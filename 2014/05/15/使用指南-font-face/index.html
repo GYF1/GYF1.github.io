@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>@font-face 使用指南 | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="@font-face 使用指南"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-05-15T01:22:48.000Z"><a href="/2014/05/15/使用指南-font-face/">5月 15 2014</a></time>
+      
+      
+  
+    <h1 class="title">@font-face 使用指南</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>@font-face<br><a id="more"></a></p>
+<h2 id="@font-face">@font-face</h2>
+<p>@font-face&#x662F;CSS3&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4ED6;&#x4E3B;&#x8981;&#x662F;&#x628A;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;Web&#x5B57;&#x4F53;&#x5D4C;&#x5165;&#x5230;&#x4F60;&#x7684;&#x7F51;&#x9875;&#x4E2D;&#xFF0C;<br>&#x968F;&#x7740;@font-face&#x6A21;&#x5757;&#x7684;&#x51FA;&#x73B0;&#xFF0C;&#x6211;&#x4EEC;&#x5728;Web&#x7684;&#x5F00;&#x53D1;&#x4E2D;&#x4F7F;&#x7528;&#x5B57;&#x4F53;&#x4E0D;&#x6015;&#x53EA;&#x80FD;&#x4F7F;&#x7528;Web&#x5B89;&#x5168;&#x5B57;&#x4F53;</p>
+<p>@font-face &#x80FD;&#x591F;&#x52A0;&#x8F7D;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#xFF0C;&#x8BA9;&#x5BA2;&#x6237;&#x7AEF;&#x663E;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x6240;&#x6CA1;&#x6709;&#x5B89;&#x88C5;&#x7684;&#x5B57;&#x4F53;&#x3002;IE&#x4E5F;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;@font-face &#xFF1A;{&#x5C5E;&#x6027;: &#x53D6;&#x503C;;}</p>
+<p>&#x5C5E;&#x6027;</p>
+<ul>
+<li>font-family&#xFF1A;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x7684;&#x5B57;&#x4F53;&#x540D;&#x79F0;&#x3002;</li>
+<li>font-style&#xFF1A;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x6837;&#x5F0F;&#x3002;</li>
+<li>font-variant&#xFF1A;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x662F;&#x5426;&#x5927;&#x5C0F;&#x5199;&#x3002;</li>
+<li>font-weight&#xFF1A;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x7684;&#x7C97;&#x7EC6;&#x3002;</li>
+<li>font-stretch&#xFF1A;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x662F;&#x5426;&#x6A2A;&#x5411;&#x7684;&#x62C9;&#x4F38;&#x53D8;&#x5F62;&#x3002;</li>
+<li>font-size&#xFF1A;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;</li>
+</ul>
+<h2 id="ttf,eot,woff,svg,&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#x4ECB;&#x7ECD;&#x53CA;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">ttf,eot,woff,svg,&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#x4ECB;&#x7ECD;&#x53CA;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2>
+<p>&#x7F51;&#x9875;&#x4E0A;&#x5C55;&#x793A;&#x6700;&#x591A;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6587;&#x5B57;&#xFF01;&#x7EB5;&#x7136;&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x518D;&#x591A;&#x7684;&#x7F51;&#x9875;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x4E22;&#x6389;&#x6587;&#x5B57;&#x7B26;&#x53F7;&#x3002;<br>&#x800C;&#x7531;&#x4E8E;&#x7F51;&#x9875;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x4F53;&#x7C7B;&#x578B;&#xFF0C;&#x4E5F;&#x662F;&#x5404;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x5B57;&#x4F53;&#x7C7B;&#x578B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x652F;&#x6301;&#x89C4;&#x683C;&#x3002; &#x5B57;&#x4F53;&#x683C;&#x5F0F;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x6709;&#x51E0;&#x4E2A;&#x5927;&#x5206;&#x7C7B;&#xFF1A;TrueType&#x3001;Embedded Open Type &#x3001;OpenType&#x3001;WOFF &#x3001;SVG&#x3002;</p>
+<h3 id="TrueType">TrueType</h3>
+<p>Windows&#x548C;Mac&#x7CFB;&#x7EDF;&#x6700;&#x5E38;&#x7528;&#x7684;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#xFF0C;&#x5176;&#x6700;&#x5927;&#x7684;&#x7279;&#x70B9;&#x5C31;&#x662F;&#x5B83;&#x662F;&#x7531;&#x4E00;&#x79CD;&#x6570;&#x5B66;&#x6A21;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x7684;&#x57FA;&#x4E8E;&#x8F6E;&#x5ED3;&#x6280;&#x672F;&#x7684;&#x5B57;&#x4F53;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x5B83;&#x4EEC;&#x6BD4;&#x57FA;&#x4E8E;&#x77E2;&#x91CF;&#x7684;&#x5B57;&#x4F53;&#x66F4;&#x5BB9;&#x6613;&#x5904;&#x7406;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x5C4F;&#x5E55;&#x4E0E;&#x6253;&#x5370;&#x8F93;&#x51FA;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x8FD9;&#x7C7B;&#x5B57;&#x4F53;&#x548C;&#x77E2;&#x91CF;&#x5B57;&#x4F53;&#x4E00;&#x6837;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x7F29;&#x653E;&#x3001;&#x65CB;&#x8F6C;&#x800C;&#x4E0D;&#x5FC5;&#x62C5;&#x5FC3;&#x4F1A;&#x51FA;&#x73B0;&#x952F;&#x9F7F;&#x3002;</p>
+<h3 id="EOT_&#x2013;_Embedded_Open_Type_(-eot)">EOT &#x2013; Embedded Open Type (.eot)</h3>
+<p>EOT&#x662F;&#x5D4C;&#x5165;&#x5F0F;&#x5B57;&#x4F53;&#xFF0C;&#x662F;&#x5FAE;&#x8F6F;&#x5F00;&#x53D1;&#x7684;&#x6280;&#x672F;&#x3002;&#x5141;&#x8BB8;OpenType&#x5B57;&#x4F53;&#x7528;@font-face&#x5D4C;&#x5165;&#x5230;&#x7F51;&#x9875;&#x5E76;&#x4E0B;&#x8F7D;&#x81F3;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#xFF0C;&#x5B58;&#x50A8;&#x5728;&#x4E34;&#x65F6;&#x5B89;&#x88C5;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002;</p>
+<h3 id="OpenType_(-otf)">OpenType (.otf)</h3>
+<p>OpenType&#x662F;&#x5FAE;&#x8F6F;&#x548C;Adobe&#x5171;&#x540C;&#x5F00;&#x53D1;&#x7684;&#x5B57;&#x4F53;&#xFF0C;&#x5FAE;&#x8F6F;&#x7684;IE&#x6D4F;&#x89C8;&#x5668;&#x5168;&#x90E8;&#x91C7;&#x7528;&#x8FD9;&#x79CD;&#x5B57;&#x4F53;&#x3002;&#x81F4;&#x529B;&#x4E8E;&#x66FF;&#x4EE3;TrueType&#x5B57;&#x4F53;&#x3002;</p>
+<h3 id="WOFF_&#x2013;_Web_Open_Font_Format_(-woff)">WOFF &#x2013; Web Open Font Format (.woff)</h3>
+<p>WOFF&#xFF08;Web&#x5F00;&#x53D1;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x4E13;&#x95E8;&#x4E3A;&#x4E86;Web&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#x6807;&#x51C6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x5BF9;&#x4E8E;TrueType/OpenType&#x7B49;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x4E2D;&#x542B;&#x6709;&#x5B57;&#x4F53;&#x4EE5;&#x53CA;&#x9488;&#x5BF9;&#x5B57;&#x4F53;&#x7684;&#x5143;&#x6570;&#x636E;&#xFF08;Metadata&#xFF09;&#xFF0C;&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x88AB;&#x538B;&#x7F29;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x3002;</p>
+<h3 id="SVG_(Scalable_Vector_Graphics)_Fonts_(-svg)">SVG (Scalable Vector Graphics) Fonts (.svg)</h3>
+<p>SVG&#x662F;&#x7531;W3C&#x5236;&#x5B9A;&#x7684;&#x5F00;&#x653E;&#x6807;&#x51C6;&#x7684;&#x56FE;&#x5F62;&#x683C;&#x5F0F;&#x3002;SVG&#x5B57;&#x4F53;&#x5C31;&#x662F;&#x4F7F;&#x7528;SVG&#x6280;&#x672F;&#x6765;&#x5448;&#x73B0;&#x5B57;&#x4F53;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x79CD;gzip&#x538B;&#x7F29;&#x683C;&#x5F0F;&#x7684;SVG&#x5B57;&#x4F53;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;">&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</h3>
+<p>&#x4F7F;&#x7528;CSS3&#x7684;@font-face&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x5D4C;&#x5165;&#x4EFB;&#x610F;&#x5B57;&#x4F53;&#xFF0C;&#x5177;&#x4F53;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x53C2;&#x7167;&#x300A;&#x5236;&#x4F5C;&#x7F51;&#x9875;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x4F53;&#x7528;&#x6237;&#x90FD;&#x80FD;&#x770B;&#x5230;&#x5417;&#x300B;&#x3002; &#x4F46;&#x662F;IE&#x53EA;&#x652F;&#x6301;&#x5FAE;&#x8F6F;&#x81EA;&#x6709;&#x7684;EOT&#x683C;&#x5F0F;&#x5B57;&#x4F53;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x5B57;&#x4F53;&#x8F6C;&#x6362;&#x5DE5;&#x5177;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;EOT&#x683C;&#x5F0F;&#xFF0C;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x4E0D;&#x652F;&#x6301;&#x8FD9;&#x4E00;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#xFF0C;&#x5176;&#x5B83;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;TTF(TrueType)&#x548C;OTF(OpenType)&#x4E24;&#x79CD;&#x5B57;&#x4F53;&#x4F5C;&#x4E3A;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x4F53;&#x3002;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/style/">Style</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/css/">CSS</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2014/05/17/keyframes-使用指南/" class="alignleft prev" title="@keyframes 使用指南">@keyframes 使用指南</a>
+  
+  
+    <a href="/2014/05/14/hello-geddy/" class="alignright next" title="Hello Geddy">Hello Geddy</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2014/05/15/使用指南-font-face/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>94</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>52</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>19</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.33px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.22px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.44px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.11px;">Bower</a><a href="/tags/css/" style="font-size: 17.78px;">CSS</a><a href="/tags/certification/" style="font-size: 11.11px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.11px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.56px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.11px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.11px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.33px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.11px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.11px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 18.89px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.22px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.11px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 16.67px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.11px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 11.11px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.22px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.44px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 15.56px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/24/meteor部署到阿里云/">meteor部署到阿里云</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/dropdown-tree/">dropdown tree</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/22/$fn/">jQuery开发插件</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

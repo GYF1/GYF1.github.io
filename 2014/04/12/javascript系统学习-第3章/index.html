@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaScript系统学习 第3章 基本概念 | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="JavaScript系统学习 第3章 基本概念"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-11T23:44:25.000Z"><a href="/2014/04/12/javascript系统学习-第3章/">4月 12 2014</a></time>
+      
+      
+  
+    <h1 class="title">JavaScript系统学习 第3章 基本概念</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x50CF;&#x5B66;&#x82F1;&#x8BED;&#x4E00;&#x6837;&#xFF0C;&#x5B66;&#x4E60;javascript&#x4E5F;&#x9700;&#x8981;&#x5B66;&#x4E60;&#x5355;&#x8BCD;&#x548C;&#x8BED;&#x6CD5;&#x3002;<br>&#x6211;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x9700;&#x8981;&#x4ED4;&#x7EC6;&#x5B66;&#x4E60;&#x7684;&#x662F;&#x4F7F;&#x7528;&#x9891;&#x7387;&#x5728;&#x521D;&#x5B66;&#x8005;&#x79CD;&#x7528;&#x7684;&#x4E0D;&#x662F;&#x5F88;&#x591A;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x6BD4;&#x4F5C;&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;&#x7B49;&#xFF0C;&#x9700;&#x8981;&#x8003;&#x8651;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x7B26;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9;&#x3002;<br>&#x5173;&#x4E8E;&#x8BED;&#x53E5;&#xFF0C;&#x4E0D;&#x8981;&#x53EA;&#x719F;&#x6089;&#x5F88;&#x666E;&#x901A;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x7528;&#x7684;&#x4E5F;&#x4E0D;&#x662F;&#x5F88;&#x591A;&#xFF0C;&#x6BD4;&#x5982;for-in&#x8BED;&#x53E5;, label&#x8BED;&#x53E5;&#xFF0C;with&#x8BED;&#x53E5;&#x7B49;<br><a id="more"></a></p>
+<h2 id="&#x4E00;&#x3001;&#x8BED;&#x6CD5;">&#x4E00;&#x3001;&#x8BED;&#x6CD5;</h2>
+<h3 id="1-1_&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;">1.1 &#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;</h3>
+<h3 id="1-2_&#x6807;&#x793A;&#x7B26;">1.2 &#x6807;&#x793A;&#x7B26;</h3>
+<p>&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#xFF1A;&#x9A7C;&#x5CF0;&#x5927;&#x5C0F;&#x5199;&#x683C;&#x5F0F;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;</p>
+<h3 id="1-3_&#x6CE8;&#x91CA;">1.3 &#x6CE8;&#x91CA;</h3>
+<p>&#x76EE;&#x7684;&#x662F;&#x63D0;&#x9AD8;&#x53EF;&#x8BFB;&#x6027;</p>
+<h3 id="1-4_&#x4E25;&#x683C;&#x6A21;&#x5F0F;">1.4 &#x4E25;&#x683C;&#x6A21;&#x5F0F;</h3>
+<p>javasript&#x662F;&#x4E00;&#x79CD;&#x89E3;&#x91CA;&#x578B;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x591A;&#x9519;&#x8BEF;&#x53EA;&#x6709;&#x53EA;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x63D0;&#x793A;&#x3002;<br>&#x6BD4;&#x5982;&#x5C11;&#x4E86;&#x5F15;&#x53F7;&#xFF0C;&#x5C11;&#x4E86;&#x62EC;&#x53F7;&#x8FD9;&#x79CD;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x9519;&#x8BEF;&#x3002;<br>&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4E5F;&#x53EF;&#x4EE5;&#x50CF;&#x7F16;&#x8BD1;&#x578B;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x80FD;&#x591F;&#x5728;&#x4FDD;&#x5B58;&#x540E;&#x5C31;&#x80FD;&#x63D0;&#x793A;&#x6211;&#x4EEC;&#x9519;&#x8BEF;&#xFF0C;&#x5BF9;&#x5F00;&#x53D1;&#x5E2E;&#x52A9;&#x4F1A;&#x5F88;&#x5927;&#x3002;<br>&#x5728;ECMAScript 5&#x5F15;&#x5165;&#x4E86;&#x4E25;&#x683C;&#x6A21;&#x5F0F;(strict mode)&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;<br>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728;&#x9876;&#x90E8;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code><span class="pi">  &quot;use strict&quot;</span>;
+</code></pre></li>
+<li><p>&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x4E0A;&#x65B9;&#x5305;&#x542B;</p>
+<pre><code>  <span class="function"><span class="keyword">function</span> <span class="title">doSomething</span><span class="params">()</span>{</span>
+<span class="pi">      &quot;use strict&quot;</span>;
+      <span class="comment">//&#x51FD;&#x6570;&#x4F53;</span>
+  }
+</code></pre></li>
+</ul>
+<p>&#x201C;use strict&#x201D;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x6CA1;&#x6709;&#x8D4B;&#x503C;&#x7ED9;&#x4EFB;&#x4F55;&#x53D8;&#x91CF;&#xFF0C;&#x542F;&#x793A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x6307;&#x793A;&#xFF08;pragma&#xFF09;<br>&#x4E0D;&#x8FC7;&#x76F4;&#x63A5;&#x52A0;&#x4E0A;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5E2E;&#x52A9;&#x4E0D;&#x662F;&#x5F88;&#x5927;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x63D2;&#x4EF6;&#x914D;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x6211;&#x77E5;&#x9053;&#x6BD4;&#x8F83;&#x597D;&#x7528;&#x7684;&#x662F;<a href="http://www.jshint.com/" target="_blank" rel="external">JSHint</a><br>&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x53EB;&#x505A;<a href="http://jslint.com/" target="_blank" rel="external">JSLint</a></p>
+<h3 id="1-5_&#x8BED;&#x53E5;">1.5 &#x8BED;&#x53E5;</h3>
+<h4 id="1-5-1_&#x5206;&#x53F7;">1.5.1 &#x5206;&#x53F7;</h4>
+<p>&#x8981;&#x628A;&#x52A0;&#x4E0A;&#x5206;&#x53F7;&#x5F53;&#x4F5C;&#x4E00;&#x79CD;&#x4E60;&#x60EF;&#xFF0C;&#x56E0;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x53EF;&#x8BFB;&#x6027;&#x5F3A;</li>
+<li>&#x907F;&#x514D;&#x9519;&#x8BEF;&#xFF0C;&#x4F8B;&#x5982;&#x4E0D;&#x5B8C;&#x6574;&#x7684;&#x8F93;&#x5165;</li>
+<li>&#x6CA1;&#x6709;&#x5206;&#x53F7;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x4EE3;&#x7801;&#x538B;&#x7F29;&#x7684;&#x65F6;&#x5019;&#x62A5;&#x9519;</li>
+<li>&#x7701;&#x7565;&#x5206;&#x53F7;&#xFF0C;&#x4F1A;&#x7531;&#x89E3;&#x91CA;&#x5668;&#x786E;&#x5B9A;&#x8BED;&#x53E5;&#x7684;&#x7ED3;&#x5C3E;&#x3002;&#x52A0;&#x4E0A;&#x5206;&#x53F7;&#x540E;&#xFF0C;&#x89E3;&#x91CA;&#x5668;&#x5C31;&#x4E0D;&#x5FC5;&#x518D;&#x82B1;&#x5B9E;&#x8DF5;&#x63A8;&#x6D4B;&#x5E94;&#x8BE5;&#x5728;&#x54EA;&#x91CC;&#x63D2;&#x5165;&#x5206;&#x53F7;&#x4E86;&#x3002;</li>
+</ul>
+<h4 id="1-5-2_&#x82B1;&#x62EC;&#x53F7;">1.5.2 &#x82B1;&#x62EC;&#x53F7;</h4>
+<p>&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#xFF1A;&#x59CB;&#x7EC8;&#x5728;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x4E2D;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x5757;&#xFF08;&#x4EE3;&#x7801;&#x5757;&#x4EE5;&#x82B1;&#x62EC;&#x53F7;&#x5F00;&#x5934;&#xFF0C;&#x4EE5;&#x82B1;&#x62EC;&#x53F7;&#x7ED3;&#x5C3E;&#xFF09;&#x3002;<br>&#x4F7F;&#x7528;&#x4E86;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x7F16;&#x7801;&#x610F;&#x56FE;&#x66F4;&#x52A0;&#x6E05;&#x6670;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x80FD;&#x964D;&#x4F4E;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x65F6;&#x51FA;&#x9519;&#x7684;&#x673A;&#x7387;&#x3002;</p>
+<h2 id="&#x4E8C;&#x3001;&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;">&#x4E8C;&#x3001;&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;</h2>
+<p>&#x53EA;&#x8981;&#x8BB0;&#x4F4F;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;&#x4F5C;&#x4E3A;&#x6807;&#x793A;&#x7B26;&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x907F;&#x5F00;&#x3002;<br>&#x5982;&#x679C;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x201D;Identifier Expected&#x201D;&#xFF0C;&#x8003;&#x8651;&#x4E0B;&#x662F;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x5173;&#x952E;&#x5B57;&#x6216;&#x4FDD;&#x7559;&#x5B57;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x53D8;&#x91CF;">&#x4E09;&#x3001;&#x53D8;&#x91CF;</h2>
+<h3 id="3-1_&#x4F7F;&#x7528;">3.1 &#x4F7F;&#x7528;</h3>
+<p>&#x677E;&#x6563;&#x7C7B;&#x578B;&#x6216;&#x7C7B;&#x578B;&#xFF0C;&#x5B9A;&#x4E49;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;var</p>
+<h3 id="3-2_&#x53D8;&#x91CF;&#x4F5C;&#x7528;&#x57DF;">3.2 &#x53D8;&#x91CF;&#x4F5C;&#x7528;&#x57DF;</h3>
+<p>&#x7528;var&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x4F1A;&#x6709;&#x4F5C;&#x7528;&#x57DF;&#x3002;<br>&#x6BD4;&#x5982;&#x5728;&#x51FD;&#x6570;&#x91CC;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x51FD;&#x6570;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x53D8;&#x91CF;&#x5373;&#x88AB;&#x9500;&#x6BC1;&#x3002;<br>&#x5165;&#x80A1;&#x7701;&#x7565;&#x4E86;var&#xFF0C;&#x521B;&#x5EFA;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5373;&#x4F7F;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x51FD;&#x6570;&#x5916;&#x90E8;&#x4E5F;&#x80FD;&#x8BBF;&#x95EE;&#x3002;<br>&#x4E0D;&#x8FC7;&#x4E0D;&#x63A8;&#x8350;&#x7701;&#x7565;var&#xFF0C;&#x8FD9;&#x6837;&#x4E0D;&#x597D;&#x7EF4;&#x62A4;&#x4EE3;&#x7801;&#xFF0C;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x6DF7;&#x4E71;&#x3002;</p>
+<h2 id="&#x56DB;&#x3001;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x56DB;&#x3001;&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>5&#x79CD;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x4E00;&#x79CD;&#x590D;&#x6742;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<h2 id="&#x4E94;&#x3001;&#x64CD;&#x4F5C;&#x7B26;">&#x4E94;&#x3001;&#x64CD;&#x4F5C;&#x7B26;</h2>
+<h2 id="&#x516D;&#x3001;&#x8BED;&#x53E5;">&#x516D;&#x3001;&#x8BED;&#x53E5;</h2>
+<h2 id="&#x4E03;&#x3001;&#x51FD;&#x6570;">&#x4E03;&#x3001;&#x51FD;&#x6570;</h2>
+<h1 id="Q&#x26;A">Q&amp;A</h1>
+<h3 id="Q:_==_&#x548C;_===_&#x7684;&#x5374;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4F60;&#x4F1A;&#x7528;&#x54EA;&#x4E2A;&#xFF1F;">Q: == &#x548C; === &#x7684;&#x5374;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4F60;&#x4F1A;&#x7528;&#x54EA;&#x4E2A;&#xFF1F;</h3>
+<p>The equality (==) operator will compare for equality after doing necessary type casting, the identity operator (===) doesn&#x2019;t do any conversions.<br>&#x2018;&#x2019; == &#x2018;0&#x2019;          // false<br>0 == &#x2018;&#x2019;            // true<br>0 == &#x2018;0&#x2019;           // true</p>
+<p>false == &#x2018;false&#x2019;   // false<br>false == &#x2018;0&#x2019;       // true</p>
+<p>false == undefined // false<br>false == null      // false<br>null == undefined  // true</p>
+<h3 id="Q:_&#x6C42;y&#x548C;z&#x7684;&#x503C;&#x662F;&#x591A;&#x5C11;&#xFF1F;">Q: &#x6C42;y&#x548C;z&#x7684;&#x503C;&#x662F;&#x591A;&#x5C11;&#xFF1F;</h3>
+<pre><code><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+<span class="keyword">var</span> x = <span class="number">1</span>;
+<span class="keyword">var</span> y = <span class="number">0</span>;
+<span class="keyword">var</span> z = <span class="number">0</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">add</span><span class="params">(n)</span>{</span>n=n+<span class="number">1</span>;}
+y = add(x);
+<span class="function"><span class="keyword">function</span> <span class="title">add</span><span class="params">(n)</span>{</span>n=n+<span class="number">3</span>;}
+z = add(x);
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</code></pre><p>A: &#x90FD;&#x4E3A;undefined&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<h3 id="Q:_&#x5217;&#x4E3E;javaScript&#x7684;3&#x79CD;&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;2&#x79CD;&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;2&#x79CD;&#x7279;&#x6B8A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;">Q: &#x5217;&#x4E3E;javaScript&#x7684;3&#x79CD;&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;2&#x79CD;&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;2&#x79CD;&#x7279;&#x6B8A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</h3>
+<p>A:<br>&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;string, boolean, number<br>&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;function, object</p>
+<h3 id="Q:_&#x5199;&#x51FA;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF1F;">Q: &#x5199;&#x51FA;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF1F;</h3>
+<pre><code><span class="keyword">for</span>(<span class="built_in">i</span>=<span class="number">0</span>, <span class="built_in">j</span>=<span class="number">0</span>; <span class="built_in">i</span>&lt;<span class="number">10</span>, <span class="built_in">j</span>&lt;<span class="number">6</span>; <span class="built_in">i</span>++, <span class="built_in">j</span>++)<span class="cell">{
+  k = i + j;
+}</span>
+</code></pre><p>A: 10</p>
+<h3 id="Q:_&#x4EE5;&#x4E0B;&#x54EA;&#x4E2A;&#x5355;&#x8BCD;&#x4E0D;&#x5C5E;&#x4E8E;javascript&#x4FDD;&#x7559;&#x5B57;:">Q: &#x4EE5;&#x4E0B;&#x54EA;&#x4E2A;&#x5355;&#x8BCD;&#x4E0D;&#x5C5E;&#x4E8E;javascript&#x4FDD;&#x7559;&#x5B57;:</h3>
+<p>A.with       B.parent       C.class         D.void<br>A: B</p>
+<h3 id="Q:_&#x8BF7;&#x9009;&#x62E9;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#x7684;&#x8868;&#x8FBE;&#x5F0F;:">Q: &#x8BF7;&#x9009;&#x62E9;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#x7684;&#x8868;&#x8FBE;&#x5F0F;:</h3>
+<p>A.null  instanceof Object   //false<br>B.null === undefined        //false<br>C.null == undefined         //true<br>D.NaN == NaN                //false</p>
+<h3 id="Q:_How_would_you_check_if_a_variable_is_null/undefined?">Q: How would you check if a variable is null/undefined?</h3>
+<pre><code><span class="regexp">//</span>check <span class="keyword">if</span> bar <span class="keyword">is</span> <span class="literal">null</span>
+bar === <span class="literal">null</span>
+
+<span class="regexp">//</span>check <span class="keyword">if</span> bar <span class="keyword">is</span> <span class="literal">undefined</span>
+<span class="keyword">typeof</span> bar === <span class="string">&quot;undefined&quot;</span>    
+</code></pre><h3 id="Q:_How_do_you_check_if_a_variable_is_an_object">Q: How do you check if a variable is an object</h3>
+<p>You can use typeof to determine if variable is an object, however bear in mind that null is actually an object! However null object is &#x2018;falsy&#x2019; thus the following will work:<br>    if(bar &amp;&amp; typeof bar === &#x201C;object&#x201D;) {<br>        console.log(&#x2018;bar is object and is not null&#x2019;);<br>    }    </p>
+<h3 id="Q:_What_is_Strict_Mode_in_JavaScript">Q: What is Strict Mode in JavaScript</h3>
+<p>Strict Mode has been introduced as part of ECMAScript 5 and introduces new, restricted variant of JavaScript which has following aims:</p>
+<p>Throws errors for actions that are rather silly but previously didn&#x2019;t throw an error<br>Throws errors for potentially unsafe actions<br>Disables functions that are poorly thought out<br>Potentially code in strict mode could run faster by eliminating mistakes that would make it difficult for JavaScript engines to perform optimizations<br>Strict mode can be enabled for the entire source file or on per function basis by adding a string literal &#x201C;use strict&#x201D; on top of the file/function i.e.</p>
+<pre><code><span class="keyword">function</span> foo(){
+  <span class="string">&quot;use strict&quot;</span>;
+  // <span class="keyword">...</span> your code <span class="keyword">...</span>
+}
+</code></pre><h3 id="Q:_Does_JavaScript_Support_automatic_type_conversion,_If_yes_give_example-">Q: Does JavaScript Support automatic type conversion, If yes give example.</h3>
+<p>Ans: Yes! Javascript support automatic type conversion. You should take advantage of it, It is most common way of type conversion used by Javascript developers.<br>Ex.</p>
+<pre><code><span class="keyword">var</span> s = <span class="string">&apos;5&apos;</span>;
+<span class="keyword">var</span> a = s*<span class="number">1</span>;
+<span class="keyword">var</span> b = +s;
+<span class="keyword">typeof</span>(s); <span class="comment">//&quot;string&quot;</span>
+<span class="keyword">typeof</span>(a); <span class="comment">//&quot;number&quot;</span>
+<span class="keyword">typeof</span>(b); <span class="comment">//&quot;number&quot; </span>
+</code></pre><h3 id="Q:_Name_any_two_JavaScript_functions_which_are_used_to_convert_nonnumeric_values_into_numbers?">Q: Name any two JavaScript functions which are used to convert nonnumeric values into numbers?</h3>
+<p>Ans:<br>    Number()<br>    parseInt()<br>    parseFloat()<br>Code</p>
+<pre><code><span class="keyword">var</span> n1 = <span class="built_in">Number</span>(&#x201C;Hello world!&#x201D;); <span class="comment">//NaN</span>
+<span class="keyword">var</span> n2 = <span class="built_in">Number</span>(&#x201C;&#x201D;);             <span class="comment">//0</span>
+<span class="keyword">var</span> n3 = <span class="built_in">Number</span>(&#x201C;<span class="number">000010</span>&#x201D;);       <span class="comment">//10</span>
+<span class="keyword">var</span> n4 = <span class="built_in">Number</span>(<span class="literal">true</span>);           <span class="comment">//1</span>
+<span class="keyword">var</span> n5 = <span class="built_in">Number</span>(<span class="literal">NaN</span>);            <span class="comment">//NaN    </span>
+</code></pre><h3 id="Q:_What_would_be_the_output_of_the_following_statements?">Q: What would be the output of the following statements?</h3>
+<p>Code</p>
+<pre><code><span class="reserved">var</span> object1 = { <span class="attribute">same</span>: <span class="string">&apos;same&apos;</span> };
+<span class="reserved">var</span> object2 = object1;
+<span class="built_in">console</span>.log(object1 === object2);
+</code></pre><p>Ans: // Logs true</p>
+<h3 id="Q:_What_will_be_the_output_of_the_following_statements?">Q: What will be the output of the following statements?</h3>
+<pre><code><span class="built_in">var</span> myString <span class="subst">=</span> <span class="string">&apos;Vikas&apos;</span> <span class="comment">// Create a primitive string object.</span>
+<span class="built_in">var</span> myStringCopy <span class="subst">=</span> myString; <span class="comment">// Copy its value into a new variable.</span>
+<span class="built_in">var</span> myString <span class="subst">=</span> <span class="built_in">null</span>; <span class="comment">// Manipulate the value</span>
+console<span class="built_in">.</span><span class="keyword">log</span>(myString, myStringCopy);
+</code></pre><p>Ans: // Logs &#x2018;null Vikas&#x2019;</p>
+<h3 id="Q:_What_looping_structures_are_there_in_JavaScript?">Q: What looping structures are there in JavaScript?</h3>
+<p>Ans: for, while, do-while loops</p>
+<h3 id="Q:_Does_JavaScript_support_foreach_loop?">Q: Does JavaScript support foreach loop?</h3>
+<p>Ans: JavaScript 1.6(ECMAScript 5th Edition) support foreach loop,</p>
+<h3 id="Q:_What_does_&#x201C;1&#x201D;+2+4_evaluate_to?">Q: What does &#x201C;1&#x201D;+2+4 evaluate to?</h3>
+<p>Ans: Since 1 is a string, everything is a string, so the result is 124.</p>
+<h3 id="Q:_What_does_3+4+&#x201D;7&#x201D;_evaluate_to?">Q: What does 3+4+&#x201D;7&#x201D; evaluate to?</h3>
+<p>Ans: Since 3 and 4 are integers, this is number arithmetic, since 7 is a string, it is concatenation, so 77 is the result.</p>
+<h3 id="Q:_What_are_the_ways_of_making_comments_in_JavaScript?">Q: What are the ways of making comments in JavaScript?</h3>
+<p>Ans:<br>// is used for line comments<br>ex:- var x=10; //comment text</p>
+<p>/<em>
+</em>/  is used for block comments<br>ex:-<br>var x= 10; /<em> this is<br>block comment example.</em>/</p>
+<h3 id="Q:_What_is_the_difference_between_&#x201C;==&#x201D;_and_&#x201C;===&#x201D;?">Q: What is the difference between &#x201C;==&#x201D; and &#x201C;===&#x201D;?</h3>
+<p>Ans:<br>&#x201C;==&#x201D; checks equality only,<br>&#x201C;===&#x201D; checks for equality as well as the type.</p>
+<h3 id="Q:_What_are_the_boolean_operators_supported_by_JavaScript?">Q: What are the boolean operators supported by JavaScript?</h3>
+<p>And Operator: &amp;&amp;<br>Or Operator: ||<br>Not Operator: !</p>
+<h3 id="Q:_What_are_the_types_used_in_JavaScript?">Q: What are the types used in JavaScript?</h3>
+<p>Ans:String, Number, Boolean, Function, Object, Null, Undefined.</p>
+<h3 id="Q:_Is_JavaScript_case_sensitive?">Q: Is JavaScript case sensitive?</h3>
+<p>Ans:Yes!<br>A function getElementById is not the same as getElementbyID.</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/javascript/">JavaScript</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/learning/">Learning</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2014/04/12/javascript系统学习-第4章/" class="alignleft prev" title="JavaScript系统学习 第4章 变量、作用域和内存问题">JavaScript系统学习 第4章 变量、作用域和内存问题</a>
+  
+  
+    <a href="/2014/04/11/javascript系统学习-第2章/" class="alignright next" title="JavaScript系统学习 第2章 使用Javascript">JavaScript系统学习 第2章 使用Javascript</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2014/04/12/javascript系统学习-第3章/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>94</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>52</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>19</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.33px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.22px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.44px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.11px;">Bower</a><a href="/tags/css/" style="font-size: 17.78px;">CSS</a><a href="/tags/certification/" style="font-size: 11.11px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.11px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.56px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.11px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.11px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.33px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.11px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.11px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 18.89px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.22px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.11px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 16.67px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.11px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 11.11px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.22px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.44px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 15.56px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/24/meteor部署到阿里云/">meteor部署到阿里云</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/dropdown-tree/">dropdown tree</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/22/$fn/">jQuery开发插件</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

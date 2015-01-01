@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>javaScript 学习笔记 | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="javaScript 学习笔记"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-03-01T13:25:58.000Z"><a href="/2014/03/01/javascript-学习笔记/">3月 1 2014</a></time>
+      
+      
+  
+    <h1 class="title">javaScript 学习笔记</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>js<br><a id="more"></a></p>
+<h1 id="&#x4E00;_&#x57FA;&#x7840;">&#x4E00; &#x57FA;&#x7840;</h1>
+<h2 id="1-_Objects">1. Objects</h2>
+<h3 id="1-1-_keys">1.1. keys</h3>
+<p>&#x6982;&#x8FF0;<br>&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7531;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x53EF;&#x679A;&#x4E3E;&#x81EA;&#x8EAB;&#x5C5E;&#x6027;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;,&#x6570;&#x7EC4;&#x4E2D;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x6392;&#x5217;&#x987A;&#x5E8F;&#x548C;&#x4F7F;&#x7528;for-in&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x8BE5;&#x5BF9;&#x8C61;&#x65F6;&#x8FD4;&#x56DE;&#x7684;&#x987A;&#x5E8F;&#x4E00;&#x81F4;(&#x4E24;&#x8005;&#x7684;&#x4E3B;&#x8981;&#x533A;&#x522B;&#x662F;for-in&#x8FD8;&#x4F1A;&#x904D;&#x5386;&#x51FA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4ECE;&#x5176;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#x7EE7;&#x627F;&#x5230;&#x7684;&#x53EF;&#x679A;&#x4E3E;&#x5C5E;&#x6027;).<br>Method of Object<br>Implemented in    JavaScript 1.8.5<br>ECMAScript Edition    ECMAScript 5th Edition<br>&#x8BED;&#x6CD5;<br>Object.keys(obj)<br>&#x53C2;&#x6570;<br>obj<br>&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x53EF;&#x679A;&#x4E3E;&#x81EA;&#x8EAB;&#x5C5E;&#x6027;&#x7684;&#x5C5E;&#x6027;&#x540D;.<br>&#x4F8B;&#x5B50;</p>
+<pre><code><span class="keyword">var</span> arr = [<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>];
+alert(<span class="built_in">Object</span>.keys(arr)); <span class="comment">// &#x5F39;&#x51FA;&quot;0,1,2&quot;</span>
+
+<span class="comment">// &#x7C7B;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</span>
+<span class="keyword">var</span> obj = { <span class="number">0</span> : <span class="string">&quot;a&quot;</span>, <span class="number">1</span> : <span class="string">&quot;b&quot;</span>, <span class="number">2</span> : <span class="string">&quot;c&quot;</span>};
+alert(<span class="built_in">Object</span>.keys(obj)); <span class="comment">// &#x5F39;&#x51FA;&quot;0,1,2&quot;</span>
+
+<span class="comment">// getFoo&#x662F;&#x4E2A;&#x4E0D;&#x53EF;&#x679A;&#x4E3E;&#x7684;&#x5C5E;&#x6027;</span>
+<span class="keyword">var</span> my_obj = <span class="built_in">Object</span>.create({}, { getFoo : { value : <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span> <span class="keyword">return</span> <span class="keyword">this</span>.foo } } });
+my_obj.foo = <span class="number">1</span>;
+
+alert(<span class="built_in">Object</span>.keys(my_obj)); <span class="comment">// &#x53EA;&#x5F39;&#x51FA;foo</span>
+</code></pre><h2 id="2-_&#x8FD0;&#x7B97;&#x7B26;">2. &#x8FD0;&#x7B97;&#x7B26;</h2>
+<h3 id="2-1_&#x6309;&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;">2.1 &#x6309;&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<h4 id="2-1-1_&#x4F4D;&#x8FD0;&#x7B97;_NOT">2.1.1 &#x4F4D;&#x8FD0;&#x7B97; NOT</h4>
+<p>&#x4F4D;&#x8FD0;&#x7B97; NOT &#x7531;&#x5426;&#x5B9A;&#x53F7;&#xFF08;~&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x5B83;&#x662F; ECMAScript &#x4E2D;&#x4E3A;&#x6570;&#x4E0D;&#x591A;&#x7684;&#x4E0E;&#x4E8C;&#x8FDB;&#x5236;&#x7B97;&#x672F;&#x6709;&#x5173;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x4E4B;&#x4E00;&#x3002;<br>&#x4F4D;&#x8FD0;&#x7B97; NOT &#x662F;&#x4E09;&#x6B65;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<ol>
+<li>&#x628A;&#x8FD0;&#x7B97;&#x6570;&#x8F6C;&#x6362;&#x6210; 32 &#x4F4D;&#x6570;&#x5B57;</li>
+<li>&#x628A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x5B83;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x53CD;&#x7801;</li>
+<li>&#x628A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x6D6E;&#x70B9;&#x6570;</li>
+</ol>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code><span class="keyword">var</span> iNum1 = <span class="number">25</span>;        <span class="comment">//25 &#x7B49;&#x4E8E; 00000000000000000000000000011001</span>
+<span class="keyword">var</span> iNum2 = ~iNum1;    <span class="comment">//&#x8F6C;&#x6362;&#x4E3A; 11111111111111111111111111100110</span>
+alert(iNum2);        <span class="comment">//&#x8F93;&#x51FA; &quot;-26&quot;</span>
+</code></pre><p>&#x4F4D;&#x8FD0;&#x7B97; NOT &#x5B9E;&#x8D28;&#x4E0A;&#x662F;&#x5BF9;&#x6570;&#x5B57;&#x6C42;&#x8D1F;&#xFF0C;&#x7136;&#x540E;&#x51CF; 1&#xFF0C;&#x56E0;&#x6B64; 25 &#x53D8; -26&#x3002;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code><span class="built_in">var</span> iNum1 <span class="subst">=</span> <span class="number">25</span>;
+<span class="built_in">var</span> iNum2 <span class="subst">=</span> <span class="attribute">-iNum1</span> <span class="subst">-</span><span class="number">1</span>;
+alert(iNum2);    <span class="comment">//&#x8F93;&#x51FA; -26</span>
+</code></pre><h1 id="&#x4E8C;_&#x7279;&#x6027;">&#x4E8C; &#x7279;&#x6027;</h1>
+<h2 id="javascript_&#x539F;&#x578B;&#x5BF9;&#x8C61;">javascript &#x539F;&#x578B;&#x5BF9;&#x8C61;</h2>
+<h2 id="javascript_&#x95ED;&#x5305;">javascript &#x95ED;&#x5305;</h2>
+<h1 id="&#x9AD8;&#x7EA7;">&#x9AD8;&#x7EA7;</h1>
+<h2 id="&#x4E25;&#x683C;&#x6A21;&#x5F0F;">&#x4E25;&#x683C;&#x6A21;&#x5F0F;</h2>
+<pre><code><span class="pi">&quot;use strict&quot;</span>;
+</code></pre>
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/javascript/">JavaScript</a>
+  </div>
+
+        
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2014/03/02/bower-使用手册/" class="alignleft prev" title="bower 使用手册">bower 使用手册</a>
+  
+  
+    <a href="/2014/03/01/mongoose-学习笔记/" class="alignright next" title="Mongoose 学习笔记">Mongoose 学习笔记</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2014/03/01/javascript-学习笔记/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>94</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>52</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>19</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.33px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.22px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.44px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.11px;">Bower</a><a href="/tags/css/" style="font-size: 17.78px;">CSS</a><a href="/tags/certification/" style="font-size: 11.11px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.11px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.56px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.11px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.11px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.33px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.11px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.11px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 18.89px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.22px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.11px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 16.67px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.11px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 11.11px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.22px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.44px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 15.56px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/24/meteor部署到阿里云/">meteor部署到阿里云</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/dropdown-tree/">dropdown tree</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/22/$fn/">jQuery开发插件</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

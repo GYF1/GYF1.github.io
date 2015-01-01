@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>TDD 简介 | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="TDD 简介"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-20T10:56:51.000Z"><a href="/2014/04/20/tdd-简介/">4月 20 2014</a></time>
+      
+      
+  
+    <h1 class="title">TDD 简介</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x662F;&#x4E00;&#x79CD;&#x654F;&#x6377;&#x5F00;&#x53D1;&#x65B9;&#x6CD5;&#x8BBA;&#xFF0C;&#x5B83;&#x628A;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;&#x5012;&#x8F6C;&#x4E86;&#x8FC7;&#x6765;&#xFF0C;&#x5728;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E4B;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x4FDD;&#x8BC1;&#x7F16;&#x5199;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#xFF0C;&#x4ECE;&#x800C;&#x7528;&#x6D4B;&#x8BD5;&#x6765;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x628A;&#x6D4B;&#x8BD5;&#x4F5C;&#x4E3A;&#x4E00;&#x9879;&#x9A8C;&#x8BC1;&#x5DE5;&#x5177;&#x6765;&#x4F7F;&#x7528;&#xFF09;&#x3002;<br><a id="more"></a><br>Test-driven development, or TDD, is an AGILE methodology that flips the development lifecycle by ensuring that tests are written first, before the code is implemented, and that<br>tests drive the development (and are not just used as a validation tool).<br>The tenets of TDD are simple:<br>&#x2022; Code is written only when there is a failing test that requires the code to pass<br>&#x2022; The bare minimum amount of code is written to ensure that the test passes<br>&#x2022; Duplication is removed at every step<br>&#x2022; Once all tests are passing, the next failing test is added for the next required functionality.<br>These simple rules ensure that:<br>&#x2022; Your code develops organically, and that every line of code written is purposeful.<br>&#x2022; Your code remains highly modular, cohesive, and reusable (as you need to be able to test it).<br>&#x2022; You provide a comprehensive array of tests to prevent future breakages and bugs.<br>&#x2022; The tests also act as specification, and thus documentation, for future needs and changes.</p>
+<p>TDD&#x7684;&#x539F;&#x5219;&#x5F88;&#x7B80;&#x5355;:</p>
+<ul>
+<li>&#x53EA;&#x6709;&#x5F53;&#x67D0;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x8FD0;&#x884C;&#x5931;&#x8D25;&#xFF0C;&#x8FDB;&#x800C;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x624D;&#x80FD;&#x901A;&#x8FC7;&#x65F6;&#x624D;&#x53BB;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x7F16;&#x5199;&#x80FD;&#x4FDD;&#x8BC1;&#x6D4B;&#x8BD5;&#x901A;&#x8FC7;&#x7684;&#x6700;&#x5C11;&#x6570;&#x91CF;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x5728;&#x6BCF;&#x4E00;&#x6B65;&#x4E2D;&#x90FD;&#x53BB;&#x6389;&#x91CD;&#x590D;&#x7684;&#x5185;&#x5BB9;&#x3002;</li>
+<li>&#x4E00;&#x65E6;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x90FD;&#x901A;&#x8FC7;&#x4E86;&#xFF0C;&#x5C31;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x5FC5;&#x9700;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x65B0;&#x589E;&#x4E00;&#x4E2A;&#x5931;&#x8D25;&#x7684;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x3002;<br>&#x8FD9;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x539F;&#x5219;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#xFF1A;</li>
+<li>&#x4F60;&#x6240;&#x5F00;&#x53D1;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x6709;&#x673A;&#x5730;&#x7EC4;&#x7EC7;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x7F16;&#x5199;&#x5730;&#x6BCF;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x76EE;&#x7684;&#x660E;&#x786E;&#x5730;&#x3002;</li>
+<li>&#x4F60;&#x5730;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x9AD8;&#x5EA6;&#x6A21;&#x5757;&#x5316;&#x3001;&#x9AD8;&#x5185;&#x805A;&#x3001;&#x5E76;&#x4E14;&#x9AD8;&#x5EA6;&#x53EF;&#x590D;&#x7528;&#xFF08;&#x56E0;&#x4E3A;&#x4F60;&#x5FC5;&#x9700;&#x80FD;&#x591F;&#x6D4B;&#x8BD5;&#x5B83;&#xFF09;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5168;&#x9762;&#x7684;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x96C6;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x5C06;&#x6765;&#x9020;&#x6210;&#x635F;&#x574F;&#x548C;bug&#x3002;</li>
+<li>&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x540C;&#x65F6;&#x53C8;&#x662F;&#x5F00;&#x53D1;&#x89C4;&#x8303;&#xFF0C;&#x5E76;&#x4E14;&#x65F6;&#x6587;&#x6863;&#x5316;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x672A;&#x6765;&#x7684;&#x9700;&#x6C42;&#x548C;&#x53D8;&#x66F4;&#x4E2D;&#x3002;</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/software-engineering/">Software Engineering</a>
+  </div>
+
+        
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2014/04/20/hello-karma/" class="alignleft prev" title="Hello Karma">Hello Karma</a>
+  
+  
+    <a href="/2014/04/20/软件测试简介/" class="alignright next" title="软件测试简介">软件测试简介</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2014/04/20/tdd-简介/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>94</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>52</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>19</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.33px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.22px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.44px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.11px;">Bower</a><a href="/tags/css/" style="font-size: 17.78px;">CSS</a><a href="/tags/certification/" style="font-size: 11.11px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.11px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.56px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.11px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.11px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.33px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.11px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.11px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 18.89px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.22px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.11px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 16.67px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.11px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 11.11px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.22px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.44px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 15.56px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/24/meteor部署到阿里云/">meteor部署到阿里云</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/dropdown-tree/">dropdown tree</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/22/$fn/">jQuery开发插件</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/31/javascript-promise/</loc>
+    <lastmod>2014-12-31T03:51:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/31/javascript-prototype/</loc>
+    <lastmod>2014-12-31T03:50:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/31/vcard-style-collection/</loc>
+    <lastmod>2014-12-31T02:08:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/26/angular-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2014-12-27T01:49:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/24/meteor%E9%83%A8%E7%BD%B2%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+    <lastmod>2014-12-25T09:55:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/25/meteor%E9%83%A8%E7%BD%B2%E5%90%8Esockjs%E6%8A%A5%E9%94%99/</loc>
+    <lastmod>2014-12-25T09:50:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/25/karma%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
+    <lastmod>2014-12-25T08:26:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/23/dropdown-tree/</loc>
+    <lastmod>2014-12-23T02:37:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/23/%E5%B0%86%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E6%88%90%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2014-12-23T02:21:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/22/$fn/</loc>
+    <lastmod>2014-12-22T03:05:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/19/markdown%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2014-12-19T02:11:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/11/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC1%E7%AB%A0/</loc>
+    <lastmod>2014-12-19T02:11:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/02/tinymce-performance-tune/</loc>
+    <lastmod>2014-12-02T01:09:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/02/ios%E4%B8%8Aiframe%E7%9A%84%E6%BB%9A%E5%8A%A8%E6%9D%A1%E5%A4%B1%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
+    <lastmod>2014-12-02T01:01:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/12/02/meteor-style/</loc>
+    <lastmod>2014-12-02T00:58:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/11/14/%E7%BD%91%E9%A1%B5%E5%8A%9F%E8%83%BD%E5%BC%95%E5%AF%BC/</loc>
+    <lastmod>2014-11-14T12:14:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/11/13/bower-register/</loc>
+    <lastmod>2014-11-13T02:52:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/11/10/floating-menu/</loc>
+    <lastmod>2014-11-10T09:58:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/</loc>
+    <lastmod>2014-11-06T06:28:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/31/%E6%B5%8F%E8%A7%88%E5%99%A8autofill-autocomplete-%E9%94%99%E4%BD%8D/</loc>
+    <lastmod>2014-10-31T02:12:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/</loc>
+    <lastmod>2014-10-30T05:09:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/http-synchronous-call-with-angularjs/</loc>
+    <lastmod>2014-10-30T04:06:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/angular-%E9%AA%8C%E8%AF%81%E7%94%A8%E6%88%B7%E6%98%AF%E5%90%A6%E7%99%BB%E5%BD%95/</loc>
+    <lastmod>2014-10-30T04:04:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/ui-router-statechangestart-statechangesuccess/</loc>
+    <lastmod>2014-10-30T04:02:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/scedelegateproviderresourceurlwhitelist/</loc>
+    <lastmod>2014-10-30T03:28:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/angular-defaultstransformresponse/</loc>
+    <lastmod>2014-10-30T03:17:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/ngcookies/</loc>
+    <lastmod>2014-10-30T02:41:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/resolve/</loc>
+    <lastmod>2014-10-30T02:37:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/30/qdefer()/</loc>
+    <lastmod>2014-10-30T02:36:36.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/29/angular-routechangestart/</loc>
+    <lastmod>2014-10-29T12:40:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/29/angular-tree-control-13/</loc>
+    <lastmod>2014-10-29T11:31:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/29/angular-json-vulnerability-protection/</loc>
+    <lastmod>2014-10-29T11:08:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/27/angular-scedelegateprovider/</loc>
+    <lastmod>2014-10-27T08:44:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/27/angular-pdf-viewer/</loc>
+    <lastmod>2014-10-27T08:40:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/27/javascript%E5%88%A4%E6%96%AD%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/</loc>
+    <lastmod>2014-10-27T08:36:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/27/%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%E9%AA%8C%E8%AF%81%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <lastmod>2014-10-27T03:33:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/27/angular-130-reponse-%E9%9C%80%E8%A6%81%E6%98%AFjson%E6%A0%BC%E5%BC%8F/</loc>
+    <lastmod>2014-10-27T03:30:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/24/meteorite/</loc>
+    <lastmod>2014-10-24T05:43:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/24/editorconfig/</loc>
+    <lastmod>2014-10-24T04:54:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/24/spaced-repetition-learning/</loc>
+    <lastmod>2014-10-24T02:44:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/23/supermemo/</loc>
+    <lastmod>2014-10-23T20:41:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/23/thebrain/</loc>
+    <lastmod>2014-10-23T13:13:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/22/tinymce%E4%BD%BF%E7%94%A8%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/</loc>
+    <lastmod>2014-10-22T07:39:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/17/jquery-ui-sortable-ipad/</loc>
+    <lastmod>2014-10-17T09:24:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/17/iframe-%E8%87%AA%E9%80%82%E5%BA%94%E9%AB%98%E5%BA%A6/</loc>
+    <lastmod>2014-10-17T07:44:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/17/tinymce-ipad-%E4%B8%8D%E8%83%BD%E8%BE%93%E5%85%A5%E6%96%87%E5%AD%97/</loc>
+    <lastmod>2014-10-17T07:38:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/17/ipad-css/</loc>
+    <lastmod>2014-10-17T02:33:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/16/tinymce-maximum-call-stack-size-exceeded/</loc>
+    <lastmod>2014-10-16T08:41:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/13/%E9%80%9A%E8%BF%87javascript%E5%9C%A8url%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2014-10-16T08:31:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/15/%E7%BD%91%E9%A1%B5%E5%8A%A0%E9%80%9F/</loc>
+    <lastmod>2014-10-16T07:46:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/16/tablet-web/</loc>
+    <lastmod>2014-10-16T06:19:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/15/%E9%A1%B5%E9%9D%A2loading%E6%95%88%E6%9E%9C/</loc>
+    <lastmod>2014-10-16T06:15:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/16/underscore-where/</loc>
+    <lastmod>2014-10-16T05:12:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/15/angularjs-&-requirejs/</loc>
+    <lastmod>2014-10-15T10:28:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/13/%E4%BD%BF%E7%94%A8requirejs%E4%BC%98%E5%8C%96web%E5%BA%94%E7%94%A8%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2014-10-13T14:00:29.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/13/uncaught-rangeerror-maximum-call-stack-size-exceeded/</loc>
+    <lastmod>2014-10-13T09:12:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/13/angular-scroll-directive/</loc>
+    <lastmod>2014-10-13T09:10:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/13/angular-scroll/</loc>
+    <lastmod>2014-10-13T09:06:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/13/jqueryformjs%E7%9A%84ajaxsubmit%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2014-10-13T09:04:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/12/node-forever/</loc>
+    <lastmod>2014-10-12T00:21:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/12/reactjs-1/</loc>
+    <lastmod>2014-10-11T23:41:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/12/vuejs/</loc>
+    <lastmod>2014-10-11T23:37:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/11/cannot-read-property-msie-of-undefined-/</loc>
+    <lastmod>2014-10-11T14:00:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/11/angular-%E5%AF%B9%E5%88%97%E8%A1%A8%E6%8E%92%E5%BA%8Fui-sortable/</loc>
+    <lastmod>2014-10-11T02:31:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/10/angular-%E6%BC%82%E6%B5%AE%E8%8F%9C%E5%8D%95/</loc>
+    <lastmod>2014-10-10T09:29:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/10/angular-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E7%99%BB%E5%BD%95%E5%B9%B6%E9%98%BB%E6%AD%A2http%E8%AF%B7%E6%B1%82/</loc>
+    <lastmod>2014-10-10T09:26:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/10/angular-datatable/</loc>
+    <lastmod>2014-10-10T09:24:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/10/js%E7%9B%91%E5%90%AC%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/</loc>
+    <lastmod>2014-10-10T09:24:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/09/css%E9%9B%AA%E7%A2%A7/</loc>
+    <lastmod>2014-10-09T04:53:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/08/angularjs---ng-repeat-with-multiple-filters-on-large-data-set/</loc>
+    <lastmod>2014-10-08T03:37:59.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/07/pdfobject-encodeuri-%E5%AF%BC%E8%87%B4url%E9%94%99%E8%AF%AF/</loc>
+    <lastmod>2014-10-07T07:40:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/build-a-mobile-app-on-nitrousio-with-ionic-framework,-firebase,-and-phonegap/</loc>
+    <lastmod>2014-10-06T06:34:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/%E7%94%A8-javascript-%E5%BC%80%E5%8F%91%E8%8B%B9%E6%9E%9C-os-x-%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2014-10-06T05:58:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/%E4%BD%BF%E7%94%A8-meteor-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91-web-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2014-10-06T05:56:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/using-meteor-and-angularjs-together/</loc>
+    <lastmod>2014-10-06T05:54:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/html5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2014-10-06T05:52:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/web-directory/</loc>
+    <lastmod>2014-10-06T03:47:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/semantic-ui/</loc>
+    <lastmod>2014-10-06T03:43:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/lineman/</loc>
+    <lastmod>2014-10-06T03:41:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/06/domcontentloaded/</loc>
+    <lastmod>2014-10-06T03:40:29.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/05/firepad-1/</loc>
+    <lastmod>2014-10-05T00:50:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/03/firepad/</loc>
+    <lastmod>2014-10-03T05:56:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/03/web%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87%E7%9A%8411%E4%B8%AA%E7%B2%BE%E5%8D%8E%E7%89%88javascript%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2014-10-03T02:36:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/03/%E5%AE%9E%E6%97%B6javascript%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6clouda%E3%80%81meteor%E3%80%81firebase%E5%AF%B9%E6%AF%94/</loc>
+    <lastmod>2014-10-03T02:34:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/03/%E4%BD%BF%E7%94%A8javascript%E5%BC%80%E5%8F%91os-x%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2014-10-03T02:24:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/03/%E6%9C%80%E7%81%AB%E5%89%8D%E7%AB%AF%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2014-10-03T02:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/livereload/</loc>
+    <lastmod>2014-10-01T11:28:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/angular-%E7%BC%93%E5%AD%98/</loc>
+    <lastmod>2014-10-01T11:27:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/nodejs%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2014-10-01T11:23:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/30/meanjs/</loc>
+    <lastmod>2014-10-01T11:22:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/nodejs-%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2014-10-01T11:21:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/angular-firebase/</loc>
+    <lastmod>2014-10-01T11:20:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/meteor/</loc>
+    <lastmod>2014-10-01T11:12:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/angular-http-%E6%8B%A6%E6%88%AA%E5%99%A8/</loc>
+    <lastmod>2014-10-01T11:09:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/30/polymer/</loc>
+    <lastmod>2014-10-01T11:03:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/firebase-%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-10-01T10:57:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/10/01/clouda/</loc>
+    <lastmod>2014-10-01T10:56:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/30/reactjs/</loc>
+    <lastmod>2014-10-01T10:56:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/29/nitrousio/</loc>
+    <lastmod>2014-09-29T13:59:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/29/openshift/</loc>
+    <lastmod>2014-09-29T13:59:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/29/docker/</loc>
+    <lastmod>2014-09-29T13:11:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/29/javascript-source-map/</loc>
+    <lastmod>2014-09-29T06:22:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/29/bootstrap-ie7/</loc>
+    <lastmod>2014-09-29T05:53:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/28/ie%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC%E8%BF%87%E4%BD%8Eiealert%E6%8F%90%E7%A4%BAjquery%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2014-09-29T00:56:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/28/angular-ui-router-%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2014-09-28T01:32:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/26/angular-partial-cache-busting/</loc>
+    <lastmod>2014-09-28T01:24:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/26/%E5%B8%A6%E6%9C%89%E5%9E%82%E7%9B%B4%E7%BC%A9%E7%95%A5%E5%9B%BE%E7%9A%84%E7%84%A6%E7%82%B9%E5%9B%BE/</loc>
+    <lastmod>2014-09-26T03:07:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/26/jqueryscrollloading-minjs/</loc>
+    <lastmod>2014-09-26T03:06:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/26/%E4%B8%A4%E4%B8%AA%E5%AD%90div-%E4%B8%80%E4%B8%AAdiv%E5%9B%BA%E5%AE%9A%E5%AE%BD%E5%BA%A6-%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%87%AA%E5%8A%A8%E5%AE%BD%E5%BA%A6/</loc>
+    <lastmod>2014-09-26T01:02:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/24/%E5%AF%B9%E8%AF%9D%E6%A1%86artdialog/</loc>
+    <lastmod>2014-09-24T02:16:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/20/javascript%E8%8E%B7%E5%8F%96select%E7%9A%84%E9%80%89%E4%B8%AD%E5%80%BC%E5%92%8C%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC/</loc>
+    <lastmod>2014-09-20T04:01:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/18/excanvasjs/</loc>
+    <lastmod>2014-09-18T00:55:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/17/javascript-%E6%95%B0%E7%BB%84%E6%B1%82%E4%BA%A4%E9%9B%86/</loc>
+    <lastmod>2014-09-17T09:28:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/17/how-to-embed-a-swf-file-in-a-html-page/</loc>
+    <lastmod>2014-09-17T09:27:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/16/bootstrap-legend/</loc>
+    <lastmod>2014-09-16T01:39:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/15/angular-growl/</loc>
+    <lastmod>2014-09-16T01:38:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/15/angular-data/</loc>
+    <lastmod>2014-09-15T10:30:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/15/angular-wizard/</loc>
+    <lastmod>2014-09-15T10:30:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/15/angular-compile-string-unrecognized-expression/</loc>
+    <lastmod>2014-09-15T08:31:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/11/multipartform-data-file-upload-with-angularjs/</loc>
+    <lastmod>2014-09-11T08:08:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/11/%E8%B0%83%E8%AF%95-iphoneipad-%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5/</loc>
+    <lastmod>2014-09-10T23:56:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/11/confirm-dialog-in-select-change-event-lead-ipad-brower-crash/</loc>
+    <lastmod>2014-09-10T23:56:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/11/10-digest()-iterations-reached/</loc>
+    <lastmod>2014-09-10T23:53:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/why-i-chose-emberjs/</loc>
+    <lastmod>2014-09-10T11:10:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/angular-location/</loc>
+    <lastmod>2014-09-10T11:10:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/angular-reload-page/</loc>
+    <lastmod>2014-09-10T11:08:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/localstorage-not-working-on-ipad-and-iphone/</loc>
+    <lastmod>2014-09-10T11:06:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/ngtouch/</loc>
+    <lastmod>2014-09-10T11:05:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/angular-detect-ipad/</loc>
+    <lastmod>2014-09-10T11:03:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/javascript-md5/</loc>
+    <lastmod>2014-09-10T01:38:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/javascript-getelement-by-class/</loc>
+    <lastmod>2014-09-10T01:37:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/js-%E5%AD%97%E7%AC%A6ascii%E7%A0%81%E8%BD%AC%E6%8D%A2%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2014-09-10T01:34:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/angularjs-multiple-filter/</loc>
+    <lastmod>2014-09-10T00:33:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/09/10/jsplumb-%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2014-09-10T00:18:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/28/%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%AD%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80pdf/</loc>
+    <lastmod>2014-08-29T07:03:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/12/book-css/</loc>
+    <lastmod>2014-08-29T07:00:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/28/ng-if-ng-switch/</loc>
+    <lastmod>2014-08-28T06:36:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/28/css-%E5%8A%A8%E6%80%81%E7%9C%81%E7%95%A5%E8%BF%87%E9%95%BF%E7%9A%84%E5%AD%97/</loc>
+    <lastmod>2014-08-28T03:21:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/27/jsplumb-%E4%BA%8B%E4%BB%B6/</loc>
+    <lastmod>2014-08-27T01:30:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/27/angular-quiz-app/</loc>
+    <lastmod>2014-08-27T00:37:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/27/angular-dragdrop/</loc>
+    <lastmod>2014-08-27T00:37:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/27/%E6%96%87%E6%A1%A3%E6%9F%A5%E7%9C%8B%E5%99%A8dash/</loc>
+    <lastmod>2014-08-27T00:32:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/26/insert-and-parse-html-into-view-using-angularjs/</loc>
+    <lastmod>2014-08-26T02:54:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/26/angular-ng-bind-html-compile/</loc>
+    <lastmod>2014-08-26T01:58:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/26/referencing-dom-nodes-in-angular-expressions-is-disallowed/</loc>
+    <lastmod>2014-08-26T01:58:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/26/javascript-connect-line/</loc>
+    <lastmod>2014-08-26T00:38:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/26/angularjs-document-ready/</loc>
+    <lastmod>2014-08-26T00:38:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/26/border-radius-/</loc>
+    <lastmod>2014-08-26T00:26:53.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/23/quiz-style/</loc>
+    <lastmod>2014-08-23T14:10:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/19/angular-url-query-parameters/</loc>
+    <lastmod>2014-08-19T07:36:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/19/expandcollapse-transition/</loc>
+    <lastmod>2014-08-19T04:02:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/19/task-list-css/</loc>
+    <lastmod>2014-08-19T01:29:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/bookmark/index.html</loc>
+    <lastmod>2014-08-15T09:49:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/15/angularcopy/</loc>
+    <lastmod>2014-08-15T03:59:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/15/normalizecss/</loc>
+    <lastmod>2014-08-15T03:58:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/15/js-%E6%92%AD%E6%94%BE%E5%99%A8/</loc>
+    <lastmod>2014-08-15T03:55:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/thinking/index.html</loc>
+    <lastmod>2014-08-15T01:45:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/07/angularjs-filter-%E4%BD%BF%E7%94%A8%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2014-08-07T09:05:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/04/bootstrap-dropdown%E9%9C%80%E8%A6%81%E7%82%B9%E5%87%BB%E4%B8%A4%E4%B8%8B%E6%89%8D%E6%89%93%E5%BC%80/</loc>
+    <lastmod>2014-08-04T03:48:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/01/%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2014-08-01T07:39:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/08/01/%E8%BF%87%E6%BB%A4js%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2014-08-01T07:38:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/25/js-test-class/</loc>
+    <lastmod>2014-07-30T05:07:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/13/bootstrap-%E6%A8%A1%E7%89%88/</loc>
+    <lastmod>2014-07-30T05:07:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/04/robotstxt/</loc>
+    <lastmod>2014-07-29T07:58:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/24/webstorm-%E6%B3%A8%E9%87%8A/</loc>
+    <lastmod>2014-07-24T07:03:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/24/%E9%9F%B3%E9%A2%91%E6%92%AD%E6%94%BE/</loc>
+    <lastmod>2014-07-24T05:14:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/21/angularjs-%E8%B7%A8%E5%9F%9F/</loc>
+    <lastmod>2014-07-23T09:17:59.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/22/angularjs-interval-timeout/</loc>
+    <lastmod>2014-07-22T06:44:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/18/angular-%E5%A4%84%E7%90%86http-302/</loc>
+    <lastmod>2014-07-21T07:27:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/12/angularjs-%E6%9B%B4%E6%94%B9iframe%E5%86%85%E6%A0%B7%E5%BC%8F/</loc>
+    <lastmod>2014-07-12T09:11:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/11/angular-anchorscroll/</loc>
+    <lastmod>2014-07-11T07:08:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/16/angularjs-tree/</loc>
+    <lastmod>2014-07-09T09:45:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/09/nestable/</loc>
+    <lastmod>2014-07-09T09:43:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/09/bootstrap-%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E9%9D%A2%E6%BB%9A%E5%8A%A8%E6%9D%A1/</loc>
+    <lastmod>2014-07-09T03:45:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/08/%E6%96%87%E6%A1%A3%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%A7%88/</loc>
+    <lastmod>2014-07-08T03:35:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/07/context-menu/</loc>
+    <lastmod>2014-07-07T08:49:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/05/oauth/</loc>
+    <lastmod>2014-07-05T03:27:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/06/angularjs-loading/</loc>
+    <lastmod>2014-07-04T01:12:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/03/nganimate/</loc>
+    <lastmod>2014-07-03T02:05:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/01/angularjs%E7%BB%84%E7%BB%87%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2014-07-02T13:10:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/02/hello-browserify/</loc>
+    <lastmod>2014-07-02T13:09:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/02/angularjs-fadein-fadeout/</loc>
+    <lastmod>2014-07-02T13:03:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/01/%E5%B0%86angularjs%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%9D%97%E5%8C%96%E7%9A%8413%E6%AD%A5/</loc>
+    <lastmod>2014-07-01T08:42:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/07/01/angularjs%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84/</loc>
+    <lastmod>2014-07-01T08:18:29.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/30/angularjs-event-bubbling/</loc>
+    <lastmod>2014-07-01T07:15:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/27/javascript-%E5%8D%A0%E4%BD%8D%E7%AC%A6%E6%9B%BF%E6%8D%A2/</loc>
+    <lastmod>2014-07-01T07:15:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/22/an-angularjs-style-guide-and-best-practice-for-app-structure/</loc>
+    <lastmod>2014-07-01T01:16:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/30/css-%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2014-07-01T01:14:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/30/hello-blueprint/</loc>
+    <lastmod>2014-06-30T00:56:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/29/960gsgrid-system%E7%BD%91%E9%A1%B5%E6%A1%86%E6%9E%B6%E7%BD%91%E6%A0%BC%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2014-06-29T14:22:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/29/360%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8%E6%8E%A7%E5%88%B6meta%E6%A0%87%E7%AD%BE%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2014-06-29T07:53:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/29/mac%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9Fwin-xp/</loc>
+    <lastmod>2014-06-29T06:28:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/29/html%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC/</loc>
+    <lastmod>2014-06-28T23:24:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/28/html%E5%8C%85%E5%90%ABhtml/</loc>
+    <lastmod>2014-06-28T01:14:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/27/angularjs-directive-return-scope/</loc>
+    <lastmod>2014-06-27T10:09:53.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/27/angularjs-foreach/</loc>
+    <lastmod>2014-06-27T07:13:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/26/javascript-%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2014-06-27T05:58:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/26/bootstrap-ie-%E5%85%BC%E5%AE%B9%E6%80%A7/</loc>
+    <lastmod>2014-06-27T05:02:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/26/angularjs-ie-%E5%85%BC%E5%AE%B9%E6%80%A7/</loc>
+    <lastmod>2014-06-26T07:29:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/08/angularjs-dropdown-toggle/</loc>
+    <lastmod>2014-06-26T03:59:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/26/angularjs-bootstrap-dropdown/</loc>
+    <lastmod>2014-06-26T03:57:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/26/angularjs-bootstrap-pagination/</loc>
+    <lastmod>2014-06-26T02:37:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/25/%E9%A6%96%E9%A1%B5%E6%95%88%E6%9E%9C%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2014-06-25T11:52:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/25/angularjs-anchorscroll/</loc>
+    <lastmod>2014-06-25T06:55:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/24/%E5%85%BC%E5%AE%B9ie%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2014-06-24T11:17:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/24/hello-artdialog/</loc>
+    <lastmod>2014-06-24T06:56:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/24/hello-seajs/</loc>
+    <lastmod>2014-06-24T06:55:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/22/paper-style/</loc>
+    <lastmod>2014-06-23T07:33:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/22/paperjs/</loc>
+    <lastmod>2014-06-22T05:46:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/22/google-javascript-style-guide/</loc>
+    <lastmod>2014-06-22T00:24:36.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/21/using-an-angularjs-factory-to-interact-with-a-restful-service/</loc>
+    <lastmod>2014-06-21T00:41:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/21/angularjs%E4%B8%ADprovider%E3%80%81factory%E3%80%81service%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2014-06-21T00:37:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/20/processing--response-in-service/</loc>
+    <lastmod>2014-06-21T00:28:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/19/angularjs-underscore/</loc>
+    <lastmod>2014-06-19T12:10:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/19/angularjs-%E5%9B%9E%E8%BD%A6direvtive/</loc>
+    <lastmod>2014-06-19T12:01:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/19/%E8%8E%B7%E5%BE%97%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/</loc>
+    <lastmod>2014-06-19T11:49:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/16/angularjs-fancybox/</loc>
+    <lastmod>2014-06-18T08:40:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/18/show-more-style-pagination-using-angularjs/</loc>
+    <lastmod>2014-06-18T05:04:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/18/hello-hostadmin/</loc>
+    <lastmod>2014-06-18T03:43:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/17/jquery-dom-%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2014-06-17T05:37:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/17/dom-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2014-06-17T05:35:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/17/angularjs-sanitize/</loc>
+    <lastmod>2014-06-17T05:33:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/17/js-%E6%95%B0%E7%BB%84-%E5%B8%B8%E7%94%A8%E6%A8%A1%E5%9D%97/</loc>
+    <lastmod>2014-06-17T05:31:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/17/angularjs-%E5%8A%A8%E6%80%81%E8%AE%BE%E5%AE%9A%E8%8F%9C%E5%8D%95active/</loc>
+    <lastmod>2014-06-17T02:25:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/16/html5-aside/</loc>
+    <lastmod>2014-06-16T03:01:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/16/category-%E6%A0%B7%E5%BC%8F-%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2014-06-16T00:39:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/15/%E5%9C%A8ng-repeat%E7%BB%93%E6%9D%9F%E5%90%8E%E6%89%A7%E8%A1%8C%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2014-06-16T00:38:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/15/fancybox/</loc>
+    <lastmod>2014-06-15T05:00:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/14/modal%E6%95%88%E6%9E%9C%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2014-06-15T04:45:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/14/slider-carousel-%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2014-06-14T23:07:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/14/owlcarousel/</loc>
+    <lastmod>2014-06-14T00:28:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/13/angularjs%E9%AA%8C%E8%AF%81%E5%AF%86%E7%A0%81%E6%98%AF%E5%90%A6%E5%8C%B9%E9%85%8D/</loc>
+    <lastmod>2014-06-13T02:18:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/13/jquery-validate/</loc>
+    <lastmod>2014-06-13T00:25:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/13/hello-nginx/</loc>
+    <lastmod>2014-06-12T22:38:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/12/hello-zsh/</loc>
+    <lastmod>2014-06-12T04:51:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/12/wget-%E5%91%BD%E4%BB%A4%E7%94%A8%E6%B3%95%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2014-06-12T03:53:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/12/mac-brew/</loc>
+    <lastmod>2014-06-12T03:51:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/12/which%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2014-06-12T03:45:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/12/5%E7%A7%8D%E6%96%B9%E6%B3%95%E5%9C%A8mac%E7%B3%BB%E7%BB%9F%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2014-06-12T03:43:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/11/angularjs-animations/</loc>
+    <lastmod>2014-06-11T08:38:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/11/jqueryformjs/</loc>
+    <lastmod>2014-06-11T01:34:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/10/coffeescript-%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2014-06-10T07:36:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/06/css-%E6%8A%97%E9%94%AF%E9%BD%BF/</loc>
+    <lastmod>2014-06-10T06:57:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/09/tried-to-load-angular-more-than-once/</loc>
+    <lastmod>2014-06-09T03:10:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/06/hello-world/</loc>
+    <lastmod>2014-06-06T00:34:53.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/06/10%E4%B8%AA%E8%B6%85%E6%A3%92-jquery-%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2014-06-06T00:29:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/06/05/hello-modernizr/</loc>
+    <lastmod>2014-06-05T01:01:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/26/help-text-on-visualforce-page/</loc>
+    <lastmod>2014-05-26T08:13:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/25/css-outline/</loc>
+    <lastmod>2014-05-25T06:20:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/25/css-zoom/</loc>
+    <lastmod>2014-05-25T06:04:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/24/%E6%96%87%E6%9C%AC%E8%BD%AC%E5%9B%BE%E7%89%87/</loc>
+    <lastmod>2014-05-25T04:13:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/25/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/</loc>
+    <lastmod>2014-05-25T04:08:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/17/keyframes-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-05-17T03:15:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/%E6%95%99%E5%AD%A6%E9%82%A6-%E7%BD%91%E6%A0%A1%E5%B9%B3%E5%8F%B0/</loc>
+    <lastmod>2014-05-15T01:41:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/15/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97-font-face/</loc>
+    <lastmod>2014-05-15T01:29:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/14/hello-geddy/</loc>
+    <lastmod>2014-05-14T00:53:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/14/hello-meteor/</loc>
+    <lastmod>2014-05-14T00:47:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/13/jquery-%E6%96%87%E6%A1%A3%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2014-05-13T12:43:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/09/css-%E5%AE%9E%E7%8E%B0%E8%A7%92%E6%8A%98%E5%8F%A0/</loc>
+    <lastmod>2014-05-13T12:22:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/09/css-%E5%AE%9E%E7%8E%B0%E7%BF%BB%E8%BD%AC/</loc>
+    <lastmod>2014-05-13T12:22:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/08/displayinline-block-inline-block%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2014-05-08T07:51:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/08/css3-border-radius/</loc>
+    <lastmod>2014-05-08T06:55:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/08/css3-gradient/</loc>
+    <lastmod>2014-05-08T05:43:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/07/html-meta-viewport/</loc>
+    <lastmod>2014-05-07T10:34:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/07/html-meta-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-05-07T10:34:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/html5-boilerplate-%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2014-05-07T09:12:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/15/html5-%E5%88%9D%E8%A7%81/</loc>
+    <lastmod>2014-05-07T09:12:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC10%E7%AB%A0/</loc>
+    <lastmod>2014-05-07T07:36:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/06/packagejson-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-05-06T14:10:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/06/hello-protractor/</loc>
+    <lastmod>2014-05-06T12:33:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/06/javascript-%E7%BC%96%E7%A0%81%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-05-06T11:41:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/06/%E7%BC%96%E5%86%99%E5%8F%AF%E7%BB%B4%E6%8A%A4%E7%9A%84javascript/</loc>
+    <lastmod>2014-05-06T07:32:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/06/webstorm-jshint/</loc>
+    <lastmod>2014-05-06T02:04:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/05/ucd-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-05-05T10:21:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/05/ued-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-05-05T10:21:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC21%E7%AB%A0/</loc>
+    <lastmod>2014-05-05T10:20:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC20%E7%AB%A0/</loc>
+    <lastmod>2014-05-05T09:10:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/05/css-background/</loc>
+    <lastmod>2014-05-05T07:57:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/14/mean-%E7%BB%86%E8%A7%A3/</loc>
+    <lastmod>2014-05-05T07:47:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/04/%E5%85%85%E5%88%86%E5%8F%91%E6%8C%A5firebug%E7%9A%84%E4%BD%9C%E7%94%A8/</loc>
+    <lastmod>2014-05-05T07:44:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/cdn%E4%BB%8B%E7%BB%8D/</loc>
+    <lastmod>2014-05-05T07:44:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/19/%E5%A4%87%E4%BB%BD%E8%BF%87%E5%8E%BB/</loc>
+    <lastmod>2014-05-05T07:44:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/01/mac-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2014-05-05T07:43:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/27/%E5%9B%BE%E7%89%87mouse-hover%E7%9A%84%E6%95%88%E6%9E%9C/</loc>
+    <lastmod>2014-05-05T07:30:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/05/bootstrap-tips/</loc>
+    <lastmod>2014-05-05T04:14:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/05/hello-yslow/</loc>
+    <lastmod>2014-05-04T23:49:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/04/javascript-lazyload/</loc>
+    <lastmod>2014-05-04T12:01:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/28/webstorm-nodejs/</loc>
+    <lastmod>2014-04-28T13:19:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/28/hello-titanium/</loc>
+    <lastmod>2014-04-28T13:02:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/28/hello-redis/</loc>
+    <lastmod>2014-04-28T12:45:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/28/hello-memcache/</loc>
+    <lastmod>2014-04-28T12:43:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/28/hello-riak/</loc>
+    <lastmod>2014-04-28T12:39:36.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/22/javascript-this/</loc>
+    <lastmod>2014-04-27T23:02:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/06/ui-router-%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2014-04-27T22:27:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/29/%E4%B8%AD%E5%9B%BD%E5%9F%8E%E5%B8%82%E7%BA%A7%E8%81%94%E5%88%97%E8%A1%A8/</loc>
+    <lastmod>2014-04-27T22:27:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/19/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84javascript-map/</loc>
+    <lastmod>2014-04-27T22:26:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/27/devops%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-27T13:10:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/27/soa%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-27T09:59:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/27/hello-bluemix/</loc>
+    <lastmod>2014-04-27T07:32:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/18/angularjs-filter/</loc>
+    <lastmod>2014-04-27T00:26:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/12/angularjs-service/</loc>
+    <lastmod>2014-04-26T23:39:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/19/angular-modules/</loc>
+    <lastmod>2014-04-26T23:30:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/29/angularjs-%E4%B8%8D%E5%90%8C%E7%9A%84controller%E4%B9%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</loc>
+    <lastmod>2014-04-26T23:30:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/08/angularjs-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2014-04-26T23:30:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/21/angularjs-%E5%8A%A8%E6%80%81%E8%AE%BE%E7%BD%AEdiv%E7%9A%84%E9%AB%98%E5%BA%A6/</loc>
+    <lastmod>2014-04-26T23:30:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/10/angularjs-%E5%A5%BD%E5%8D%9A%E6%96%87%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2014-04-26T23:30:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/08/angularjs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-26T23:30:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/07/angularjs-%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2014-04-26T23:30:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/29/angularjs-%E5%AE%9E%E7%8E%B0%E5%9B%BD%E9%99%85%E5%8C%96/</loc>
+    <lastmod>2014-04-26T23:30:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/angularjs-%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%92%8C%E8%A3%81%E5%89%AA/</loc>
+    <lastmod>2014-04-26T23:30:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/06/angularjs-%E5%B0%8F%E8%B4%B4%E5%A3%AB/</loc>
+    <lastmod>2014-04-26T23:30:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/angularjs-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2014-04-26T23:29:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/19/e-learning-%E7%A0%94%E7%A9%B6/</loc>
+    <lastmod>2014-04-26T13:42:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/hello-pomelo/</loc>
+    <lastmod>2014-04-26T11:29:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/nodejs-%E5%BC%80%E5%8F%91%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2014-04-26T09:31:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/hello-haxe/</loc>
+    <lastmod>2014-04-26T09:27:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/bdd-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-26T06:24:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E6%95%8F%E6%8D%B7%E6%96%B9%E6%B3%95%E4%B9%8B%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8Bxp%E5%92%8Cscrum%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2014-04-26T04:45:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-26T04:41:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/scrum-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-26T04:37:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/hello-teamcity/</loc>
+    <lastmod>2014-04-26T04:33:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/hello-coffeescript/</loc>
+    <lastmod>2014-04-26T01:17:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/17/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2014-04-26T00:46:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99%E5%9B%9B/</loc>
+    <lastmod>2014-04-26T00:43:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99%E5%85%AD/</loc>
+    <lastmod>2014-04-26T00:43:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99%E4%BA%94/</loc>
+    <lastmod>2014-04-26T00:43:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99%E4%BA%8C/</loc>
+    <lastmod>2014-04-26T00:43:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99%E4%B8%89/</loc>
+    <lastmod>2014-04-26T00:43:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99%E4%B8%80/</loc>
+    <lastmod>2014-04-26T00:42:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/hello-stylus/</loc>
+    <lastmod>2014-04-25T14:30:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/hello-underscore/</loc>
+    <lastmod>2014-04-25T14:30:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/hello-spinejs/</loc>
+    <lastmod>2014-04-25T14:29:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/hello-d3js/</loc>
+    <lastmod>2014-04-25T14:28:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/d3js/</loc>
+    <lastmod>2014-04-25T14:28:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/highcharts/</loc>
+    <lastmod>2014-04-25T14:28:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/24/webstorm-bower/</loc>
+    <lastmod>2014-04-25T13:53:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/02/bower-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2014-04-25T13:48:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/25/webstorm-git/</loc>
+    <lastmod>2014-04-24T22:14:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/24/webstorm-grunt/</loc>
+    <lastmod>2014-04-24T12:50:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/24/webstorm-karma/</loc>
+    <lastmod>2014-04-24T12:50:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/16/javascript-%E9%97%AD%E5%8C%85/</loc>
+    <lastmod>2014-04-22T23:30:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/22/javascript-%E7%A7%81%E6%9C%89%E6%88%90%E5%91%98/</loc>
+    <lastmod>2014-04-22T23:30:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/29/neterr_empty_response/</loc>
+    <lastmod>2014-04-22T22:53:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/05/mootools/</loc>
+    <lastmod>2014-04-22T22:53:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/01/mongoose-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-22T22:53:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/06/mongoose-promise-%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2014-04-22T22:53:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/07/jquery-%E4%BB%A3%E7%A0%81%E8%BF%81%E7%A7%BB%E5%88%B0angular%E9%87%8C/</loc>
+    <lastmod>2014-04-22T22:52:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC25%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC24%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC23%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC22%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC19%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC18%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC17%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC16%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:52:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC15%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC14%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC13%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC12%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC11%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC9%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC8%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC7%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC6%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:51:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC5%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:50:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC4%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:50:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC3%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:50:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/11/javascript%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0-%E7%AC%AC2%E7%AB%A0/</loc>
+    <lastmod>2014-04-22T22:49:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/01/javascript-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-22T22:48:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/19/javascript-%E5%85%88%E5%90%8E%E9%A1%BA%E5%BA%8F%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2014-04-22T22:48:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/22/heroku-postgres-%E5%8D%87%E7%BA%A7/</loc>
+    <lastmod>2014-04-22T22:39:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/javascript-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F%E6%B8%85%E5%8D%95/</loc>
+    <lastmod>2014-04-22T22:39:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/11/table%E6%A1%86%E6%9E%B6%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2014-04-22T22:35:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/grunt-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-04-22T22:33:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/02/27/express-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-22T22:33:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/05/dojo/</loc>
+    <lastmod>2014-04-22T22:32:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/amd-cmd/</loc>
+    <lastmod>2014-04-22T22:31:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/19/jquery-%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2014-04-22T22:30:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/09/jquery-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-22T22:30:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/24/nodejs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-22T22:30:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/27/nodejs-%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86module/</loc>
+    <lastmod>2014-04-22T22:30:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/02/nodejs-%E5%B8%B8%E7%94%A8module/</loc>
+    <lastmod>2014-04-22T22:29:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2014-04-22T22:23:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/%E8%80%83%E8%AF%95%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2014-04-22T22:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/05/yui/</loc>
+    <lastmod>2014-04-22T22:22:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/21/hello-commonjs/</loc>
+    <lastmod>2014-04-21T09:30:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/21/javascript-%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E6%98%AF%E9%AD%94%E9%AC%BC/</loc>
+    <lastmod>2014-04-21T08:31:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/21/javascript-%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2014-04-21T08:30:07.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/12/javascript-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2014-04-21T06:08:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/21/hello-requirejs/</loc>
+    <lastmod>2014-04-21T01:35:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/yeoman-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-04-21T01:09:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/nodejs-%E5%AE%9E%E7%8E%B0%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96/</loc>
+    <lastmod>2014-04-20T13:40:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/hello-jasmine/</loc>
+    <lastmod>2014-04-20T11:30:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/hello-karma/</loc>
+    <lastmod>2014-04-20T11:26:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/tdd-%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-20T11:15:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/compass-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2014-04-20T10:29:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/jshint-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-04-20T10:29:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/06/fuel-ux-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2014-04-20T10:29:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/07/javascript-%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2014-04-20T10:28:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/about/index.html</loc>
+    <lastmod>2014-04-20T10:24:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2014-04-20T10:22:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/20/hello-webstorm/</loc>
+    <lastmod>2014-04-20T09:48:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/01/hello-phantomjs/</loc>
+    <lastmod>2014-04-20T06:16:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/19/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-prototype/</loc>
+    <lastmod>2014-04-19T08:26:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/19/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-factory/</loc>
+    <lastmod>2014-04-19T07:46:03.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/12/angularjs-directive/</loc>
+    <lastmod>2014-04-19T06:23:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/19/angularjs-type/</loc>
+    <lastmod>2014-04-19T02:06:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/06/angularjs-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2014-04-18T11:43:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/15/angularjs-%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/</loc>
+    <lastmod>2014-04-18T11:43:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/25/angularjs-authentication/</loc>
+    <lastmod>2014-04-18T11:43:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/15/angularjs-bootstrap-modal/</loc>
+    <lastmod>2014-04-18T11:43:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/06/angularjs-bootstrap-tab/</loc>
+    <lastmod>2014-04-18T11:43:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/21/angularjs-directives-%E5%AE%9E%E4%BE%8B%E8%A7%A3%E6%9E%90/</loc>
+    <lastmod>2014-04-18T11:43:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/16/angularjs-form-validation-%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/</loc>
+    <lastmod>2014-04-18T11:42:53.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/angularjs-jquery-%E5%85%B1%E5%AD%98%E6%B3%95%E5%88%99/</loc>
+    <lastmod>2014-04-18T11:42:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/16/angularjs-ng-controller%E4%B8%8Edata-ng-controller/</loc>
+    <lastmod>2014-04-18T11:42:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/16/angularjs-routeprovider%E4%B8%8Eurlrouterprovider%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2014-04-18T11:42:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/06/angularjs-ui%E7%9A%84%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2014-04-18T11:42:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/17/hello-hoodie/</loc>
+    <lastmod>2014-04-17T13:44:19.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/17/hello-kotlin/</loc>
+    <lastmod>2014-04-17T12:02:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/17/hello-ionic/</loc>
+    <lastmod>2014-04-17T04:57:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/17/hello-ratchet/</loc>
+    <lastmod>2014-04-17T02:12:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/05/golang/</loc>
+    <lastmod>2014-04-17T02:09:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/16/%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8-back-to-top/</loc>
+    <lastmod>2014-04-17T00:52:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/24/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2014-04-17T00:19:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/12/github-%E5%A4%9A%E7%94%A8%E6%88%B7%E5%88%87%E6%8D%A2/</loc>
+    <lastmod>2014-04-16T23:49:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/note/index.html</loc>
+    <lastmod>2014-04-16T12:15:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/16/%E6%BC%82%E6%B5%AE%E6%95%88%E6%9E%9C/</loc>
+    <lastmod>2014-04-16T11:52:41.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-observer/</loc>
+    <lastmod>2014-04-13T09:04:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/04/13/mooc-%E5%8F%91%E5%B1%95%E7%A0%94%E7%A9%B6/</loc>
+    <lastmod>2014-04-13T00:31:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/02/27/sql-%E6%B3%A8%E6%84%8F%E7%82%B9/</loc>
+    <lastmod>2014-04-05T06:48:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/31/css-%E5%AD%A6%E4%B9%A0%E4%B8%80/</loc>
+    <lastmod>2014-03-31T00:58:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/normalizecss-%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2014-03-20T13:52:25.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/20/css-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8(%E6%A1%86%E6%9E%B6)/</loc>
+    <lastmod>2014-03-19T23:53:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/18/timeline-%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2014-03-19T05:56:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/17/salesforce-invalid-session-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2014-03-17T09:44:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/15/css%E6%A0%B7%E5%BC%8F%E8%A1%A8-conventions/</loc>
+    <lastmod>2014-03-15T07:28:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/14/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E5%8F%AF%E5%AE%9A%E5%88%B6%E7%9A%84%E5%B8%83%E5%B1%80/</loc>
+    <lastmod>2014-03-13T22:34:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/12/custom-visualforce-page-inline-edit/</loc>
+    <lastmod>2014-03-13T07:25:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/10/passportjs-%E7%BB%99%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BA%86%E4%BB%80%E4%B9%88/</loc>
+    <lastmod>2014-03-10T01:11:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/03/01/heroku-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2014-03-08T02:55:24.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/02/27/visualforce-%E5%B0%8F%E8%B4%B4%E5%A3%AB/</loc>
+    <lastmod>2014-02-27T08:39:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/25/salesforce-%E6%9C%AF%E8%AF%AD/</loc>
+    <lastmod>2014-01-25T01:37:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/24/postgres-fucntion-%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E9%AB%98%E6%80%A7%E8%83%BD/</loc>
+    <lastmod>2014-01-24T07:49:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/24/visualforce-%E5%A4%A7%E6%95%B0%E6%8D%AEtable%E5%AE%9E%E7%8E%B0/</loc>
+    <lastmod>2014-01-24T06:37:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/19/how-to-use-new-relic-to-monitor-performance-on-heroku/</loc>
+    <lastmod>2014-01-24T06:37:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/22/heroku%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E7%82%B9/</loc>
+    <lastmod>2014-01-24T06:36:48.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/20/salesforce-email-template-%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2014-01-24T04:17:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/20/salesforce-email-alert-%E6%B2%A1%E6%9C%89%E5%8F%91%E9%80%81email/</loc>
+    <lastmod>2014-01-24T04:16:30.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/19/apex-design-patterns/</loc>
+    <lastmod>2014-01-19T13:14:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/19/sales-cloud-consultant-sample-questions/</loc>
+    <lastmod>2014-01-19T03:53:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/01/19/example-questionaire-for-service-cloud-consultant/</loc>
+    <lastmod>2014-01-19T03:00:17.000Z</lastmod>
+  </url>
+  
+</urlset>

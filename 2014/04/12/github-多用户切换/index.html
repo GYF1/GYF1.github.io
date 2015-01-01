@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Github 多用户切换 | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Github 多用户切换"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-12T11:18:13.000Z"><a href="/2014/04/12/github-多用户切换/">4月 12 2014</a></time>
+      
+      
+  
+    <h1 class="title">Github 多用户切换</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x600E;&#x4E48;&#x5207;&#x6362;&#x591A;&#x4E2A;&#x7528;&#x6237;<br><a id="more"></a></p>
+<h1 id="&#x4E00;&#x3001;keys&#x7BA1;&#x7406;">&#x4E00;&#x3001;keys&#x7BA1;&#x7406;</h1>
+<p>for example, 2 keys created at:</p>
+<p>~/.ssh/id_rsa_activehacker<br>~/.ssh/id_rsa_jexchan<br>then, add these two keys as following</p>
+<p>$ ssh-add ~/.ssh/id_rsa_activehacker<br>$ ssh-add ~/.ssh/id_rsa_jexchan<br>you can delete all cached keys before</p>
+<p>$ ssh-add -D<br>finally, you can check your saved keys</p>
+<p>$ ssh-add -l</p>
+<h1 id="&#x4E8C;&#x3001;config">&#x4E8C;&#x3001;config</h1>
+<p>github&#x4F7F;&#x7528;SSH&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x662F;&#x5355;&#x7528;&#x6237;&#xFF08;first&#xFF09;&#xFF0C;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x5BF9;&#x540E;&#xFF0C;&#x5C06;&#x516C;&#x94A5;&#x4FDD;&#x5B58;&#x81F3;github&#xFF0C;&#x6BCF;&#x6B21;&#x8FDE;&#x63A5;&#x65F6;SSH&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x672C;&#x5730;&#x79C1;&#x94A5;&#xFF08;&#x9ED8;&#x8BA4;~/.ssh/id_rsa&#xFF09;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x9A8C;&#x8BC1;&#x3002;&#x5355;&#x7528;&#x6237;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FDE;&#x63A5;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4FDD;&#x5B58;&#x7684;&#x516C;&#x94A5;&#x548C;&#x53D1;&#x9001;&#x7684;&#x79C1;&#x94A5;&#x81EA;&#x7136;&#x662F;&#x914D;&#x5BF9;&#x7684;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x662F;&#x591A;&#x7528;&#x6237;&#xFF08;first&#xFF0C;second&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FDE;&#x63A5;&#x5230;second&#x7684;&#x5E10;&#x53F7;&#x65F6;&#xFF0C;second&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x81EA;&#x5DF1;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x4F46;&#x662F;SSH&#x5BA2;&#x6237;&#x7AEF;&#x4F9D;&#x7136;&#x53D1;&#x9001;&#x9ED8;&#x8BA4;&#x79C1;&#x94A5;&#xFF0C;&#x5373;first&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x9A8C;&#x8BC1;&#x81EA;&#x7136;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x8981;&#x5B9E;&#x73B0;&#x591A;&#x5E10;&#x53F7;&#x4E0B;&#x7684;SSH key&#x5207;&#x6362;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x505A;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x9996;&#x5148;cd&#x5230;~/.ssh &#x4F7F;&#x7528; ssh-keygen -t -rsa -C &#x2018;second@mail.com&#x2019; &#x751F;&#x6210;&#x65B0;&#x7684;SSH key&#xFF1A;id_rsa_second&#xFF0C;&#x751F;&#x6210;&#x5B8C;&#x540E;&#x5C06;&#x65B0;&#x7684;SSH public key&#x6DFB;&#x52A0;&#x5230;github&#x3002;</p>
+<pre><code>ssh<span class="attribute">-keygen</span> <span class="attribute">-t</span> rsa <span class="attribute">-C</span> <span class="string">&apos;second@mail.com&apos;</span>
+</code></pre><p>&#x9ED8;&#x8BA4;SSH&#x53EA;&#x4F1A;&#x8BFB;&#x53D6;id_rsa&#xFF0C;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x8BA9;SSH&#x8BC6;&#x522B;&#x65B0;&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x5230;SSH agent</p>
+<pre><code>ssh-<span class="keyword">add</span> &#xFF5E;/<span class="preprocessor">.ssh</span>/id_rsa_second
+</code></pre><p>&#x8BE5;&#x547D;&#x4EE4;&#x5982;&#x679C;&#x62A5;&#x9519;&#xFF1A;Could not open a connection to your authentication agent.&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x5230;ssh agent&#xFF0C;&#x53EF;&#x6267;&#x884C;ssh-agent bash&#x547D;&#x4EE4;&#x540E;&#x518D;&#x6267;&#x884C;ssh-add&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x6B65;&#x9AA4;&#x540E;&#x5728;~/.ssh&#x76EE;&#x5F55;&#x521B;&#x5EFA;config&#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x79C1;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code><span class="comment"># Default github user(first<span class="yardoctag">@mail</span>.com)</span>
+<span class="constant">Host</span> github.com
+<span class="constant">HostName</span> github.com
+<span class="constant">User</span> git
+<span class="constant">IdentityFile</span> <span class="constant">C</span><span class="symbol">:/Users/username/</span>.ssh/id_rsa
+
+<span class="comment"># second user(second<span class="yardoctag">@mail</span>.com)</span>
+<span class="constant">Host</span> github-second
+<span class="constant">HostName</span> github.com
+<span class="constant">User</span> git
+<span class="constant">IdentityFile</span> <span class="constant">C</span><span class="symbol">:/Users/username/</span>.ssh/id_rsa_second
+</code></pre><p>Host&#x968F;&#x610F;&#x5373;&#x53EF;&#xFF0C;&#x65B9;&#x4FBF;&#x81EA;&#x5DF1;&#x8BB0;&#x5FC6;&#xFF0C;&#x540E;&#x7EED;&#x5728;&#x6DFB;&#x52A0;remote&#x662F;&#x8FD8;&#x9700;&#x8981;&#x7528;&#x5230;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5728;&#x8FDE;&#x63A5;&#x975E;&#x9ED8;&#x8BA4;&#x5E10;&#x53F7;&#x7684;github&#x4ED3;&#x5E93;&#x65F6;&#xFF0C;&#x8FDC;&#x7A0B;&#x5E93;&#x7684;&#x5730;&#x5740;&#x8981;&#x5BF9;&#x5E94;&#x5730;&#x505A;&#x4E00;&#x4E9B;&#x4FEE;&#x6539;&#xFF0C;&#x6BD4;&#x5982;&#x73B0;&#x5728;&#x6DFB;&#x52A0;second&#x5E10;&#x53F7;&#x4E0B;&#x7684;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;test&#xFF0C;&#x5219;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x6DFB;&#x52A0;&#xFF1A;</p>
+<pre><code>git remote <span class="built_in">add</span> test git@github-<span class="keyword">second</span>:<span class="keyword">second</span>/test.git <span class="comment">#&#x5E76;&#x975E;&#x539F;&#x6765;&#x7684;git@github.com:second/test.git</span>
+</code></pre><p>&#x8FD9;&#x6837;&#x6BCF;&#x6B21;&#x8FDE;&#x63A5;&#x90FD;&#x4F1A;&#x4F7F;&#x7528;id_rsa_second&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x3002;&#x81F3;&#x6B64;&#xFF0C;&#x5927;&#x529F;&#x544A;&#x6210;&#xFF01;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;github&#x6839;&#x636E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;user.email&#x6765;&#x83B7;&#x53D6;github&#x5E10;&#x53F7;&#x663E;&#x793A;author&#x4FE1;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x591A;&#x5E10;&#x53F7;&#x7528;&#x6237;&#x4E00;&#x5B9A;&#x8981;&#x8BB0;&#x5F97;&#x5C06;user.email&#x6539;&#x4E3A;&#x76F8;&#x5E94;&#x7684;email(second@mail.com)&#x3002;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/giant/">Giant</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/git/">Git</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2014/04/13/mooc-发展研究/" class="alignleft prev" title="MOOC 发展研究">MOOC 发展研究</a>
+  
+  
+    <a href="/2014/04/12/javascript-严格模式清单/" class="alignright next" title="JavaScript 严格模式清单">JavaScript 严格模式清单</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2014/04/12/github-多用户切换/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>94</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>52</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>19</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.33px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.22px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.44px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.11px;">Bower</a><a href="/tags/css/" style="font-size: 17.78px;">CSS</a><a href="/tags/certification/" style="font-size: 11.11px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.11px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.56px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.11px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.11px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.33px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.11px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.11px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 18.89px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.22px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.11px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 16.67px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.11px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 11.11px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.22px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.44px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 15.56px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/24/meteor部署到阿里云/">meteor部署到阿里云</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/dropdown-tree/">dropdown tree</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/22/$fn/">jQuery开发插件</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>第 4 页 | Giant | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title category">Giant</h2>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-28T12:42:35.000Z"><a href="/2014/04/28/hello-memcache/">4月 28 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/28/hello-memcache/">Hello Memcache</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Memcache&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x5185;&#x5B58;&#x5BF9;&#x8C61;&#x7F13;&#x5B58;&#x7CFB;&#x7EDF;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x5185;&#x5B58;&#x91CC;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x7684;&#x5DE8;&#x5927;&#x7684;hash&#x8868;&#xFF0C;&#x5B83;&#x80FD;&#x591F;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x5404;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x56FE;&#x50CF;&#x3001;&#x89C6;&#x9891;&#x3001;&#x6587;&#x4EF6;&#x4EE5;&#x53CA;&#x6570;&#x636E;&#x5E93;&#x68C0;&#x7D22;&#x7684;&#x7ED3;&#x679C;&#x7B49;&#x3002;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x5C31;&#x662F;&#x5C06;&#x6570;&#x636E;&#x8C03;&#x7528;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x8BFB;&#x53D6;&#xFF0C;&#x4ECE;&#x800C;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x8BFB;&#x53D6;&#x901F;&#x5EA6;&#x3002;<br>Memcache&#x662F;danga&#x7684;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x6700;&#x65E9;&#x662F;LiveJournal &#x670D;&#x52A1;&#x7684;&#xFF0C;&#x6700;&#x521D;&#x4E3A;&#x4E86;&#x52A0;&#x901F; LiveJournal &#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x800C;&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x540E;&#x6765;&#x88AB;&#x5F88;&#x591A;&#x5927;&#x578B;&#x7684;&#x7F51;&#x7AD9;&#x91C7;&#x7528;&#x3002;<br>Memcached&#x662F;&#x4EE5;&#x5B88;&#x62A4;&#x7A0B;&#x5E8F;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#x4E8E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF0C;&#x968F;&#x65F6;&#x4F1A;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8FDE;&#x63A5;&#x548C;&#x64CD;&#x4F5C;&#x3002;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-26T11:28:12.000Z"><a href="/2014/04/26/hello-pomelo/">4月 26 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/26/hello-pomelo/">Hello Pomelo</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>pomelo &#x662F;&#x7531;&#x7F51;&#x6613;&#x5F00;&#x53D1;&#x7684;&#x57FA;&#x4E8E;node.js&#x5F00;&#x53D1;&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x6E38;&#x620F;&#x670D;&#x52A1;&#x5668;&#x6846;&#x67B6;&#xFF0C; &#x4E5F;&#x53EF;&#x4F5C;&#x4E3A;&#x9AD8;&#x5B9E;&#x65F6;web&#x5E94;&#x7528;&#x6846;&#x67B6;&#x3002;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-26T09:26:40.000Z"><a href="/2014/04/26/hello-haxe/">4月 26 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/26/hello-haxe/">Hello Haxe</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Haxe&#x662F;&#x4E00;&#x95E8;&#x65B0;&#x5174;&#x7684;&#x5F00;&#x6E90;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x79F0;&#xFF1A;&#x201C;&#x76F8;&#x6BD4;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#xFF08;Java&#x7684;&#x5E73;&#x53F0;&#x662F; JVM&#xFF0C;C#&#x7684;&#x5E73;&#x53F0;&#x662F;.Net&#xFF0C;ActionScript&#x7684;&#x5E73;&#x53F0;&#x662F;Flash Player&#x7B49;&#x7B49;&#xFF09;&#xFF0C;Haxe&#x624D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x591A;&#x5E73;&#x53F0;&#x8BED;&#x8A00;&#x3002;&#x4E0D;&#x7BA1;&#x662F;&#x5F00;&#x53D1;&#x539F;&#x751F;iOS&#x3001;Android&#x5E94;&#x7528;&#xFF0C;&#x8FD8;&#x662F;&#x7F51;&#x9875;&#xFF1B;&#x4E0D;&#x8BBA;&#x662F;&#x5E94;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x8FD8;&#x662F;&#x4E2A;&#x4EBA;&#x684C;&#x9762;&#xFF0C;Haxe&#x90FD; &#x53EF;&#x4EE5;&#x80DC;&#x4EFB;&#x3002;&#x201D;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-26T09:19:13.000Z"><a href="/2014/04/26/nodejs-开发桌面应用/">4月 26 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/26/nodejs-开发桌面应用/">Node.js 开发桌面应用</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Node-Webkit<br>heX<br>Node-Qt<br>AppJs<br>Chromium Embedded Framework (CEF)<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/26/nodejs-开发桌面应用/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-26T04:33:18.000Z"><a href="/2014/04/26/hello-teamcity/">4月 26 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/26/hello-teamcity/">Hello TeamCity</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>TeamCity&#x662F;&#x4E00;&#x6B3E;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;&#xFF08;Continue Integration&#xFF09;&#x5DE5;&#x5177;&#xFF0C;&#x5305;&#x62EC;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;Java&#xFF0C;.Net&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x3002; TeamCity&#x63D0;&#x4F9B;&#x4E00;&#x7CFB;&#x5217;&#x7279;&#x6027;&#x53EF;&#x4EE5;&#x8BA9;&#x56E2;&#x961F;&#x5FEB;&#x901F;&#x5B9E;&#x73B0;&#x6301;&#x7EED;&#x7EE7;&#x627F;&#xFF1A;IDE&#x5DE5;&#x5177;&#x96C6;&#x6210;&#x3001;&#x5404;&#x79CD;&#x6D88;&#x606F;&#x901A;&#x77E5;&#x3001;&#x5404;&#x79CD;&#x62A5;&#x8868;&#x3001;&#x9879;&#x76EE;&#x7684;&#x7BA1;&#x7406;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x7F16;&#x8BD1;&#x7B49;&#x7B49;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8FD9;&#x4E9B;&#xFF0C;&#x90FD;&#x662F; &#x8BA9;&#x4F60;&#x7684;&#x56E2;&#x961F;&#x5FEB;&#x901F;&#x4EAB;&#x6709;&#x6301;&#x7EED;&#x7EE7;&#x627F;&#x5E26;&#x6765;&#x7684;&#x6548;&#x7387;&#x63D0;&#x5347;&#x3001;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x8F6F;&#x4EF6;&#x4FDD;&#x969C;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/26/hello-teamcity/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-26T04:22:46.000Z"><a href="/2014/04/26/angularjs-数据绑定过程/">4月 26 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/26/angularjs-数据绑定过程/">理解AngularJS数据绑定过程</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5173;&#x4E8E;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF0C;&#x5728;angular&#x91CC;&#x6709;3&#x4E2A;service&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<br>$watch &#xFF0C;$apply &#x548C; $digest<br>&#x4E09;&#x8005;&#x662F;&#x5982;&#x4F55;&#x534F;&#x540C;&#x5DE5;&#x4F5C;&#x7684;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/26/angularjs-数据绑定过程/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-25T14:30:32.000Z"><a href="/2014/04/25/hello-coffeescript/">4月 25 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/25/hello-coffeescript/">Hello CoffeeScript</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>CoffeeScript&#x8FD9;&#x4E00;&#x95E8;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x6784;&#x5EFA;&#x5728;JavaScript&#x4E4B;&#x4E0A;&#xFF0C;&#x5176;&#x88AB;&#x7F16;&#x8BD1;&#x6210;&#x9AD8;&#x6548;&#x7684;JavaScript&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;web&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x8FD0;&#x884C;&#x5B83;&#xFF0C;&#x6216;&#x662F;&#x901A;&#x8FC7;&#x8BF8;&#x5982;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5E94;&#x7528;&#x7684;Node.js&#x4E00;&#x7C7B;&#x7684;&#x6280;&#x672F;&#x6765;&#x4F7F;&#x7528;&#x5B83;&#x3002;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x901A;&#x5E38;&#x90FD;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4EA7;&#x751F;&#x51FA;&#x6765;&#x7684;JavaScript&#x4E0E;&#x8BB8;&#x591A;&#x7684;&#x6700;&#x4F73;&#x505A;&#x6CD5;&#x90FD;&#x4FDD;&#x6301;&#x4E86;&#x4E00;&#x81F4;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/25/hello-coffeescript/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-24T12:46:35.000Z"><a href="/2014/04/24/webstorm-karma/">4月 24 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/24/webstorm-karma/">WebStorm &amp; Karma</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x603B;&#x7ED3;&#x5982;&#x4F55;&#x5728;WebStorm&#x91CC;&#x4F7F;&#x7528;Karma<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/24/webstorm-karma/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-24T12:45:23.000Z"><a href="/2014/04/24/webstorm-grunt/">4月 24 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/24/webstorm-grunt/">WebStorm &amp; Grunt</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x603B;&#x7ED3;&#x5982;&#x4F55;&#x5728;WebStorm&#x91CC;&#x4F7F;&#x7528;Grunt<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/24/webstorm-grunt/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-24T12:39:58.000Z"><a href="/2014/04/24/webstorm-bower/">4月 24 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/24/webstorm-bower/">WebStorm &amp; Bower</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x603B;&#x7ED3;&#x5982;&#x4F55;&#x5728;WebStorm&#x91CC;&#x4F7F;&#x7528;Bower<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/04/24/webstorm-bower/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+    <a href="/categories/giant/page/3/" class="alignleft prev">上一页</a>
+  
+  
+    <a href="/categories/giant/page/5/" class="alignright next">下一页</a>
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>94</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>52</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>19</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.33px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.22px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.44px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.11px;">Bower</a><a href="/tags/css/" style="font-size: 17.78px;">CSS</a><a href="/tags/certification/" style="font-size: 11.11px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.11px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.56px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.11px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.11px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.33px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.11px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.11px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 18.89px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.22px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.11px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 16.67px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.11px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 11.11px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.22px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.44px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 15.56px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/24/meteor部署到阿里云/">meteor部署到阿里云</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/23/dropdown-tree/">dropdown tree</a>
+      </li>
+    
+      <li>
+        <a href="/2014/12/22/$fn/">jQuery开发插件</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>
