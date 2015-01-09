@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-01-01T01:58:16.454Z</updated>
+  <updated>2015-01-09T08:49:43.293Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -13,6 +13,411 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[javascript 最佳实践]]></title>
+    <link href="http://blog.gyf1.com/2015/01/08/javascript-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://blog.gyf1.com/2015/01/08/javascript-最佳实践/</id>
+    <published>2015-01-08T07:51:31.000Z</published>
+    <updated>2015-01-09T08:36:43.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#xFF0C;&#x80FD;&#x8DF3;&#x7684;&#x66F4;&#x9AD8;&#x3002;<br>&#x7ECF;&#x9A8C;&#x4E0D;&#x5B8C;&#x5168;&#x7B49;&#x4E8E;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;<br>&#x672C;&#x7BC7;&#x4E3B;&#x8981;&#x6574;&#x7406;&#x4E00;&#x4E9B;&#x524D;&#x4EBA;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;<br>&#x5BF9;&#x4E8E;&#x65B0;&#x4EBA;&#x53EF;&#x80FD;&#x4E00;&#x4E0B;&#x5B50;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x7528;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;jslint&#x6216;&#x8005;jshint&#x4F5C;&#x4E3A;&#x76D1;&#x7763;&#x3002;<br><a id="more"></a></p>
+<h3 id="1_&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x4F7F;&#x7528;var&#x5173;&#x952E;&#x5B57;"><em>1</em> &#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x4F7F;&#x7528;var&#x5173;&#x952E;&#x5B57;</h3>
+<p>&#x7ED9;&#x4E00;&#x4E2A;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x4F1A;&#x5BFC;&#x81F4;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;&#x8981;&#x907F;&#x514D;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;</p>
+<h3 id="2_&#x4F7F;&#x7528;===&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#xFF1D;&#xFF1D;"><em>2</em> &#x4F7F;&#x7528;===&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#xFF1D;&#xFF1D;</h3>
+<p>==&#xFF08;&#x6216;!=&#xFF09;&#x64CD;&#x4F5C;&#x7B26;&#x5728;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C; <em>&#x7C7B;&#x578B;&#x8F6C;&#x6362;</em> ;<br>===&#xFF08;&#x6216;!==&#xFF09;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x8F6C;&#x6362;&#x3002;&#x5B83;&#x5C06;&#x6BD4;&#x8F83;&#x503C;&#x548C;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x901F;&#x5EA6;&#x4E0A;&#x4E5F;&#x88AB;&#x8BA4;&#x4E3A;&#x4F18;&#x4E8E;==&#x3002;</p>
+<pre><code>[<span class="number">10</span>] === <span class="number">10</span>    // <span class="keyword">is</span> <span class="literal">false</span>
+[<span class="number">10</span>]  == <span class="number">10</span>    // <span class="keyword">is</span> <span class="literal">true</span>
+<span class="string">&apos;10&apos;</span> == <span class="number">10</span>     // <span class="keyword">is</span> <span class="literal">true</span>
+<span class="string">&apos;10&apos;</span> === <span class="number">10</span>    // <span class="keyword">is</span> <span class="literal">false</span>
+ []   == <span class="number">0</span>     // <span class="keyword">is</span> <span class="literal">true</span>
+ [] ===  <span class="number">0</span>     // <span class="keyword">is</span> <span class="literal">false</span>
+ <span class="string">&apos;&apos;</span> == <span class="literal">false</span>   <span class="regexp">//</span> <span class="keyword">is</span> <span class="literal">true</span> but <span class="literal">true</span> == <span class="string">&quot;a&quot;</span> <span class="keyword">is</span> <span class="literal">false</span>
+ <span class="string">&apos;&apos;</span> ===   <span class="literal">false</span> <span class="regexp">//</span> <span class="keyword">is</span> <span class="literal">false</span>
+</code></pre><h3 id="3_&#x4F7F;&#x7528;&#x95ED;&#x5305;&#x5B9E;&#x73B0;&#x79C1;&#x6709;&#x53D8;&#x91CF;"><em>3</em> &#x4F7F;&#x7528;&#x95ED;&#x5305;&#x5B9E;&#x73B0;&#x79C1;&#x6709;&#x53D8;&#x91CF;</h3>
+<pre><code>a = (<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    <span class="keyword">var</span> privatefunction = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+        alert(<span class="string">&apos;hello&apos;</span>);
+    }
+
+    <span class="keyword">return</span> {
+        publicfunction : <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+            privatefunction();
+        }
+    }
+})();
+</code></pre><h3 id="4_&#x5728;&#x8BED;&#x53E5;&#x7ED3;&#x5C3E;&#x5904;&#x4F7F;&#x7528;&#x5206;&#x53F7;"><em>4</em> &#x5728;&#x8BED;&#x53E5;&#x7ED3;&#x5C3E;&#x5904;&#x4F7F;&#x7528;&#x5206;&#x53F7;</h3>
+<p>&#x5728;&#x8BED;&#x53E5;&#x7ED3;&#x5C3E;&#x5904;&#x4F7F;&#x7528;&#x5206;&#x53F7;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5FD8;&#x8BB0;&#x5199;&#x4E86;&#x4F60;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x8B66;&#x544A;&#xFF0C;&#x56E0;&#x4E3A;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;JavaScript&#x89E3;&#x91CA;&#x5668;&#x4F1A;&#x5E2E;&#x4F60;&#x52A0;&#x4E0A;&#x5206;&#x53F7;&#x3002;</p>
+<h3 id="5_&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;"><em>5</em> &#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</h3>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">Person</span><span class="params">(firstName, lastName)</span>{</span>
+    <span class="keyword">this</span>.firstName =  firstName;
+    <span class="keyword">this</span>.lastName = lastName;
+}
+
+<span class="keyword">var</span> Saad = <span class="keyword">new</span> Person(<span class="string">&quot;Saad&quot;</span>, <span class="string">&quot;Mousliki&quot;</span>);
+</code></pre><h3 id="6_&#x5C0F;&#x5FC3;&#x4F7F;&#x7528;typeof&#x3001;instanceof&#x548C;constructor"><em>6</em> &#x5C0F;&#x5FC3;&#x4F7F;&#x7528;typeof&#x3001;instanceof&#x548C;constructor</h3>
+<pre><code><span class="keyword">var</span> arr = [<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>];
+<span class="keyword">typeof</span> arr;   <span class="comment">// return &quot;object&quot;</span>
+arr  <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// true</span>
+arr.constructor();  <span class="comment">//[]</span>
+</code></pre><h3 id="7_&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF08;Self-calling_Funtion&#xFF09;"><em>7</em> &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF08;Self-calling Funtion&#xFF09;</h3>
+<p>&#x8FD9;&#x4E2A;&#x7ECF;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x81EA;&#x8C03;&#x7528;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF08;Self-Invoked Anonymous Function&#xFF09;&#x6216;&#x8005;&#x5373;&#x65F6;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;IIFE-Immediately Invoked Function Expression)&#x3002;<br>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5728;&#x521B;&#x5EFA;&#x540E;&#x7ACB;&#x5373;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x901A;&#x5E38;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code><span class="list">(<span class="title">function</span><span class="list">()</span>{
+    // some private code that will be executed automatically
+})</span><span class="list">()</span><span class="comment">;</span>
+<span class="list">(<span class="title">function</span><span class="list">(<span class="title">a</span>,b)</span>{
+    var result = a+b<span class="comment">;</span>
+    return result<span class="comment">;</span>
+})</span><span class="list">(<span class="number">10</span>,<span class="number">20</span>)</span>
+</code></pre><h3 id="8_&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x9879;"><em>8</em> &#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x9879;</h3>
+<pre><code>var items = [<span class="number">12</span>, <span class="number">548</span> , &apos;<span class="literal">a</span>&apos; , <span class="number">2</span> , <span class="number">5478</span> , &apos;foo&apos; , <span class="number">8852</span>, , &apos;Doe&apos; , <span class="number">2145</span> , <span class="number">119</span>]<span class="comment">;</span>
+var  randomItem = items[Math.floor(Math.random() * items.length)]<span class="comment">;</span>
+</code></pre><h3 id="9_&#x5728;&#x7279;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;"><em>9</em> &#x5728;&#x7279;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;</h3>
+<p>&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x5728;&#x4F60;&#x60F3;&#x8981;&#x751F;&#x6210;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x5728;&#x6700;&#x5C0F;&#x6700;&#x5927;&#x503C;&#x4E4B;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x85AA;&#x6C34;&#x503C;&#x3002;</p>
+<pre><code>var x = Math.<span class="built_in">floor</span>(Math.<span class="built_in">random</span>() * (<span class="built_in">max</span> - <span class="built_in">min</span> + <span class="number">1</span>)) + <span class="built_in">min</span>;
+</code></pre><h3 id="10_&#x5728;0&#x548C;&#x8BBE;&#x5B9A;&#x7684;&#x6700;&#x5927;&#x503C;&#x4E4B;&#x95F4;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6570;&#x7EC4;"><em>10</em> &#x5728;0&#x548C;&#x8BBE;&#x5B9A;&#x7684;&#x6700;&#x5927;&#x503C;&#x4E4B;&#x95F4;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6570;&#x7EC4;</h3>
+<pre><code>var numbersArray = [] , max = <span class="number">100</span>;
+
+<span class="keyword">for</span>( var i=<span class="number">1</span>; numbersArray.push(i++) &lt; max;);  // numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span> <span class="keyword">...</span> <span class="number">100</span>]
+</code></pre><h3 id="11_&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7684;&#x6570;&#x5B57;&#x5B57;&#x6BCD;&#x5B57;&#x7B26;&#x4E32;"><em>11</em> &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7684;&#x6570;&#x5B57;&#x5B57;&#x6BCD;&#x5B57;&#x7B26;&#x4E32;</h3>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">generateRandomAlphaNum</span><span class="params">(len)</span> {</span>
+    <span class="keyword">var</span> rdmstring = <span class="string">&quot;&quot;</span>;
+    <span class="keyword">for</span>( ; rdmString.length &amp;lt; len; rdmString  += <span class="built_in">Math</span>.random().toString(<span class="number">36</span>).substr(<span class="number">2</span>));
+    <span class="keyword">return</span>  rdmString.substr(<span class="number">0</span>, len);
+}
+</code></pre><p>&#x7279;&#x610F;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;Math.random()&#x751F;&#x6210;0&#x5230;1&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#xFF0C;number.toString(36)&#x662F;&#x5C06;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x8F6C;&#x6362;&#x6210;36&#x8FDB;&#x5236;&#xFF08;0-9&#xFF0C;a-z&#xFF09;&#xFF0C;&#x6700;&#x540E;substr&#x53BB;&#x6389;&#x524D;&#x9762;&#x7684;&#x201C;0.&#x201D;&#x5B57;&#x7B26;&#x4E32;</p>
+<h3 id="12_&#x6253;&#x4E71;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6570;&#x7EC4;"><em>12</em> &#x6253;&#x4E71;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6570;&#x7EC4;</h3>
+<pre><code><span class="keyword">var</span> numbers = [<span class="number">5</span>, <span class="number">458</span> , <span class="number">120</span> , -<span class="number">215</span> , <span class="number">228</span> , <span class="number">400</span> , <span class="number">122205</span>, -<span class="number">85411</span>];
+numbers = numbers.sort(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span> <span class="keyword">return</span> <span class="built_in">Math</span>.random() - <span class="number">0.5</span>});
+<span class="comment">/* the array numbers will be equal for example to [120, 5, 228, -215, 400, 458, -85411, 122205]  */</span>
+</code></pre><h3 id="13_String&#x7684;trim&#x51FD;&#x6570;"><em>13</em> String&#x7684;trim&#x51FD;&#x6570;</h3>
+<p>&#x5728;Java&#x3001;C#&#x3001;PHP&#x548C;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7ECF;&#x5178;&#x7684; trim &#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x53BB;&#x9664;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x7A7A;&#x683C;&#x7B26;&#xFF0C;&#x800C;&#x5728;JavaScript&#x4E2D;&#x5E76;&#x6CA1;&#x6709;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;String&#x5BF9;&#x8C61;&#x4E0A;&#x52A0;&#x4E0A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code><span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span><span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/^\s+|\s+$/g</span>, <span class="string">&quot;&quot;</span>);};
+</code></pre><p>&#x53BB;&#x6389;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x524D;&#x540E;&#x7A7A;&#x683C;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x90E8;&#x7A7A;&#x683C;</p>
+<h3 id="14_&#x9644;&#x52A0;&#xFF08;append&#xFF09;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E0A;"><em>14</em> &#x9644;&#x52A0;&#xFF08;append&#xFF09;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E0A;</h3>
+<pre><code>var array1 = [<span class="number">12</span> , <span class="string">&quot;foo&quot;</span> , {<span class="property">name</span>: <span class="string">&quot;Joe&quot;</span>} , -<span class="number">2458</span>];
+
+var array2 = [<span class="string">&quot;Doe&quot;</span> , <span class="number">555</span> , <span class="number">100</span>];
+Array.prototype.push.apply(array1, array2);
+/* array1 will be <span class="keyword">equal</span> <span class="keyword">to</span>  [<span class="number">12</span> , <span class="string">&quot;foo&quot;</span> , {<span class="property">name</span> <span class="string">&quot;Joe&quot;</span>} , -<span class="number">2458</span> , <span class="string">&quot;Doe&quot;</span> , <span class="number">555</span> , <span class="number">100</span>] */
+</code></pre><p>&#x5176;&#x5B9E;concat&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5B9E;&#x73B0;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x8FD9;&#x91CC;&#x662F;&#x76F4;&#x63A5;&#x6539;&#x53D8;array1</p>
+<h3 id="15_&#x5C06;arguments&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;"><em>15</em> &#x5C06;arguments&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</h3>
+<pre><code><span class="keyword">var</span> argArray = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);
+</code></pre><p>arguments&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x7684;&#x6570;&#x7EC4;</p>
+<h3 id="16_&#x9A8C;&#x8BC1;&#x53C2;&#x6570;&#x662F;&#x5426;&#x662F;&#x6570;&#x5B57;&#xFF08;number&#xFF09;"><em>16</em> &#x9A8C;&#x8BC1;&#x53C2;&#x6570;&#x662F;&#x5426;&#x662F;&#x6570;&#x5B57;&#xFF08;number&#xFF09;</h3>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span><span class="params">(n)</span>{</span>
+    <span class="keyword">return</span> !<span class="built_in">isNaN</span>(<span class="built_in">parseFloat</span>(n)) &amp;&amp; <span class="built_in">isFinite</span>(n);
+}
+</code></pre><h3 id="17_&#x9A8C;&#x8BC1;&#x53C2;&#x6570;&#x662F;&#x5426;&#x662F;&#x6570;&#x7EC4;"><em>17</em> &#x9A8C;&#x8BC1;&#x53C2;&#x6570;&#x662F;&#x5426;&#x662F;&#x6570;&#x7EC4;</h3>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">isArray</span><span class="params">(obj)</span>{</span>
+    <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(obj) === <span class="string">&apos;[object Array]&apos;</span> ;
+}
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;toString()&#x65B9;&#x6CD5;&#x88AB;&#x91CD;&#x5199;&#x4E86;&#xFF08;overridden&#xFF09;&#xFF0C;&#x4F60;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6280;&#x5DE7;&#x5C31;&#x4E0D;&#x80FD;&#x5F97;&#x5230;&#x60F3;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x4E86;&#x3002;&#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code><span class="built_in">Array</span>.isArray(obj); <span class="comment">// &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;array&#x7684;&#x65B9;&#x6CD5;</span>
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x5728;&#x4F7F;&#x7528;&#x591A;&#x91CD;frames&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; instanceof &#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x5982;&#x679C;&#x4F60;&#x6709;&#x591A;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x9519;&#x8BEF;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code><span class="reserved">var</span> myFrame = <span class="built_in">document</span>.createElement(<span class="string">&apos;iframe&apos;</span>);
+<span class="built_in">document</span>.body.appendChild(myFrame);
+
+<span class="reserved">var</span> myArray = <span class="built_in">window</span>.frames[<span class="built_in">window</span>.frames.length-<span class="number">1</span>].Array;
+<span class="reserved">var</span> arr = <span class="keyword">new</span> myArray(a,b,<span class="number">10</span>); <span class="regexp">//</span> [a,b,<span class="number">10</span>]
+
+<span class="regexp">//</span> <span class="keyword">instanceof</span> will <span class="keyword">not</span> work correctly, myArray loses his constructor
+<span class="regexp">//</span> constructor <span class="keyword">is</span> <span class="keyword">not</span> shared between frames
+arr <span class="keyword">instanceof</span> Array; <span class="regexp">//</span> <span class="literal">false</span>
+</code></pre><h3 id="18_&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#x6216;&#x6700;&#x5C0F;&#x503C;"><em>18</em> &#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#x6216;&#x6700;&#x5C0F;&#x503C;</h3>
+<pre><code><span class="keyword">var</span>  numbers = [<span class="number">5</span>, <span class="number">458</span> , <span class="number">120</span> , -<span class="number">215</span> , <span class="number">228</span> , <span class="number">400</span> , <span class="number">122205</span>, -<span class="number">85411</span>];
+<span class="keyword">var</span> maxInNumbers = <span class="built_in">Math</span>.max.apply(<span class="built_in">Math</span>, numbers);
+<span class="keyword">var</span> minInNumbers = <span class="built_in">Math</span>.min.apply(<span class="built_in">Math</span>, numbers);
+</code></pre><p>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x4E86;Function.prototype.apply&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7684;&#x6280;&#x5DE7;</p>
+<h3 id="19_&#x6E05;&#x7A7A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;"><em>19</em> &#x6E05;&#x7A7A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</h3>
+<pre><code><span class="keyword">var</span> myArray = [<span class="number">12</span> , <span class="number">222</span> , <span class="number">1000</span> ];
+myArray.length = <span class="number">0</span>; <span class="comment">// myArray will be equal to [].</span>
+</code></pre><h3 id="20_&#x4E0D;&#x8981;&#x4F7F;&#x7528;_delete_&#x6765;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x9879;&#x3002;"><em>20</em> &#x4E0D;&#x8981;&#x4F7F;&#x7528; delete &#x6765;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x9879;&#x3002;</h3>
+<p>&#x4F7F;&#x7528; splice &#x800C;&#x4E0D;&#x8981;&#x4F7F;&#x7528; delete &#x6765;&#x5220;&#x9664;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x9879;&#x3002;<br>&#x4F7F;&#x7528; delete &#x53EA;&#x662F;&#x7528; undefined &#x6765;&#x66FF;&#x6362;&#x6389;&#x539F;&#x6709;&#x7684;&#x9879;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x5220;&#x9664;&#x3002;</p>
+<p>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code>var items = [<span class="number">12</span>, <span class="number">548</span> ,&apos;<span class="literal">a</span>&apos; , <span class="number">2</span> , <span class="number">5478</span> , &apos;foo&apos; , <span class="number">8852</span>, , &apos;Doe&apos; ,<span class="number">2154</span> , <span class="number">119</span> ]<span class="comment">;</span>
+items.length<span class="comment">; // return 11</span>
+delete items[<span class="number">3</span>]<span class="comment">; // return true</span>
+items.length<span class="comment">; // return 11</span>
+/* items will be equal to [<span class="number">12</span>, <span class="number">548</span>, <span class="string">&quot;a&quot;</span>, undefined &#xD7; <span class="number">1</span>, <span class="number">5478</span>, <span class="string">&quot;foo&quot;</span>, <span class="number">8852</span>, undefined &#xD7; <span class="number">1</span>, <span class="string">&quot;Doe&quot;</span>, <span class="number">2154</span>,       <span class="number">119</span>]   */
+</code></pre><p>&#x800C;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code>var items = [<span class="number">12</span>, <span class="number">548</span> ,&apos;<span class="literal">a</span>&apos; , <span class="number">2</span> , <span class="number">5478</span> , &apos;foo&apos; , <span class="number">8852</span>, , &apos;Doe&apos; ,<span class="number">2154</span> , <span class="number">119</span> ]<span class="comment">;</span>
+items.length<span class="comment">; // return 11</span>
+items.splice(<span class="number">3</span>,<span class="number">1</span>) <span class="comment">;</span>
+items.length<span class="comment">; // return 10</span>
+/* items will be equal to [<span class="number">12</span>, <span class="number">548</span>, <span class="string">&quot;a&quot;</span>, <span class="number">5478</span>, <span class="string">&quot;foo&quot;</span>, <span class="number">8852</span>, undefined &#xD7; <span class="number">1</span>, <span class="string">&quot;Doe&quot;</span>, <span class="number">2154</span>,       <span class="number">119</span>]   */
+</code></pre><p>delete &#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x88AB;&#x7528;&#x6765;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x3002;</p>
+<h3 id="21_&#x4F7F;&#x7528;_length_&#x6765;&#x622A;&#x77ED;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;"><em>21</em> &#x4F7F;&#x7528; length &#x6765;&#x622A;&#x77ED;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</h3>
+<p>&#x8DDF;&#x4E0A;&#x9762;&#x7684;&#x6E05;&#x7A7A;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; length &#x5C5E;&#x6027;&#x6765;&#x622A;&#x77ED;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x3002;</p>
+<pre><code><span class="keyword">var</span> myArray = [<span class="number">12</span> , <span class="number">222</span> , <span class="number">1000</span> , <span class="number">124</span> , <span class="number">98</span> , <span class="number">10</span> ];
+myArray.length = <span class="number">4</span>; <span class="comment">// myArray will be equal to [12 , 222 , 1000 , 124].</span>
+</code></pre><p>&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684; length &#x8BBE;&#x7F6E;&#x6210;&#x4E00;&#x4E2A;&#x6BD4;&#x73B0;&#x5728;&#x5927;&#x7684;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x5C31;&#x4F1A;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x4F1A;&#x589E;&#x52A0;&#x65B0;&#x7684; undefined &#x7684;&#x9879;&#x8865;&#x4E0A;&#x3002; &#x6570;&#x7EC4;&#x7684; length &#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code>myArray.<span class="built_in">length</span> = <span class="number">10</span>; <span class="comment">// the new array length is 10</span>
+myArray[myArray.<span class="built_in">length</span> - <span class="number">1</span>] ; <span class="comment">// undefined</span>
+</code></pre><h3 id="22_&#x4F7F;&#x7528;&#x903B;&#x8F91;_AND/OR_&#x505A;&#x6761;&#x4EF6;&#x5224;&#x65AD;"><em>22</em> &#x4F7F;&#x7528;&#x903B;&#x8F91; AND/OR &#x505A;&#x6761;&#x4EF6;&#x5224;&#x65AD;</h3>
+<pre><code>var foo = <span class="number">10</span>;
+foo == <span class="number">10</span> &amp;&amp; <span class="keyword">do</span>Something(); // &#x7B49;&#x4EF7;&#x4E8E; <span class="keyword">if</span> (foo == <span class="number">10</span>) <span class="keyword">do</span>Something();
+foo == <span class="number">5</span> || <span class="keyword">do</span>Something(); // &#x7B49;&#x4EF7;&#x4E8E; <span class="keyword">if</span> (foo != <span class="number">5</span>) <span class="keyword">do</span>Something();
+</code></pre><p>&#x903B;&#x8F91; &#x6216; &#x8FD8;&#x53EF;&#x4EE5;&#x88AB;&#x4F7F;&#x7528;&#x6765;&#x4E3A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span><span class="params">(arg1)</span>{</span>
+    Arg1 = arg1 || <span class="number">10</span>; <span class="comment">// &#x5982;&#x679C;arg1&#x6CA1;&#x6709;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;Arg1&#x5C06;&#x88AB;&#x9ED8;&#x8BA4;&#x8BBE;&#x6210;10</span>
+}
+</code></pre><h3 id="23_&#x4F7F;&#x7528;_map()_&#x65B9;&#x6CD5;&#x6765;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x91CC;&#x7684;&#x9879;"><em>23</em> &#x4F7F;&#x7528; map() &#x65B9;&#x6CD5;&#x6765;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x91CC;&#x7684;&#x9879;</h3>
+<pre><code><span class="keyword">var</span> squares = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>].map(<span class="function"><span class="keyword">function</span> <span class="params">(val)</span> {</span>
+    <span class="keyword">return</span> val * val;
+});
+<span class="comment">// squares will be equal to [1, 4, 9, 16]</span>
+</code></pre><h3 id="24_&#x56DB;&#x820D;&#x4E94;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4FDD;&#x7559;N&#x4F4D;&#x5C0F;&#x6570;"><em>24</em> &#x56DB;&#x820D;&#x4E94;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4FDD;&#x7559;N&#x4F4D;&#x5C0F;&#x6570;</h3>
+<p>var num =2.443242342;<br>num = num.toFixed(4);  // num will be equal to 2.4432</p>
+<h3 id="25_&#x6D6E;&#x70B9;&#x6570;&#x95EE;&#x9898;"><em>25</em> &#x6D6E;&#x70B9;&#x6570;&#x95EE;&#x9898;</h3>
+<pre><code><span class="number">0.1</span> + <span class="number">0.2</span> === <span class="number">0.3</span> // <span class="keyword">is</span> false
+<span class="number">9007199254740992</span> + <span class="number">1</span> // <span class="keyword">is</span> equal <span class="keyword">to</span> <span class="number">9007199254740992</span>
+<span class="number">9007199254740992</span> + <span class="number">2</span> // <span class="keyword">is</span> equal <span class="keyword">to</span> <span class="number">9007199254740994</span>
+</code></pre><p>&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x8FD9;&#x6837;&#xFF1F; 0.1+0.2&#x7B49;&#x4E8E;0.30000000000000004&#x3002;<br>&#x4F60;&#x8981;&#x77E5;&#x9053;&#xFF0C;&#x6240;&#x6709;&#x7684;JavaScript&#x6570;&#x5B57;&#x5728;&#x5185;&#x90E8;&#x90FD;&#x662F;&#x4EE5;64&#x4F4D;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x7B26;&#x5408;IEEE 754&#x6807;&#x51C6;&#x3002;<br>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; toFixed() &#x548C; toPrecision() &#x65B9;&#x6CD5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="26_&#x4F7F;&#x7528;for-in&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5185;&#x90E8;&#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x610F;&#x68C0;&#x67E5;&#x5C5E;&#x6027;"><em>26</em> &#x4F7F;&#x7528;for-in&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5185;&#x90E8;&#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x610F;&#x68C0;&#x67E5;&#x5C5E;&#x6027;</h3>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x80FD;&#x591F;&#x907F;&#x514D;&#x5728;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;&#x8BBF;&#x95EE;&#x539F;&#x578B;&#x7684;&#x5C5E;&#x6027;</p>
+<pre><code><span class="keyword">for</span> (<span class="keyword">var</span> name <span class="keyword">in</span> <span class="keyword">object</span>) {
+    <span class="keyword">if</span> (<span class="keyword">object</span>.hasOwnProperty(name)) {
+        <span class="comment">// do something with name</span>
+    }
+}
+</code></pre><h3 id="27_&#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;"><em>27</em> &#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;</h3>
+<pre><code><span class="built_in">var</span> a <span class="subst">=</span> <span class="number">0</span>;
+<span class="built_in">var</span> b <span class="subst">=</span> ( a<span class="subst">++</span>, <span class="number">99</span> );
+console<span class="built_in">.</span><span class="keyword">log</span>(a);  <span class="comment">// a will be equal to 1</span>
+console<span class="built_in">.</span><span class="keyword">log</span>(b);  <span class="comment">// b is equal to 99</span>
+</code></pre><h3 id="28_&#x7F13;&#x5B58;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x548C;&#x67E5;&#x8BE2;&#xFF08;calculation_or_querying&#xFF09;&#x7684;&#x53D8;&#x91CF;"><em>28</em> &#x7F13;&#x5B58;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x548C;&#x67E5;&#x8BE2;&#xFF08;calculation or querying&#xFF09;&#x7684;&#x53D8;&#x91CF;</h3>
+<p>&#x5BF9;&#x4E8E;jQuery&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x597D;&#x7F13;&#x5B58;&#x8FD9;&#x4E9B;DOM&#x5143;&#x7D20;&#x3002;</p>
+<pre><code><span class="reserved">var</span> navright = <span class="built_in">document</span>.querySelector(<span class="string">&apos;#right&apos;</span>);
+<span class="reserved">var</span> navleft = <span class="built_in">document</span>.querySelector(<span class="string">&apos;#left&apos;</span>);
+<span class="reserved">var</span> navup = <span class="built_in">document</span>.querySelector(<span class="string">&apos;#up&apos;</span>);
+<span class="reserved">var</span> navdown = <span class="built_in">document</span>.querySelector(<span class="string">&apos;#down&apos;</span>);
+</code></pre><h3 id="29_&#x5728;&#x8C03;&#x7528;_isFinite()&#x4E4B;&#x524D;&#x9A8C;&#x8BC1;&#x53C2;&#x6570;"><em>29</em> &#x5728;&#x8C03;&#x7528; isFinite()&#x4E4B;&#x524D;&#x9A8C;&#x8BC1;&#x53C2;&#x6570;</h3>
+<pre><code><span class="built_in">isFinite</span>(<span class="number">0</span>/<span class="number">0</span>) ; <span class="comment">// false</span>
+<span class="built_in">isFinite</span>(<span class="string">&quot;foo&quot;</span>); <span class="comment">// false</span>
+<span class="built_in">isFinite</span>(<span class="string">&quot;10&quot;</span>); <span class="comment">// true</span>
+<span class="built_in">isFinite</span>(<span class="number">10</span>);   <span class="comment">// true</span>
+<span class="built_in">isFinite</span>(undifined);  <span class="comment">// false</span>
+<span class="built_in">isFinite</span>();   <span class="comment">// false</span>
+<span class="built_in">isFinite</span>(<span class="literal">null</span>);  <span class="comment">// true  !!!</span>
+</code></pre><h3 id="30_&#x907F;&#x514D;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x8D1F;&#x6570;&#x7D22;&#x5F15;&#xFF08;negative_indexes&#xFF09;"><em>30</em> &#x907F;&#x514D;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x8D1F;&#x6570;&#x7D22;&#x5F15;&#xFF08;negative indexes&#xFF09;</h3>
+<pre><code><span class="keyword">var</span> numbersArray = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];
+<span class="keyword">var</span> <span class="keyword">from</span> = numbersArray.indexOf(<span class="string">&quot;foo&quot;</span>) ;  <span class="comment">// from is equal to -1</span>
+numbersArray.splice(<span class="keyword">from</span>,<span class="number">2</span>);    <span class="comment">// will return [5]</span>
+</code></pre><p>&#x786E;&#x4FDD;&#x8C03;&#x7528; indexOf &#x65F6;&#x7684;&#x53C2;&#x6570;&#x4E0D;&#x662F;&#x8D1F;&#x6570;&#x3002;</p>
+<h3 id="31_&#x57FA;&#x4E8E;JSON&#x7684;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF08;serialization_and_deserialization&#xFF09;"><em>31</em> &#x57FA;&#x4E8E;JSON&#x7684;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF08;serialization and deserialization&#xFF09;</h3>
+<pre><code>var person = {<span class="property">name</span> :&apos;Saad&apos;, age : <span class="number">26</span>, department : {ID : <span class="number">15</span>, <span class="property">name</span> : <span class="string">&quot;R&amp;D&quot;</span>} };
+var stringFromPerson = JSON.stringify(person);
+/* stringFromPerson <span class="keyword">is</span> <span class="keyword">equal</span> <span class="keyword">to</span> <span class="string">&quot;{&quot;</span><span class="property">name</span><span class="string">&quot;:&quot;</span>Saad<span class="string">&quot;,&quot;</span>age<span class="string">&quot;:26,&quot;</span>department<span class="string">&quot;:{&quot;</span>ID<span class="string">&quot;:15,&quot;</span><span class="property">name</span><span class="string">&quot;:&quot;</span>R&amp;D<span class="string">&quot;}}&quot;</span>   */
+var personFromString = JSON.parse(stringFromPerson);
+/* personFromString <span class="keyword">is</span> <span class="keyword">equal</span> <span class="keyword">to</span> person object  */
+</code></pre><h3 id="32_&#x907F;&#x514D;&#x4F7F;&#x7528;_eval()_&#x548C;_Function_&#x6784;&#x9020;&#x51FD;&#x6570;"><em>32</em> &#x907F;&#x514D;&#x4F7F;&#x7528; eval() &#x548C; Function &#x6784;&#x9020;&#x51FD;&#x6570;</h3>
+<p>&#x4F7F;&#x7528; eval &#x548C; Function &#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x975E;&#x5E38;&#x6602;&#x8D35;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x4ED6;&#x4EEC;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x811A;&#x672C;&#x5F15;&#x64CE;&#x5C06;&#x6E90;&#x4EE3;&#x7801;&#x8F6C;&#x6362;&#x6210;&#x53EF;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code><span class="keyword">var</span> func1 = <span class="keyword">new</span> <span class="function"><span class="keyword">Function</span><span class="params">(functionCode)</span>;</span>
+<span class="keyword">var</span> func2 = <span class="keyword">eval</span>(functionCode);
+</code></pre><h3 id="33_&#x907F;&#x514D;&#x4F7F;&#x7528;_with()"><em>33</em> &#x907F;&#x514D;&#x4F7F;&#x7528; with()</h3>
+<p>&#x4F7F;&#x7528; with() &#x4F1A;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x540C;&#x540D;&#x7684;&#x53D8;&#x91CF;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x503C;&#x800C;&#x5F15;&#x8D77;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x9EBB;&#x70E6;&#x3002;</p>
+<h3 id="34_&#x907F;&#x514D;&#x4F7F;&#x7528;_for-in_&#x6765;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;"><em>34</em> &#x907F;&#x514D;&#x4F7F;&#x7528; for-in &#x6765;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</h3>
+<p>&#x907F;&#x514D;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code><span class="built_in">var</span> <span class="keyword">sum</span> <span class="subst">=</span> <span class="number">0</span>;
+for (<span class="built_in">var</span> i <span class="keyword">in</span> arrayNumbers) {
+    <span class="keyword">sum</span> <span class="subst">+=</span> arrayNumbers<span class="preprocessor">[</span>i<span class="preprocessor">]</span><span class="markup">;
+}</span>
+</code></pre><p>&#x66F4;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#xFF1A;</p>
+<pre><code>var sum = <span class="number">0</span>;
+<span class="keyword">for</span> (var <span class="built_in">i</span> = <span class="number">0</span>, len = <span class="transposed_variable">arrayNumbers.</span><span class="built_in">length</span>; <span class="built_in">i</span> &lt; len; <span class="built_in">i</span>++) <span class="cell">{
+    sum += arrayNumbers[i];
+}</span>
+</code></pre><p>&#x9644;&#x52A0;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;i &#x548C; len &#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x53D6;&#x503C;&#x90FD;&#x53EA;&#x6267;&#x884C;&#x4E86;&#x4E00;&#x6B21;&#xFF0C;&#x4F1A;&#x6BD4;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x66F4;&#x9AD8;&#x6548;&#xFF1A;</p>
+<pre><code><span class="keyword">for</span> (var <span class="built_in">i</span> = <span class="number">0</span>; <span class="built_in">i</span> &lt; <span class="transposed_variable">arrayNumbers.</span><span class="built_in">length</span>; <span class="built_in">i</span>++)
+</code></pre><p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x56E0;&#x4E3A;arrayNumbers.length&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x88AB;&#x8BA1;&#x7B97;&#x3002;</p>
+<h3 id="35_&#x5728;&#x8C03;&#x7528;_setTimeout()_&#x548C;_setInterval()_&#x7684;&#x65F6;&#x5019;&#x4F20;&#x5165;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;"><em>35</em> &#x5728;&#x8C03;&#x7528; setTimeout() &#x548C; setInterval() &#x7684;&#x65F6;&#x5019;&#x4F20;&#x5165;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x4F20;&#x9012;&#x7ED9; setTimeout() &#x6216;&#x8005; setInterval()&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x88AB;&#x5982;&#x4F7F;&#x7528; eval &#x4E00;&#x6837;&#x88AB;&#x89E3;&#x6790;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x975E;&#x5E38;&#x8017;&#x65F6;&#x7684;&#x3002;<br>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code><span class="keyword">set</span>Interval(<span class="string">&apos;doSomethingPeriodically()&apos;</span>, <span class="number">1000</span>);
+<span class="keyword">set</span>TimeOut(<span class="string">&apos;doSomethingAfterFiveSeconds()&apos;</span>, <span class="number">5000</span>)
+</code></pre><p>&#x800C;&#x7528;&#xFF1A;</p>
+<pre><code><span class="keyword">set</span>Interval(<span class="keyword">do</span>SomethingPeriodically, <span class="number">1000</span>);
+<span class="keyword">set</span>TimeOut(<span class="keyword">do</span>SomethingAfterFiveSeconds, <span class="number">5000</span>);
+</code></pre><h3 id="36_&#x4F7F;&#x7528;_switch/case_&#x8BED;&#x53E5;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x957F;&#x4E32;&#x7684;_if/else"><em>36</em> &#x4F7F;&#x7528; switch/case &#x8BED;&#x53E5;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x957F;&#x4E32;&#x7684; if/else</h3>
+<p>&#x5728;&#x5224;&#x65AD;&#x60C5;&#x51B5;&#x5927;&#x4E8E;2&#x79CD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528; switch/case &#x66F4;&#x9AD8;&#x6548;&#xFF0C;&#x800C;&#x4E14;&#x66F4;&#x4F18;&#x96C5;&#xFF08;&#x66F4;&#x6613;&#x4E8E;&#x7EC4;&#x7EC7;&#x4EE3;&#x7801;&#xFF09;&#x3002;&#x4F46;&#x5728;&#x5224;&#x65AD;&#x7684;&#x60C5;&#x51B5;&#x8D85;&#x8FC7;10&#x79CD;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x8981;&#x4F7F;&#x7528; switch/case&#x3002;</p>
+<h3 id="37_&#x5728;&#x5224;&#x65AD;&#x6570;&#x503C;&#x8303;&#x56F4;&#x65F6;&#x4F7F;&#x7528;_switch/case"><em>37</em> &#x5728;&#x5224;&#x65AD;&#x6570;&#x503C;&#x8303;&#x56F4;&#x65F6;&#x4F7F;&#x7528; switch/case</h3>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x4F7F;&#x7528; switch/case &#x5224;&#x65AD;&#x6570;&#x503C;&#x8303;&#x56F4;&#x7684;&#x65F6;&#x5019;&#x662F;&#x5408;&#x7406;&#x7684;&#xFF1A;</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">getCategory</span><span class="params">(age)</span> {</span>
+    <span class="keyword">var</span> category = <span class="string">&quot;&quot;</span>;
+    <span class="keyword">switch</span> (<span class="literal">true</span>) {
+        <span class="keyword">case</span> <span class="built_in">isNaN</span>(age):
+            category = <span class="string">&quot;not an age&quot;</span>;
+            <span class="keyword">break</span>;
+        <span class="keyword">case</span> (age &gt;= <span class="number">50</span>):
+            category = <span class="string">&quot;Old&quot;</span>;
+            <span class="keyword">break</span>;
+        <span class="keyword">case</span> (age &lt;= <span class="number">20</span>):
+            category = <span class="string">&quot;Baby&quot;</span>;
+            <span class="keyword">break</span>;
+        <span class="keyword">default</span>:
+            category = <span class="string">&quot;Young&quot;</span>;
+            <span class="keyword">break</span>;
+    };
+    <span class="keyword">return</span> category;
+}
+getCategory(<span class="number">5</span>);  <span class="comment">// will return &quot;Baby&quot;</span>
+</code></pre><h3 id="38_&#x4E3A;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x6307;&#x5B9A;prototype&#x5BF9;&#x8C61;"><em>38</em> &#x4E3A;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x6307;&#x5B9A;prototype&#x5BF9;&#x8C61;</h3>
+<p>&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;prototype&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x6709;&#x53EF;&#x80FD;&#xFF1A;</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">clone</span><span class="params">(object)</span> {</span>
+    <span class="function"><span class="keyword">function</span> <span class="title">OneShotConstructor</span><span class="params">()</span>{</span>};
+    OneShotConstructor.prototype= object;
+    <span class="keyword">return</span> <span class="keyword">new</span> OneShotConstructor();
+}
+<span class="keyword">clone</span>(<span class="keyword">Array</span>).prototype ;  <span class="comment">// []</span>
+</code></pre><h3 id="39_&#x4E00;&#x4E2A;HTML&#x8F6C;&#x4E49;&#x51FD;&#x6570;"><em>39</em> &#x4E00;&#x4E2A;HTML&#x8F6C;&#x4E49;&#x51FD;&#x6570;</h3>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">escapeHTML</span><span class="params">(text)</span> {</span>
+    <span class="keyword">var</span> replacements= {<span class="string">&quot;&lt;&quot;</span>: <span class="string">&quot;&amp;lt;&quot;</span>, <span class="string">&quot;&gt;&quot;</span>: <span class="string">&quot;&amp;gt;&quot;</span>,<span class="string">&quot;&amp;&quot;</span>: <span class="string">&quot;&amp;amp;&quot;</span>, <span class="string">&quot;\&quot;&quot;</span>: <span class="string">&quot;&amp;quot;&quot;</span>};
+    <span class="keyword">return</span> text.replace(<span class="regexp">/[&lt;&gt;&amp;&quot;]/g</span>, <span class="function"><span class="keyword">function</span><span class="params">(character)</span> {</span>
+        <span class="keyword">return</span> replacements[character];
+    });
+}
+</code></pre><h3 id="40_&#x907F;&#x514D;&#x5728;&#x5FAA;&#x73AF;&#x5185;&#x90E8;&#x4F7F;&#x7528;_try-catch-finally"><em>40</em> &#x907F;&#x514D;&#x5728;&#x5FAA;&#x73AF;&#x5185;&#x90E8;&#x4F7F;&#x7528; try-catch-finally</h3>
+<p>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x6BCF;&#x6B21;&#x5F53; catch &#x4ECE;&#x53E5;&#x88AB;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x88AB;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x4F1A;&#x8D4B;&#x503C;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x5728; try-catch-finally &#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x4F1A;&#x65B0;&#x5EFA;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x907F;&#x514D;&#x8FD9;&#x6837;&#x7684;&#x5199;&#x6CD5;&#xFF1A;</p>
+<pre><code>var object = <span class="matrix">[<span class="string">&apos;foo&apos;</span>, <span class="string">&apos;bar&apos;</span>]</span>, <span class="built_in">i</span>;
+<span class="keyword">for</span> (<span class="built_in">i</span> = <span class="number">0</span>, len = <span class="transposed_variable">object.</span><span class="built_in">length</span>; <span class="built_in">i</span> &lt;len; <span class="built_in">i</span>++) <span class="cell">{
+    try {
+        // do something that throws an exception
+    }</span>
+    <span class="keyword">catch</span> (e) <span class="cell">{
+        // handle exception
+    }</span>
+}
+</code></pre><p>&#x800C;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code><span class="keyword">var</span> <span class="keyword">object</span> = [<span class="string">&apos;foo&apos;</span>, <span class="string">&apos;bar&apos;</span>], i;
+<span class="keyword">try</span> {
+    <span class="keyword">for</span> (i = <span class="number">0</span>, len = <span class="keyword">object</span>.length; i &lt;len; i++) {
+        <span class="comment">// do something that throws an exception</span>
+    }
+}
+<span class="keyword">catch</span> (e) {
+    <span class="comment">// handle exception</span>
+}
+</code></pre><h3 id="41_&#x4E3A;_XMLHttpRequests_&#x8BBE;&#x7F6E;&#x8D85;&#x65F6;&#x3002;"><em>41</em> &#x4E3A; XMLHttpRequests &#x8BBE;&#x7F6E;&#x8D85;&#x65F6;&#x3002;</h3>
+<p>&#x5728;&#x4E00;&#x4E2A;XHR&#x8BF7;&#x6C42;&#x5360;&#x7528;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x540E;&#xFF08;&#x6BD4;&#x5982;&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x95EE;&#x9898;&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4E2D;&#x6B62;&#x8FD9;&#x6B21;&#x8BF7;&#x6C42;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x5BF9;XHR&#x8C03;&#x7528;&#x914D;&#x5957;&#x4F7F;&#x7528; setTimeout()&#x3002;</p>
+<pre><code><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest ();
+xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    <span class="keyword">if</span> (<span class="keyword">this</span>.readyState == <span class="number">4</span>) {
+        clearTimeout(timeout);
+        <span class="comment">// do something with response data</span>
+    }
+}
+<span class="keyword">var</span> timeout = setTimeout( <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    xhr.abort(); <span class="comment">// call error callback</span>
+}, <span class="number">60</span>*<span class="number">1000</span> <span class="comment">/* timeout after a minute */</span> );
+xhr.open(<span class="string">&apos;GET&apos;</span>, url, <span class="literal">true</span>);
+
+xhr.send();
+</code></pre><p>&#x6B64;&#x5916;&#xFF0C;&#x4E00;&#x822C;&#x4F60;&#x5E94;&#x8BE5;&#x5B8C;&#x5168;&#x907F;&#x514D;&#x540C;&#x6B65;&#x7684;Ajax&#x8BF7;&#x6C42;&#x3002;</p>
+<h3 id="42_&#x5904;&#x7406;WebSocket&#x8D85;&#x65F6;"><em>42</em> &#x5904;&#x7406;WebSocket&#x8D85;&#x65F6;</h3>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;WebSocket&#x8FDE;&#x63A5;&#x521B;&#x5EFA;&#x4E4B;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x6D3B;&#x52A8;&#x7684;&#x8BDD;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x5728;30&#x79D2;&#x4E4B;&#x540E;&#x65AD;&#x5F00;&#xFF08;time out&#xFF09;&#x4F60;&#x7684;&#x8FDE;&#x63A5;&#x3002;<br>&#x9632;&#x706B;&#x5899;&#x4E5F;&#x4F1A;&#x5728;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4E0D;&#x6D3B;&#x52A8;&#x4E4B;&#x540E;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x8D85;&#x65F6;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x95F4;&#x6B47;&#x6027;&#x5730;&#x5411;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53D1;&#x9001;&#x7A7A;&#x6D88;&#x606F;&#x3002;&#x8981;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x4FDD;&#x6301;&#x8FDE;&#x63A5;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x53D6;&#x6D88;&#x8FDE;&#x63A5;&#x7684;&#x4FDD;&#x6301;&#x3002;<br>&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6280;&#x5DE7;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x8D85;&#x65F6;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A; timerID&#xFF1A;</p>
+<pre><code><span class="keyword">var</span> timerID = <span class="number">0</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">keepAlive</span><span class="params">()</span> {</span>
+    <span class="keyword">var</span> timeout = <span class="number">15000</span>;
+    <span class="keyword">if</span> (webSocket.readyState == webSocket.OPEN) {
+        webSocket.send(<span class="string">&apos;&apos;</span>);
+    }
+    timerId = setTimeout(keepAlive, timeout);
+}
+<span class="function"><span class="keyword">function</span> <span class="title">cancelKeepAlive</span><span class="params">()</span> {</span>
+    <span class="keyword">if</span> (timerId) {
+        cancelTimeout(timerId);
+    }
+}
+</code></pre><p>keepAlive()&#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x88AB;&#x6DFB;&#x52A0;&#x5728;webSOcket&#x8FDE;&#x63A5;&#x7684; onOpen() &#x65B9;&#x6CD5;&#x7684;&#x6700;&#x540E;&#xFF0C;&#x800C; cancelKeepAlive() &#x6DFB;&#x52A0;&#x5728; onClose() &#x65B9;&#x6CD5;&#x7684;&#x6700;&#x540E;&#x3002;</p>
+<h3 id="43_&#x7262;&#x8BB0;&#xFF0C;&#x539F;&#x59CB;&#x8FD0;&#x7B97;&#x7B26;&#x59CB;&#x7EC8;&#x6BD4;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8981;&#x9AD8;&#x6548;&#x3002;&#x4F7F;&#x7528;VanillaJS&#x3002;"><em>43</em> &#x7262;&#x8BB0;&#xFF0C;&#x539F;&#x59CB;&#x8FD0;&#x7B97;&#x7B26;&#x59CB;&#x7EC8;&#x6BD4;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8981;&#x9AD8;&#x6548;&#x3002;&#x4F7F;&#x7528;<a href="http://vanilla-js.com/" target="_blank" rel="external">VanillaJS</a>&#x3002;</h3>
+<p>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code><span class="built_in">var</span> <span class="keyword">min</span> <span class="subst">=</span> Math<span class="built_in">.</span><span class="keyword">min</span>(a,b);
+A<span class="built_in">.</span>push(v);
+</code></pre><p>&#x800C;&#x7528;&#xFF1A;</p>
+<pre><code>var <span class="built_in">min</span> = a &lt; b ? a : b;
+A[A.<span class="built_in">length</span>] = v;
+</code></pre><h3 id="44_&#x7F16;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x6574;&#x6D01;&#x5DE5;&#x5177;&#x3002;&#x5728;&#x4E0A;&#x7EBF;&#x4E4B;&#x524D;&#x4F7F;&#x7528;JSLint&#x548C;&#x4EE3;&#x7801;&#x538B;&#x7F29;&#x5DE5;&#x5177;&#xFF08;minification&#xFF09;&#xFF08;&#x6BD4;&#x5982;JSMin&#xFF09;&#x3002;"><em>44</em> &#x7F16;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x6574;&#x6D01;&#x5DE5;&#x5177;&#x3002;&#x5728;&#x4E0A;&#x7EBF;&#x4E4B;&#x524D;&#x4F7F;&#x7528;JSLint&#x548C;&#x4EE3;&#x7801;&#x538B;&#x7F29;&#x5DE5;&#x5177;&#xFF08;minification&#xFF09;&#xFF08;&#x6BD4;&#x5982;JSMin&#xFF09;&#x3002;</h3>
+<h3 id="45_JavaScript&#x662F;&#x4E0D;&#x53EF;&#x601D;&#x8BAE;&#x7684;&#x3002;&#x6700;&#x597D;&#x7684;JavaScript&#x5B66;&#x4E60;&#x8D44;&#x6E90;&#x3002;"><em>45</em> JavaScript&#x662F;&#x4E0D;&#x53EF;&#x601D;&#x8BAE;&#x7684;&#x3002;&#x6700;&#x597D;&#x7684;JavaScript&#x5B66;&#x4E60;&#x8D44;&#x6E90;&#x3002;</h3>
+<p>======</p>
+<pre><code><span class="label">http:</span>//blog<span class="preprocessor">.jobbole</span><span class="preprocessor">.com</span>/<span class="number">54495</span>/
+<span class="label">http:</span>//modernweb<span class="preprocessor">.com</span>/<span class="number">2013</span>/<span class="number">12</span>/<span class="number">23</span>/<span class="number">45</span>-useful-javascript-tips-tricks-<span class="keyword">and</span>-best-practices/
+<span class="label">http:</span>//djt<span class="preprocessor">.qq</span><span class="preprocessor">.com</span>/article/view/<span class="number">945</span>?ADTAG=email<span class="preprocessor">.InnerAD</span><span class="preprocessor">.weekly</span><span class="number">.20131125</span>
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#xFF0C;&#x80FD;&#x8DF3;&#x7684;&#x66F4;&#x9AD8;&#x3002;<br>&#x7ECF;&#x9A8C;&#x4E0D;&#x5B8C;&#x5168;&#x7B49;&#x4E8E;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;<br>&#x672C;&#x7BC7;&#x4E3B;&#x8981;&#x6574;&#x7406;&#x4E00;&#x4E9B;&#x524D;&#x4EBA;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;<br>&#x5BF9;&#x4E8E;&#x65B0;&#x4EBA;&#x53EF;&#x80FD;&#x4E00;&#x4E0B;&#x5B50;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x7528;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;jslint&#x6216;&#x8005;jshint&#x4F5C;&#x4E3A;&#x76D1;&#x7763;&#x3002;<br>]]>
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[what is 'this']]></title>
+    <link href="http://blog.gyf1.com/2015/01/08/what-is-this/"/>
+    <id>http://blog.gyf1.com/2015/01/08/what-is-this/</id>
+    <published>2015-01-08T03:49:13.000Z</published>
+    <updated>2015-01-08T07:52:26.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5F88;&#x591A;&#x5B66;&#x4E60;JavaScript&#x7684;&#x4EBA;&#xFF0C;&#x4E4B;&#x524D;&#x90FD;&#x662F;&#x5B66;&#x4E60;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x3002;</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5F88;&#x591A;&#x5B66;&#x4E60;JavaScript&#x7684;&#x4EBA;&#xFF0C;&#x4E4B;&#x524D;&#x90FD;&#x662F;&#x5B66;&#x4E60;&#x5176;&#x4ED6;&#x8BED]]>
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[闭包实践]]></title>
+    <link href="http://blog.gyf1.com/2015/01/08/%E9%97%AD%E5%8C%85%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://blog.gyf1.com/2015/01/08/闭包实践/</id>
+    <published>2015-01-08T03:28:38.000Z</published>
+    <updated>2015-01-08T07:52:28.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x95ED;&#x5305;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4E0D;&#x592A;&#x5BB9;&#x6613;&#x63CF;&#x8FF0;<br>&#x4F46;&#x662F;&#x672C;&#x8D28;&#x4E0A;&#x5374;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;</p>
+<p>&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;:</p>
+<h2 id="&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;"><em>&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;</em></h2>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>a = (<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    <span class="keyword">var</span> privatefunction = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+        alert(<span class="string">&apos;hello&apos;</span>);
+    }
+
+    <span class="keyword">return</span> {
+        publicfunction : <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+            privatefunction();
+        }
+    }
+})();
+</code></pre><p>a&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;a&#x8C03;&#x7528;&#x5230;publicfunction&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8C03;&#x7528;&#x5230;privatefunction<br>&#x5F88;&#x591A;&#x4EBA;&#x4E00;&#x770B;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x70B9;&#x5403;&#x60CA;&#xFF0C;&#x56E0;&#x4E3A;&#x81EA;&#x5DF1;&#x65E9;&#x5C31;&#x8FD9;&#x4E48;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x5C31;&#x662F;&#x95ED;&#x5305;&#x3002;</p>
+<p><a id="more"></a><br><a href="http://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x95ED;&#x5305;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4E0D;&#x592A;&#x5BB9;&#x6613;&#x63CF;&#x8FF0;<br>&#x4F46;&#x662F;&#x672C;&#x8D28;&#x4E0A;&#x5374;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;</p>
+<p>&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;:</p>
+<h2 id="&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;"><em>&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;</em></h2>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>a = (<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    <span class="keyword">var</span> privatefunction = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+        alert(<span class="string">&apos;hello&apos;</span>);
+    }
+
+    <span class="keyword">return</span> {
+        publicfunction : <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+            privatefunction();
+        }
+    }
+})();
+</code></pre><p>a&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;a&#x8C03;&#x7528;&#x5230;publicfunction&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8C03;&#x7528;&#x5230;privatefunction<br>&#x5F88;&#x591A;&#x4EBA;&#x4E00;&#x770B;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x70B9;&#x5403;&#x60CA;&#xFF0C;&#x56E0;&#x4E3A;&#x81EA;&#x5DF1;&#x65E9;&#x5C31;&#x8FD9;&#x4E48;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x5C31;&#x662F;&#x95ED;&#x5305;&#x3002;</p>
+<p>]]>
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[javascript promise]]></title>
@@ -454,104 +859,6 @@ $.add(<span class="number">3</span>,<span class="number">4</span>); <span class=
 ]]></content>
     <summary type="html">
     <![CDATA[<p><a href="http://www.sitepoint.com/floating-message-plugins/" target="_blank" rel="external">http://www.sitepoint.com/floating-message-plu]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[How to Style a HTML file upload button in Pure CSS]]></title>
-    <link href="http://blog.gyf1.com/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/"/>
-    <id>http://blog.gyf1.com/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/</id>
-    <published>2014-11-06T06:26:35.000Z</published>
-    <updated>2014-11-06T06:28:27.000Z</updated>
-    <content type="html"><![CDATA[<p>Step 1. Create a simple html markup</p>
-<pre><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;fileUpload btn btn-primary&quot;</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">span</span>&gt;</span>Upload<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;file&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;upload&quot;</span> /&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre><p>Step 2. CSS: Tricky Part</p>
-<pre><code><span class="class">.fileUpload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
-    <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-<span class="rule">}</span></span>
-<span class="class">.fileUpload</span> <span class="tag">input</span><span class="class">.upload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
-    <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-    <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
-    <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">filter</span>:<span class="value"> <span class="function">alpha(opacity=<span class="number">0</span>)</span></span></span>;
-<span class="rule">}</span></span>
-</code></pre><p><a id="more"></a><br><a href="http://geniuscarrier.com/how-to-style-a-html-file-upload-button-in-pure-css/" target="_blank" rel="external">http://geniuscarrier.com/how-to-style-a-html-file-upload-button-in-pure-css/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Step 1. Create a simple html markup</p>
-<pre><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;fileUpload btn btn-primary&quot;</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">span</span>&gt;</span>Upload<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;file&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;upload&quot;</span> /&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre><p>Step 2. CSS: Tricky Part</p>
-<pre><code><span class="class">.fileUpload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
-    <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-<span class="rule">}</span></span>
-<span class="class">.fileUpload</span> <span class="tag">input</span><span class="class">.upload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
-    <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-    <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
-    <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">filter</span>:<span class="value"> <span class="function">alpha(opacity=<span class="number">0</span>)</span></span></span>;
-<span class="rule">}</span></span>
-</code></pre><p>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[浏览器autofill autocomplete 错位]]></title>
-    <link href="http://blog.gyf1.com/2014/10/31/%E6%B5%8F%E8%A7%88%E5%99%A8autofill-autocomplete-%E9%94%99%E4%BD%8D/"/>
-    <id>http://blog.gyf1.com/2014/10/31/浏览器autofill-autocomplete-错位/</id>
-    <published>2014-10-31T01:57:55.000Z</published>
-    <updated>2014-10-31T02:12:44.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x9996;&#x5148;&#x5728;form&#x4E0A;&#x52A0;autocomplete=&#x201D;off&#x201D;<br>&#x4F46;&#x662F;&#x6CA1;&#x4EC0;&#x4E48;&#x4F5C;&#x7528;</p>
-<p>&#x9700;&#x8981;&#x52A0;&#x4E00;&#x4E9B;&#x5047;&#x7684;&#x9690;&#x85CF;&#x7684;input&#x5B57;&#x6BB5;<br><!-- fake fields are a workaround for chrome autofill getting the wrong fields --></p>
-<pre><code>&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;fakeusernameremembered&quot;</span>/&gt;
-&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;password&quot;</span> name=<span class="string">&quot;fakepasswordremembered&quot;</span>/&gt;
-</code></pre><a id="more"></a>
-
-<p><a href="http://stackoverflow.com/questions/15738259/disabling-chrome-autofill" target="_blank" rel="external">http://stackoverflow.com/questions/15738259/disabling-chrome-autofill</a><br><a href="https://discussions.apple.com/thread/4199365?tstart=0" target="_blank" rel="external">https://discussions.apple.com/thread/4199365?tstart=0</a><br><a href="http://blog.csdn.net/wangxiaohui6687/article/details/10149579" target="_blank" rel="external">http://blog.csdn.net/wangxiaohui6687/article/details/10149579</a><br><a href="http://stackoverflow.com/questions/2530/how-do-you-disable-browser-autocomplete-on-web-form-field-input-tag" target="_blank" rel="external">http://stackoverflow.com/questions/2530/how-do-you-disable-browser-autocomplete-on-web-form-field-input-tag</a><br><a href="http://stackoverflow.com/questions/10938891/disable-autofill-in-chrome-without-disabling-autocomplete" target="_blank" rel="external">http://stackoverflow.com/questions/10938891/disable-autofill-in-chrome-without-disabling-autocomplete</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x9996;&#x5148;&#x5728;form&#x4E0A;&#x52A0;autocomplete=&#x201D;off&#x201D;<br>&#x4F46;&#x662F;&#x6CA1;&#x4EC0;&#x4E48;&#x4F5C;&#x7528;</p>
-<p>&#x9700;&#x8981;&#x52A0;&#x4E00;&#x4E9B;&#x5047;&#x7684;&#x9690;&#x85CF;&#x7684;input&#x5B57;&#x6BB5;<br><!-- fake fields are a workaround for chrome autofill getting the wrong fields --></p>
-<pre><code>&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;fakeusernameremembered&quot;</span>/&gt;
-&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;password&quot;</span> name=<span class="string">&quot;fakepasswordremembered&quot;</span>/&gt;
-</code></pre>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Resolve http request before running app and switching to a route or state]]></title>
-    <link href="http://blog.gyf1.com/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/"/>
-    <id>http://blog.gyf1.com/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/</id>
-    <published>2014-10-30T04:10:40.000Z</published>
-    <updated>2014-10-30T05:09:30.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state" target="_blank" rel="external">http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state</a><br><a href="http://embed.plnkr.co/TWiDY3/script.js" target="_blank" rel="external">http://embed.plnkr.co/TWiDY3/script.js</a><br><a href="http://plnkr.co/edit/TWiDY3?p=info" target="_blank" rel="external">http://plnkr.co/edit/TWiDY3?p=info</a><br><a href="http://stackoverflow.com/questions/20094273/stop-angular-ui-router-navigation-until-promise-is-resolved" target="_blank" rel="external">http://stackoverflow.com/questions/20094273/stop-angular-ui-router-navigation-until-promise-is-resolved</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state" target="_]]>
     </summary>
     
   </entry>

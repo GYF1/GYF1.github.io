@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/01/08/javascript-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2015-01-09T08:36:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/08/%E9%97%AD%E5%8C%85%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2015-01-08T07:52:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/08/what-is-this/</loc>
+    <lastmod>2015-01-08T07:52:26.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2014/12/31/javascript-promise/</loc>
     <lastmod>2014-12-31T03:51:23.000Z</lastmod>
   </url>
