@@ -80,6 +80,492 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-01-20T05:43:15.000Z"><a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">1月 20 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;js&#x4E0D;&#x662F;&#x5F88;&#x4E45;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x5C11;&#x4F1A;&#x6D89;&#x53CA;&#x5230;&#x51FD;&#x6570;&#x7ED1;&#x5B9A;(Function binding)&#x3002;<br>&#x4F46;&#x662F;&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x79CD;&#x4FDD;&#x5B58;this&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x9700;&#x8981;&#x7684;&#x6B63;&#x662F;&#xFF1A;</p>
+<pre><code><span class="function"><span class="keyword">Function</span>.<span class="title">prototype</span>.<span class="title">bind</span><span class="params">()</span></span>
+</code></pre><p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x9047;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x503E;&#x5411;&#x5C06;this&#x5148;&#x4FDD;&#x5B58;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4E2D;&#x3002;&#x8FD9;&#x6837;&#x5F53;this&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53D8;&#x91CF;&#x8BBF;&#x95EE;&#x5230;this&#x3002;<br>&#x6BD4;&#x5982;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x4E3A;&#xFF1A;self&#xFF0C;_this&#xFF0C;context</p>
+<p>&#x8FD9;&#x6837;&#x505A;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+<p>&#x7F51;&#x53CB;&#x7684;&#x58F0;&#x97F3;&#xFF1A;</p>
+<p>1</p>
+<pre><code>Ohhhh I would do anything <span class="keyword">for</span> scope, <span class="keyword">but</span> I won&apos;t do <span class="keyword">that</span> = this
+&#x6211;&#x53EF;&#x4EE5;&#x5BF9;&#x4F5C;&#x7528;&#x57DF;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#xFF0C;&#x4F46;&#x662F;&#x7EDD;&#x5BF9;&#x4E0D;&#x4F1A;&#x5C06; <span class="keyword">that</span> = this
+</code></pre><p>2</p>
+<pre><code>&#x5728;jquery&#x4E2D;&#xFF0C;&#x6211;&#x4F1A;&#x4F7F;&#x7528;<span class="variable">$this</span>&#xFF1B;&#x4F46;&#x662F;&#x5728;&#x7EAF;js&#x4E2D;&#xFF0C;&#x6211;&#x4F1A;&#x4F7F;&#x7528;.<span class="keyword">bind</span>()
+</code></pre><p>&#x4E0A;&#x9762;&#x4E24;&#x6761;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x597D;&#x7684;&#x5EFA;&#x8BAE;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/20/understanding-javascript’s-functionprototypebind/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-20T04:21:42.000Z"><a href="/2015/01/20/maximum-call-stack-size-exceeded/">1月 20 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/20/maximum-call-stack-size-exceeded/">Maximum call stack size exceeded</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://www.cnblogs.com/amosleaf/archive/2012/04/19/2457441.html" target="_blank" rel="external">http://www.cnblogs.com/amosleaf/archive/2012/04/19/2457441.html</a><br><a href="http://www.zizhujy.com/blog/post/2012/03/18/Uncaught-RangeError-Maximum-call-stack-size-exceeded.aspx" target="_blank" rel="external">http://www.zizhujy.com/blog/post/2012/03/18/Uncaught-RangeError-Maximum-call-stack-size-exceeded.aspx</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-20T03:34:46.000Z"><a href="/2015/01/20/js-匿名函数/">1月 20 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/20/js-匿名函数/">js 匿名函数</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x7ED9;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x540D;&#x79F0;&#xFF1F;<br>&#x56E0;&#x4E3A;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x6709;&#x65F6;&#x5019;&#x6CA1;&#x6709;&#x7528;<br>&#x4EC0;&#x4E48;&#x8BF7;&#x770B;&#x4E0B;&#x4F7F;&#x7528;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF1A;</p>
+<h2 id="&#x5728;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;">&#x5728;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;</h2>
+<pre><code><span class="keyword">var</span> jabbaTheHut = {
+ laugh : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> alert(<span class="string">&quot;ho ho ho ho&quot;</span>); }
+}
+jabbaTheHut.laugh();
+</code></pre><h2 id="&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5217;&#x8868;">&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5217;&#x8868;</h2>
+<pre><code><span class="keyword">var</span> toDoToday = [
+ <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> alert(<span class="string">&quot;Aren&apos;t you a little short for a storm trooper?&quot;</span>) },
+ <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> alert(<span class="string">&quot;Boring conversation anyway&quot;</span>) },
+];
+<span class="keyword">for</span>(<span class="keyword">var</span> x=<span class="number">0</span>; x&lt;toDoToday.length; x++) {
+ toDoToday[x]();
+}
+</code></pre><h2 id="&#x5C06;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x65F6;">&#x5C06;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x65F6;</h2>
+<pre><code><span class="comment">// function statement</span>
+<span class="function"><span class="keyword">function</span> <span class="title">itIsATrap</span><span class="params">(theTrap)</span>{</span>
+ theTrap();
+}
+
+<span class="comment">// function operator</span>
+itIsATrap(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> alert(<span class="string">&quot;Many Bothans died to bring us this information&quot;</span>); });
+</code></pre><p>&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x5728;&#x5B9A;&#x4E49;&#x5355;&#x5E94;&#x7528;&#x7684;&#x51FD;&#x6570;&#x65F6;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x65F6;&#x3002;<br>&#x6BD4;&#x5982;&#x5728;jquery&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x4F1A;&#x7528;&#x5230;</p>
+<pre><code>$(document).ready(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    alert(<span class="string">&quot;page has loaded.&quot;</span>);
+});
+</code></pre><h2 id="&#x5728;if&#x6761;&#x4EF6;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x51FD;&#x6570;">&#x5728;if&#x6761;&#x4EF6;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x51FD;&#x6570;</h2>
+<pre><code><span class="keyword">var</span> chooseSide;
+<span class="keyword">if</span>(skywalker == <span class="string">&quot;Luke Skywalker&quot;</span>) {
+    chooseSide = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+        <span class="keyword">return</span> <span class="string">&quot;jedi&quot;</span>;
+    }
+}
+<span class="keyword">else</span> {
+    chooseSide = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+        <span class="keyword">return</span> <span class="string">&quot;sith&quot;</span>;
+    }
+}
+alert(chooseSide());
+</code></pre><h2 id="&#x5728;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x91CC;&#x5B9A;&#x4E49;&#x51FD;&#x6570;">&#x5728;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x91CC;&#x5B9A;&#x4E49;&#x51FD;&#x6570;</h2>
+<pre><code><span class="keyword">for</span>(<span class="keyword">var</span> x=<span class="number">0</span>; x&lt;=<span class="number">900</span>; x++) {
+    <span class="keyword">var</span> myFunction = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+        alert(<span class="string">&quot;When &quot;</span> + x + <span class="string">&quot; years old you reach, look as good you will not.&quot;</span>);
+    }
+    myFunction();
+}
+</code></pre><p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/20/js-匿名函数/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-20T01:36:58.000Z"><a href="/2015/01/20/meteor-offline/">1月 20 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/20/meteor-offline/">meteor offline</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x79BB;&#x7EBF;&#x5E94;&#x7528;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/20/meteor-offline/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-20T00:53:14.000Z"><a href="/2015/01/20/hello-gulp/">1月 20 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/20/hello-gulp/">hello gulp</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>gulp.js &#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x6D41;&#x7684;&#xFF0C;&#x4EE3;&#x7801;&#x4F18;&#x4E8E;&#x914D;&#x7F6E;&#x7684;&#x65B0;&#x4E00;&#x4EE3;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#x3002;<br>Gulp &#x548C; Grunt &#x7C7B;&#x4F3C;&#x3002;&#x4F46;&#x76F8;&#x6BD4;&#x4E8E; Grunt &#x7684;&#x9891;&#x7E41;&#x7684; IO &#x64CD;&#x4F5C;&#xFF0C;Gulp &#x7684;&#x6D41;&#x64CD;&#x4F5C;&#xFF0C;&#x80FD;&#x66F4;&#x5FEB;&#x5730;&#x5B8C;&#x6210;&#x6784;&#x5EFA;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/20/hello-gulp/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-16T02:51:12.000Z"><a href="/2015/01/16/offline-mobile/">1月 16 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/16/offline-mobile/">offline mobile</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>web&#x5E94;&#x7528;&#xFF0C;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x79BB;&#x7EBF;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;<br>&#x5173;&#x952E;&#x8BCD;:<br>Application Cache<br>Pouchdb</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/16/offline-mobile/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-16T01:27:26.000Z"><a href="/2015/01/16/爬虫/">1月 16 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/16/爬虫/">爬虫</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x722C;&#x866B;</p>
+<p>&#x5173;&#x952E;&#x5B57;&#xFF1A;Spider Crawler</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/16/爬虫/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-14T06:20:44.000Z"><a href="/2015/01/14/box-sizing/">1月 14 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/14/box-sizing/">box-sizing</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>css &#x5C5E;&#x6027; box-sizing</p>
+<p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/14/box-sizing/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-14T03:08:45.000Z"><a href="/2015/01/14/fixed-table-layouts/">1月 14 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/14/fixed-table-layouts/">Fixed Table Layouts</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>CSS&#x4E2D;&#x6709;&#x4E2A;&#x5C5E;&#x6027;&#x201C;table-layout&#x201D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x8BA9;table&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x7684;&#x6309;&#x7167;&#x6211;&#x4EEC;&#x7684;&#x9884;&#x671F;&#x7684;&#x8BBE;&#x8BA1;&#x663E;&#x793A;&#x3002;<br>&#x4E3B;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x662F;&#xFF1A;&#x8868;&#x683C;&#x91CC;&#x9762;&#x7531;&#x4E8E;&#x5185;&#x5BB9;&#x592A;&#x591A;&#xFF0C;&#x8868;&#x683C;&#x6491;&#x5F00;&#x4E86;&#x3002;<br>css&#x4EE3;&#x7801;</p>
+<pre><code><span class="tag">table</span> <span class="rules">{
+  <span class="rule"><span class="attribute">table-layout</span>:<span class="value"> fixed</span></span>;
+<span class="rule">}</span></span>
+</code></pre><p>table-layout&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;auto</p>
+<p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/14/fixed-table-layouts/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-01-12T12:28:57.000Z"><a href="/2015/01/12/清除浮动/">1月 12 2015</a></time>
       
       
@@ -99,453 +585,6 @@
         
           <div class="alignleft">
             <a href="/2015/01/12/清除浮动/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-08T07:51:31.000Z"><a href="/2015/01/08/javascript-最佳实践/">1月 8 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/08/javascript-最佳实践/">javascript 最佳实践</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#xFF0C;&#x80FD;&#x8DF3;&#x7684;&#x66F4;&#x9AD8;&#x3002;<br>&#x7ECF;&#x9A8C;&#x4E0D;&#x5B8C;&#x5168;&#x7B49;&#x4E8E;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;<br>&#x672C;&#x7BC7;&#x4E3B;&#x8981;&#x6574;&#x7406;&#x4E00;&#x4E9B;&#x524D;&#x4EBA;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;<br>&#x5BF9;&#x4E8E;&#x65B0;&#x4EBA;&#x53EF;&#x80FD;&#x4E00;&#x4E0B;&#x5B50;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x7528;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;jslint&#x6216;&#x8005;jshint&#x4F5C;&#x4E3A;&#x76D1;&#x7763;&#x3002;<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/08/javascript-最佳实践/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-08T03:49:13.000Z"><a href="/2015/01/08/what-is-this/">1月 8 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/08/what-is-this/">what is &#39;this&#39;</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x5F88;&#x591A;&#x5B66;&#x4E60;JavaScript&#x7684;&#x4EBA;&#xFF0C;&#x4E4B;&#x524D;&#x90FD;&#x662F;&#x5B66;&#x4E60;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x3002;</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-08T03:28:38.000Z"><a href="/2015/01/08/闭包实践/">1月 8 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/08/闭包实践/">闭包实践</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x95ED;&#x5305;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4E0D;&#x592A;&#x5BB9;&#x6613;&#x63CF;&#x8FF0;<br>&#x4F46;&#x662F;&#x672C;&#x8D28;&#x4E0A;&#x5374;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;</p>
-<p>&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;:</p>
-<h2 id="&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;"><em>&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;</em></h2>
-<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
-<pre><code>a = (<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
-    <span class="keyword">var</span> privatefunction = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
-        alert(<span class="string">&apos;hello&apos;</span>);
-    }
-
-    <span class="keyword">return</span> {
-        publicfunction : <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
-            privatefunction();
-        }
-    }
-})();
-</code></pre><p>a&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;a&#x8C03;&#x7528;&#x5230;publicfunction&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8C03;&#x7528;&#x5230;privatefunction<br>&#x5F88;&#x591A;&#x4EBA;&#x4E00;&#x770B;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x70B9;&#x5403;&#x60CA;&#xFF0C;&#x56E0;&#x4E3A;&#x81EA;&#x5DF1;&#x65E9;&#x5C31;&#x8FD9;&#x4E48;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x5C31;&#x662F;&#x95ED;&#x5305;&#x3002;</p>
-<p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/08/闭包实践/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-31T03:51:02.000Z"><a href="/2014/12/31/javascript-promise/">12月 31 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/31/javascript-promise/">javascript promise</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://www.infoq.com/cn/news/2011/09/js-promise/" target="_blank" rel="external">http://www.infoq.com/cn/news/2011/09/js-promise/</a><br><a href="http://www.jb51.net/article/48680.htm" target="_blank" rel="external">http://www.jb51.net/article/48680.htm</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-31T03:49:30.000Z"><a href="/2014/12/31/javascript-prototype/">12月 31 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/31/javascript-prototype/">javascript prototype</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x7F51;&#x4E0A;&#x9762;&#x8BB2;&#x4EC0;&#x4E48;&#x662F;prototype&#x7684;&#x535A;&#x6587;&#x4E0D;&#x8BA1;&#x5176;&#x6570;&#xFF0C;&#x770B;&#x4E86;&#x4E00;&#x5708;&#x540E;&#xFF0C;&#x4F3C;&#x61C2;&#x975E;&#x61C2;&#x3002;<br>&#x4E00;&#x53E5;&#x8BDD;&#xFF1A;&#x7ED9;&#x5BF9;&#x8C61;&#x7684; <em>&#x5B9E;&#x4F8B;</em> &#x6DFB;&#x52A0;&#x5171;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;<br>&#x6211;&#x89C9;&#x5F97;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x7406;&#x89E3;&#x54EA;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x9700;&#x8981;&#x4F7F;&#x7528;prototype</p>
-<p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/31/javascript-prototype/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-31T02:05:51.000Z"><a href="/2014/12/31/vcard-style-collection/">12月 31 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/31/vcard-style-collection/">vCard style collection</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://www.blacktie.co/2013/10/victoria-simple-vcard/" target="_blank" rel="external">http://www.blacktie.co/2013/10/victoria-simple-vcard/</a><br><a href="http://www.blacktie.co/demo/victoria/" target="_blank" rel="external">http://www.blacktie.co/demo/victoria/</a><br><a href="http://leta.artrow.net/" target="_blank" rel="external">http://leta.artrow.net/</a><br><a href="http://www.freshdesignweb.com/personal-vcard-templates.html" target="_blank" rel="external">http://www.freshdesignweb.com/personal-vcard-templates.html</a><br><a href="http://streetsmash.com/vcard-template/" target="_blank" rel="external">http://streetsmash.com/vcard-template/</a><br><a href="http://www.basicoh.com/demo/transition/" target="_blank" rel="external">http://www.basicoh.com/demo/transition/</a><br><a href="http://www.bootskin.org/theme/resumes-cv/" target="_blank" rel="external">http://www.bootskin.org/theme/resumes-cv/</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-26T02:09:27.000Z"><a href="/2014/12/26/angular-单元测试/">12月 26 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/26/angular-单元测试/">angular 单元测试</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x7684;&#x597D;&#x5904;&#xFF1A;<br>&#x589E;&#x52A0;&#x5BF9;&#x81EA;&#x5DF1;&#x4EE3;&#x7801;&#x7684;&#x4E00;&#x4EFD;&#x81EA;&#x4FE1;<br>&#x5982;&#x679C;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#xFF0C;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x5F88;&#x591A;bug<br>&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5728;angular&#x91CC;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;<br>Jasmine + Karma<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/26/angular-单元测试/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-25T07:10:08.000Z"><a href="/2014/12/25/meteor部署后sockjs报错/">12月 25 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x901A;&#x8FC7;ip&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x8BBF;&#x95EE;&#xFF0C;&#x662F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x7684;<br>&#x731C;&#x6D4B;&#x662F;&#x4F7F;&#x7528;&#x4E86;nginx&#x505A;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x65F6;&#x5BFC;&#x81F4;&#x7684;</p>
-<p>&#x6700;&#x540E;&#x914D;&#x7F6E;&#x6210;&#x529F;&#x7684;&#x662F;&#xFF1A;</p>
-<pre><code>proxy_pass http:<span class="comment">//127.0.0.1:8000;</span>
-
-proxy_http_version <span class="number">1.1</span>;
-proxy_set_header Upgrade <span class="variable">$http_upgrade</span>;
-proxy_set_header Connection <span class="string">&quot;upgrade&quot;</span>;
-proxy_set_header Host <span class="variable">$http_host</span>;
-
-proxy_set_header X<span class="attribute">-Real</span><span class="attribute">-IP</span> <span class="variable">$remote_addr</span>;
-proxy_set_header X<span class="attribute">-Forward</span><span class="attribute">-For</span> <span class="variable">$proxy_add_x_forwarded_for</span>;
-proxy_set_header X<span class="attribute">-Forward</span><span class="attribute">-Proto</span> http;
-proxy_set_header X<span class="attribute">-Nginx</span><span class="attribute">-Proxy</span> <span class="literal">true</span>;
-
-proxy_redirect off;
-</code></pre><p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/25/meteor部署后sockjs报错/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-25T05:20:48.000Z"><a href="/2014/12/25/karma显示测试覆盖率/">12月 25 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x4EC5;&#x4EC5;&#x663E;&#x793A;&#x901A;&#x8FC7;&#x6216;&#x8005;&#x5931;&#x8D25;&#xFF0C;&#x610F;&#x4E49;&#x4E0D;&#x5927;<br>&#x66F4;&#x91CD;&#x8981;&#x7684;&#x5E94;&#x8BE5;&#x662F;&#xFF1A;&#x8986;&#x76D6;&#x7387;&#x591A;&#x5C11;&#xFF0C;&#x54EA;&#x4E9B;&#x884C;&#x88AB;&#x8986;&#x76D6;&#xFF0C;&#x54EA;&#x4E9B;&#x884C;&#x6CA1;&#x88AB;&#x8986;&#x76D6;</p>
-<p>&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<a href="https://github.com/karma-runner/karma-coverage" target="_blank" rel="external">karma-coverage</a><br>&#x6839;&#x636E;&#x6587;&#x6863;&#x91CC;&#x7684;&#x914D;&#x7F6E;&#x64CD;&#x4F5C;&#x5373;&#x53EF;<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/25/karma显示测试覆盖率/#more" class="more-link">阅读全文</a>
           </div>
         
         
@@ -588,7 +627,7 @@ proxy_redirect off;
   
     <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>56</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>58</small></li>
   
     <li><a href="/categories/others/">Others</a><small>10</small></li>
   
@@ -598,7 +637,7 @@ proxy_redirect off;
   
     <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
   
-    <li><a href="/categories/style/">Style</a><small>20</small></li>
+    <li><a href="/categories/style/">Style</a><small>21</small></li>
   
   </ul>
 </div>
@@ -619,43 +658,43 @@ proxy_redirect off;
   <ul class="entry">
     
       <li>
+        <a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/maximum-call-stack-size-exceeded/">Maximum call stack size exceeded</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/js-匿名函数/">js 匿名函数</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/meteor-offline/">meteor offline</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/hello-gulp/">hello gulp</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/16/offline-mobile/">offline mobile</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/16/爬虫/">爬虫</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/14/box-sizing/">box-sizing</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/14/fixed-table-layouts/">Fixed Table Layouts</a>
+      </li>
+    
+      <li>
         <a href="/2015/01/12/清除浮动/">清除浮动</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/08/javascript-最佳实践/">javascript 最佳实践</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/08/what-is-this/">what is &#39;this&#39;</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/08/闭包实践/">闭包实践</a>
-      </li>
-    
-      <li>
-        <a href="/2014/12/31/javascript-promise/">javascript promise</a>
-      </li>
-    
-      <li>
-        <a href="/2014/12/31/javascript-prototype/">javascript prototype</a>
-      </li>
-    
-      <li>
-        <a href="/2014/12/31/vcard-style-collection/">vCard style collection</a>
-      </li>
-    
-      <li>
-        <a href="/2014/12/26/angular-单元测试/">angular 单元测试</a>
-      </li>
-    
-      <li>
-        <a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a>
-      </li>
-    
-      <li>
-        <a href="/2014/12/25/karma显示测试覆盖率/">karma显示测试覆盖率</a>
       </li>
     
   </ul>

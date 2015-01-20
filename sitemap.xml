@@ -2,6 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/01/20/understanding-javascript%E2%80%99s-functionprototypebind/</loc>
+    <lastmod>2015-01-20T06:44:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/20/js-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2015-01-20T05:32:55.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/20/maximum-call-stack-size-exceeded/</loc>
+    <lastmod>2015-01-20T04:22:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/20/meteor-offline/</loc>
+    <lastmod>2015-01-20T01:38:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/20/hello-gulp/</loc>
+    <lastmod>2015-01-20T00:56:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/16/offline-mobile/</loc>
+    <lastmod>2015-01-19T01:39:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/16/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2015-01-16T02:41:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/05/25/css-zoom/</loc>
+    <lastmod>2015-01-14T06:27:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/14/fixed-table-layouts/</loc>
+    <lastmod>2015-01-14T06:24:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/14/box-sizing/</loc>
+    <lastmod>2015-01-14T06:21:56.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/01/12/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/</loc>
     <lastmod>2015-01-12T12:44:38.000Z</lastmod>
   </url>
@@ -1264,11 +1314,6 @@
   <url>
     <loc>http://blog.gyf1.com/2014/05/25/css-outline/</loc>
     <lastmod>2014-05-25T06:20:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.gyf1.com/2014/05/25/css-zoom/</loc>
-    <lastmod>2014-05-25T06:04:34.000Z</lastmod>
   </url>
   
   <url>
