@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-01-22T08:08:26.579Z</updated>
+  <updated>2015-01-22T08:15:05.035Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://blog.gyf1.com/2015/01/22/understanding-angular%E2%80%99s-apply()-and-digest()/"/>
     <id>http://blog.gyf1.com/2015/01/22/understanding-angular’s-apply()-and-digest()/</id>
     <published>2015-01-22T06:05:53.000Z</published>
-    <updated>2015-01-22T08:08:14.000Z</updated>
+    <updated>2015-01-22T08:10:58.000Z</updated>
     <content type="html"><![CDATA[<p>$apply() and $digest() are two core, and sometimes confusing, aspects of AngularJS.<br>To understand how AngularJS works one needs to fully understand how $apply() and $digest() work.<br>This article aims to explain what $apply() and $digest() really are, and how they can be useful in your day-to-day AngularJS programming.</p>
 <p><a id="more"></a></p>
 <h1 id="$apply_and_$digest_Explored">$apply and $digest Explored</h1>
@@ -113,6 +113,8 @@ angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<spa
     
       <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
     
+      <category term="English" scheme="http://blog.gyf1.com/tags/english/"/>
+    
       <category term="Giant" scheme="http://blog.gyf1.com/categories/giant/"/>
     
   </entry>
@@ -185,8 +187,10 @@ var <span class="keyword">length</span> = myArray.<span class="keyword">length</
     <link href="http://blog.gyf1.com/2015/01/21/%E4%BD%A0%E6%B2%A1%E6%9C%89%E5%AE%8C%E6%95%B4%E7%9A%84%E4%BA%86%E8%A7%A3%E8%BF%87%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     <id>http://blog.gyf1.com/2015/01/21/你没有完整的了解过正则表达式/</id>
     <published>2015-01-21T01:51:54.000Z</published>
-    <updated>2015-01-21T05:01:52.000Z</updated>
+    <updated>2015-01-22T08:13:25.000Z</updated>
     <content type="html"><![CDATA[<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x60F3;&#x8981;&#x7528;&#x7684;&#x597D;&#x662F;&#x53EF;&#x6015;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x5F88;&#x53EF;&#x6015;&#x7684;&#x3002;<br>&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x65E6;&#x4F60;&#x8BB0;&#x4F4F;&#x4E86;&#x6BCF;&#x4E2A;&#x7B26;&#x53F7;&#x4EE3;&#x8868;&#x4E86;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5C31;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x6297;&#x62D2;&#x5B83;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8FD9;&#x7BC7;&#x9898;&#x76EE;&#x8BF4;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x4E1C;&#x897F;&#x8981;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;&#x3002;</p>
+<a id="more"></a>
+
 <h1 id="&#x7B2C;&#x4E00;&#x7AE0;_&#x5B66;&#x4E60;&#x57FA;&#x7840;">&#x7B2C;&#x4E00;&#x7AE0; &#x5B66;&#x4E60;&#x57FA;&#x7840;</h1>
 <p>&#x5B66;&#x4E60;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x91CD;&#x70B9;&#x662F;&#x82B1;&#x4E2A;&#x4E00;&#x5929;&#x7684;&#x65F6;&#x95F4;&#x53BB;&#x597D;&#x597D;&#x8BB0;&#x5FC6;&#x4E00;&#x4E0B;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x91CC;&#x9762;&#x4F1A;&#x7528;&#x5230;&#x7684;&#x7B26;&#x53F7;&#x3002;<br>&#x8FD9;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x6700;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x5750;&#x4E0B;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E9B;&#x5361;&#x7247;&#xFF0C;&#x6B7B;&#x8BB0;&#x786C;&#x80CC;&#x4ED6;&#x4EEC;&#x3002;<br>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x7B26;&#x53F7;&#xFF1A;</p>
 <p>.</p>
@@ -335,7 +339,9 @@ alert(email.replace(<span class="regexp">/([a-z\d_-]+)@([a-z\d_-]+)\.[a-z]{2,4}/
 </code></pre><p>&#x539F;&#x6587;<br><a href="http://code.tutsplus.com/tutorials/you-dont-know-anything-about-regular-expressions-a-complete-guide--net-7869" target="_blank" rel="external">http://code.tutsplus.com/tutorials/you-dont-know-anything-about-regular-expressions-a-complete-guide--net-7869</a><br><a href="http://www.smashingmagazine.com/2009/06/01/essential-guide-to-regular-expressions-tools-tutorials-and-resources/" target="_blank" rel="external">http://www.smashingmagazine.com/2009/06/01/essential-guide-to-regular-expressions-tools-tutorials-and-resources/</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x60F3;&#x8981;&#x7528;&#x7684;&#x597D;&#x662F;&#x53EF;&#x6015;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&]]>
+    <![CDATA[<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x60F3;&#x8981;&#x7528;&#x7684;&#x597D;&#x662F;&#x53EF;&#x6015;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x5F88;&#x53EF;&#x6015;&#x7684;&#x3002;<br>&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x65E6;&#x4F60;&#x8BB0;&#x4F4F;&#x4E86;&#x6BCF;&#x4E2A;&#x7B26;&#x53F7;&#x4EE3;&#x8868;&#x4E86;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5C31;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x6297;&#x62D2;&#x5B83;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8FD9;&#x7BC7;&#x9898;&#x76EE;&#x8BF4;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x4E1C;&#x897F;&#x8981;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;&#x3002;</p>
+]]>
+    
     </summary>
     
       <category term="Translation" scheme="http://blog.gyf1.com/tags/translation/"/>
@@ -349,8 +355,13 @@ alert(email.replace(<span class="regexp">/([a-z\d_-]+)@([a-z\d_-]+)\.[a-z]{2,4}/
     <link href="http://blog.gyf1.com/2015/01/20/immediately-invoked-function-expression-(iife)/"/>
     <id>http://blog.gyf1.com/2015/01/20/immediately-invoked-function-expression-(iife)/</id>
     <published>2015-01-20T08:23:22.000Z</published>
-    <updated>2015-01-21T01:50:25.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x53EF;&#x4EE5;&#x5E2E;&#x7EC4;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x53EF;&#x4EE5;&#x5E2E;&#x7EC4;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;</h1>
+    <updated>2015-01-22T08:14:54.000Z</updated>
+    <content type="html"><![CDATA[<p>In case you hadn&#x2019;t noticed, I&#x2019;m a bit of a stickler for terminology. So, after hearing the popular, yet misleading, JavaScript term &#x201C;self-executing anonymous function&#x201D; (or self-invoked anonymous function) one too many times, I&#x2019;ve finally decided to organize my thoughts into an article.</p>
+<p>In addition to providing some very thorough information about how this pattern actually works, I&#x2019;ve actually made a recommendation on what we should call it, moving forward. Also, If you want to skip ahead, you can just check out some actual Immediately-Invoked Function Expressions, but I recommend reading the entire article.</p>
+<p>Please understand that this article isn&#x2019;t intended to be an &#x201C;I&#x2019;m right, you&#x2019;re wrong&#x201D; kind of thing. I&#x2019;m genuinely interested in helping people understand potentially complex concepts, and feel that using consistent and accurate terminology is one of the easiest things that people can do to facilitate understanding.</p>
+<a id="more"></a>
+
+<h1 id="&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x53EF;&#x4EE5;&#x5E2E;&#x7EC4;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x53EF;&#x4EE5;&#x5E2E;&#x7EC4;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;</h1>
 <p>&#x5728;js&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;function&#xFF0C;&#x5F53;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;context&#x3002;<br>&#x56E0;&#x4E3A;&#x5B9A;&#x4E49;&#x5728;function&#x91CC;&#x9762;&#x7684;variables&#x6216;&#x8005;function, &#x53EA;&#x80FD;&#x5728;&#x8FD9;&#x4E2A;function&#x91CC;&#x8BBF;&#x95EE;&#x3002;<br>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x5B9A;&#x4E49;&#x79C1;&#x6709;&#x53D8;&#x91CF;&#x3002;</p>
 <pre><code><span class="regexp">//</span> Because <span class="keyword">this</span> <span class="reserved">function</span> returns another <span class="reserved">function</span> that has access to the
 <span class="regexp">//</span> <span class="string">&quot;private&quot;</span> <span class="reserved">var</span> i, the returned <span class="reserved">function</span> <span class="keyword">is</span>, effectively, <span class="string">&quot;privileged.&quot;</span>
@@ -596,7 +607,11 @@ i; <span class="comment">// ReferenceError: i is not defined (it only exists ins
 </code></pre><p>&#x539F;&#x6587;<br><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank" rel="external">http://benalman.com/news/2010/11/immediately-invoked-function-expression/</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x53EF;&#x4EE5;&#x5E2E;&#x7EC4;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;">&#]]>
+    <![CDATA[<p>In case you hadn&#x2019;t noticed, I&#x2019;m a bit of a stickler for terminology. So, after hearing the popular, yet misleading, JavaScript term &#x201C;self-executing anonymous function&#x201D; (or self-invoked anonymous function) one too many times, I&#x2019;ve finally decided to organize my thoughts into an article.</p>
+<p>In addition to providing some very thorough information about how this pattern actually works, I&#x2019;ve actually made a recommendation on what we should call it, moving forward. Also, If you want to skip ahead, you can just check out some actual Immediately-Invoked Function Expressions, but I recommend reading the entire article.</p>
+<p>Please understand that this article isn&#x2019;t intended to be an &#x201C;I&#x2019;m right, you&#x2019;re wrong&#x201D; kind of thing. I&#x2019;m genuinely interested in helping people understand potentially complex concepts, and feel that using consistent and accurate terminology is one of the easiest things that people can do to facilitate understanding.</p>
+]]>
+    
     </summary>
     
       <category term="Translation" scheme="http://blog.gyf1.com/tags/translation/"/>
