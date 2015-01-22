@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>你没有完整的了解过正则表达式 | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="你没有完整的了解过正则表达式"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-21T01:51:54.000Z"><a href="/2015/01/21/你没有完整的了解过正则表达式/">1月 21 2015</a></time>
+      
+      
+  
+    <h1 class="title">你没有完整的了解过正则表达式</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x60F3;&#x8981;&#x7528;&#x7684;&#x597D;&#x662F;&#x53EF;&#x6015;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x5F88;&#x53EF;&#x6015;&#x7684;&#x3002;<br>&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x65E6;&#x4F60;&#x8BB0;&#x4F4F;&#x4E86;&#x6BCF;&#x4E2A;&#x7B26;&#x53F7;&#x4EE3;&#x8868;&#x4E86;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5C31;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x6297;&#x62D2;&#x5B83;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8FD9;&#x7BC7;&#x9898;&#x76EE;&#x8BF4;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x4E1C;&#x897F;&#x8981;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;&#x3002;</p>
+<h1 id="&#x7B2C;&#x4E00;&#x7AE0;_&#x5B66;&#x4E60;&#x57FA;&#x7840;">&#x7B2C;&#x4E00;&#x7AE0; &#x5B66;&#x4E60;&#x57FA;&#x7840;</h1>
+<p>&#x5B66;&#x4E60;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x91CD;&#x70B9;&#x662F;&#x82B1;&#x4E2A;&#x4E00;&#x5929;&#x7684;&#x65F6;&#x95F4;&#x53BB;&#x597D;&#x597D;&#x8BB0;&#x5FC6;&#x4E00;&#x4E0B;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x91CC;&#x9762;&#x4F1A;&#x7528;&#x5230;&#x7684;&#x7B26;&#x53F7;&#x3002;<br>&#x8FD9;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x6700;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x5750;&#x4E0B;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E9B;&#x5361;&#x7247;&#xFF0C;&#x6B7B;&#x8BB0;&#x786C;&#x80CC;&#x4ED6;&#x4EEC;&#x3002;<br>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x7B26;&#x53F7;&#xFF1A;</p>
+<p>.</p>
+<pre><code>. - Matches <span class="keyword">any</span> <span class="keyword">character</span>, except <span class="keyword">for</span> <span class="built_in">line</span> breaks <span class="keyword">if</span> dotall is <span class="constant">false</span>.
+</code></pre><p>*</p>
+<pre><code>* - Matches <span class="number">0</span> <span class="operator">or</span> more <span class="operator">of</span> <span class="operator">the</span> preceding <span class="keyword">character</span>.
+</code></pre><p>+</p>
+<pre><code>+ - Matches <span class="number">1</span> <span class="operator">or</span> more <span class="operator">of</span> <span class="operator">the</span> preceding <span class="keyword">character</span>.
+</code></pre><p>?</p>
+<pre><code>? - Preceding character <span class="keyword">is</span> <span class="keyword">optional</span>. Matches <span class="number">0</span> <span class="keyword">or</span> <span class="number">1</span> occurrence.
+</code></pre><p>\d</p>
+<pre><code>\d - Matches <span class="built_in">any</span> single digit
+</code></pre><p>\w</p>
+<pre><code>\w - Matches <span class="keyword">any</span> <span class="built_in">word</span> <span class="keyword">character</span> (alphanumeric &amp; underscore).
+</code></pre><p>[XYZ]</p>
+<pre><code>[XYZ] - Matches any single <span class="property">character</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="property">character</span> <span class="type">class</span>.
+</code></pre><p>[XYZ]+</p>
+<pre><code>[XYZ]+ - Matches one <span class="keyword">or</span> more <span class="keyword">of</span> any <span class="keyword">of</span> <span class="keyword">the</span> <span class="property">characters</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">set</span>.
+</code></pre><p>$</p>
+<pre><code>$ - Matches <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="type">string</span>.
+</code></pre><p>^</p>
+<pre><code>^ - Matches <span class="operator">the</span> beginning <span class="operator">of</span> <span class="operator">a</span> <span class="keyword">string</span>.
+</code></pre><p>[^a-z]</p>
+<pre><code>[^a-z] - <span class="keyword">When</span> inside <span class="keyword">of</span> a character <span class="keyword">class</span>, the ^ means <span class="keyword">NOT</span>; <span class="keyword">in</span> this <span class="keyword">case</span>, match anything that <span class="keyword">is</span> <span class="keyword">NOT</span> a lowercase letter.
+</code></pre><p><em>&#x4E0A;&#x9762;&#x7684;&#x4E1C;&#x897F;&#x770B;&#x8D77;&#x6765;&#x7684;&#x786E;&#x662F;&#x76F8;&#x5F53;&#x65E0;&#x804A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x6B7B;&#x8BB0;&#x786C;&#x80CC;&#x3002;&#x5982;&#x679C;&#x4F60;&#x90FD;&#x638C;&#x63E1;&#x4E86;&#xFF0C;&#x4F60;&#x4F1A;&#x5F88;&#x723D;&#x7684;&#x3002;</em></p>
+<h2 id="&#x5DE5;&#x5177;">&#x5DE5;&#x5177;</h2>
+<p>&#x5F53;&#x4F60;&#x5199;&#x7684;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x60F3;&#x8981;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x6709;&#x628A;&#x5934;&#x641E;&#x6210;&#x79C3;&#x9876;&#x7684;&#x611F;&#x89C9;&#x3002;&#x4F60;&#x81EA;&#x5DF1;&#x89C9;&#x5F97;&#x5E94;&#x8BE5;&#x662F;&#x767E;&#x5206;&#x767E;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x7684;&#x3002;<br>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x5E2E;&#x52A9;&#x4F60;&#xFF1A;</p>
+<pre><code><span class="label">http:</span>//regexr<span class="preprocessor">.com</span>/
+</code></pre><h1 id="&#x4E8C;&#x3001;&#x89C6;&#x9891;&#x5B66;&#x4E60;">&#x4E8C;&#x3001;&#x89C6;&#x9891;&#x5B66;&#x4E60;</h1>
+<h1 id="&#x4E09;&#x3001;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5728;js&#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528;">&#x4E09;&#x3001;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5728;js&#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528;</h1>
+<p>&#x8FD9;&#x4E00;&#x7AE0;&#x91CC;&#x9762;&#x4E3B;&#x8981;&#x5B66;&#x4E60;&#xFF0C;&#x5728;js&#x4E2D;&#x5982;&#x4F55;&#x53D1;&#x6325;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5F3A;&#x5927;&#x4F5C;&#x7528;&#x3002;</p>
+<h2 id="1-_Test()">1. Test()</h2>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x8868;&#x660E;&#x662F;&#x5426;&#x5339;&#x914D;&#x3002;<br>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>var username = <span class="string">&apos;JohnSmith&apos;</span>;
+alert(<span class="regexp">/[A-Za-z_-]+/</span>.test(username)); <span class="regexp">//</span> returns <span class="keyword">true</span>
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5B9A;&#x4E49;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5B50;&#x6BCD;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#x3001; &#x7834;&#x6298;&#x53F7;&#x3002;<br>&#x6211;&#x4EEC;&#x628A;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x5B57;&#x7B26;&#x5305;&#x5728;&#x4E00;&#x4E2A;&#x65B9;&#x6846;&#x91CC;&#x9762;&#xFF0C;&#x8FD9;&#x79CD;&#x53EF;&#x4EE5;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;&#x5B57;&#x7B26;&#x7C7B;&#x201D;&#x3002;<br>&#x7B26;&#x53F7;&#x201C;&#xFF0B;&#x201D;&#x8868;&#x793A;&#x6EE1;&#x8DB3;1&#x4E2A;&#x6216;&#x8005;&#x66F4;&#x591A;&#x3002;</p>
+<h2 id="2-_Split()">2. Split()</h2>
+<p>&#x4F60;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x8FC7;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;<br>&#x5B83;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x544A;&#x8BC9;&#x4EE3;&#x7801;&#x5728;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#x505A;&#x5206;&#x5272;&#x3002;</p>
+<pre><code>var str = <span class="string">&apos;this is my string&apos;</span>;
+alert(str.split(<span class="regexp">/\s/</span>)); <span class="regexp">//</span> alerts <span class="string">&quot;this, is, my, string&quot;</span>
+</code></pre><p>&#x201C;\s&#x201D; &#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x7B26;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x5272;&#x6210;&#x4E86;&#x6570;&#x7EC4;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x503C;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x503C;&#x7684;index&#x6765;&#x8C03;&#x7528;</p>
+<pre><code>var str = <span class="string">&apos;this is my this string&apos;</span>;
+alert(str.split(<span class="regexp">/\s/</span>)[<span class="number">3</span>]); <span class="regexp">//</span> alerts <span class="string">&quot;string&quot;</span>
+</code></pre><h2 id="3-_Replace()">3. Replace()</h2>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x5C06;&#x4E00;&#x4E2A;string&#xFF0C;&#x6765;&#x66FF;&#x6362;&#x6210;&#x53E6;&#x4E00;&#x4E2A;string&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x5C06;&#x8981;&#x66FF;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x627E;&#x5230;&#x3002;</p>
+<h3 id="&#x4F8B;&#x5B50;1">&#x4F8B;&#x5B50;1</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x201D;Hello, World&#x201D;&#x66FF;&#x6362;&#x6210;&#x201D;Hello, Universe&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>var someString = <span class="string">&apos;Hello, World&apos;</span>;
+someString = someString.replace(<span class="regexp">/World/</span>, <span class="string">&apos;Universe&apos;</span>);
+alert(someString); <span class="regexp">//</span> alerts <span class="string">&quot;Hello, Universe&quot;</span>
+</code></pre><p>&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;replace(&#x2018;World&#x2019;, &#x2018;Universe&#x2019;)&#x3002;<br>&#x8FD8;&#x6709;&#x5C31;&#x662F;&#xFF0C;&#x66FF;&#x6362;&#x65B9;&#x6CD5;&#x5E76;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x5C06;&#x66FF;&#x6362;&#x7684;&#x503C;&#x8D4B;&#x7ED9;&#x53D8;&#x91CF;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x624B;&#x52A8;&#x8D4B;&#x503C;&#x624D;&#x884C;&#x3002;</p>
+<h3 id="&#x4F8B;&#x5B50;2">&#x4F8B;&#x5B50;2</h3>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x8981;&#x505A;&#x4E2A;&#x7528;&#x6237;&#x6CE8;&#x518C;&#x7684;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BA9;&#x7528;&#x6237;&#x4E0D;&#x8981;&#x8F93;&#x5165;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;&#x5F15;&#x53F7;&#x3001;&#x5206;&#x53F7;&#x7B49;&#x7B49;&#x3002;<br>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x6B63;&#x5219;&#x6765;&#x89E3;&#x51B3;</p>
+<pre><code><span class="keyword">var</span> username = <span class="string">&apos;J;ohnSmith;@%&apos;</span>;
+username = username.replace(<span class="regexp">/[^A-Za-z\d_-]+/</span>, <span class="string">&apos;&apos;</span>);
+alert(username); <span class="comment">// JohnSmith;@%</span>
+</code></pre><p>&#x6709;&#x4EBA;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x53D1;&#x73B0;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x6709;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x9A6C;&#x4E0A;&#x6765;&#x89E3;&#x51B3;&#x3002;<br>&#x5728;alert&#x4E2D;&#x6211;&#x4EEC;&#x53D1;&#x73B0;j&#x540E;&#x9762;&#x7684;&#x5206;&#x53F7;&#x53BB;&#x6389;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x6709;&#x4E2A;&#x5206;&#x53F7;&#x6CA1;&#x53BB;&#x6389;&#x3002;<br>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x544A;&#x8BC9;&#x5F15;&#x64CE;&#xFF0C;&#x5F53;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5206;&#x53F7;&#x540E;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x641C;&#x7D22;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x6700;&#x540E;&#x7ED3;&#x675F;&#x7684;&#x659C;&#x6760;&#x540E;&#x9762;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x201C;g&#x201D;&#xFF0C;&#x8FD9;&#x4E2A;&#x7B26;&#x53F7;&#x4EE3;&#x8868;&#x5168;&#x5C40;&#x7684;&#x3002;<br>&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5E94;&#x8BE5;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5B50;&#xFF1A;</p>
+<pre><code><span class="keyword">var</span> username = <span class="string">&apos;J;ohnSmith;@%&apos;</span>;
+username = username.replace(<span class="regexp">/[^A-Za-z\d_-]+/g</span>, <span class="string">&apos;&apos;</span>);
+alert(username); <span class="comment">// alerts JohnSmith</span>
+</code></pre><p>&#x73B0;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x6240;&#x6709;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x5C06;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x7ED9;&#x66FF;&#x6362;&#x6389;&#x4E86;&#x3002;<br>&#x518D;&#x6765;&#x770B;&#x4E00;&#x6B21;&#x4E0A;&#x9762;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; - .replace(/[^A-Za-z\d_-]+/g, &#x2018;&#x2019;);<br>&#x6709;&#x4E00;&#x70B9;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x7B26;&#x53F7;&#x201C;^&#x201D;&#x662F;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x91CC;&#x9762;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x7684;&#x610F;&#x601D;&#x662F;&#x201C;&#x5426;&#x201D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x627E;&#x5230;&#x6240;&#x6709;&#x4E0D;&#x6EE1;&#x8DB3;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#x3002;<br>&#x6211;&#x4EEC;&#x518D;&#x6765;&#x7406;&#x89E3;&#x4E00;&#x904D;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x662F;&#xFF0C;&#x627E;&#x5230;&#x6240;&#x6709;&#x7684;&#x4E0D;&#x662F;&#x5B50;&#x6BCD;&#xFF0C;&#x4E0D;&#x662F;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x4E0D;&#x662F;&#x7834;&#x6298;&#x53F7;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x4E86;&#xFF0C;&#x5C06;&#x5B83;&#x66FF;&#x6362;&#x6210;&#x7A7A;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x6210;&#x628A;&#x627E;&#x5230;&#x7684;&#x5220;&#x6389;&#x3002;</p>
+<h2 id="4-_Match()">4. Match()</h2>
+<p>&#x548C;test()&#x65B9;&#x6CD5;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;match&#x4E0D;&#x662F;&#x8FD4;&#x56DE;&#x7684;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x7684;&#x6240;&#x6709;&#x7167;&#x5230;&#x5185;&#x5BB9;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<h3 id="&#x4F8B;&#x5B50;1-1">&#x4F8B;&#x5B50;1</h3>
+<pre><code>var name = <span class="string">&apos;JeffreyWay&apos;</span>;
+alert(name.match(<span class="regexp">/e/</span>)); <span class="regexp">//</span> alerts <span class="string">&quot;e&quot;</span>
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x53EA;&#x7167;&#x5230;&#x4E00;&#x4E2A;e&#xFF0C;&#x5982;&#x679C;&#x8981;&#x628A;&#x6240;&#x6709;&#x7684;e&#x90FD;&#x627E;&#x51FA;&#x6765;&#xFF0C;&#x518D;&#x6B21;&#x8BF4;&#x4E00;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;g&#x6765;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x641C;&#x7D22;&#x3002;</p>
+<pre><code>var name = <span class="string">&apos;JeffreyWay&apos;</span>;
+alert(name.match(<span class="regexp">/e/g</span>)); <span class="regexp">//</span> alerts <span class="string">&quot;e,e&quot;</span>
+</code></pre><p>&#x5F53;&#x60F3;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;index</p>
+<pre><code>var name = <span class="string">&apos;JeffreyWay&apos;</span>;
+alert(name.match(<span class="regexp">/e/g</span>)[<span class="number">1</span>]); <span class="regexp">//</span> alerts <span class="string">&quot;e&quot;</span>
+</code></pre><h3 id="&#x4F8B;&#x5B50;2-1">&#x4F8B;&#x5B50;2</h3>
+<p>&#x6211;&#x4EEC;&#x518D;&#x7528;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x52A0;&#x6DF1;&#x7406;&#x89E3;</p>
+<pre><code>var <span class="typename">string</span> = <span class="attribute">&apos;This</span> <span class="keyword">is</span> just a <span class="typename">string</span> <span class="keyword">with</span> some <span class="number">12345</span> <span class="keyword">and</span> some !@#$ mixed <span class="keyword">in</span>.&apos;;
+alert(<span class="typename">string</span>.match(/[a-z]+/gi)); // alerts <span class="string">&quot;This,is,just,a,string,with,some,and,some,mixed,in&quot;</span>
+</code></pre><p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; &#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x627E;&#x5230;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5B57;&#x7B26;&#x3002;<br>&#x8FD9;&#x91CC;&#x8981;&#x63D0;&#x4E00;&#x4E0B;i&#xFF0C;i&#x6307;&#x7684;&#x662F;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;<br>&#x5982;&#x679C;&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x503C;&#xFF0C;&#x4F7F;&#x7528;index</p>
+<pre><code>var <span class="typename">string</span> = <span class="attribute">&apos;This</span> <span class="keyword">is</span> just a <span class="typename">string</span> <span class="keyword">with</span> some <span class="number">12345</span> <span class="keyword">and</span> some !@#$ mixed <span class="keyword">in</span>.&apos;;
+var matches = <span class="typename">string</span>.match(/[a-z]+/gi);
+alert(matches[<span class="number">2</span>]); // alerts <span class="string">&quot;just&quot;</span>
+</code></pre><h2 id="5-_&#x5206;&#x5272;email">5. &#x5206;&#x5272;email</h2>
+<p>&#x6211;&#x4EEC;&#x8981;&#x5C06;nettuts@tutsplus.com&#x5206;&#x5272;&#x6210;&#x7528;&#x6237;&#x540D;&#x548C;&#x57DF;&#x540D;&#x201D;nettuts&#x201D;&#x548C;&#x201D;tutsplus&#x201D;</p>
+<pre><code>var email = <span class="string">&apos;nettuts@tutsplus.com&apos;</span>;
+alert(email.replace(<span class="regexp">/([a-z\d_-]+)@([a-z\d_-]+)\.[a-z]{2,4}/ig</span>, <span class="string">&apos;$1, $2&apos;</span>)); <span class="regexp">//</span> alerts <span class="string">&quot;nettuts, tutsplus&quot;</span>
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x662F;&#x521A;&#x5B66;&#x4E60;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x6709;&#x70B9;&#x56F0;&#x60D1;&#x3002;<br>&#x522B;&#x96BE;&#x8FC7;&#xFF0C;&#x6240;&#x6709;&#x4EBA;&#x90FD;&#x4F1A;&#x7ECF;&#x5386;&#x8FD9;&#x4E2A;&#x7B2C;&#x4E00;&#x6B21;&#x3002;<br>&#x6211;&#x4EEC;&#x6765;&#x5206;&#x6279;&#x770B;&#x4EE3;&#x7801;&#x5E94;&#x8BE5;&#x4F1A;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x4E00;&#x70B9;</p>
+<pre><code>.<span class="built_in">replace</span>(/([<span class="operator">a</span>-z\d_-]+)
+</code></pre><p>&#x67E5;&#x627E;&#x4EFB;&#x610F;&#x7684;&#x5B50;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#x3001;&#x7834;&#x6298;&#x53F7;&#xFF0C;&#x201C;&#xFF0B;&#x201D;&#x53F7;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x3002;&#x5C06;&#x5185;&#x5BB9;&#x5305;&#x88F9;&#x5728;&#x62EC;&#x53F7;&#x91CC;&#x9762;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x60F3;&#x7B49;&#x4F1A;&#x83B7;&#x53D6;&#x8FD9;&#x8FB9;&#x67E5;&#x627E;&#x5230;&#x7684;&#x503C;&#x3002;</p>
+<pre><code><span class="at_rule">@<span class="keyword">([a-z\d_-]+)</span></span>
+</code></pre><p>&#x9996;&#x9875;&#x67E5;&#x627E;@&#x7B26;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x67E5;&#x627E;&#x5B50;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#x3001;&#x7834;&#x6298;&#x53F7;&#x3002;&#x518D;&#x63D0;&#x4E00;&#x6B21;&#xFF0C;&#x5C06;&#x5185;&#x5BB9;&#x5305;&#x88F9;&#x5728;&#x62EC;&#x53F7;&#x91CC;&#x9762;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x60F3;&#x7B49;&#x4F1A;&#x83B7;&#x53D6;&#x8FD9;&#x8FB9;&#x67E5;&#x627E;&#x5230;&#x7684;&#x503C;&#x3002;</p>
+<pre><code>\.[a-z]<span class="list">{2,4}</span>/ig,
+</code></pre><p>&#x7EE7;&#x7EED;&#x770B;&#xFF0C;&#x9996;&#x5148;&#x662F;&#x201C;&#x70B9;&#x201D;&#x53F7;&#xFF08;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x8F6C;&#x4E49;&#x201D;\&#x201D;&#x6765;&#x4F7F;&#x7528;&#x70B9;&#x53F7;&#xFF09;&#xFF0C;&#x8FD9;&#x6BB5;&#x662F;&#x4E3A;&#x4E86;&#x67E5;&#x627E;.com&#x4E4B;&#x7C7B;&#x7684;&#x57DF;&#x540D;</p>
+<pre><code><span class="xml">&apos;</span><span class="variable">$1</span><span class="xml">, </span><span class="variable">$2</span><span class="xml">&apos;)</span>
+</code></pre><p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x8BF4;&#x83B7;&#x53D6;&#x6211;&#x4EEC;&#x5B58;&#x50A8;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x62EC;&#x53F7;&#x91CC;&#x7684;&#x503C;&#xFF0C;&#x548C;&#x7B2C;&#x4E8C;&#x4E2A;&#x62EC;&#x53F7;&#x91CC;&#x7684;&#x503C;</p>
+<h2 id="6-_&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;location&#x7684;&#x5BF9;&#x8C61;">6. &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;location&#x7684;&#x5BF9;&#x8C61;</h2>
+<p>location&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x5F53;&#x524D;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x4FE1;&#x606F;&#xFF1A;href&#xFF0C;host&#xFF0C;port&#xFF0C;protocol&#x7B49;&#x7B49;<br>&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x662F;&#x4E3A;&#x4E86;&#x8054;&#x7CFB;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x624D;&#x7528;location&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x4F8B;&#x5B50;&#xFF0C;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6807;&#x51C6;&#x7684;locaiton&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x89E3;&#x7801;url</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">loc</span><span class="params">(url)</span> {</span> }
+</code></pre><p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5B83;</p>
+<pre><code><span class="keyword">var</span> l = loc(<span class="string">&apos;http://www.somesite.com?somekey=somevalue&amp;anotherkey=anothervalue#theHashGoesHere&apos;</span>);
+</code></pre><p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">loc</span><span class="params">(url)</span> {</span>
+    <span class="keyword">return</span> <span class="cell">{
+
+    }</span>
+}
+</code></pre><h3 id="Search">Search</h3>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;query string&#x91CC;&#x9762;&#x7684;&#x53C2;&#x6570;</p>
+<pre><code><span class="keyword">return</span> {
+    search : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+        <span class="keyword">return</span> url.match(<span class="regexp">/\?(.+)/i</span>)[<span class="number">1</span>];
+               <span class="comment">// returns &quot;somekey=somevalue&amp;anotherkey=anothervalue#theHashGoesHere&quot;</span>
+    }
+}
+</code></pre><h3 id="Hash">Hash</h3>
+<pre><code>hash : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    <span class="keyword">return</span> url.match(<span class="regexp">/#(.+)/i</span>)[<span class="number">1</span>]; <span class="comment">// returns &quot;theHashGoesHere&quot;</span>
+},
+</code></pre><h3 id="Protocol">Protocol</h3>
+<pre><code>protocol : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    <span class="keyword">return</span> url.match(<span class="regexp">/(ht|f)tps?:/i</span>)[<span class="number">0</span>]; <span class="comment">// returns &apos;http:&apos;</span>
+},
+</code></pre><h3 id="Href">Href</h3>
+<pre><code>href : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    <span class="keyword">return</span> url.match(<span class="regexp">/(.+\.[a-z]{2,4})/ig</span>); <span class="comment">// returns &quot;http://www.somesite.com&quot;</span>
+}
+</code></pre><h3 id="&#x6211;&#x4EEC;&#x7684;&#x6700;&#x7EC8;&#x6210;&#x679C;&#xFF1A;">&#x6211;&#x4EEC;&#x7684;&#x6700;&#x7EC8;&#x6210;&#x679C;&#xFF1A;</h3>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">loc</span><span class="params">(url)</span> {</span>
+    <span class="keyword">return</span> {
+        search : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+            <span class="keyword">return</span> url.match(<span class="regexp">/\?(.+)/i</span>)[<span class="number">1</span>];
+        },
+
+        hash : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+            <span class="keyword">return</span> url.match(<span class="regexp">/#(.+)/i</span>)[<span class="number">1</span>];
+        },
+
+        protocol : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+            <span class="keyword">return</span> url.match(<span class="regexp">/(ht|f)tps?:/</span>)[<span class="number">0</span>];
+        },
+
+        href : <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+            <span class="keyword">return</span> url.match(<span class="regexp">/(.+\.[a-z]{2,4})/ig</span>);
+        }
+    }
+}
+</code></pre><p>&#x539F;&#x6587;<br><a href="http://code.tutsplus.com/tutorials/you-dont-know-anything-about-regular-expressions-a-complete-guide--net-7869" target="_blank" rel="external">http://code.tutsplus.com/tutorials/you-dont-know-anything-about-regular-expressions-a-complete-guide--net-7869</a><br><a href="http://www.smashingmagazine.com/2009/06/01/essential-guide-to-regular-expressions-tools-tutorials-and-resources/" target="_blank" rel="external">http://www.smashingmagazine.com/2009/06/01/essential-guide-to-regular-expressions-tools-tutorials-and-resources/</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/javascript/">JavaScript</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/translation/">Translation</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2015/01/21/好的web开发人员都应该知道的10件事/" class="alignleft prev" title="好的web开发人员都应该知道的10件事">好的web开发人员都应该知道的10件事</a>
+  
+  
+    <a href="/2015/01/20/immediately-invoked-function-expression-(iife)/" class="alignright next" title="Immediately-Invoked Function Expression (IIFE)">Immediately-Invoked Function Expression (IIFE)</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2015/01/21/你没有完整的了解过正则表达式/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>95</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>62</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>21</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 12.73px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.82px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 13.64px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.91px;">Bower</a><a href="/tags/css/" style="font-size: 18.18px;">CSS</a><a href="/tags/certification/" style="font-size: 10.91px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.91px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.45px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.91px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 10.91px;">Grunt</a><a href="/tags/html5/" style="font-size: 12.73px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.73px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.91px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.91px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.09px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 11.82px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.91px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.27px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.91px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.55px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.82px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 13.64px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.36px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/"></a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/js里的原型和继承/">js里的原型和继承</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/理解js里的原型/">理解js里的原型</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/好的web开发人员都应该知道的10件事/">好的web开发人员都应该知道的10件事</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/你没有完整的了解过正则表达式/">你没有完整的了解过正则表达式</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/maximum-call-stack-size-exceeded/">Maximum call stack size exceeded</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/js-匿名函数/">js 匿名函数</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/meteor-offline/">meteor offline</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

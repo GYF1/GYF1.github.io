@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-22T07:39:34.000Z"><a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">1月 22 2015</a></time>
+      
+      
+  
+    <h1 class="title"></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>title: &#x2018;Understanding Angular&#x2019;s apply() and digest()&#x2019;<br>date: 2015-01-22 14:05:53<br>categories: Giant<br>tags: [E,AngularJS]</p>
+<hr>
+<p>$apply() and $digest() are two core, and sometimes confusing, aspects of AngularJS.<br>To understand how AngularJS works one needs to fully understand how $apply() and $digest() work.<br>This article aims to explain what $apply() and $digest() really are, and how they can be useful in your day-to-day AngularJS programming.</p>
+<p><a id="more"></a></p>
+<h1 id="$apply_and_$digest_Explored">$apply and $digest Explored</h1>
+<p>AngularJS offers an incredibly awesome feature known as two way data binding which greatly simplifies our lives.<br>Data binding means that when you change something in the view, the scope model automagically updates.<br>Similarly, whenever the scope model changes, the view updates itself with the new value.<br>How does does AngularJS do that? When you write an expression (),<br>behind the scenes Angular sets up a watcher on the scope model,<br>which in turn updates the view whenever the model changes.<br>This watcher is just like any watcher you set up in AngularJS:</p>
+<pre><code><span class="variable">$scope</span>.<span class="variable">$watch</span>(<span class="string">&apos;aModel&apos;</span>, <span class="function"><span class="keyword">function</span><span class="params">(newValue, oldValue)</span> {</span>
+  <span class="comment">//update the DOM with newValue</span>
+});
+</code></pre><p>The second argument passed to $watch() is known as a listener function,<br>and is called whenever the value of aModel changes.<br>It is easy for us to grasp that when the value of aModel changes this listener is called,<br>updating the expression in HTML. B<br>ut, there is still one big question! How does Angular figure out when to call this listener function?<br>In other words, how does AngularJS know when aModel changes so it can call the corresponding listener?<br>Does it run a function periodically to check whether the value of the scope model has changed?<br>Well, this is where the $digest cycle steps in.</p>
+<p>It&#x2019;s the $digest cycle where the watchers are fired.<br>When a watcher is fired, AngularJS evaluates the scope model,<br>and if it has changed then the corresponding listener function is called.<br>So, our next question is when and how this $digest cycle starts.</p>
+<p>The $digest cycle starts as a result of a call to $scope.$digest().<br>Assume that you change a scope model in a handler function through the ng-click directive.<br>In that case AngularJS automatically triggers a $digest cycle by calling $digest().<br>When the $digest cycle starts, it fires each of the watchers.<br>These watchers check if the current value of the scope model is different from last calculated value.<br>If yes, then the corresponding listener function executes.<br>As a result if you have any expressions in the view they will be updated.<br>In addition to ng-click, there are several other built-in directives/services that let you change models (e.g. ng-model, $timeout, etc) and automatically trigger a $digest cycle.</p>
+<p>So far, so good! But, there is a small gotcha.<br>In the above cases, Angular doesn&#x2019;t directly call $digest().<br>Instead, it calls $scope.$apply(), which in turn calls $rootScope.$digest().<br>As a result of this, a digest cycle starts at the $rootScope,<br>and subsequently visits all the child scopes calling the watchers along the way.</p>
+<p>Now, let&#x2019;s assume you attach an ng-click directive to a button and pass a function name to it.<br>When the button is clicked, AngularJS wraps the function call within $scope.$apply().<br>So, your function executes as usual, change models (if any),<br>and a $digest cycle starts to ensure your changes are reflected in the view.</p>
+<p>Note: $scope.$apply() automatically calls $rootScope.$digest().<br>The $apply() function comes in two flavors.<br>The first one takes a function as an argument, evaluates it, and triggers a $digest cycle.<br>The second version does not take any arguments and just starts a $digest cycle when called.<br>We will see why the former one is the preferred approach shortly.</p>
+<h1 id="When_Do_You_Call_$apply()_Manually?">When Do You Call $apply() Manually?</h1>
+<p>If AngularJS usually wraps our code in $apply() and starts a $digest cycle,<br>then when do you need to do call $apply() manually?<br>Actually, AngularJS makes one thing pretty clear.<br>It will account for only those model changes which are done inside AngularJS&#x2019; context<br>(i.e. the code that changes models is wrapped inside $apply()).<br>Angular&#x2019;s built-in directives already do this so that any model changes you make are reflected in the view.<br>However, if you change any model outside of the Angular context,<br>then you need to inform Angular of the changes by calling $apply() manually.<br>It&#x2019;s like telling Angular that you are changing some models and it should fire the watchers so that your changes propagate properly.</p>
+<p>For example, if you use JavaScript&#x2019;s setTimeout() function to update a scope model,<br>Angular has no way of knowing what you might change.<br>In this case it&#x2019;s your responsibility to call $apply() manually,<br>which triggers a $digest cycle.<br>Similarly, if you have a directive that sets up a DOM event listener and changes some models inside the handler function,<br>you need to call $apply() to ensure the changes take effect.</p>
+<p>Let&#x2019;s look at an example.<br>Suppose you have a page, and once the page loads you want to display a message after a two second delay.<br>Your implementation might look something like the JavaScript and HTML shown in the following listing.</p>
+<p><em>html</em></p>
+<pre><code><span class="tag">&lt;<span class="title">body</span> <span class="attribute">ng-app</span>=<span class="value">&quot;myApp&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">ng-controller</span>=<span class="value">&quot;MessageController&quot;</span>&gt;</span>
+    Delayed Message: 
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+</code></pre><p><em>js</em></p>
+<pre><code><span class="comment">/* What happens without an $apply() */</span>
+
+angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<span class="string">&apos;MessageController&apos;</span>, <span class="function"><span class="keyword">function</span><span class="params">(<span class="variable">$scope</span>)</span> {</span>
+
+  <span class="variable">$scope</span>.getMessage = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+      <span class="variable">$scope</span>.message = <span class="string">&apos;Fetched after 3 seconds&apos;</span>;
+      console.log(<span class="string">&apos;message:&apos;</span>+<span class="variable">$scope</span>.message);
+    }, <span class="number">2000</span>);
+  }
+
+  <span class="variable">$scope</span>.getMessage();
+
+});
+</code></pre><p>By running the example, you will see that the delayed function runs after a two second interval, and updates the scope model message.<br>Still, the view doesn&#x2019;t update.<br>The reason, as you may have guessed, is that we forgot to call $apply() manually.<br>Therefore, we need to update our getMessage() function as shown below.</p>
+<p><em>js</em></p>
+<pre><code><span class="comment">/* What happens with $apply */</span>
+angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<span class="string">&apos;MessageController&apos;</span>, <span class="function"><span class="keyword">function</span><span class="params">(<span class="variable">$scope</span>)</span> {</span>
+
+  <span class="variable">$scope</span>.getMessage = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+      <span class="variable">$scope</span>.<span class="variable">$apply</span>(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+        <span class="comment">//wrapped this within $apply</span>
+        <span class="variable">$scope</span>.message = <span class="string">&apos;Fetched after 3 seconds&apos;</span>;
+        console.log(<span class="string">&apos;message:&apos;</span> + <span class="variable">$scope</span>.message);
+      });
+    }, <span class="number">2000</span>);
+  }
+
+  <span class="variable">$scope</span>.getMessage();
+
+});
+</code></pre><p>If you run this updated example, you can see the view update after two seconds.<br>The only change is that we wrapped our code inside $scope.$apply() which automatically triggers $rootScope.$digest().<br>As a result the watchers are fired as usual and the view updates.</p>
+<p>Note: By the way, you should use $timeout service whenever possible which is setTimeout() with automatic $apply()<br>so that you don&#x2019;t have to call $apply() manually.</p>
+<p>Also, note that in the above code you could have done the model changes as usual and placed a call to $apply()<br>(the no-arg version) in the end. Have a look at the following snippet:</p>
+<pre><code><span class="variable">$scope</span>.getMessage = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+  setTimeout(<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
+    <span class="variable">$scope</span>.message = <span class="string">&apos;Fetched after two seconds&apos;</span>;
+    console.log(<span class="string">&apos;message:&apos;</span> + <span class="variable">$scope</span>.message);
+    <span class="variable">$scope</span>.<span class="variable">$apply</span>(); <span class="comment">//this triggers a $digest</span>
+  }, <span class="number">2000</span>);
+};
+</code></pre><p>The above code uses the no-arg version of $apply() and works.<br>Keep in mind that you should always use the version of $apply() that accepts a function argument.<br>This is because when you pass a function to $apply(), the function call is wrapped inside a try&#x2026;catch block,<br>and any exceptions that occur will be passed to the $exceptionHandler service.</p>
+<h1 id="How_Many_Times_Does_the_$digest_Loop_Run?">How Many Times Does the $digest Loop Run?</h1>
+<p>When a $digest cycle runs, the watchers are executed to see if the scope models have changed.<br>If they have, then the corresponding listener functions are called.<br>This leads to an important question.<br>What if a listener function itself changed a scope model? How would AngularJS account for that change?</p>
+<p>The answer is that the $digest loop doesn&#x2019;t run just once.<br>At the end of the current loop, it starts all over again to check if any of the models have changed.<br>This is basically dirty checking, and is done to account for any model changes that might have been done by listener functions.<br>So, the $digest cycle keeps looping until there are no more model changes, or it hits the max loop count of 10.<br>It&#x2019;s always good to stay idempotent and try to minimize model changes inside the listener functions.</p>
+<p>Note: At a minimum, $digest will run twice even if your listener functions don&#x2019;t change any models.<br>As discussed above, it runs once more to make sure the models are stable and there are no changes.</p>
+<h1 id="Conclusion">Conclusion</h1>
+<p>I hope this article has clarified what $apply and $digest are all about.<br>The most important thing to keep in mind is whether or not Angular can detect your changes.<br>If it cannot, then you must call $apply() manually.</p>
+<hr>
+<p>&#x539F;&#x6587;&#xFF1A; <a href="http://www.sitepoint.com/understanding-angulars-apply-digest/" target="_blank" rel="external">http://www.sitepoint.com/understanding-angulars-apply-digest/</a></p>
+<p><code>$apply()</code> &#x548C; <code>$digest()</code>&#x662F;angular&#x91CC;&#x4E24;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x70B9;&#x3002;<br>&#x8981;&#x60F3;&#x77E5;&#x9053;ng&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x80AF;&#x5B9A;&#x8981;&#x7406;&#x89E3;apply&#x548C;digest&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#x3002;<br>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x4E00;&#x8D77;&#x6765;&#x63ED;&#x9732;&#x4E00;&#x4E0B;apply&#x548C;digest&#x7684;&#x771F;&#x5B9E;&#x9762;&#x76EE;&#xFF0C;&#x5E76;&#x4E14;&#x5B66;&#x4E60;&#x4E0B;&#x5982;&#x4F55;&#x7528;&#x5728;&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x7684;&#x7F16;&#x7A0B;&#x4E2D;&#x3002;</p>
+<h1 id="&#x63A2;&#x7D22;$apply&#x3001;$digest">&#x63A2;&#x7D22;$apply&#x3001;$digest</h1>
+<p>&#x5728;ng&#x4E2D;&#x4E00;&#x4E2A;&#x5F88;&#x9177;&#x7684;&#x7279;&#x6027;&#x5C31;&#x662F;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#xFF0C;&#x8FD9;&#x5927;&#x5927;&#x65B9;&#x4FBF;&#x4E86;&#x6211;&#x4EEC;&#x7F16;&#x7A0B;&#x3002;<br>&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF0C;&#x6307;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;view&#x4E0A;&#x4FEE;&#x6539;&#x4E86;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#xFF0C;model&#x4F1A;&#x81EA;&#x52A8;&#x8DDF;&#x7740;&#x53D8;&#x3002;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x679C;model&#x53D8;&#x4E86;&#xFF0C;view&#x4E0A;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x8DDF;&#x7740;&#x53D8;&#x3002;<br>&#x4F46;&#x662F;angular&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x7684;&#x3002;<br>&#x5F53;&#x4F60;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;,&#x5728;&#x8FD9;&#x4E2A;&#x80CC;&#x540E;&#xFF0C;angular&#x4F1A;&#x81EA;&#x52A8;&#x5728;scope&#x4E0A;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76D1;&#x89C6;&#x5668;&#x3002;&#x8FD9;&#x4E2A;&#x80CC;&#x540E;&#x7684;&#x76D1;&#x89C6;&#x5668;&#x548C;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x7684;watch&#x662F;&#x4E00;&#x6837;&#x7684;</p>
+<pre><code><span class="variable">$scope</span>.<span class="variable">$watch</span>(<span class="string">&apos;aModel&apos;</span>, <span class="function"><span class="keyword">function</span><span class="params">(newValue, oldValue)</span> {</span>
+  <span class="comment">//update the DOM with newValue</span>
+});
+</code></pre><p>watch&#x91CC;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x3002;&#x6BCF;&#x5F53;aModel&#x6539;&#x53D8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;<br>&#x5F88;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x5F53;aModel&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x5E76;&#x66F4;&#x65B0;html&#x4E0A;&#x7684;&#x5185;&#x5BB9;&#x3002;<br>&#x4F46;&#x662F;&#xFF0C;&#x8FD8;&#x6709;&#x4E2A;&#x5927;&#x95EE;&#x9898;&#xFF0C;angular&#x662F;&#x600E;&#x4E48;&#x5224;&#x65AD;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x9700;&#x8981;&#x8C03;&#x7528;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x7684;&#xFF1F;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;angular&#x662F;&#x600E;&#x4E48;&#x77E5;&#x9053;aModel&#x6539;&#x53D8;&#x7684;&#x3002;<br>&#x662F;&#x4E0D;&#x662F;angular&#x4F1A;&#x5B9A;&#x65F6;&#x7684;&#x53BB;&#x68C0;&#x67E5;aModel?<br>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;$digest&#x7684;&#x4ECB;&#x5165;&#x4E86;&#x3002;</p>
+<p>&#x5F53;&#x8C03;&#x7528;$scope.$digest()&#x7684;&#x65F6;&#x5019;&#xFF0C;$digest&#x5FAA;&#x73AF;&#x5C31;&#x5F00;&#x59CB;&#x4E86;&#x3002;<br>&#x5047;&#x8BBE;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;ng-click&#x4E8B;&#x4EF6;&#x6539;&#x53D8;&#x4E86;model&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;angular&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;$digest()&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;$digest&#x5FAA;&#x73AF;&#x5C31;&#x5F00;&#x59CB;&#x4E86;&#x3002;<br>&#x5F53;$digest&#x5FAA;&#x73AF;&#x5F00;&#x59CB;&#x540E;&#xFF0C;&#x5B83;&#x4F1A;&#x89E6;&#x53D1;&#x6BCF;&#x4E2A;watcher&#x3002;watcher&#x4F1A;&#x53BB;&#x68C0;&#x67E5;&#x73B0;&#x5728;&#x7684;scope&#x91CC;&#x5B58;&#x7684;&#x53D8;&#x91CF;&#x503C;&#x548C;&#x4E0A;&#x6B21;&#x5B58;&#x7684;&#x503C;&#x6709;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#x3002;<br>&#x5982;&#x679C;&#x53D8;&#x5316;&#x4E86;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x8FD0;&#x884C;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x9875;&#x9762;&#x4E0A;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5C31;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x6210;&#x6700;&#x65B0;&#x7684;&#x503C;&#x3002;<br>&#x9664;&#x4E86;ng-click, &#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x6307;&#x4EE4;&#x4F1A;&#x53BB;&#x6539;&#x53D8;model&#xFF0C;&#x6BD4;&#x5982;ng-model, $timeout&#x7B49;&#x7B49;&#xFF0C;&#x4ED6;&#x4EEC;&#x90FD;&#x4F1A;&#x89E6;&#x53D1;$digest&#x5FAA;&#x73AF;&#x3002;</p>
+<p>&#x5230;&#x76EE;&#x524D;&#x6765;&#x8BF4;&#xFF0C;&#x90FD;&#x662F;&#x6BD4;&#x8F83;&#x597D;&#x7406;&#x89E3;&#x7684;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;angular&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x8C03;&#x7528;$digest()&#xFF0C;<br>&#x800C;&#x662F;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x7684;$scope.$apply(), &#x7136;&#x540E;&#x63A5;&#x4E0B;&#x6765;&#x624D;&#x4F1A;&#x8C03;&#x7528;$rootScope.$digest()<br>&#x6240;&#x4EE5;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;$digest&#x662F;&#x4ECE;$rootScope&#x4E0A;&#x5F00;&#x59CB;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x8C03;&#x7528;&#x540E;&#x4F1A;&#x628A;&#x6240;&#x6709;&#x5B50;&#x7684;scope&#x4E0A;&#x7684;watcher&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x4E00;&#x904D;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x4F60;&#x5728;&#x4E00;&#x4E2A;button&#x4E0A;&#x589E;&#x52A0;&#x4E86;ng-click&#x6307;&#x4EE4;&#xFF0C;&#x5E76;&#x4E14;&#x5F80;&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x91CC;&#x9762;&#x4F20;&#x5165;&#x4E86;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x3002;<br>&#x5F53;&#x8FD9;&#x4E2A;&#x6309;&#x94AE;&#x88AB;&#x70B9;&#x51FB;&#x65F6;&#xFF0C;angular&#x628A;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x5C01;&#x88C5;&#x5728;$scope.$apply()&#x91CC;&#x9762;&#xFF0C;<br>&#x6240;&#x4EE5;&#xFF0C;&#x653E;&#x5728;&#x6307;&#x4EE4;&#x91CC;&#x7684;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x6267;&#x884C;&#x540E;&#x53EF;&#x80FD;&#x4F1A;&#x6539;&#x53D8;model&#xFF0C;&#x7136;&#x540E;$digest&#x5FAA;&#x73AF;&#x5C31;&#x5F00;&#x59CB;&#x4E86;&#xFF0C;&#x5FAA;&#x73AF;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x6539;&#x53D8;&#x7684;model&#x4F1A;&#x6B63;&#x5E38;&#x53CD;&#x5E94;&#x5230;view&#x4E0A;&#x9762;&#x53BB;&#x3002;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+  
+    <a href="/2015/01/21/js里的原型和继承/" class="alignright next" title="js里的原型和继承">js里的原型和继承</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2015/01/22/understanding-angular’s-apply()-and-digest()/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>95</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>62</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>21</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 12.73px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.82px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 13.64px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.91px;">Bower</a><a href="/tags/css/" style="font-size: 18.18px;">CSS</a><a href="/tags/certification/" style="font-size: 10.91px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.91px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.45px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.91px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 10.91px;">Grunt</a><a href="/tags/html5/" style="font-size: 12.73px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.73px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.91px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.91px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.09px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 11.82px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.91px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.27px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.91px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.55px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.82px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 13.64px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.36px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/"></a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/js里的原型和继承/">js里的原型和继承</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/理解js里的原型/">理解js里的原型</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/好的web开发人员都应该知道的10件事/">好的web开发人员都应该知道的10件事</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/21/你没有完整的了解过正则表达式/">你没有完整的了解过正则表达式</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/maximum-call-stack-size-exceeded/">Maximum call stack size exceeded</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/js-匿名函数/">js 匿名函数</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/meteor-offline/">meteor offline</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>

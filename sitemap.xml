@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/01/22/understanding-angular%E2%80%99s-apply()-and-digest()/</loc>
+    <lastmod>2015-01-22T07:39:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/21/js%E9%87%8C%E7%9A%84%E5%8E%9F%E5%9E%8B%E5%92%8C%E7%BB%A7%E6%89%BF/</loc>
+    <lastmod>2015-01-21T09:47:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/21/%E7%90%86%E8%A7%A3js%E9%87%8C%E7%9A%84%E5%8E%9F%E5%9E%8B/</loc>
+    <lastmod>2015-01-21T09:21:28.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/21/%E5%A5%BD%E7%9A%84web%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E9%83%BD%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%8410%E4%BB%B6%E4%BA%8B/</loc>
+    <lastmod>2015-01-21T05:07:13.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/21/%E4%BD%A0%E6%B2%A1%E6%9C%89%E5%AE%8C%E6%95%B4%E7%9A%84%E4%BA%86%E8%A7%A3%E8%BF%87%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <lastmod>2015-01-21T05:01:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/20/immediately-invoked-function-expression-(iife)/</loc>
+    <lastmod>2015-01-21T01:50:25.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/01/20/understanding-javascript%E2%80%99s-functionprototypebind/</loc>
     <lastmod>2015-01-20T06:44:57.000Z</lastmod>
   </url>
