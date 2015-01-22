@@ -80,7 +80,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-01-22T07:39:34.000Z"><a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">1月 22 2015</a></time>
+        <time datetime="2015-01-22T07:50:28.000Z"><a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">1月 22 2015</a></time>
       
       
   
@@ -90,8 +90,8 @@
     </header>
     <div class="entry">
       
-        <p>title: &#x2018;Understanding Angular&#x2019;s apply() and digest()&#x2019;<br>date: 2015-01-22 14:05:53<br>categories: Giant<br>tags: [E,AngularJS]</p>
-<hr>
+        <p>title: &#x2018;Understanding Angular&#x2019;s apply() and digest()&#x2019;<br>date: 2015-01-22 14:05:53<br>categories: Giant</p>
+<h2 id="tags:_[&#x2018;E&#x2019;,&#x2019;AngularJS&#x2019;]">tags: [&#x2018;E&#x2019;,&#x2019;AngularJS&#x2019;]</h2>
 <p>$apply() and $digest() are two core, and sometimes confusing, aspects of AngularJS.<br>To understand how AngularJS works one needs to fully understand how $apply() and $digest() work.<br>This article aims to explain what $apply() and $digest() really are, and how they can be useful in your day-to-day AngularJS programming.</p>
 <p>
       
@@ -158,210 +158,6 @@ var <span class="keyword">length</span> = myArray.<span class="keyword">length</
           <div class="alignleft">
             <a href="/2015/01/21/js里的原型和继承/#more" class="more-link">阅读全文</a>
           </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-21T07:40:43.000Z"><a href="/2015/01/21/理解js里的原型/">1月 21 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/21/理解js里的原型/">理解js里的原型</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h1 id="&#x5BF9;&#x8C61;">&#x5BF9;&#x8C61;</h1>
-<p>&#x5728;js&#x91CC;&#x9762;&#x5BF9;&#x8C61;&#x662F;&#x6307;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x60F3;&#x63CF;&#x8FF0;&#x6211;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6211;&#x4F1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6709;&#x4E24;&#x4E2A;key&#x7684;&#x5BF9;&#x8C61;&#xFF1A;<br>&#x201C;firstName&#x201D; &#x6307;&#x5411;&#x201D;Yinfeng&#x201D; &#x548C; &#x201C;lastName&#x201D; &#x6307;&#x5411; &#x201C;Guo&#x201D;<br>key&#x5728;&#x5BF9;&#x8C61;&#x4E2D;&#x90FD;&#x662F;string</p>
-<p>&#x5728;js&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Object.create</p>
-<pre><code><span class="keyword">var</span> person = <span class="built_in">Object</span>.create(<span class="literal">null</span>); <span class="comment">// this creates an empty objects</span>
-</code></pre><p>&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x4E0D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;var person = {}; &#xFF1F;</p>
-<h1 id="&#x539F;&#x578B;">&#x539F;&#x578B;</h1>
-<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;js&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x3002;<br>&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x53EB;&#x505A;&#x539F;&#x578B;&#x3002;<br>&#x5047;&#x5982;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x67E5;&#x627E;&#x67D0;&#x4E00;&#x4E2A;key&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;js&#x4F1A;&#x7EE7;&#x7EED;&#x5728;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x4E2D;&#x53BB;&#x67E5;&#x627E;&#x3002;<br>&#x627E;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C31;&#x662F;&#x904D;&#x5386;&#x201C;&#x539F;&#x578B;&#x94FE;&#x201D;&#xFF0C;&#x77E5;&#x9053;&#x627E;&#x5230;null&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;undefined.</p>
-<p>&#x518D;&#x770B;&#x4E0B;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x4EE3;&#x7801; Object.create(null).<br>&#x53C2;&#x6570;&#x544A;&#x8BC9;js&#xFF0C;&#x4EC0;&#x4E48;&#x662F;&#x65B0;&#x5B9A;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Object.getPrototypeOf&#x6765;&#x67E5;&#x770B;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x3002;</p>
-<pre><code><span class="keyword">var</span> man = <span class="built_in">Object</span>.create(<span class="literal">null</span>);
-defineProperty(man, <span class="string">&apos;sex&apos;</span>, <span class="string">&quot;male&quot;</span>);
-
-<span class="keyword">var</span> yehuda = <span class="built_in">Object</span>.create(man);
-defineProperty(yehuda, <span class="string">&apos;firstName&apos;</span>, <span class="string">&quot;Yehuda&quot;</span>);
-defineProperty(yehuda, <span class="string">&apos;lastName&apos;</span>, <span class="string">&quot;Katz&quot;</span>);
-
-yehuda.sex       <span class="comment">// &quot;male&quot;</span>
-yehuda.firstName <span class="comment">// &quot;Yehuda&quot;</span>
-yehuda.lastName  <span class="comment">// &quot;Katz&quot;</span>
-
-<span class="built_in">Object</span>.getPrototypeOf(yehuda) <span class="comment">// returns the man object</span>
-</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x9519;&#x5F00;&#x7684;&#x5171;&#x4EAB;&#x5BF9;&#x8C61;</p>
-<pre><code><span class="keyword">var</span> person = <span class="built_in">Object</span>.create(<span class="literal">null</span>);
-defineProperty(person, <span class="string">&apos;fullName&apos;</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
-  <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName;
-});
-
-<span class="comment">// this time, let&apos;s make man&apos;s prototype person, so all</span>
-<span class="comment">// men share the fullName function</span>
-<span class="keyword">var</span> man = <span class="built_in">Object</span>.create(person);
-defineProperty(man, <span class="string">&apos;sex&apos;</span>, <span class="string">&quot;male&quot;</span>);
-
-<span class="keyword">var</span> yehuda = <span class="built_in">Object</span>.create(man);
-defineProperty(yehuda, <span class="string">&apos;firstName&apos;</span>, <span class="string">&quot;Yehuda&quot;</span>);
-defineProperty(yehuda, <span class="string">&apos;lastName&apos;</span>, <span class="string">&quot;Katz&quot;</span>);
-
-yehuda.sex        <span class="comment">// &quot;male&quot;</span>
-yehuda.fullName() <span class="comment">// &quot;Yehuda Katz&quot;</span>
-</code></pre><h1 id="&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;">&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;</h1>
-<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;writable, configurable, enumerable&#x7684;&#x5C5E;&#x6027;&#x662F;&#x975E;&#x5E38;&#x666E;&#x904D;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x6BCF;&#x6B21;&#x90FD;&#x90A3;&#x6837;&#x8C03;&#x7528;defineProperty&#x3002;<br>js&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;&#x901A;&#x8FC7;=&#x76F4;&#x63A5;&#x8D4B;&#x503C;</p>
-<pre><code><span class="keyword">var</span> person = <span class="built_in">Object</span>.create(<span class="literal">null</span>);
-
-<span class="comment">// instead of using defineProperty and specifying writable,</span>
-<span class="comment">// configurable, and enumerable, we can just assign the</span>
-<span class="comment">// value directly and JavaScript will take care of the rest</span>
-person[<span class="string">&apos;fullName&apos;</span>] = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
-  <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName;
-};
-
-<span class="comment">// this time, let&apos;s make man&apos;s prototype person, so all</span>
-<span class="comment">// men share the fullName function</span>
-<span class="keyword">var</span> man = <span class="built_in">Object</span>.create(person);
-man[<span class="string">&apos;sex&apos;</span>] = <span class="string">&quot;male&quot;</span>;
-
-<span class="keyword">var</span> yehuda = <span class="built_in">Object</span>.create(man);
-yehuda[<span class="string">&apos;firstName&apos;</span>] = <span class="string">&quot;Yehuda&quot;</span>;
-yehuda[<span class="string">&apos;lastName&apos;</span>] = <span class="string">&quot;Katz&quot;</span>;
-
-yehuda.sex        <span class="comment">// &quot;male&quot;</span>
-yehuda.fullName() <span class="comment">// &quot;Yehuda Katz&quot;</span>
-</code></pre><h1 id="&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;">&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;</h1>
-<p>&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x5355;&#x72EC;&#x5B9A;&#x4E49;&#x5F88;&#x591A;&#x5C5E;&#x6027;&#x662F;&#x5F88;&#x70E6;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x3002;js&#x63D0;&#x4F9B;&#x4E86;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x6B21;&#x6027;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x3002;</p>
-<pre><code><span class="keyword">var</span> person = { firstName: <span class="string">&quot;Paul&quot;</span>, lastName: <span class="string">&quot;Irish&quot;</span> }
-</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7B49;&#x540C;&#x4E8E;&#xFF1A;</p>
-<pre><code>var person = Object<span class="preprocessor">.create</span>(Object<span class="preprocessor">.prototype</span>)<span class="comment">;</span>
-person<span class="preprocessor">.firstName</span> = <span class="string">&quot;Paul&quot;</span><span class="comment">;</span>
-person<span class="preprocessor">.lastName</span>  = <span class="string">&quot;Irish&quot;</span><span class="comment">;</span>
-</code></pre><p>&#x7528;&#x5B57;&#x9762;&#x91CF;&#x8BED;&#x6CD5;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x4F1A;&#x9ED8;&#x8BA4;&#x4E3A;Object.prototype&#x3002;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5B50;&#xFF1A;</p>
-<p><img src="http://yehudakatz.com/wp-content/uploads/2011/08/prototype-chain.png" alt="&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x7684;&#x56FE;&#x7247;"></p>
-<p>Object.prototype &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x5E0C;&#x671B;&#x5BF9;&#x8C61;&#x62E5;&#x6709;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x3002;<br>&#x901A;&#x8FC7;&#x539F;&#x578B;&#x94FE;&#xFF08;prototype chain&#xFF09;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x6709;&#x4E0A;&#x9762;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x90A3;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;<br>&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x90A3;&#x4E9B;&#x5C5E;&#x6027;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x5728;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x4E0A;&#x9762;&#x3002;<br>&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E00;&#x822C;&#x4F1A;&#x91CD;&#x5199;toString&#x65B9;&#x6CD5;</p>
-<pre><code><span class="keyword">var</span> alex = { firstName: <span class="string">&quot;Alex&quot;</span>, lastName: <span class="string">&quot;Russell&quot;</span> };
-
-alex.toString() <span class="comment">// &quot;[object Object]&quot;</span>
-
-<span class="keyword">var</span> brendan = {
-  firstName: <span class="string">&quot;Brendan&quot;</span>,
-  lastName: <span class="string">&quot;Eich&quot;</span>,
-  toString: <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> <span class="keyword">return</span> <span class="string">&quot;Brendan Eich&quot;</span>; }
-};
-
-brendan.toString() <span class="comment">// &quot;Brendan Eich&quot;</span>
-</code></pre><p>&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x53EA;&#x6709;&#x5728;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4ECB;&#x610F;Object.prototype&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x539F;&#x578B;&#x7684;&#x624D;&#x4F1A;&#x6BD4;&#x8F83;&#x9002;&#x7528;&#x3002;<br>&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x4E0A;&#x4E0A;&#x9762;&#x90A3;&#x6837;&#x5206;&#x4EAB;&#x6216;&#x8005;&#x4F20;&#x9012;&#x5C5E;&#x6027;&#x3002;<br>&#x6240;&#x4EE5;&#x6709;&#x5F97;&#x6709;&#x5931;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x7ED9;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
-<pre><code><span class="keyword">var</span> fromPrototype = <span class="function"><span class="keyword">function</span><span class="params">(prototype, object)</span> {</span>
-  <span class="keyword">var</span> newObject = <span class="built_in">Object</span>.create(prototype);
-
-  <span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> object) {
-    <span class="keyword">if</span> (object.hasOwnProperty(prop)) {
-      newObject[prop] = object[prop];
-    }
-  }
-
-  <span class="keyword">return</span> newObject;
-};
-
-<span class="keyword">var</span> person = {
-  toString: <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
-    <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName;
-  }
-};
-
-<span class="keyword">var</span> man = fromPrototype(person, {
-  sex: <span class="string">&quot;male&quot;</span>
-});
-
-<span class="keyword">var</span> jeremy = fromPrototype(man, {
-  firstName: <span class="string">&quot;Jeremy&quot;</span>,
-  lastName:  <span class="string">&quot;Ashkenas&quot;</span>
-});
-
-jeremy.sex        <span class="comment">// &quot;male&quot;</span>
-jeremy.toString() <span class="comment">// &quot;Jeremy Ashkenas&quot;</span>
-</code></pre><p>&#x5EFA;&#x597D;&#x7684;&#x5BF9;&#x8C61;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;</p>
-<p><img src="http://yehudakatz.com/wp-content/uploads/2011/08/prototype-chain-2.png" alt="&#x5E26;&#x6709;&#x6307;&#x5B9A;&#x539F;&#x578B;&#x7684;"></p>
-<h1 id="&#x672C;&#x5730;&#x5BF9;&#x8C61;&#x5B9A;&#x5411;">&#x672C;&#x5730;&#x5BF9;&#x8C61;&#x5B9A;&#x5411;</h1>
-<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x539F;&#x578B;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;&#xFF0C;&#x5C31;&#x50CF;&#x4F20;&#x7EDF;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x8A00;&#x3002;<br>&#x4E3A;&#x4E86;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;js&#x63D0;&#x4F9B;&#x4E86;new&#x64CD;&#x4F5C;&#x7B26;&#x3002;</p>
-<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF0C;js&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4F7F;&#x7528;function&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x5B50;&#x65E2;&#x80FD;&#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x5668;&#x6765;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x539F;&#x578B;&#x7684;&#x7279;&#x6027;&#x3002;</p>
-<pre><code><span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span><span class="params">(firstName, lastName)</span> {</span>
-  <span class="keyword">this</span>.firstName = firstName;
-  <span class="keyword">this</span>.lastName = lastName;
-}
-
-Person.prototype = {
-  toString: <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName; }
-}
-</code></pre><p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5982;&#x4F55;&#x57FA;&#x4E8E;Person&#x5BF9;&#x8C61;&#x6765;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5B9E;&#x4F8B;</p>
-<pre><code><span class="function"><span class="keyword">function</span> <span class="title">newObject</span><span class="params">(func)</span> {</span>
-  <span class="comment">// get an Array of all the arguments except the first one</span>
-  <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>);
-
-  <span class="comment">// create a new object with its prototype assigned to func.prototype</span>
-  <span class="keyword">var</span> object = <span class="built_in">Object</span>.create(func.prototype);
-
-  <span class="comment">// invoke the constructor, passing the new object as &apos;this&apos;</span>
-  <span class="comment">// and the rest of the arguments as the arguments</span>
-  func.apply(object, args);
-
-  <span class="comment">// return the new object</span>
-  <span class="keyword">return</span> object;
-}
-
-<span class="keyword">var</span> brendan = newObject(Person, <span class="string">&quot;Brendan&quot;</span>, <span class="string">&quot;Eich&quot;</span>);
-brendan.toString() <span class="comment">// &quot;Brendan Eich&quot;</span>
-</code></pre><p>&#x800C;js&#x91CC;&#x7684;new &#x64CD;&#x4F5C;&#x7B26;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E0A;&#x9762;&#x540C;&#x6837;&#x7684;&#x529F;&#x80FD;&#x3002;&#x8FD9;&#x548C;&#x5176;&#x4ED6;&#x7684;&#x5F88;&#x6B63;&#x7EDF;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x8A00;&#x662F;&#x5F88;&#x76F8;&#x4F3C;&#x7684;&#x3002;</p>
-<pre><code><span class="keyword">var</span> mark = <span class="keyword">new</span> Person(<span class="string">&quot;Mark&quot;</span>, <span class="string">&quot;Miller&quot;</span>);
-mark.toString() <span class="comment">// &quot;Mark Miller&quot;</span>
-</code></pre><p>&#x4ECE;&#x672C;&#x8D28;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;js&#x7684;Function&#x5BF9;&#x8C61;&#x770B;&#x6210;&#x662F;class&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x5668;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x539F;&#x578B;&#x3002;<br>&#x6211;&#x8BF4;&#x8FC7;&#xFF0C;&#x65E9;&#x8D77;&#x7684;js&#x91CC;&#x5E76;&#x6CA1;&#x6709;Object.create&#x3002;<br>&#x6B63;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x53EA;&#x662F;&#x4E4B;&#x524D;&#x4EBA;&#x4EEC;&#x90FD;&#x4F7F;&#x7528;new &#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x5B9E;&#x73B0;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
-<pre><code><span class="keyword">var</span> createObject = <span class="function"><span class="keyword">function</span> <span class="params">(o)</span> {</span>
-  <span class="comment">// we only want the prototype part of the `new`</span>
-  <span class="comment">// behavior, so make an empty constructor</span>
-  <span class="function"><span class="keyword">function</span> <span class="title">F</span><span class="params">()</span> {</span>}
-
-  <span class="comment">// set the function&apos;s `prototype` property to the</span>
-  <span class="comment">// object that we want the new object&apos;s prototype</span>
-  <span class="comment">// to be.</span>
-  F.prototype = o;
-
-  <span class="comment">// use the `new` operator. We will get a new</span>
-  <span class="comment">// object whose prototype is o, and we will</span>
-  <span class="comment">// invoke the empty function, which does nothing.</span>
-  <span class="keyword">return</span> <span class="keyword">new</span> F();
-};
-</code></pre><p>&#x539F;&#x6587;<br><a href="http://yehudakatz.com/2011/08/12/understanding-prototypes-in-JavaScript/" target="_blank" rel="external">http://yehudakatz.com/2011/08/12/understanding-prototypes-in-JavaScript/</a></p>
-
-      
-    </div>
-    <footer>
-      
         
         
       
@@ -1138,6 +934,53 @@ alert(chooseSide());
 
 
 
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-20T00:53:14.000Z"><a href="/2015/01/20/hello-gulp/">1月 20 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/20/hello-gulp/">hello gulp</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>gulp.js &#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x6D41;&#x7684;&#xFF0C;&#x4EE3;&#x7801;&#x4F18;&#x4E8E;&#x914D;&#x7F6E;&#x7684;&#x65B0;&#x4E00;&#x4EE3;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#x3002;<br>Gulp &#x548C; Grunt &#x7C7B;&#x4F3C;&#x3002;&#x4F46;&#x76F8;&#x6BD4;&#x4E8E; Grunt &#x7684;&#x9891;&#x7E41;&#x7684; IO &#x64CD;&#x4F5C;&#xFF0C;Gulp &#x7684;&#x6D41;&#x64CD;&#x4F5C;&#xFF0C;&#x80FD;&#x66F4;&#x5FEB;&#x5730;&#x5B8C;&#x6210;&#x6784;&#x5EFA;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/20/hello-gulp/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
 
 <nav id="pagination">
   
@@ -1189,7 +1032,7 @@ alert(chooseSide());
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/agile-development/" style="font-size: 12.73px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.82px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 13.64px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.91px;">Bower</a><a href="/tags/css/" style="font-size: 18.18px;">CSS</a><a href="/tags/certification/" style="font-size: 10.91px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.91px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.45px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.91px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 10.91px;">Grunt</a><a href="/tags/html5/" style="font-size: 12.73px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.73px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.91px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.91px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.09px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 11.82px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.91px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.27px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.91px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.55px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.82px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 13.64px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.36px;">jQuery</a>
+    <a href="/tags/agile-development/" style="font-size: 13.00px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.00px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.00px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.00px;">Bower</a><a href="/tags/css/" style="font-size: 18.00px;">CSS</a><a href="/tags/certification/" style="font-size: 11.00px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.00px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.00px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 10.00px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.00px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.00px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.00px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.00px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.00px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.00px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.00px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.00px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.00px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.00px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.00px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.00px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.00px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.00px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.00px;">jQuery</a>
   </div>
 </div>
 
@@ -1205,10 +1048,6 @@ alert(chooseSide());
     
       <li>
         <a href="/2015/01/21/js里的原型和继承/">js里的原型和继承</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/21/理解js里的原型/">理解js里的原型</a>
       </li>
     
       <li>
@@ -1237,6 +1076,10 @@ alert(chooseSide());
     
       <li>
         <a href="/2015/01/20/meteor-offline/">meteor offline</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/hello-gulp/">hello gulp</a>
       </li>
     
   </ul>
