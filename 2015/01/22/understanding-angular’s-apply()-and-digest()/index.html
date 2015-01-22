@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>GYF1</title>
+  <title>Understanding Angular’s apply() and digest() | GYF1</title>
   <meta name="author" content="GYF1">
   
   <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Understanding Angular’s apply() and digest()"/>
   <meta property="og:site_name" content="GYF1"/>
 
   
@@ -79,19 +79,17 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-01-22T08:04:08.000Z"><a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">1月 22 2015</a></time>
+        <time datetime="2015-01-22T06:05:53.000Z"><a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">1月 22 2015</a></time>
       
       
   
-    <h1 class="title"></h1>
+    <h1 class="title">Understanding Angular’s apply() and digest()</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>title: Understanding Angular&#x2019;s apply() and digest()<br>date: 2015-01-22 14:05:53<br>categories: Giant<br>tags: AngularJS</p>
-<hr>
-<p>$apply() and $digest() are two core, and sometimes confusing, aspects of AngularJS.<br>To understand how AngularJS works one needs to fully understand how $apply() and $digest() work.<br>This article aims to explain what $apply() and $digest() really are, and how they can be useful in your day-to-day AngularJS programming.</p>
+        <p>$apply() and $digest() are two core, and sometimes confusing, aspects of AngularJS.<br>To understand how AngularJS works one needs to fully understand how $apply() and $digest() work.<br>This article aims to explain what $apply() and $digest() really are, and how they can be useful in your day-to-day AngularJS programming.</p>
 <p><a id="more"></a></p>
 <h1 id="$apply_and_$digest_Explored">$apply and $digest Explored</h1>
 <p>AngularJS offers an incredibly awesome feature known as two way data binding which greatly simplifies our lives.<br>Data binding means that when you change something in the view, the scope model automagically updates.<br>Similarly, whenever the scope model changes, the view updates itself with the new value.<br>How does does AngularJS do that? When you write an expression (),<br>behind the scenes Angular sets up a watcher on the scope model,<br>which in turn updates the view whenever the model changes.<br>This watcher is just like any watcher you set up in AngularJS:</p>
@@ -164,8 +162,7 @@ angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<spa
 <p>Note: At a minimum, $digest will run twice even if your listener functions don&#x2019;t change any models.<br>As discussed above, it runs once more to make sure the models are stable and there are no changes.</p>
 <h1 id="Conclusion">Conclusion</h1>
 <p>I hope this article has clarified what $apply and $digest are all about.<br>The most important thing to keep in mind is whether or not Angular can detect your changes.<br>If it cannot, then you must call $apply() manually.</p>
-<hr>
-<p>&#x539F;&#x6587;&#xFF1A; <a href="http://www.sitepoint.com/understanding-angulars-apply-digest/" target="_blank" rel="external">http://www.sitepoint.com/understanding-angulars-apply-digest/</a></p>
+<p>&#xFF0A;&#xFF0A;&#xFF0A;&#xFF0A;&#xFF0A;&#xFF0A;&#xFF0A;&#xFF0A;&#xFF0A;<br>&#x539F;&#x6587;&#xFF1A; <a href="http://www.sitepoint.com/understanding-angulars-apply-digest/" target="_blank" rel="external">http://www.sitepoint.com/understanding-angulars-apply-digest/</a></p>
 <p><code>$apply()</code> &#x548C; <code>$digest()</code>&#x662F;angular&#x91CC;&#x4E24;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x70B9;&#x3002;<br>&#x8981;&#x60F3;&#x77E5;&#x9053;ng&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x80AF;&#x5B9A;&#x8981;&#x7406;&#x89E3;apply&#x548C;digest&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#x3002;<br>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x4E00;&#x8D77;&#x6765;&#x63ED;&#x9732;&#x4E00;&#x4E0B;apply&#x548C;digest&#x7684;&#x771F;&#x5B9E;&#x9762;&#x76EE;&#xFF0C;&#x5E76;&#x4E14;&#x5B66;&#x4E60;&#x4E0B;&#x5982;&#x4F55;&#x7528;&#x5728;&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x7684;&#x7F16;&#x7A0B;&#x4E2D;&#x3002;</p>
 <h1 id="&#x63A2;&#x7D22;$apply&#x3001;$digest">&#x63A2;&#x7D22;$apply&#x3001;$digest</h1>
 <p>&#x5728;ng&#x4E2D;&#x4E00;&#x4E2A;&#x5F88;&#x9177;&#x7684;&#x7279;&#x6027;&#x5C31;&#x662F;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#xFF0C;&#x8FD9;&#x5927;&#x5927;&#x65B9;&#x4FBF;&#x4E86;&#x6211;&#x4EEC;&#x7F16;&#x7A0B;&#x3002;<br>&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF0C;&#x6307;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;view&#x4E0A;&#x4FEE;&#x6539;&#x4E86;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#xFF0C;model&#x4F1A;&#x81EA;&#x52A8;&#x8DDF;&#x7740;&#x53D8;&#x3002;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x679C;model&#x53D8;&#x4E86;&#xFF0C;view&#x4E0A;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x8DDF;&#x7740;&#x53D8;&#x3002;<br>&#x4F46;&#x662F;angular&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x7684;&#x3002;<br>&#x5F53;&#x4F60;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;,&#x5728;&#x8FD9;&#x4E2A;&#x80CC;&#x540E;&#xFF0C;angular&#x4F1A;&#x81EA;&#x52A8;&#x5728;scope&#x4E0A;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x76D1;&#x89C6;&#x5668;&#x3002;&#x8FD9;&#x4E2A;&#x80CC;&#x540E;&#x7684;&#x76D1;&#x89C6;&#x5668;&#x548C;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x7684;watch&#x662F;&#x4E00;&#x6837;&#x7684;</p>
@@ -182,7 +179,17 @@ angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<spa
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/giant/">Giant</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/angularjs/">AngularJS</a>
+  </div>
+
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
         <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
         
@@ -252,7 +259,7 @@ angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<spa
   
     <li><a href="/categories/database/">Database</a><small>5</small></li>
   
-    <li><a href="/categories/giant/">Giant</a><small>95</small></li>
+    <li><a href="/categories/giant/">Giant</a><small>96</small></li>
   
     <li><a href="/categories/html/">HTML</a><small>7</small></li>
   
@@ -289,7 +296,7 @@ angular.module(<span class="string">&apos;myApp&apos;</span>,[]).controller(<spa
   <ul class="entry">
     
       <li>
-        <a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/"></a>
+        <a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">Understanding Angular’s apply() and digest()</a>
       </li>
     
       <li>
