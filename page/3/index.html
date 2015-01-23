@@ -80,6 +80,204 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-01-08T07:51:31.000Z"><a href="/2015/01/08/javascript-最佳实践/">1月 8 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/08/javascript-最佳实践/">javascript 最佳实践</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#xFF0C;&#x80FD;&#x8DF3;&#x7684;&#x66F4;&#x9AD8;&#x3002;<br>&#x7ECF;&#x9A8C;&#x4E0D;&#x5B8C;&#x5168;&#x7B49;&#x4E8E;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;<br>&#x672C;&#x7BC7;&#x4E3B;&#x8981;&#x6574;&#x7406;&#x4E00;&#x4E9B;&#x524D;&#x4EBA;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;<br>&#x5BF9;&#x4E8E;&#x65B0;&#x4EBA;&#x53EF;&#x80FD;&#x4E00;&#x4E0B;&#x5B50;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x7528;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;jslint&#x6216;&#x8005;jshint&#x4F5C;&#x4E3A;&#x76D1;&#x7763;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/08/javascript-最佳实践/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-08T03:49:13.000Z"><a href="/2015/01/08/what-is-this/">1月 8 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/08/what-is-this/">what is &#39;this&#39;</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5F88;&#x591A;&#x5B66;&#x4E60;JavaScript&#x7684;&#x4EBA;&#xFF0C;&#x4E4B;&#x524D;&#x90FD;&#x662F;&#x5B66;&#x4E60;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x3002;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-08T03:28:38.000Z"><a href="/2015/01/08/闭包实践/">1月 8 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/08/闭包实践/">闭包实践</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x95ED;&#x5305;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4E0D;&#x592A;&#x5BB9;&#x6613;&#x63CF;&#x8FF0;<br>&#x4F46;&#x662F;&#x672C;&#x8D28;&#x4E0A;&#x5374;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;</p>
+<p>&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;:</p>
+<h2 id="&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;"><em>&#x7528;&#x6765;&#x9690;&#x85CF;&#x4E00;&#x4E9B;&#x79C1;&#x6709;&#x7684;&#x65B9;&#x6CD5;</em></h2>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>a = (<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    <span class="keyword">var</span> privatefunction = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+        alert(<span class="string">&apos;hello&apos;</span>);
+    }
+
+    <span class="keyword">return</span> {
+        publicfunction : <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+            privatefunction();
+        }
+    }
+})();
+</code></pre><p>a&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;a&#x8C03;&#x7528;&#x5230;publicfunction&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8C03;&#x7528;&#x5230;privatefunction<br>&#x5F88;&#x591A;&#x4EBA;&#x4E00;&#x770B;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x70B9;&#x5403;&#x60CA;&#xFF0C;&#x56E0;&#x4E3A;&#x81EA;&#x5DF1;&#x65E9;&#x5C31;&#x8FD9;&#x4E48;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x5C31;&#x662F;&#x95ED;&#x5305;&#x3002;</p>
+<p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/08/闭包实践/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-31T03:51:02.000Z"><a href="/2014/12/31/javascript-promise/">12月 31 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/31/javascript-promise/">javascript promise</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://www.infoq.com/cn/news/2011/09/js-promise/" target="_blank" rel="external">http://www.infoq.com/cn/news/2011/09/js-promise/</a><br><a href="http://www.jb51.net/article/48680.htm" target="_blank" rel="external">http://www.jb51.net/article/48680.htm</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-12-31T03:49:30.000Z"><a href="/2014/12/31/javascript-prototype/">12月 31 2014</a></time>
       
       
@@ -367,237 +565,6 @@ proxy_redirect off;
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-23T02:20:25.000Z"><a href="/2014/12/23/将数组转换成树形结构/">12月 23 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x76F4;&#x63A5;&#x4E0A;&#x4EE3;&#x7801;:</p>
-<pre><code>var nodes = [
-    {
-        <span class="string">&quot;id&quot;</span>: <span class="string">&quot;12&quot;</span>,
-        <span class="string">&quot;parentId&quot;</span>: <span class="string">&quot;0&quot;</span>,
-        <span class="string">&quot;text&quot;</span>: <span class="string">&quot;Man&quot;</span>,
-        <span class="string">&quot;level&quot;</span>: <span class="string">&quot;1&quot;</span>,
-        <span class="string">&quot;children&quot;</span>: null
-    }, { /*<span class="keyword">...</span>*/ } ];
-
-var map = {}, node, roots = [];
-<span class="keyword">for</span> (var i = <span class="number">0</span>; i &lt; nodes.length; i += <span class="number">1</span>) {
-    node = nodes[i];
-    node.children = [];
-    map[node.id] = i; // use map to look-up the parents
-    <span class="keyword">if</span> (node.parentId !== <span class="string">&quot;0&quot;</span>) {
-        nodes[map[node.parentId]].children.push(node);
-    } <span class="keyword">else</span> {
-        roots.push(node);
-    }
-}
-console.log(roots); // &lt;-- there<span class="string">&apos;s your tree
-
-&lt;!--more--&gt;</span>
-</code></pre><p><a href="http://stackoverflow.com/questions/18017869/build-tree-array-from-flat-array-in-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/18017869/build-tree-array-from-flat-array-in-javascript</a><br><a href="http://stackoverflow.com/questions/2286031/javascript-building-tree-hierarchy" target="_blank" rel="external">http://stackoverflow.com/questions/2286031/javascript-building-tree-hierarchy</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-23T01:02:16.000Z"><a href="/2014/12/23/dropdown-tree/">12月 23 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/23/dropdown-tree/">dropdown tree</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x60C5;&#x666F;&#xFF1A;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6709;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;<br>&#x8981;&#x8BA9;&#x7528;&#x6237;&#x4ECE;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;<br>&#x7B2C;&#x4E00;&#x4E2A;&#x65B9;&#x6848;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x4E2A;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x663E;&#x7136;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x3002;<br>&#x540E;&#x6765;&#x770B;&#x5230;&#x5176;&#x4ED6;&#x7F51;&#x7AD9;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#xFF0C;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x4E86;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x3002;<br>&#x8FD9;&#x6837;&#x5B50;&#xFF0C;&#x5360;&#x7684;&#x5730;&#x65B9;&#x4E0D;&#x591A;&#xFF0C;&#x7ED3;&#x6784;&#x4E5F;&#x6E05;&#x6670;&#x3002;<br>&#x672C;&#x6587;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x3002;<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/23/dropdown-tree/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-22T01:35:29.000Z"><a href="/2014/12/22/$fn/">12月 22 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/22/$fn/">jQuery开发插件</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x5982;&#x4F55;&#x6DFB;&#x52A0;jQuery&#x63D2;&#x4EF6;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;:</p>
-<p><em>&#x9759;&#x6001;&#x65B9;&#x6CD5;</em></p>
-<pre><code>jQuery.extend(<span class="keyword">object</span>); <span class="comment">//&#x4E3A;&#x6269;&#x5C55;jQuery&#x7C7B;&#x672C;&#x8EAB;.&#x4E3A;&#x7C7B;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x3002;</span>
-</code></pre><p><em>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</em></p>
-<pre><code>jQuery.fn.extend(<span class="keyword">object</span>); <span class="comment">//&#x7ED9;jQuery&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x3002;</span>
-</code></pre><p>&#x4F8B;&#x5B50;:</p>
-<h3 id="jQuery-fn-extend">jQuery.fn.extend</h3>
-<pre><code>$.fn.extend({
-    hilight:<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
-        <span class="comment">// Our plugin implementation code goes here.</span>
-    }
-})
-&#x6211;&#x4EEC;&#x7684;&#x63D2;&#x4EF6;&#x901A;&#x8FC7;&#x8FD9;&#x6837;&#x88AB;&#x8C03;&#x7528;&#xFF1A;
-$(<span class="string">&apos;#myDiv&apos;</span>).hilight();
-</code></pre><h3 id="jQuery-extend">jQuery.extend</h3>
-<pre><code>$.extend({
-&#x3000;&#x3000;add:<span class="function"><span class="keyword">function</span><span class="params">(a,b)</span>{</span>returna+b;}
-});
-
-$.add(<span class="number">3</span>,<span class="number">4</span>); <span class="comment">//return 7</span>
-</code></pre><p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/22/$fn/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-19T02:11:18.000Z"><a href="/2014/12/19/markdown语法教程/">12月 19 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/19/markdown语法教程/"></a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>title: &#x2018;Markdown &#x8BED;&#x6CD5;&#x6559;&#x7A0B;&#x2019;<br>date: 2014-01-06 08:21:30<br>categories: Others</p>
-<h2 id="tags:_Markdown">tags: Markdown</h2>
-<p>Markdown&#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x578B;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;WEB&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x8F83;HTML&#x6765;&#x8BF4;&#x66F4;&#x7B80;&#x4FBF;&#x3001;&#x66F4;&#x5B89;&#x5168;&#x3001;&#x53EF;&#x8BFB;&#x6027;&#x66F4;&#x5F3A;&#x7684;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x3002;Markdown&#x7684;&#x8BED;&#x6CD5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x82B1;&#x4E94;&#x5206;&#x949F;&#x5C31;&#x80FD;&#x5B66;&#x4E60;&#x5B8C;&#x5927;&#x90E8;&#x5206;&#x8BED;&#x6CD5;&#x3002;<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/19/markdown语法教程/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -631,7 +598,7 @@ $.add(<span class="number">3</span>,<span class="number">4</span>); <span class=
   
     <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>62</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>66</small></li>
   
     <li><a href="/categories/others/">Others</a><small>10</small></li>
   
@@ -662,27 +629,15 @@ $.add(<span class="number">3</span>,<span class="number">4</span>); <span class=
   <ul class="entry">
     
       <li>
-        <a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">Understanding Angular’s apply() and digest()</a>
+        <a href="/2015/01/22/js-tests/">js tests</a>
       </li>
     
       <li>
-        <a href="/2015/01/21/js里的原型和继承/">js里的原型和继承</a>
+        <a href="/2015/01/22/10-digest()-iterations-reached-aborting/">10 digest() iterations reached. Aborting</a>
       </li>
     
       <li>
-        <a href="/2015/01/21/好的web开发人员都应该知道的10件事/">好的web开发人员都应该知道的10件事</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/21/你没有完整的了解过正则表达式/">你没有完整的了解过正则表达式</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/20/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
+        <a href="/2015/01/22/关于javascript中apply()和call()方法的区别z/">关于javascript中apply()和call()方法的区别z</a>
       </li>
     
       <li>
@@ -690,15 +645,27 @@ $.add(<span class="number">3</span>,<span class="number">4</span>); <span class=
       </li>
     
       <li>
-        <a href="/2015/01/20/js-匿名函数/">js 匿名函数</a>
+        <a href="/2015/01/18/getting-over-jquery/">Getting Over jQuery</a>
       </li>
     
       <li>
-        <a href="/2015/01/20/meteor-offline/">meteor offline</a>
+        <a href="/2015/01/18/understanding-prototypes-in-javascript/">Understanding Prototypes in JavaScript</a>
       </li>
     
       <li>
-        <a href="/2015/01/20/hello-gulp/">hello gulp</a>
+        <a href="/2015/01/17/js里的原型和继承/">js里的原型和继承</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/understanding-angular’s-apply()-and-digest()/">Understanding Angular’s apply() and digest()</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
       </li>
     
   </ul>

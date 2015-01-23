@@ -80,6 +80,237 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-12-23T02:20:25.000Z"><a href="/2014/12/23/将数组转换成树形结构/">12月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x76F4;&#x63A5;&#x4E0A;&#x4EE3;&#x7801;:</p>
+<pre><code>var nodes = [
+    {
+        <span class="string">&quot;id&quot;</span>: <span class="string">&quot;12&quot;</span>,
+        <span class="string">&quot;parentId&quot;</span>: <span class="string">&quot;0&quot;</span>,
+        <span class="string">&quot;text&quot;</span>: <span class="string">&quot;Man&quot;</span>,
+        <span class="string">&quot;level&quot;</span>: <span class="string">&quot;1&quot;</span>,
+        <span class="string">&quot;children&quot;</span>: null
+    }, { /*<span class="keyword">...</span>*/ } ];
+
+var map = {}, node, roots = [];
+<span class="keyword">for</span> (var i = <span class="number">0</span>; i &lt; nodes.length; i += <span class="number">1</span>) {
+    node = nodes[i];
+    node.children = [];
+    map[node.id] = i; // use map to look-up the parents
+    <span class="keyword">if</span> (node.parentId !== <span class="string">&quot;0&quot;</span>) {
+        nodes[map[node.parentId]].children.push(node);
+    } <span class="keyword">else</span> {
+        roots.push(node);
+    }
+}
+console.log(roots); // &lt;-- there<span class="string">&apos;s your tree
+
+&lt;!--more--&gt;</span>
+</code></pre><p><a href="http://stackoverflow.com/questions/18017869/build-tree-array-from-flat-array-in-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/18017869/build-tree-array-from-flat-array-in-javascript</a><br><a href="http://stackoverflow.com/questions/2286031/javascript-building-tree-hierarchy" target="_blank" rel="external">http://stackoverflow.com/questions/2286031/javascript-building-tree-hierarchy</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-23T01:02:16.000Z"><a href="/2014/12/23/dropdown-tree/">12月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/23/dropdown-tree/">dropdown tree</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x60C5;&#x666F;&#xFF1A;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6709;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;<br>&#x8981;&#x8BA9;&#x7528;&#x6237;&#x4ECE;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;<br>&#x7B2C;&#x4E00;&#x4E2A;&#x65B9;&#x6848;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x4E2A;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x663E;&#x7136;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x3002;<br>&#x540E;&#x6765;&#x770B;&#x5230;&#x5176;&#x4ED6;&#x7F51;&#x7AD9;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#xFF0C;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x4E86;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x3002;<br>&#x8FD9;&#x6837;&#x5B50;&#xFF0C;&#x5360;&#x7684;&#x5730;&#x65B9;&#x4E0D;&#x591A;&#xFF0C;&#x7ED3;&#x6784;&#x4E5F;&#x6E05;&#x6670;&#x3002;<br>&#x672C;&#x6587;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/12/23/dropdown-tree/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-22T01:35:29.000Z"><a href="/2014/12/22/$fn/">12月 22 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/22/$fn/">jQuery开发插件</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5982;&#x4F55;&#x6DFB;&#x52A0;jQuery&#x63D2;&#x4EF6;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;:</p>
+<p><em>&#x9759;&#x6001;&#x65B9;&#x6CD5;</em></p>
+<pre><code>jQuery.extend(<span class="keyword">object</span>); <span class="comment">//&#x4E3A;&#x6269;&#x5C55;jQuery&#x7C7B;&#x672C;&#x8EAB;.&#x4E3A;&#x7C7B;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x3002;</span>
+</code></pre><p><em>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</em></p>
+<pre><code>jQuery.fn.extend(<span class="keyword">object</span>); <span class="comment">//&#x7ED9;jQuery&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x3002;</span>
+</code></pre><p>&#x4F8B;&#x5B50;:</p>
+<h3 id="jQuery-fn-extend">jQuery.fn.extend</h3>
+<pre><code>$.fn.extend({
+    hilight:<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+        <span class="comment">// Our plugin implementation code goes here.</span>
+    }
+})
+&#x6211;&#x4EEC;&#x7684;&#x63D2;&#x4EF6;&#x901A;&#x8FC7;&#x8FD9;&#x6837;&#x88AB;&#x8C03;&#x7528;&#xFF1A;
+$(<span class="string">&apos;#myDiv&apos;</span>).hilight();
+</code></pre><h3 id="jQuery-extend">jQuery.extend</h3>
+<pre><code>$.extend({
+&#x3000;&#x3000;add:<span class="function"><span class="keyword">function</span><span class="params">(a,b)</span>{</span>returna+b;}
+});
+
+$.add(<span class="number">3</span>,<span class="number">4</span>); <span class="comment">//return 7</span>
+</code></pre><p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/12/22/$fn/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-19T02:11:18.000Z"><a href="/2014/12/19/markdown语法教程/">12月 19 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/19/markdown语法教程/"></a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>title: &#x2018;Markdown &#x8BED;&#x6CD5;&#x6559;&#x7A0B;&#x2019;<br>date: 2014-01-06 08:21:30<br>categories: Others</p>
+<h2 id="tags:_Markdown">tags: Markdown</h2>
+<p>Markdown&#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x578B;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;WEB&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x8F83;HTML&#x6765;&#x8BF4;&#x66F4;&#x7B80;&#x4FBF;&#x3001;&#x66F4;&#x5B89;&#x5168;&#x3001;&#x53EF;&#x8BFB;&#x6027;&#x66F4;&#x5F3A;&#x7684;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x3002;Markdown&#x7684;&#x8BED;&#x6CD5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x82B1;&#x4E94;&#x5206;&#x949F;&#x5C31;&#x80FD;&#x5B66;&#x4E60;&#x5B8C;&#x5927;&#x90E8;&#x5206;&#x8BED;&#x6CD5;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/12/19/markdown语法教程/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-12-02T01:07:10.000Z"><a href="/2014/12/02/tinymce-performance-tune/">12月 2 2014</a></time>
       
       
@@ -326,214 +557,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-11-06T06:26:35.000Z"><a href="/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/">11月 6 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/">How to Style a HTML file upload button in Pure CSS</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Step 1. Create a simple html markup</p>
-<pre><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;fileUpload btn btn-primary&quot;</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">span</span>&gt;</span>Upload<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;file&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;upload&quot;</span> /&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre><p>Step 2. CSS: Tricky Part</p>
-<pre><code><span class="class">.fileUpload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
-    <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-<span class="rule">}</span></span>
-<span class="class">.fileUpload</span> <span class="tag">input</span><span class="class">.upload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
-    <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-    <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
-    <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">filter</span>:<span class="value"> <span class="function">alpha(opacity=<span class="number">0</span>)</span></span></span>;
-<span class="rule">}</span></span>
-</code></pre><p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-31T01:57:55.000Z"><a href="/2014/10/31/浏览器autofill-autocomplete-错位/">10月 31 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/31/浏览器autofill-autocomplete-错位/">浏览器autofill autocomplete 错位</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x9996;&#x5148;&#x5728;form&#x4E0A;&#x52A0;autocomplete=&#x201D;off&#x201D;<br>&#x4F46;&#x662F;&#x6CA1;&#x4EC0;&#x4E48;&#x4F5C;&#x7528;</p>
-<p>&#x9700;&#x8981;&#x52A0;&#x4E00;&#x4E9B;&#x5047;&#x7684;&#x9690;&#x85CF;&#x7684;input&#x5B57;&#x6BB5;<br><!-- fake fields are a workaround for chrome autofill getting the wrong fields --></p>
-<pre><code>&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;fakeusernameremembered&quot;</span>/&gt;
-&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;password&quot;</span> name=<span class="string">&quot;fakepasswordremembered&quot;</span>/&gt;
-</code></pre>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/10/31/浏览器autofill-autocomplete-错位/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T04:10:40.000Z"><a href="/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/">Resolve http request before running app and switching to a route or state</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state" target="_blank" rel="external">http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state</a><br><a href="http://embed.plnkr.co/TWiDY3/script.js" target="_blank" rel="external">http://embed.plnkr.co/TWiDY3/script.js</a><br><a href="http://plnkr.co/edit/TWiDY3?p=info" target="_blank" rel="external">http://plnkr.co/edit/TWiDY3?p=info</a><br><a href="http://stackoverflow.com/questions/20094273/stop-angular-ui-router-navigation-until-promise-is-resolved" target="_blank" rel="external">http://stackoverflow.com/questions/20094273/stop-angular-ui-router-navigation-until-promise-is-resolved</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T04:05:16.000Z"><a href="/2014/10/30/http-synchronous-call-with-angularjs/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/http-synchronous-call-with-angularjs/">http Synchronous call with AngularJS</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://stackoverflow.com/questions/13088153/how-to-http-synchronous-call-with-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/13088153/how-to-http-synchronous-call-with-angularjs</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests</a><br><a href="http://stackoverflow.com/questions/20184070/angularjs-have-method-return-synchronously-when-it-calls-http-or-resource-int" target="_blank" rel="external">http://stackoverflow.com/questions/20184070/angularjs-have-method-return-synchronously-when-it-calls-http-or-resource-int</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -567,7 +590,7 @@
   
     <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>62</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>66</small></li>
   
     <li><a href="/categories/others/">Others</a><small>10</small></li>
   
@@ -598,27 +621,15 @@
   <ul class="entry">
     
       <li>
-        <a href="/2015/01/22/understanding-angular’s-apply()-and-digest()/">Understanding Angular’s apply() and digest()</a>
+        <a href="/2015/01/22/js-tests/">js tests</a>
       </li>
     
       <li>
-        <a href="/2015/01/21/js里的原型和继承/">js里的原型和继承</a>
+        <a href="/2015/01/22/10-digest()-iterations-reached-aborting/">10 digest() iterations reached. Aborting</a>
       </li>
     
       <li>
-        <a href="/2015/01/21/好的web开发人员都应该知道的10件事/">好的web开发人员都应该知道的10件事</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/21/你没有完整的了解过正则表达式/">你没有完整的了解过正则表达式</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/20/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/20/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
+        <a href="/2015/01/22/关于javascript中apply()和call()方法的区别z/">关于javascript中apply()和call()方法的区别z</a>
       </li>
     
       <li>
@@ -626,15 +637,27 @@
       </li>
     
       <li>
-        <a href="/2015/01/20/js-匿名函数/">js 匿名函数</a>
+        <a href="/2015/01/18/getting-over-jquery/">Getting Over jQuery</a>
       </li>
     
       <li>
-        <a href="/2015/01/20/meteor-offline/">meteor offline</a>
+        <a href="/2015/01/18/understanding-prototypes-in-javascript/">Understanding Prototypes in JavaScript</a>
       </li>
     
       <li>
-        <a href="/2015/01/20/hello-gulp/">hello gulp</a>
+        <a href="/2015/01/17/js里的原型和继承/">js里的原型和继承</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/understanding-angular’s-apply()-and-digest()/">Understanding Angular’s apply() and digest()</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/understanding-javascript’s-functionprototypebind/">Understanding JavaScript’s Function.prototype.bind</a>
       </li>
     
   </ul>
