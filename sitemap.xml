@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/01/25/closures-in-javascript/</loc>
+    <lastmod>2015-01-25T07:55:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/23/angularjs-style-guide/</loc>
+    <lastmod>2015-01-25T06:23:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/22/css-tests/</loc>
+    <lastmod>2015-01-23T07:36:22.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/01/22/js-tests/</loc>
     <lastmod>2015-01-23T02:56:28.000Z</lastmod>
   </url>

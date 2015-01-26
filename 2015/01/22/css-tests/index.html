@@ -1,0 +1,832 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css tests | GYF1</title>
+  <meta name="author" content="GYF1">
+  
+  <meta name="description" content="郭银锋 | 程序员 | JavaScript | CSS">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="css tests"/>
+  <meta property="og:site_name" content="GYF1"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!--<meta name="baidu-site-verification" content="ZDIDoHeMEZ" />-->
+  <!--<meta name="baidu_union_verify" content="579c32c6acaf563a65fed2fa8575ebd3">-->
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+
+
+  <link rel="alternate" href="/atom.xml" title="GYF1" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">GYF1</a></h1>
+  <h2><a href="/">Web Platform, Cloud and Mobile Application Development</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
+    
+      <li><a href="/note">Note</a></li>
+    
+      <li><a href="/thinking">Thinking</a></li>
+    
+      <li><a href="/bookmark">Bookmark</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-22T12:09:03.000Z"><a href="/2015/01/22/css-tests/">1月 22 2015</a></time>
+      
+      
+  
+    <h1 class="title">css tests</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Question</p>
+<pre><code>Can <span class="operator">a</span> percentage <span class="built_in">value</span> be given <span class="operator">in</span> <span class="operator">a</span> ruby-align property?
+</code></pre><p>Answers B</p>
+<pre><code><span class="literal">A</span>. Yes
+B. No
+</code></pre><p>Question</p>
+<pre><code>Consider the following code snippet:
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;sectors&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;A&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;A&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;B&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;B&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;C&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;C&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;D&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;D&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;E&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;E&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+With these style rules:
+<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+    <span class="id">#sectors</span> &gt; <span class="tag">div</span> <span class="rules">{
+        <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
+        <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
+        <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">80</span>px</span></span>;
+        <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">80</span>px</span></span>;
+        <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">16</span>px</span></span>;
+        <span class="rule"><span class="attribute">background-color</span>:<span class="value">red</span></span>;
+        <span class="rule"><span class="attribute">color</span>:<span class="value"> white</span></span>;
+        <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;
+    <span class="rule">}</span></span>
+    <span class="id">#sectors</span> &gt; <span class="tag">div</span><span class="pseudo">::after</span> <span class="rules">{
+        <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="function">attr(id)</span> <span class="string">&apos;-Block&apos;</span></span></span>;
+    <span class="rule">}</span></span>
+    <span class="id">#sectors</span> &gt; <span class="tag">div</span><span class="class">.changecolor</span> <span class="rules">{
+        <span class="rule"><span class="attribute">background-color</span>:<span class="value"> blue</span></span>;
+    <span class="rule">}</span></span>
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+Which of the following code snippets when inserted into CSS will change the A and B div&#x2019;s color from red to blue?
+</code></pre><p>Answers A</p>
+<pre><code><span class="tag">A</span>. <span class="tag">In</span> <span class="tag">style</span> <span class="tag">rule</span> <span class="tag">add</span> <span class="tag">this</span> <span class="tag">code</span>  &#x201C;<span class="id">#sectors</span> &gt; <span class="tag">div</span><span class="pseudo">:not(</span><span class="class">.C</span>)<span class="pseudo">:not(</span><span class="class">.D</span>)<span class="pseudo">:not(</span><span class="class">.E</span>) <span class="rules">{<span class="rule"><span class="attribute">background-color</span>:<span class="value"> blue</span></span>;<span class="rule">}</span></span>&#x201D;
+<span class="tag">B</span>. <span class="tag">In</span> <span class="tag">style</span> <span class="tag">rule</span> <span class="tag">add</span> <span class="tag">this</span> <span class="tag">code</span>  &#x201C;<span class="id">#sectors</span> &gt; <span class="tag">div</span><span class="pseudo">:not(</span><span class="class">.C</span>, <span class="class">.D</span>, <span class="class">.E</span>) <span class="rules">{<span class="rule"><span class="attribute">background-color</span>:<span class="value"> blue</span></span>;<span class="rule">}</span></span>&#x201D;
+<span class="tag">C</span>. <span class="tag">Both</span> <span class="tag">A</span> <span class="tag">and</span> <span class="tag">B</span>
+<span class="tag">D</span>. <span class="tag">None</span> <span class="tag">of</span> <span class="tag">the</span> <span class="tag">above</span>
+</code></pre><p>Question</p>
+<pre><code>Consider <span class="operator">the</span> following code:  body { <span class="keyword">text</span>-<span class="built_in">replace</span>: <span class="string">&quot;a&quot;</span> <span class="string">&quot;b&quot;</span> <span class="string">&quot;b&quot;</span> <span class="string">&quot;c&quot;</span> }
+What will be <span class="operator">the</span> output <span class="operator">of</span> <span class="operator">the</span> following <span class="keyword">string</span> <span class="keyword">if</span> <span class="operator">the</span> <span class="keyword">text</span>-<span class="built_in">replace</span> style is implemented?  andy lives behind cafe
+</code></pre><p>Answers B</p>
+<pre><code>A. ndy lives behind cbfe
+B. cndy lives cehind ccfe
+<span class="keyword">C</span>. andy lives behind cafe
+<span class="keyword">D</span>. andy lives cehind bafe
+</code></pre><p>Question</p>
+<pre><code>Consider <span class="keyword">the</span> following code:  border-opacity:<span class="number">0.7</span>;
+Given a <span class="keyword">div</span> element <span class="keyword">that</span> needs <span class="keyword">to</span> have a transparent red border,
+which <span class="keyword">of</span> <span class="keyword">the</span> following code samples will work <span class="keyword">in</span> conjunction <span class="keyword">with</span> <span class="keyword">the</span> code <span class="keyword">above</span> <span class="keyword">to</span> accomplish <span class="keyword">the</span> requirement?
+</code></pre><p>Answers A</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">border</span><span class="value">: <span class="number">1</span>px solid rgba(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.7</span>);</span>
+<span class="tag">B</span>. <span class="attribute">border</span><span class="value">: <span class="number">1</span>px solid rgb(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.7</span>);</span>
+C. <span class="attribute">border</span><span class="value">: <span class="number">1</span>px solid rgba(<span class="number">255</span>, <span class="number">255</span>, <span class="number">0</span>, <span class="number">0.7</span>);</span>
+D. <span class="attribute">border</span><span class="value">: <span class="number">1</span>px solid red;</span> <span class="attribute">opacity</span><span class="value">: <span class="number">0.7</span>;</span>
+</code></pre><p>Question</p>
+<pre><code>Consider the following code:  div[class^=<span class="string">&quot;stronger&quot;</span>] { } {em <span class="keyword">...</span> }  Which of the following statements is true?
+</code></pre><p>Answers A</p>
+<pre><code>A. It applies <span class="keyword">the</span> rule only <span class="function_start"><span class="keyword">on</span></span> divs who belong <span class="keyword">to</span> a <span class="type">class</span> <span class="keyword">that</span> <span class="keyword">begins with</span> <span class="string">&quot;stronger&quot;</span>.
+B. It applies <span class="keyword">the</span> rule only <span class="function_start"><span class="keyword">on</span></span> divs <span class="keyword">of</span> <span class="type">class</span> <span class="string">&quot;stronger&quot;</span>.
+C. It applies <span class="keyword">the</span> rule only <span class="function_start"><span class="keyword">on</span></span> divs who belong <span class="keyword">to</span> a <span class="type">class</span> which <span class="keyword">end</span> <span class="keyword">with</span> <span class="string">&quot;stronger&quot;</span>.
+D. It applies <span class="keyword">the</span> rule only <span class="function_start"><span class="keyword">on</span></span> divs who belong <span class="keyword">to</span> a <span class="type">class</span> which <span class="keyword">does not contain</span> <span class="string">&quot;stronger&quot;</span> <span class="keyword">in</span> <span class="keyword">its</span> <span class="property">name</span>.
+</code></pre><p>Question</p>
+<pre><code>Consider <span class="operator">the</span> following font definition:  font-weight:<span class="keyword">normal</span>  What is <span class="operator">the</span> other way <span class="operator">of</span> getting <span class="operator">the</span> same <span class="built_in">result</span>?
+</code></pre><p>Answers C</p>
+<pre><code>A<span class="built_in">.</span> font<span class="attribute">-weight</span>: <span class="number">100</span>
+B<span class="built_in">.</span> font<span class="attribute">-weight</span>: <span class="number">900</span>
+C<span class="built_in">.</span> font<span class="attribute">-weight</span>: <span class="number">400</span>
+D<span class="built_in">.</span> font<span class="attribute">-weight</span>: <span class="number">700</span>
+</code></pre><p>Question</p>
+<pre><code>Consider the following problem:
+When trying to apply a CSS3 style to a label of a checked radio button like this:
+....
+<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="tag">label</span><span class="pseudo">:checked</span> <span class="rules">{
+    <span class="rule"><span class="attribute">font-weight</span>:<span class="value"> bold</span></span>;
+<span class="rule">}</span></span>
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+....
+<span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;radio&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;rad&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;radio&quot;</span>/&gt;</span>
+<span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;rad&quot;</span>&gt;</span>A Label<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+This does not produce the desired effect.
+Which of the following snippets will correct issue?
+</code></pre><p>Answers C</p>
+<pre><code>A. It is not possible <span class="keyword">to</span> style.
+B. &lt;input id=<span class="string">&quot;rad&quot;</span> <span class="class"><span class="keyword">type</span>=</span><span class="string">&quot;radio&quot;</span> name=<span class="string">&quot;rad&quot;</span>&gt;&lt;label <span class="string">&quot;rad&quot;</span>&gt;A Label&lt;/label&gt;
+C. input[<span class="class"><span class="keyword">type</span>=</span><span class="string">&quot;radio&quot;</span>]:checked+label{ font-weight: bold; }
+D. input[<span class="class"><span class="keyword">type</span>=</span><span class="string">&quot;radio&quot;</span>]:checked@label{ font-weight: bold; }
+</code></pre><p>Question</p>
+<pre><code>For <span class="operator">the</span> <span class="built_in">clear</span> property, which <span class="operator">of</span> <span class="operator">the</span> following <span class="built_in">value</span> is <span class="operator">not</span> valid?
+</code></pre><p>Answers D</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">none</span>
+<span class="tag">B</span>. <span class="attribute">left</span>
+C. <span class="attribute">right</span>
+D. <span class="attribute">top</span>
+</code></pre><p>Question</p>
+<pre><code><span class="tag">Given</span> <span class="tag">that</span> <span class="tag">one</span> <span class="tag">div</span> <span class="tag">element</span> <span class="tag">needs</span> <span class="tag">to</span> <span class="tag">be</span> <span class="tag">hidden</span> <span class="tag">and</span> <span class="tag">on</span> <span class="tag">active</span> <span class="tag">state</span> <span class="tag">needs</span> <span class="tag">to</span> <span class="tag">be</span> <span class="tag">displayed</span>, <span class="tag">what</span> <span class="tag">will</span> <span class="tag">be</span> <span class="tag">the</span> <span class="tag">output</span> <span class="tag">of</span> <span class="tag">the</span> <span class="tag">following</span> <span class="tag">code</span>?
+<span class="tag">div</span> <span class="rules">{
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+    <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> opacity <span class="number">1</span>s ease-out</span></span>;
+    <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span><span class="class">.active</span> <span class="rules">{
+    <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">1</span></span></span>;
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
+<span class="rule">}</span></span>
+</code></pre><p>Answers A</p>
+<pre><code>A. <span class="keyword">On</span> active state the element <span class="keyword">is</span> displayed.
+B. <span class="keyword">On</span> active state the element<span class="attribute">&apos;s</span> opacity <span class="keyword">is</span> changed <span class="keyword">to</span> <span class="number">1.</span>
+C. <span class="keyword">On</span> active state the element<span class="attribute">&apos;s</span> opacity <span class="keyword">is</span> changed <span class="keyword">to</span> <span class="number">0.</span>
+D. Nothing will be shown.
+</code></pre><p>Question</p>
+<pre><code>Given <span class="keyword">the</span> following problem:
+A drop shadow needs <span class="keyword">to</span> appear only <span class="keyword">at</span> <span class="keyword">the</span> bottom,
+<span class="keyword">and</span> no images should be used.
+Consider <span class="keyword">the</span> following code:
+-moz-box-shadow: <span class="number">0</span>px <span class="number">4</span>px <span class="number">4</span>px <span class="comment">#000;</span>
+-webkit-box-shadow: <span class="number">0</span>px <span class="number">4</span>px <span class="number">4</span>px <span class="comment">#000;</span>
+box-shadow-bottom: <span class="number">5</span>px <span class="comment">#000;</span>
+
+However, this produces shadows <span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> <span class="property">rest</span> <span class="keyword">of</span> <span class="keyword">the</span> element.
+Which <span class="keyword">of</span> <span class="keyword">the</span> following code snippets will correct <span class="keyword">the</span> issue?
+</code></pre><p>Answers B</p>
+<pre><code>A<span class="built_in">.</span>  border<span class="attribute">-bottom</span>:<span class="number">5</span>px solid <span class="variable">#ffffff</span>;
+    <span class="attribute">-webkit</span><span class="attribute">-box</span><span class="attribute">-shadow</span>: <span class="number">0</span>px <span class="number">5</span>px <span class="variable">#000000</span>;
+    <span class="attribute">-moz</span><span class="attribute">-box</span><span class="attribute">-shadow</span>: <span class="number">0</span>px <span class="number">5</span>px <span class="variable">#000000</span>;
+    box<span class="attribute">-shadow</span>: <span class="number">0</span>px <span class="number">5</span>px <span class="variable">#000000</span>;
+B<span class="built_in">.</span>  <span class="attribute">-webkit</span><span class="attribute">-box</span><span class="attribute">-shadow</span>: <span class="number">0</span> <span class="number">4</span>px <span class="number">4</span>px <span class="subst">-</span><span class="number">2</span>px <span class="variable">#000000</span>;
+    <span class="attribute">-moz</span><span class="attribute">-box</span><span class="attribute">-shadow</span>: <span class="number">0</span> <span class="number">4</span>px <span class="number">4</span>px <span class="subst">-</span><span class="number">2</span>px <span class="variable">#000000</span>;
+    box<span class="attribute">-shadow</span>: <span class="number">0</span> <span class="number">4</span>px <span class="number">4</span>px <span class="subst">-</span><span class="number">2</span>px <span class="variable">#000000</span>;
+C<span class="built_in">.</span>  <span class="attribute">-webkit</span><span class="attribute">-box</span><span class="attribute">-shadow</span>: <span class="number">0</span> <span class="number">4</span>px <span class="number">4</span>px <span class="subst">-</span><span class="number">2</span>px inside  <span class="variable">#000000</span>;
+    <span class="attribute">-moz</span><span class="attribute">-box</span><span class="attribute">-shadow</span>: <span class="number">0</span> <span class="number">4</span>px <span class="number">4</span>px <span class="subst">-</span><span class="number">2</span>px inside <span class="variable">#000000</span>;
+    box<span class="attribute">-shadow</span>: <span class="number">0</span> <span class="number">4</span>px <span class="number">4</span>px <span class="subst">-</span><span class="number">2</span>px inside  <span class="variable">#000000</span>;
+D<span class="built_in">.</span>  <span class="literal">None</span> of these<span class="built_in">.</span>
+</code></pre><p>Question</p>
+<pre><code>Is <span class="keyword">it</span> possible <span class="built_in">to</span> <span class="built_in">combine</span> <span class="operator">a</span> background image <span class="operator">and</span> CSS3 gradients?
+</code></pre><p>Answers B</p>
+<pre><code>A. It <span class="keyword">is</span> possible only <span class="keyword">when</span> two separate styles are used, <span class="string">&quot;background-image&quot;</span> <span class="keyword">and</span> <span class="string">&quot;gradient&quot;</span>, <span class="keyword">on</span> an HTML tag.
+B. It <span class="keyword">is</span> possible only <span class="keyword">when</span> <span class="string">&quot;background-image&quot;</span> <span class="keyword">is</span> used.
+C. It <span class="keyword">is</span> possible only <span class="keyword">when</span> layered HTML tags are used, <span class="string">&quot;background-image&quot;</span> <span class="keyword">and</span> <span class="string">&quot;gradient&quot;</span>.
+D. It <span class="keyword">is</span> <span class="keyword">not</span> possible <span class="keyword">to</span> combine a background image <span class="keyword">and</span> CSS3 gradients.
+</code></pre><p>Question</p>
+<pre><code>Is <span class="keyword">it</span> possible <span class="built_in">to</span> use transition animations <span class="operator">with</span> <span class="operator">a</span> gradient background?
+</code></pre><p>Answers B</p>
+<pre><code>A. <span class="literal">YES</span>
+B. <span class="literal">NO</span>
+</code></pre><p>Question</p>
+<pre><code>Is there <span class="operator">a</span> way <span class="built_in">to</span> <span class="built_in">create</span> <span class="operator">a</span> pure CSS3 <span class="keyword">text</span> color gradient?
+</code></pre><p>Answers C</p>
+<pre><code>A. Yes, using <span class="keyword">the</span> <span class="type">text</span>-gradient <span class="keyword">property</span>.
+B. Yes, <span class="keyword">but</span> only <span class="keyword">for</span> headings.
+C. There <span class="keyword">is</span> no way <span class="keyword">to</span> do a <span class="type">text</span> color gradient <span class="keyword">with</span> CSS3.
+D. None <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">above</span>.
+</code></pre><p>Question</p>
+<pre><code><span class="tag">Read</span> <span class="tag">the</span> <span class="tag">following</span>:
+<span class="at_rule">@<span class="keyword">page</span></span> <span class="tag">rotated</span> <span class="rules">{<span class="rule"><span class="attribute">size</span>:<span class="value"> landscape</span></span></span>}
+<span class="tag">TABLE</span> <span class="rules">{<span class="rule"><span class="attribute">page</span>:<span class="value"> rotated</span></span>; <span class="rule"><span class="attribute">page-break-before</span>:<span class="value"> right</span></span></span>}
+<span class="tag">What</span> <span class="tag">will</span> <span class="tag">this</span> <span class="tag">code</span> <span class="tag">do</span>?
+</code></pre><p>Answers A</p>
+<pre><code>A. It will <span class="keyword">put</span> all tables <span class="function_start"><span class="keyword">on</span></span> a right-hand side landscape page.
+B. It will rotate <span class="keyword">the</span> page <span class="keyword">if</span> <span class="keyword">the</span> table <span class="keyword">is</span> positioned <span class="keyword">at</span> <span class="keyword">the</span> right side.
+C. It will keep <span class="keyword">the</span> table <span class="keyword">in</span> <span class="keyword">the</span> landscape position <span class="keyword">and</span> rotate <span class="keyword">the</span> page.
+D. None <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">above</span>
+</code></pre><p>Question</p>
+<pre><code>State whether <span class="keyword">the</span> following statement <span class="keyword">is</span> <span class="constant">true</span> <span class="keyword">or</span> <span class="constant">false</span>.
+If a parent element display <span class="keyword">property</span> <span class="keyword">is</span> <span class="keyword">set</span> <span class="keyword">to</span> none, <span class="keyword">its</span> children too will <span class="keyword">not</span> be rendered.
+</code></pre><p>Answers A</p>
+<pre><code><span class="literal">A</span>. <span class="literal">True</span>
+B. <span class="literal">False</span>
+</code></pre><p>Question</p>
+<pre><code><span class="tag">Suppose</span> <span class="tag">that</span> <span class="tag">a</span> &lt;<span class="tag">tr</span>&gt; <span class="tag">tag</span> <span class="tag">has</span> 10 &lt;<span class="tag">td</span>&gt; <span class="tag">tags</span>.
+<span class="tag">In</span> <span class="tag">this</span> <span class="tag">case</span> <span class="tag">which</span> <span class="tag">statement</span> <span class="tag">is</span> <span class="tag">correct</span> <span class="tag">given</span> <span class="tag">the</span> <span class="tag">following</span>?
+<span class="tag">td</span><span class="pseudo">:nth-child(3n+0)</span><span class="rules">{
+    <span class="rule"><span class="attribute">background-color</span>:<span class="value"> orange</span></span>;
+<span class="rule">}</span></span>
+</code></pre><p>Answers D</p>
+<pre><code>A. It returns a syntax <span class="keyword">error</span>.
+B. The background color <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">fourth</span> td will be orange.
+C. The background color <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">third</span> td will be orange.
+D. The background color <span class="keyword">of</span> <span class="keyword">every</span> <span class="keyword">third</span> td will be orange.
+</code></pre><p>Question</p>
+<pre><code>The <span class="built_in">min</span>-width property cannot be applied <span class="built_in">to</span> <span class="operator">the</span> following <span class="keyword">element</span>:
+</code></pre><p>Answers C</p>
+<pre><code>A. button
+B. span
+C. <span class="built_in">table</span> row
+</code></pre><p>Question</p>
+<pre><code>There are various types <span class="operator">of</span> input fields <span class="operator">in</span> <span class="operator">a</span> HTML page.
+Choose <span class="operator">the</span> appropriate CSS3 code which will have <span class="operator">an</span> effect <span class="command"><span class="keyword">on</span> <span class="title">all</span> <span class="title">inputs</span>, <span class="title">except</span> <span class="title">checkbox</span> <span class="title">and</span>  <span class="title">radio</span>.</span>
+</code></pre><p>Answers B</p>
+<pre><code>A. form input:not([<span class="keyword">type</span>=<span class="string">&quot;radio&quot;</span>], [<span class="keyword">type</span>=<span class="string">&quot;checkbox&quot;</span>]) { }
+B. input:not([<span class="keyword">type</span>=<span class="string">&quot;radio&quot;</span>]):not([<span class="keyword">type</span>=<span class="string">&quot;checkbox&quot;</span>]) {  }
+C. input:not([<span class="keyword">type</span>=<span class="string">&quot;radio &amp; checkbox&quot;</span>]) {  }
+D. input:!([<span class="keyword">type</span>=<span class="string">&quot;radio&quot;</span>]) , input:!([<span class="keyword">type</span>=<span class="string">&quot;checkbox&quot;</span>]) {  }
+</code></pre><p>Question</p>
+<pre><code>To apply style <span class="function_start"><span class="keyword">on</span></span> <span class="keyword">every</span> input element except <span class="type">text</span>, which <span class="keyword">of</span> <span class="keyword">the</span> following selectors should be used?
+</code></pre><p>Answers B</p>
+<pre><code>A. input:([!<span class="class"><span class="keyword">type</span>=</span><span class="string">&apos;text&apos;</span>])
+B. input:not([<span class="class"><span class="keyword">type</span>=</span><span class="string">&quot;text&quot;</span>])
+C. input:not([<span class="class"><span class="keyword">type</span>!=</span><span class="string">&quot;text&quot;</span>])
+D. input:([<span class="class"><span class="keyword">type</span>!=</span><span class="string">&apos;text&apos;</span>])
+</code></pre><p>Question</p>
+<pre><code><span class="keyword">Using</span> height <span class="keyword">on</span> transitions <span class="keyword">is</span> <span class="keyword">not</span> possible <span class="keyword">with</span>:
+</code></pre><p>Answers A</p>
+<pre><code><span class="tag">A</span>. <span class="tag">height</span><span class="pseudo">:auto</span>
+<span class="tag">B</span>. <span class="tag">height</span><span class="pseudo">:100</span>%
+<span class="tag">C</span>. <span class="tag">height</span><span class="pseudo">:0</span>
+<span class="tag">D</span>. <span class="tag">max-height</span><span class="pseudo">:100</span>%
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> the best <span class="function"><span class="keyword">method</span> <span class="title">to</span> <span class="title">select</span> <span class="title">all</span> <span class="title">elements</span> <span class="title">except</span> <span class="title">for</span> <span class="title">the</span> <span class="title">last</span> <span class="title">one</span> <span class="title">in</span> <span class="title">an</span> <span class="title">unordered</span> <span class="title">list</span>?</span>
+</code></pre><p>Answers B</p>
+<pre><code>A. Adding <span class="operator">a</span> class <span class="built_in">to</span> <span class="keyword">each</span> &lt;li&gt; <span class="keyword">element</span> but <span class="keyword">last</span>
+B. Using li:<span class="operator">not</span>(:<span class="keyword">last</span>-child) css selector
+C. Using li:<span class="keyword">last</span>-child selector
+D. None <span class="operator">of</span> <span class="operator">the</span> above
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> default value <span class="keyword">of</span> <span class="keyword">the</span> animation-direction <span class="keyword">property</span>?
+</code></pre><p>Answers B</p>
+<pre><code>A. none
+B. normal
+<span class="keyword">C</span>. alternate
+<span class="keyword">D</span>. inherited
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> default value <span class="keyword">of</span> <span class="keyword">the</span> transform-style <span class="keyword">property</span>?
+</code></pre><p>Answers B</p>
+<pre><code>A. preserve-<span class="number">3</span>d
+B. flat
+<span class="keyword">C</span>. none
+<span class="keyword">D</span>. preserve
+</code></pre><p>Question</p>
+<pre><code>What is the difference between <span class="attribute">float</span><span class="pseudo">:left</span>; vs <span class="attribute">display</span><span class="value">:inline-block;</span> ?
+</code></pre><p>Answers BC</p>
+<pre><code>A. There <span class="keyword">is</span> no difference, both <span class="keyword">of</span> them have <span class="keyword">the</span> same results.
+B. display:inline-block; adds whitespace <span class="keyword">between</span> <span class="keyword">the</span> elements.
+C. float:left; collapses <span class="keyword">the</span> parent element <span class="function_start"><span class="keyword">on</span></span> itself.
+D. None <span class="keyword">of</span> these.
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> initial value <span class="keyword">of</span> <span class="keyword">the</span> animation-iteration-<span class="command">count</span> <span class="keyword">property</span>?
+</code></pre><p>Answers A</p>
+<pre><code>A. <span class="number">1</span>
+B. <span class="number">5</span>
+<span class="keyword">C</span>. <span class="keyword">None</span>
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> initial value <span class="keyword">of</span> <span class="keyword">the</span> font-size <span class="keyword">property</span>?
+</code></pre><p>Answers B</p>
+<pre><code>A. small
+B. medium
+<span class="keyword">C</span>. large
+<span class="keyword">D</span>. default
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> initial value <span class="keyword">of</span> <span class="keyword">the</span> marquee-speed <span class="keyword">property</span>?
+</code></pre><p>Answers B</p>
+<pre><code>A. slow
+B. normal
+<span class="keyword">C</span>. fast
+<span class="keyword">D</span>. none
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> initial value <span class="keyword">of</span> <span class="keyword">the</span> opacity <span class="keyword">property</span>?
+</code></pre><p>Answers A</p>
+<pre><code>A. <span class="number">1</span>
+B. <span class="keyword">normal</span>
+C. <span class="constant">none</span>
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> maximum value <span class="keyword">that</span> can be <span class="keyword">given</span> <span class="keyword">to</span> <span class="keyword">the</span> voice-volume <span class="keyword">property</span>?
+</code></pre><p>Answers B</p>
+<pre><code>A. <span class="number">10</span>
+B. <span class="number">100</span>
+<span class="keyword">C</span>. <span class="number">500</span>
+<span class="keyword">D</span>. <span class="keyword">None</span> of the above
+</code></pre><p>Question</p>
+<pre><code>What <span class="keyword">is</span> <span class="keyword">the</span> range <span class="keyword">of</span> values (<span class="keyword">in</span> decimal notation) <span class="keyword">that</span> can be specified <span class="keyword">in</span> <span class="keyword">the</span> RGB color model?
+</code></pre><p>Answers B</p>
+<pre><code>A. <span class="number">0</span> <span class="keyword">to</span> <span class="number">256</span>
+B. <span class="number">0</span> <span class="keyword">to</span> <span class="number">255</span>
+C. -<span class="number">250</span> <span class="keyword">to</span> <span class="number">250</span>
+D. -<span class="number">255</span> <span class="keyword">to</span> <span class="number">255</span>
+</code></pre><p>Question</p>
+<pre><code>What will be the output of the following code?
+...
+<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="class">.foo</span> <span class="rules">{
+ <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px</span></span>;
+ <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">50</span>px</span></span>;
+ <span class="rule"><span class="attribute">border-width</span>:<span class="value"><span class="number">3</span>px</span></span>;
+ <span class="rule"><span class="attribute">-webkit-border-image</span>:<span class="value">
+ <span class="function">-webkit-gradient(linear, <span class="number">0</span> <span class="number">0</span>, <span class="number">0</span> <span class="number">100</span>%, <span class="function">from(black)</span>, <span class="function">to(red)</span>)</span> <span class="number">1</span> <span class="number">100</span>%</span></span>;
+ <span class="rule"><span class="attribute">-webkit-border-image</span>:<span class="value">       <span class="function">-webkit-linear-gradient(black, red)</span> <span class="number">1</span> <span class="number">100</span>%</span></span>;
+ <span class="rule"><span class="attribute">-o-border-image</span>:<span class="value">           <span class="function">-o-linear-gradient(black, red)</span>) <span class="number">1</span> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">-moz-border-image</span>:<span class="value">         <span class="function">-moz-linear-gradient(black, red)</span> <span class="number">1</span> <span class="number">100</span>%</span></span>;
+  <span class="rule">}</span></span>
+  </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+  ...
+  <span class="tag">&lt;<span class="title">div</span>  <span class="attribute">class</span>=<span class="value">&quot;foo&quot;</span>&gt;</span>Lorem<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre><p>Answers C</p>
+<pre><code>A. The <span class="keyword">text</span> <span class="string">&quot;Lorem&quot;</span> will be colored <span class="keyword">black</span>-red.
+B. The <span class="operator">div</span> <span class="keyword">element</span> will be colored <span class="keyword">black</span>-red.
+C. The border <span class="operator">of</span> <span class="operator">div</span> <span class="keyword">element</span> will be colored <span class="keyword">black</span>-red.
+D. None <span class="operator">of</span> these.
+</code></pre><p>Question</p>
+<pre><code><span class="tag">What</span> <span class="tag">will</span> <span class="tag">be</span> <span class="tag">the</span> <span class="tag">output</span> <span class="tag">of</span> <span class="tag">the</span> <span class="tag">following</span> <span class="tag">rule</span>?  <span class="tag">em</span> <span class="rules">{ <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>,<span class="number">1</span>)</span> </span></span></span>}
+</code></pre><p>Answers C</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">Opacity</span> 1 with <span class="value">solid</span> red <span class="attribute">color</span>
+<span class="tag">B</span>. <span class="attribute">Opacity</span> 0 with <span class="value">solid</span> blue <span class="attribute">color</span>
+C. <span class="attribute">Opacity</span> 0 with <span class="value">solid</span> red <span class="attribute">color</span>
+D. <span class="attribute">Opacity</span> 1 with <span class="value">solid</span> blue <span class="attribute">color</span>
+E. <span class="attribute">None</span> of these.
+</code></pre><p>Question</p>
+<pre><code>What will happen <span class="keyword">if</span> <span class="operator">the</span> cursor property <span class="built_in">value</span> is <span class="built_in">set</span> <span class="built_in">to</span> <span class="constant">none</span>?
+</code></pre><p>Answers B</p>
+<pre><code><span class="tag">A</span>. The <span class="value">default</span> <span class="attribute">cursor</span> will be displayed.
+<span class="tag">B</span>. No <span class="attribute">cursor</span> will be displayed.
+C. <span class="tag">A</span> <span class="value">pointer</span> <span class="attribute">cursor</span> will be displayed.
+D. <span class="tag">A</span> <span class="value">text</span> <span class="attribute">cursor</span> will be displayed.
+</code></pre><p>Question</p>
+<pre><code>What will happen <span class="keyword">if</span> <span class="keyword">the</span> pause <span class="keyword">property</span> <span class="keyword">is</span> used <span class="keyword">as</span> follows?
+h2 { pause: <span class="number">40</span>s <span class="number">60</span>s }
+</code></pre><p>Answers A</p>
+<pre><code>A. pause-<span class="keyword">before</span> will be <span class="built_in">set</span> <span class="built_in">to</span> <span class="number">40</span> <span class="built_in">seconds</span> <span class="operator">and</span> pause-<span class="keyword">after</span> will be <span class="built_in">set</span> <span class="built_in">to</span> <span class="number">60</span> <span class="built_in">seconds</span>.
+B. pause-<span class="keyword">after</span> will be <span class="built_in">set</span> <span class="built_in">to</span> <span class="number">40</span> <span class="built_in">seconds</span> <span class="operator">and</span> pause-<span class="keyword">before</span> will be <span class="built_in">set</span> <span class="built_in">to</span> <span class="number">60</span> <span class="built_in">seconds</span>.
+C. pause-<span class="keyword">after</span> <span class="operator">and</span> pause-<span class="keyword">before</span> will be <span class="built_in">set</span> <span class="built_in">to</span> <span class="number">40</span> <span class="built_in">seconds</span>.
+D. pause-<span class="keyword">after</span> <span class="operator">and</span> pause-<span class="keyword">before</span> will be <span class="built_in">set</span> <span class="built_in">to</span> <span class="number">60</span> <span class="built_in">seconds</span>.
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following are <span class="operator">not</span> valid values <span class="keyword">for</span> <span class="operator">the</span> target-<span class="built_in">new</span> property?
+</code></pre><p>Answers DE</p>
+<pre><code>A. window
+B. tab
+<span class="keyword">C</span>. none
+<span class="keyword">D</span>. parent
+<span class="keyword">E</span>. current
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following can be used <span class="built_in">to</span> <span class="built_in">add</span> <span class="operator">a</span> shadow around <span class="operator">the</span> <span class="operator">div</span> <span class="keyword">element</span> below?
+&lt;<span class="operator">div</span>&gt;Lorem ipsum&lt;/<span class="operator">div</span>&gt;
+</code></pre><p>Answers A</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">box-shadow</span><span class="value">: <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px <span class="number">2</span>px <span class="hexcolor">#888</span>;</span>
+<span class="tag">B</span>. <span class="attribute">border</span>-shadow<span class="value">: <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px <span class="number">2</span>px <span class="hexcolor">#888</span>;</span>
+C. <span class="tag">div</span>-shadow<span class="value">: <span class="number">8</span>px <span class="number">2</span>px <span class="number">0</span> <span class="number">0</span> <span class="hexcolor">#888</span>;</span>
+D. <span class="attribute">None</span> of these
+</code></pre><p>Question</p>
+<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following filters <span class="keyword">does</span> SVG support?
+</code></pre><p>Answers B</p>
+<pre><code>A. SVG supports only CSS filters.
+B. SVG supports CSS filters <span class="keyword">as</span> well <span class="keyword">as</span> <span class="string">&apos;filter&apos;</span> <span class="keyword">property</span> <span class="keyword">of</span> SVG
+C. SVG supports only <span class="string">&apos;filter&apos;</span> <span class="keyword">property</span> <span class="keyword">of</span> SVG
+D. SVG does <span class="keyword">not</span> supports any filters
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following is <span class="operator">not</span> <span class="operator">a</span> valid page break?
+</code></pre><p>Answers B</p>
+<pre><code>A<span class="built_in">.</span> page<span class="attribute">-break</span><span class="attribute">-inside</span>
+B<span class="built_in">.</span> page<span class="attribute">-break</span><span class="attribute">-outside</span>
+C<span class="built_in">.</span> page<span class="attribute">-break</span><span class="attribute">-before</span>
+D<span class="built_in">.</span> page<span class="attribute">-break</span><span class="attribute">-after</span>
+E<span class="built_in">.</span> <span class="literal">None</span> of these
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following is <span class="operator">not</span> <span class="operator">a</span> valid <span class="built_in">value</span> <span class="keyword">for</span> <span class="operator">the</span> font-smooth property?
+</code></pre><p>Answers D</p>
+<pre><code>A. auto
+B. never
+<span class="keyword">C</span>. always
+<span class="keyword">D</span>. normal
+<span class="keyword">E</span>. length
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following is <span class="operator">not</span> <span class="operator">a</span> valid <span class="built_in">value</span> <span class="keyword">for</span> <span class="operator">the</span> font-stretch property?
+</code></pre><p>Answers</p>
+<pre><code>A. condensed
+B. normal
+<span class="keyword">C</span>. semi-narrower
+<span class="keyword">D</span>. expanded
+<span class="keyword">E</span>. semi-expanded
+</code></pre><p>Question</p>
+<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following <span class="keyword">is</span> <span class="keyword">the</span> initial value <span class="keyword">for</span> <span class="keyword">the</span> column-fill <span class="keyword">property</span>?
+</code></pre><p>Answers</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">auto</span>
+<span class="tag">B</span>. balance
+C. <span class="attribute">none</span>
+</code></pre><p>Question</p>
+<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following option <span class="keyword">does</span> <span class="keyword">not</span> exist <span class="keyword">in</span> media groups available <span class="keyword">in</span> CSS3?
+</code></pre><p>Answers D</p>
+<pre><code><span class="literal">A</span>. continuous <span class="literal">or</span> paged
+B. visual <span class="literal">or</span> tactile
+C. grid <span class="literal">or</span> bitmap
+D. braille <span class="literal">or</span> screen
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following properties allow percentages <span class="operator">in</span> their <span class="built_in">value</span> fields?
+</code></pre><p>Answers AD</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">font-size</span>
+<span class="tag">B</span>. <span class="attribute">font-variant</span>
+C. <span class="attribute">font-weight</span>
+D. <span class="attribute">line-height</span>
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following properties specifies <span class="operator">the</span> minimum <span class="built_in">number</span> <span class="operator">of</span> <span class="keyword">lines</span> <span class="operator">of</span> <span class="operator">a</span> paragraph that must be left <span class="keyword">at</span> <span class="operator">the</span> bottom <span class="operator">of</span> <span class="operator">a</span> page?
+</code></pre><p>Answers A</p>
+<pre><code>A. orphans
+B. windows
+<span class="keyword">C</span>. bottom
+<span class="keyword">D</span>. overflow
+<span class="keyword">E</span>. <span class="keyword">None</span> of these
+</code></pre><p>Question</p>
+<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following statements <span class="keyword">is</span> <span class="constant">true</span> <span class="keyword">with</span> regard <span class="keyword">to</span> CSS3 transitions?
+</code></pre><p>Answers</p>
+<pre><code>A. Using CSS transitions will slow down page upload <span class="operator">and</span> produce lag.
+B. The completion <span class="operator">of</span> <span class="operator">a</span> CSS transition generates <span class="operator">a</span> corresponding DOM event.
+    An event is fired <span class="keyword">for</span> <span class="keyword">each</span> property that undergoes <span class="operator">a</span> transition.
+    This allows <span class="operator">a</span> content developer <span class="built_in">to</span> perform actions that synchronize <span class="operator">with</span> <span class="operator">the</span> completion <span class="operator">of</span> <span class="operator">a</span> transition.
+C. CSS transitions allow DOM events <span class="operator">in</span> CSS values <span class="built_in">to</span> occur smoothly over <span class="operator">a</span> specified duration.
+D. None <span class="operator">of</span> these
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following styles is <span class="operator">not</span> valid <span class="keyword">for</span> <span class="operator">an</span> image?
+</code></pre><p>Answers E</p>
+<pre><code>A. img { <span class="built_in">float</span>= left }
+B. img { <span class="built_in">float</span>: left here }
+C. img { background: <span class="string">&quot;black&quot;</span> }
+D. img { border-width: <span class="number">10</span> }
+E. All <span class="keyword">of</span> the above
+</code></pre><p>Question</p>
+<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following styles <span class="keyword">is</span> valid?
+</code></pre><p>Answers E</p>
+<pre><code>A<span class="built_in">.</span> <span class="keyword">order</span>: <span class="string">&quot;none&quot;</span>;
+B<span class="built_in">.</span> <span class="keyword">order</span><span class="subst">=</span> <span class="string">&quot;none&quot;</span>;
+C<span class="built_in">.</span> <span class="keyword">order</span>: <span class="literal">none</span>;
+D<span class="built_in">.</span> <span class="keyword">order</span><span class="subst">=</span> <span class="literal">none</span>;
+E<span class="built_in">.</span> <span class="literal">None</span> of these<span class="built_in">.</span>
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will apply <span class="operator">a</span> <span class="keyword">black</span> inner glow <span class="operator">with</span> <span class="number">25</span>% opacity <span class="built_in">to</span> <span class="operator">a</span> page <span class="keyword">element</span>?
+</code></pre><p>Answers B</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">box-shadow</span><span class="value">: <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>, <span class="number">0.25</span>);</span>
+<span class="tag">B</span>. <span class="attribute">box-shadow</span><span class="value">: inset <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="number">0.25</span>);</span>
+C. <span class="attribute">box-shadow</span><span class="value">: <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>, <span class="number">25</span>%);</span>
+D. <span class="attribute">box-shadow</span><span class="value">: inset <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="number">25</span>%);</span>
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will apply <span class="operator">a</span> gradient transition <span class="built_in">to</span> <span class="comment">#DemoGradient using CSS3?</span>
+</code></pre><p>Answers B</p>
+<pre><code><span class="tag">A</span>. <span class="at_rule">@<span class="keyword">-webkit-keyframes</span> pulse #DemoGradient </span>{
+    0% <span class="rules">{
+        <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-gradient(linear, left top, left bottom, <span class="function">color-stop(<span class="number">0</span>, <span class="function">rgb(<span class="number">196</span>,<span class="number">222</span>,<span class="number">242</span>)</span>)</span>, <span class="function">color-stop(<span class="number">0.5</span>, <span class="function">rgb(<span class="number">242</span>,<span class="number">242</span>,<span class="number">242</span>)</span>)</span>, <span class="function">color-stop(<span class="number">1</span>, <span class="function">rgb(<span class="number">240</span>,<span class="number">240</span>,<span class="number">240</span>)</span>)</span>)</span></span></span>;
+    <span class="rule">}</span></span>
+    50% <span class="rules">{
+        <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-gradient(linear, left top, left bottom, <span class="function">color-stop(<span class="number">0</span>, <span class="function">rgb(<span class="number">222</span>,<span class="number">252</span>,<span class="number">255</span>)</span>)</span>, <span class="function">color-stop(<span class="number">0.5</span>, <span class="function">rgb(<span class="number">242</span>,<span class="number">242</span>,<span class="number">242</span>)</span>)</span>, <span class="function">color-stop(<span class="number">1</span>, <span class="function">rgb(<span class="number">240</span>,<span class="number">240</span>,<span class="number">240</span>)</span>)</span>)</span></span></span>;
+    <span class="rule">}</span></span>
+    100% <span class="rules">{
+        <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-gradient(linear, left top, left bottom, <span class="function">color-stop(<span class="number">0</span>, <span class="function">rgb(<span class="number">196</span>,<span class="number">222</span>,<span class="number">242</span>)</span>)</span>, <span class="function">color-stop(<span class="number">0.5</span>, <span class="function">rgb(<span class="number">242</span>,<span class="number">242</span>,<span class="number">242</span>)</span>)</span>, <span class="function">color-stop(<span class="number">1</span>, <span class="function">rgb(<span class="number">240</span>,<span class="number">240</span>,<span class="number">240</span>)</span>)</span>)</span></span></span>;
+    <span class="rule">}</span></span>
+    }
+<span class="tag">B</span>. <span class="id">#DemoGradient</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-webkit-linear-gradient(#C7D3DC,#<span class="number">5</span>B798E)</span></span></span>;
+    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-moz-linear-gradient(#C7D3DC,#<span class="number">5</span>B798E)</span></span></span>;
+    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">-o-linear-gradient(#C7D3DC,#<span class="number">5</span>B798E)</span></span></span>;
+    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">linear-gradient(#C7D3DC,#<span class="number">5</span>B798E)</span></span></span>;
+    <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> background <span class="number">1</span>s ease-out</span></span>;
+    <span class="rule"><span class="attribute">-moz-transition</span>:<span class="value"> background <span class="number">1</span>s ease-out</span></span>;
+    <span class="rule"><span class="attribute">-o-transition</span>:<span class="value"> background <span class="number">1</span>s ease-out</span></span>;
+    <span class="rule"><span class="attribute">transition</span>:<span class="value"> background <span class="number">1</span>s ease-out</span></span>;
+    <span class="rule"><span class="attribute">background-size</span>:<span class="value"><span class="number">1</span>px <span class="number">200</span>px</span></span>;
+    <span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+    <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#839DB0</span></span></span>;
+    <span class="rule"><span class="attribute">cursor</span>:<span class="value">pointer</span></span>;
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">150</span>px</span></span>;
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>px</span></span>;
+    <span class="rule">}</span></span>
+    <span class="id">#DemoGradient</span><span class="pseudo">:Hover</span><span class="rules">{
+    <span class="rule"><span class="attribute">background-position</span>:<span class="value"><span class="number">100</span>px</span></span>;
+    <span class="rule">}</span></span>
+<span class="tag">C</span>.  <span class="tag">It</span> <span class="tag">is</span> <span class="tag">not</span> <span class="tag">possible</span> <span class="tag">to</span> <span class="tag">apply</span> <span class="tag">a</span> <span class="tag">gradient</span> <span class="tag">transition</span> <span class="tag">using</span> <span class="tag">only</span> <span class="tag">CSS3</span>.
+</code></pre><p>Question</p>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will <span class="built_in">create</span> <span class="operator">a</span> triangle effect <span class="keyword">using</span> pure CSS3 <span class="command"><span class="keyword">on</span> <span class="title">a</span> <span class="title">white</span> <span class="title">background</span>, <span class="title">without</span> <span class="title">making</span> <span class="title">use</span> <span class="title">of</span> <span class="title">background</span> <span class="title">images</span>?</span>
+</code></pre><p>Answers</p>
+<pre><code><span class="tag">A</span>. It is not possible to do so.
+<span class="tag">B</span>. <span class="attribute">border-color</span><span class="value">: <span class="hexcolor">#a0c7ff</span> <span class="hexcolor">#ffffff</span> <span class="hexcolor">#ffffff</span> <span class="hexcolor">#ffffff</span>;</span>     <span class="attribute">border-style</span><span class="value">: solid;</span>     <span class="attribute">border-width</span><span class="value">: <span class="number">20</span>px;</span>     <span class="attribute">width</span><span class="value">: <span class="number">0</span>px;</span>     <span class="attribute">height</span><span class="value">: <span class="number">0</span>px;</span>
+C. <span class="attribute">background-color</span><span class="value">: <span class="hexcolor">#a0c7ff</span> <span class="hexcolor">#ffffff</span> <span class="hexcolor">#ffffff</span> <span class="hexcolor">#ffffff</span>;</span>     <span class="attribute">border-style</span><span class="value">: solid;</span>     <span class="attribute">border-width</span><span class="value">: <span class="number">20</span>px;</span>     <span class="attribute">width</span><span class="value">: <span class="number">0</span>px;</span>     <span class="attribute">height</span><span class="value">: <span class="number">0</span>px;</span>
+D. <span class="attribute">background-color</span><span class="value">: <span class="hexcolor">#a0c7ff</span> <span class="hexcolor">#ffffff</span> <span class="hexcolor">#ffffff</span> <span class="hexcolor">#ffffff</span>;</span> <span class="attribute">border-style</span><span class="value">: solid;</span> <span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span> <span class="attribute">width</span><span class="value">: <span class="number">10</span>px;</span> <span class="attribute">height</span><span class="value">: <span class="number">10</span>px;</span>
+</code></pre><h2 id="Question">Question</h2>
+<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will decrease <span class="number">50</span>px <span class="built_in">from</span> <span class="operator">a</span> DIV <span class="keyword">element</span> whose width is <span class="number">100</span>%?
+</code></pre><p>Answers</p>
+<pre><code><span class="tag">A</span>. <span class="attribute">width</span><span class="value">: calc(<span class="number">100</span>% - <span class="number">50</span>px);</span>
+<span class="tag">B</span>. <span class="attribute">width</span><span class="value">: reduce(<span class="number">100</span>% - <span class="number">50</span>px);</span>
+C. <span class="attribute">width</span><span class="value">: decrease(<span class="number">100</span>% - <span class="number">50</span>px);</span>
+D. <span class="attribute">width</span><span class="value">: <span class="number">100</span>% - <span class="number">50</span>px;</span>
+</code></pre><h2 id="Question-1">Question</h2>
+<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">given</span> options <span class="keyword">is</span>/are equivalent <span class="keyword">to</span> <span class="keyword">the</span> following rule?
+DIV { line-height: <span class="number">1.2</span>; font-size: <span class="number">10</span>pt }
+</code></pre><p>Answers AC</p>
+<pre><code><span class="tag">A</span>. <span class="tag">DIV</span> <span class="rules">{ <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">1.2</span>em</span></span>; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">10</span>pt </span></span></span>}
+<span class="tag">B</span>. <span class="tag">DIV</span> <span class="rules">{ <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">12</span>em</span></span>; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">10</span>pt </span></span></span>}
+<span class="tag">C</span>. <span class="tag">DIV</span> <span class="rules">{ <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">120</span>%</span></span>; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">10</span>pt </span></span></span>}
+<span class="tag">D</span>. <span class="tag">DIV</span> <span class="rules">{ <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">20</span>%</span></span>; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">10</span>pt </span></span></span>}
+<span class="tag">E</span>. <span class="tag">DIV</span> <span class="rules">{ <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">80</span>%</span></span>; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">10</span>pt </span></span></span>}
+</code></pre><h2 id="Question-2">Question</h2>
+<pre><code>Which <span class="constant">one</span> <span class="operator">of</span> <span class="operator">the</span> following is appropriate <span class="built_in">to</span> mirror/flip <span class="keyword">text</span> <span class="keyword">by</span> <span class="keyword">using</span> CSS3?
+</code></pre><p>Answers A</p>
+<pre><code><span class="tag">A</span>. <span class="class">.mirror_text</span>{
+    -moz-<span class="attribute">transform</span><span class="value">: scaleX(-<span class="number">1</span>);</span>
+    -o-<span class="attribute">transform</span><span class="value">: scaleX(-<span class="number">1</span>);</span>
+    -webkit-<span class="attribute">transform</span><span class="value">: scaleX(-<span class="number">1</span>);</span>
+    <span class="attribute">transform</span><span class="value">: scaleX(-<span class="number">1</span>);</span>
+    <span class="attribute">filter</span><span class="value">: FlipH;</span>
+    -ms-<span class="attribute">filter</span><span class="value">: <span class="string">&quot;FlipH&quot;</span>;</span>
+    }
+<span class="tag">B</span>. <span class="class">.mirror_text</span>{
+    Box-reflect; 20px <span class="attribute">right</span>;
+    }
+C. <span class="class">.mirror_text</span>{
+    Box-reflect; 20px <span class="attribute">left</span>;
+    }
+D. <span class="class">.mirror_text</span>{
+    -moz-<span class="attribute">transform</span><span class="value">: rotate(-<span class="number">180</span>deg);</span>
+    -webkit-<span class="attribute">transform</span><span class="value">: rotate(-<span class="number">180</span>deg);</span>
+    <span class="attribute">transform</span><span class="value">: rotate(-<span class="number">180</span>deg);</span>
+    }
+</code></pre><h2 id="Question-3">Question</h2>
+<pre><code>Which statement <span class="keyword">is</span> correct <span class="keyword">given</span> <span class="keyword">the</span> following?
+box-shadow:<span class="number">30</span>px <span class="number">20</span>px <span class="number">10</span>px <span class="number">5</span>px black;
+</code></pre><p>Answers B</p>
+<pre><code>A. The shadow will be spread out <span class="keyword">to</span> <span class="number">30</span>px top, <span class="number">20</span>px right, <span class="number">10</span>px bottom, <span class="number">5</span>px left.
+B. The position <span class="keyword">of</span> <span class="keyword">the</span> horizontal black shadow <span class="keyword">is</span> <span class="number">30</span>px <span class="keyword">and</span> <span class="keyword">the</span> position <span class="keyword">of</span> <span class="keyword">the</span> vertical black shadow <span class="keyword">is</span> <span class="number">20</span>px <span class="keyword">and</span> blur distance <span class="keyword">is</span> <span class="number">10</span>px <span class="keyword">and</span> size <span class="keyword">of</span> shadow <span class="keyword">is</span> <span class="number">5</span>px.
+C. The position <span class="keyword">of</span> <span class="keyword">the</span> vertical  black shadow <span class="keyword">is</span> <span class="number">30</span>px <span class="keyword">and</span> <span class="keyword">the</span> position <span class="keyword">of</span> <span class="keyword">the</span> horizontal black shadow <span class="keyword">is</span> <span class="number">20</span>px <span class="keyword">and</span> size <span class="keyword">of</span> shadow <span class="keyword">is</span> <span class="number">10</span>px <span class="keyword">and</span> blur distance <span class="keyword">is</span> <span class="number">5</span>px.
+D. The shadow will be spread out <span class="keyword">to</span> <span class="number">30</span>px top <span class="keyword">and</span> bottom, <span class="number">20</span>px left <span class="keyword">and</span> right <span class="keyword">with</span> <span class="number">10</span>px blur distance, <span class="number">5</span>px shadow size.
+</code></pre><p>Helpers</p>
+<pre><code>box-shadow: horizontalOffset verticalOffset Blur Spread Color. Spread <span class="keyword">is</span> also known <span class="keyword">as</span> the Size. Answer <span class="number">2</span> <span class="keyword">is</span> correct.
+http:<span class="comment">//www.w3schools.com/cssref/css3_pr_box-shadow.asp</span>
+</code></pre><p>Question</p>
+<pre><code><span class="tag">While</span> <span class="tag">rendering</span> <span class="tag">the</span> <span class="tag">following</span> <span class="tag">code</span>, <span class="tag">what</span> <span class="tag">is</span> <span class="tag">the</span> <span class="tag">role</span> <span class="tag">of</span> &quot;<span class="tag">src</span>&quot; <span class="tag">propery</span>?
+<span class="at_rule">@<span class="keyword">font-face</span></span> <span class="rules">{
+    <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">&quot;calibriforh1&quot;</span></span></span>;
+    <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">local(<span class="string">&quot;calibri&quot;</span>)</span>, <span class="function">url(calibri.woff)</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">h1</span> <span class="rules">{
+    <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">&quot;calibriforh1&quot;</span>,
+    arial, sans-serif</span></span>;
+<span class="rule">}</span></span>
+</code></pre><p>Answers A</p>
+<pre><code>A. It&apos;s <span class="keyword">for</span> searching <span class="keyword">the</span> user&apos;s system <span class="keyword">for</span> a <span class="string">&quot;calibri&quot;</span> font, <span class="keyword">and</span> <span class="keyword">if</span> <span class="keyword">it</span> <span class="keyword">does</span> <span class="keyword">not</span> exist, <span class="keyword">it</span> will load <span class="keyword">the</span> font <span class="keyword">from</span> <span class="keyword">the</span> server instead.
+B. It&apos;s <span class="keyword">for</span> searching <span class="keyword">the</span> user&apos;s system <span class="keyword">for</span> a <span class="string">&quot;calibri&quot;</span> font, <span class="keyword">and</span> <span class="keyword">if</span> <span class="keyword">it</span> <span class="keyword">does</span> <span class="keyword">not</span> exist, <span class="keyword">it</span> will load user&apos;s system&apos;s default font instead.
+C. It&apos;s <span class="keyword">for</span> loading <span class="keyword">the</span> user&apos;s system&apos;s default font.
+D. None <span class="keyword">of</span> these.
+</code></pre><p>Helper</p>
+<pre><code><span class="label">https:</span>//developer<span class="preprocessor">.mozilla</span><span class="preprocessor">.org</span>/en-US/docs/Web/CSS/@font-face
+</code></pre><p><a href="http://odesk-tests.com/tests/146/questions/395" target="_blank" rel="external">http://odesk-tests.com/tests/146/questions/395</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/style/">Style</a>
+  </div>
+
+        
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        
+<div class="prev_next clearfix">
+  
+    <a href="/2015/01/22/js-tests/" class="alignleft prev" title="js tests">js tests</a>
+  
+  
+    <a href="/2015/01/22/10-digest()-iterations-reached-aborting/" class="alignright next" title="10 digest() iterations reached. Aborting">10 digest() iterations reached. Aborting</a>
+  
+</div>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://blog.gyf1.com/2015/01/22/css-tests/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+   -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"gyf"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.gyf1.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
+  
+    <li><a href="/categories/database/">Database</a><small>5</small></li>
+  
+    <li><a href="/categories/giant/">Giant</a><small>96</small></li>
+  
+    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+  
+    <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
+  
+    <li><a href="/categories/javascript/">JavaScript</a><small>68</small></li>
+  
+    <li><a href="/categories/others/">Others</a><small>10</small></li>
+  
+    <li><a href="/categories/portfolio/">Portfolio</a><small>7</small></li>
+  
+    <li><a href="/categories/salesforce/">Salesforce</a><small>9</small></li>
+  
+    <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
+  
+    <li><a href="/categories/style/">Style</a><small>22</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/agile-development/" style="font-size: 13.00px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.00px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.00px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.00px;">Bower</a><a href="/tags/css/" style="font-size: 18.00px;">CSS</a><a href="/tags/certification/" style="font-size: 11.00px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.00px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.00px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 11.00px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.00px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.00px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.00px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.00px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.00px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.00px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.00px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.00px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.00px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.00px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.00px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.00px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.00px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.00px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.00px;">jQuery</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2015/01/25/closures-in-javascript/">Closures in JavaScript</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/23/angularjs-style-guide/">AngularJS Style Guide</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/22/js-tests/">js tests</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/22/css-tests/">css tests</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/22/10-digest()-iterations-reached-aborting/">10 digest() iterations reached. Aborting</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/22/关于javascript中apply()和call()方法的区别z/">关于javascript中apply()和call()方法的区别z</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/20/maximum-call-stack-size-exceeded/">Maximum call stack size exceeded</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/18/getting-over-jquery/">Getting Over jQuery</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/18/understanding-prototypes-in-javascript/">Understanding Prototypes in JavaScript</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/17/js里的原型和继承/">js里的原型和继承</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <iframe 
+	width="100%" 
+	height="600" 
+	class="share_self"  
+	frameborder="0" 
+	scrolling="no" 
+	src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=3988939492&verifier=76ceba5c&dpc=1"
+	>
+</iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 GYF1
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+</body>
+</html>
