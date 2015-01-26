@@ -2,18 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/01/22/js-apply-call-difference/</loc>
+    <lastmod>2015-01-26T01:12:28.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/01/25/closures-in-javascript/</loc>
-    <lastmod>2015-01-25T07:55:33.000Z</lastmod>
+    <lastmod>2015-01-26T01:08:57.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://blog.gyf1.com/2015/01/23/angularjs-style-guide/</loc>
-    <lastmod>2015-01-25T06:23:58.000Z</lastmod>
+    <lastmod>2015-01-26T01:07:43.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://blog.gyf1.com/2015/01/22/css-tests/</loc>
-    <lastmod>2015-01-23T07:36:22.000Z</lastmod>
+    <lastmod>2015-01-26T01:06:37.000Z</lastmod>
   </url>
   
   <url>
@@ -79,11 +84,6 @@
   <url>
     <loc>http://blog.gyf1.com/2015/01/22/10-digest()-iterations-reached-aborting/</loc>
     <lastmod>2015-01-22T09:06:31.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.gyf1.com/2015/01/22/%E5%85%B3%E4%BA%8Ejavascript%E4%B8%ADapply()%E5%92%8Ccall()%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%ABz/</loc>
-    <lastmod>2015-01-22T08:41:24.000Z</lastmod>
   </url>
   
   <url>

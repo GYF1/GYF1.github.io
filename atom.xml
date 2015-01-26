@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-01-26T00:59:22.248Z</updated>
+  <updated>2015-01-26T01:14:55.353Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -19,11 +19,13 @@
     <link href="http://blog.gyf1.com/2015/01/25/closures-in-javascript/"/>
     <id>http://blog.gyf1.com/2015/01/25/closures-in-javascript/</id>
     <published>2015-01-25T06:22:55.000Z</published>
-    <updated>2015-01-25T07:55:33.000Z</updated>
+    <updated>2015-01-26T01:08:57.000Z</updated>
     <content type="html"><![CDATA[<p>By now, you probably know all about functions and all the fun functiony things that they do.<br>An important part of working with functions, with JavaScript, and (possibly) life in general is understanding the topic known as closures.<br>Closures touch upon a gray area where functions and variable scope intersect:</p>
 <p><img src="http://www.kirupa.com/images/gray_area_72.png" alt="Closure"></p>
 <p>Now, I am not going to say any more about closures, for this is something best explained by seeing code.<br>Any words I add right now to define or describe what closures are will only serve to confuse things.<br>In the following sections, we&#x2019;ll start off in familiar territory and then slowly venture into hostile areas where closures can be found.</p>
 <p>Onwards!</p>
+<a id="more"></a>
+
 <h1 id="Functions_within_Functions">Functions within Functions</h1>
 <p>The first thing we are going to do is really drill in on what happens when you have functions within functions&#x2026;and the inner function gets returned.<br>As part of that, let&#x2019;s do a quick review of functions.</p>
 <p>Take a look at the following code:</p>
@@ -140,7 +142,12 @@ timer();
 <p>The stopWatch outer function is no longer in play, and the timer variable is bound to the getDelay function.<br>Now, here is the twist. The getDelay function relies on the startTime variable that lives in the context of the outer stopWatch function:</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>By now, you probably know all about functions and all the fun functiony things that they do.<br>An important part of working with functio]]>
+    <![CDATA[<p>By now, you probably know all about functions and all the fun functiony things that they do.<br>An important part of working with functions, with JavaScript, and (possibly) life in general is understanding the topic known as closures.<br>Closures touch upon a gray area where functions and variable scope intersect:</p>
+<p><img src="http://www.kirupa.com/images/gray_area_72.png" alt="Closure"></p>
+<p>Now, I am not going to say any more about closures, for this is something best explained by seeing code.<br>Any words I add right now to define or describe what closures are will only serve to confuse things.<br>In the following sections, we&#x2019;ll start off in familiar territory and then slowly venture into hostile areas where closures can be found.</p>
+<p>Onwards!</p>
+]]>
+    
     </summary>
     
       <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
@@ -152,8 +159,11 @@ timer();
     <link href="http://blog.gyf1.com/2015/01/23/angularjs-style-guide/"/>
     <id>http://blog.gyf1.com/2015/01/23/angularjs-style-guide/</id>
     <published>2015-01-23T15:12:58.000Z</published>
-    <updated>2015-01-25T06:23:58.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="AngularJS_Style_Guide">AngularJS Style Guide</h1>
+    <updated>2015-01-26T01:07:43.000Z</updated>
+    <content type="html"><![CDATA[<p>Best practices for AngularJS</p>
+<a id="more"></a>
+
+<h1 id="AngularJS_Style_Guide">AngularJS Style Guide</h1>
 <p><em>Opinionated AngularJS style guide for teams by <a href="//twitter.com/john_papa">@john_papa</a></em></p>
 <p>If you are looking for an opinionated style guide for syntax, conventions, and structuring AngularJS applications, then step right in. These styles are based on my development experience with <a href="//angularjs.org">AngularJS</a>, presentations, <a href="http://pluralsight.com/training/Authors/Details/john-papa" target="_blank" rel="external">Pluralsight training courses</a> and working in teams.</p>
 <p>The purpose of this style guide is to provide guidance on building AngularJS applications by showing the conventions I use and, more importantly, why I choose them.</p>
@@ -4149,8 +4159,9 @@ ng-m <span class="comment">// creates an Angular module</span>
 <p><strong><a href="#table-of-contents">Back to top</a></strong></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="AngularJS_Style_Guide">AngularJS Style Guide</h1>
-<p><em>Opinionated AngularJS style guide for teams by <a href="//twitter.com/john_]]>
+    <![CDATA[<p>Best practices for AngularJS</p>
+]]>
+    
     </summary>
     
       <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
@@ -4236,8 +4247,11 @@ object &#x2611;&#xFE0F;
     <link href="http://blog.gyf1.com/2015/01/22/css-tests/"/>
     <id>http://blog.gyf1.com/2015/01/22/css-tests/</id>
     <published>2015-01-22T12:09:03.000Z</published>
-    <updated>2015-01-23T07:36:22.000Z</updated>
-    <content type="html"><![CDATA[<p>Question</p>
+    <updated>2015-01-26T01:06:37.000Z</updated>
+    <content type="html"><![CDATA[<p>Tests to check whether you really know css.</p>
+<a id="more"></a>
+
+<p>Question</p>
 <pre><code>Can <span class="operator">a</span> percentage <span class="built_in">value</span> be given <span class="operator">in</span> <span class="operator">a</span> ruby-align property?
 </code></pre><p>Answers B</p>
 <pre><code><span class="literal">A</span>. Yes
@@ -4776,8 +4790,9 @@ D. None <span class="keyword">of</span> these.
 </code></pre><p><a href="http://odesk-tests.com/tests/146/questions/395" target="_blank" rel="external">http://odesk-tests.com/tests/146/questions/395</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Question</p>
-<pre><code>Can <span class="operator">a</span> percentage <span class="built_in">value</span> be given <span class="operator]]>
+    <![CDATA[<p>Tests to check whether you really know css.</p>
+]]>
+    
     </summary>
     
       <category term="Style" scheme="http://blog.gyf1.com/categories/style/"/>
@@ -4834,11 +4849,11 @@ D. None <span class="keyword">of</span> these.
   </entry>
   
   <entry>
-    <title><![CDATA[关于javascript中apply()和call()方法的区别z]]></title>
-    <link href="http://blog.gyf1.com/2015/01/22/%E5%85%B3%E4%BA%8Ejavascript%E4%B8%ADapply()%E5%92%8Ccall()%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%ABz/"/>
-    <id>http://blog.gyf1.com/2015/01/22/关于javascript中apply()和call()方法的区别z/</id>
+    <title><![CDATA[关于javascript中apply()和call()方法的区别]]></title>
+    <link href="http://blog.gyf1.com/2015/01/22/js-apply-call-difference/"/>
+    <id>http://blog.gyf1.com/2015/01/22/js-apply-call-difference/</id>
     <published>2015-01-22T08:37:07.000Z</published>
-    <updated>2015-01-22T08:41:24.000Z</updated>
+    <updated>2015-01-26T01:12:28.000Z</updated>
     <content type="html"><![CDATA[<p><a id="more"></a><br><a href="http://www.cnblogs.com/fighting_cp/archive/2010/09/20/1831844.html" target="_blank" rel="external">http://www.cnblogs.com/fighting_cp/archive/2010/09/20/1831844.html</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply</a><br><a href="http://hangar.runway7.net/javascript/difference-call-apply" target="_blank" rel="external">http://hangar.runway7.net/javascript/difference-call-apply</a></p>
 ]]></content>
     <summary type="html">
