@@ -89,14 +89,56 @@
     </header>
     <div class="entry">
       
-        <p>css &#x5C5E;&#x6027; box-sizing</p>
-<p><a id="more"></a><br><a href="http://css-tricks.com/box-sizing/" target="_blank" rel="external">http://css-tricks.com/box-sizing/</a><br><a href="http://getbootstrap.com/getting-started/#third-parties" target="_blank" rel="external">http://getbootstrap.com/getting-started/#third-parties</a></p>
+        <p>css &#x5C5E;&#x6027; box-sizing<br>ie&#x6807;&#x51C6;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;&#x4E0D;&#x5305;&#x62EC;padding&#x548C;border<br>&#x5728;&#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x9AD8;&#x5EA6;&#x3001;&#x5BBD;&#x5EA6;&#x4F1A;&#x628A;padding&#x548C;border&#x90FD;&#x7B97;&#x5728;&#x91CC;&#x9762;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5185;&#x5BB9;&#x663E;&#x793A;&#x90E8;&#x5206;&#x5F88;&#x5C0F;&#x3002;<br>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;box-sizing&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;<br>box-sizing: content-box &#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;&#x4EC5;&#x4EC5;&#x662F;&#x5185;&#x5BB9;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;padding&#x548C;border&#x8BBE;&#x7F6E;&#x540E;&#x4F1A;&#x53E6;&#x52A0;<br>box-sizing: border-box &#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x4F1A;&#x5305;&#x62EC;padding&#x548C;border</p>
+<a id="more"></a>
+
+<p>The &#x201C;box model&#x201D; in CSS works like this:</p>
+<p>width + padding + border = actual visible/rendered width of box<br>height + padding + border = actual visible/rendered height of box</p>
+<p>It&#x2019;s a little weird, but you get used to it. In IE 6 and earlier, when in &#x201C;quirks mode,&#x201D; the box model was treated differently.</p>
+<p>width = actual visible/rendered width of box<br>height = actual visible/rendered height of box</p>
+<p>The border and padding values moved inward, cutting into the width/height of the box rather than expanding it. Here is a dramatic example of the difference:</p>
+<p><img src="http://cdn.css-tricks.com/wp-content/uploads/2010/09/widthbox.png" alt="box-sizing-difference"></p>
+<p>It was weird quirk to have to deal with, although the fix was usually as easy as setting a proper DOCTYPE and getting out of quirks mode.<br>More to the point, some people prefered this handling of the box model, claiming it to be more intuitive.<br>It&#x2019;s a valid point.<br>Having the actual visible width of a box not be what you declared in the CSS is a bit mind bending.</p>
+<p>The mind bending continues with the modern implementation.<br>Let&#x2019;s say you have a block-level element like a <div> on the page.<br>It&#x2019;s within another parent <div> with a width of 500px.<br>The child div will automatically default to 100% as wide as the parent (500px) without any special CSS.<br>That&#x2019;s how block-level elements work. But now let&#x2019;s say you add 10px of padding all around and a 2px border.<br>The child div will behave like the old quirks-mode box and the padding and border will cut into the box.<br>The visible box will remain 500px in width.<br>Now if you go and explicitly declare the width of that child div to be 100%, the div will actually grow and break out of the parent.<br>The width will start at 500px, but then 10px of padding and 2px of border on either side will leave the visible box at 524px.</div></div></p>
+<p>If you wanted to ensure the box kissed the edges of the parent, but still use a 100% width declaration,<br>you&#x2019;d have to set the child divs width to 476px.<br>But now we&#x2019;ve run into a problem, and that&#x2019;s fluid width design.<br>Let&#x2019;s say instead of the parent being 500px, you use 72%.<br>Now what do you set the inner divs width to be to make sure it kisses the edges?<br>There is no answer with the current box model.<br>The percentages mixed with pixel values just don&#x2019;t mix well.<br>Setting the inner divs width to 95.2% will work when the parent just happens to be exactly 500px,<br>but if it grows wider, as happens in fluid width design, the div will be too narrow, and if the parent grows narrower,<br>the inner div will be too wide and break out of the parent.</p>
+<p>This <div> pseudo markup only takes us so far, because the answer of course is to not use a 100% width declaration.<br>Removing that will solve our problems.<br>However, there is one very important element which really needs this 100% width declaration, and that is the venerable textarea.</div></p>
+<p>The textarea doesn&#x2019;t care if you make it a block level element,<br>it&#x2019;s width will be determined by the required cols attribute unless you explicitly set it.<br>In a fluid width environment,<br>it is very likely you&#x2019;ll want a textarea that is fluid width as well and your layout may demand that it matches up nicely both left and right.<br>In fact, in the current design of this site, that is the case.</p>
+<p><img src="http://cdn.css-tricks.com/wp-content/uploads/2010/09/textarea-lineup.png" alt="box-sizing-difference"></p>
+<p><em>Notice the textarea lines up with the text inputs at either width. The left edge and right edge are also of equal distance from other objects.</em></p>
+<p>To accomplish this, we want to be using 100% width and pixel-based padding and border, and that is the unholy combination that is seemingly impossible. Even the great designer Jon Hicks, known for his excellent fluid width designs, had this to say on the subject in the CSS Wishlist I put together a few years back:</p>
+<pre><code>    I would love <span class="operator">a</span> different box model! I find <span class="keyword">it</span> bizarre that padding <span class="operator">and</span> border <span class="built_in">add</span> <span class="operator">the</span> width <span class="operator">of</span> <span class="operator">an</span> object, <span class="operator">and</span> would love <span class="built_in">to</span> be able <span class="built_in">to</span> give something like <span class="operator">a</span> textarea <span class="number">100</span>% width <span class="operator">and</span> <span class="number">3</span>px padding <span class="keyword">without</span> worrying what <span class="keyword">it</span>&#x2019;s going <span class="built_in">to</span> <span class="built_in">do</span> <span class="operator">the</span> layout. Perhaps something like padding-inside <span class="keyword">as</span> <span class="operator">a</span> <span class="built_in">new</span> selector?
+
+    In that vein I also wish I could specify <span class="operator">a</span> <span class="number">100</span>% width <span class="keyword">for</span> <span class="operator">an</span> <span class="keyword">element</span>, minus <span class="operator">a</span> <span class="built_in">set</span> fixed width. Again, very useful when creating fluid designs <span class="operator">with</span> form elements!
+</code></pre><h1 id="Kapow!">Kapow!</h1>
+<p>In an epic The DaVinci Code-like plot twist, the answer to our problem is right where we started, the box model itself.<br>If we could force our <textarea> to have padding and border that cut into it&#x2019;s 100% width instead of expanding it,<br>we&#x2019;d be all set. Wouldn&#x2019;t you know it? There is a way!</textarea></p>
+<pre><code><span class="tag">textarea</span> <span class="rules">{
+  <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> border-box</span></span>; <span class="comment">/* Safari/Chrome, other WebKit */</span>
+  <span class="rule"><span class="attribute">-moz-box-sizing</span>:<span class="value"> border-box</span></span>;    <span class="comment">/* Firefox, other Gecko */</span>
+  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;         <span class="comment">/* Opera/IE 8+ */</span>
+<span class="rule">}</span></span>
+</code></pre><p>The box-sizing CSS3 property can do just this.<br>The border-box value (as opposed to the content-box default) makes the final rendered box the declared width, and any border and padding cut inside the box.<br>We can now safely declare our textarea to be of 100% width, including pixel-based padding and border, and accomplish out layout perfectly.</p>
+<h1 id="Support">Support</h1>
+<p>Chrome (any): box-sizing<br>Opera 8.5+: box-sizing<br>Firefox (any): -moz-box-sizing<br>Safari 3: -webkit-box-sizing (unprefixed in 5.1+ versions)<br>IE8+: box-sizing</p>
+<h1 id="Min_/_Max">Min / Max</h1>
+<p>Box-sizing should and does work with min-width / max-width / min-height / max-height with one exception: Firefox. In even modern Firefox, v11 at the time of this update, min-height and max-height don&#x2019;t respect box-sizing. See this fiddle by Beau Smith to illustrate the problem. This is a known bug since 2005.</p>
+<h1 id="Notes">Notes</h1>
+<ol>
+<li>The moz prefix version also supports padding-box which pulls the padding inside the box but not the border. Non-spec.</li>
+<li>Way to calculate it all with jQuery by Cody Lindley.</li>
+<li>I&#x2019;m a big fan of using box-sizing: border-box; on everything, as explained by Paul Irish here.</li>
+</ol>
+<p><a href="http://css-tricks.com/box-sizing/" target="_blank" rel="external">http://css-tricks.com/box-sizing/</a><br><a href="http://getbootstrap.com/getting-started/#third-parties" target="_blank" rel="external">http://getbootstrap.com/getting-started/#third-parties</a></p>
 
       
     </div>
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/styles/">Styles</a>
+  </div>
+
         
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a></div>
         <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","qzone","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","weixin","qzone","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
@@ -171,11 +213,13 @@
   
     <li><a href="/categories/giant/">Giant</a><small>96</small></li>
   
-    <li><a href="/categories/html/">HTML</a><small>7</small></li>
+    <li><a href="/categories/html/">HTML</a><small>9</small></li>
   
     <li><a href="/categories/innovation/">Innovation</a><small>3</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>68</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>69</small></li>
+  
+    <li><a href="/categories/mobile/">Mobile</a><small>1</small></li>
   
     <li><a href="/categories/others/">Others</a><small>10</small></li>
   
@@ -187,6 +231,8 @@
   
     <li><a href="/categories/style/">Style</a><small>22</small></li>
   
+    <li><a href="/categories/styles/">Styles</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -195,7 +241,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/agile-development/" style="font-size: 13.00px;">Agile Development</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.00px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.00px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.00px;">Bower</a><a href="/tags/css/" style="font-size: 18.00px;">CSS</a><a href="/tags/certification/" style="font-size: 11.00px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.00px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.00px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 11.00px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.00px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.00px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.00px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.00px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.00px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.00px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.00px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.00px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.00px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.00px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.00px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.00px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.00px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.00px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.00px;">jQuery</a>
+    <a href="/tags/agile-development/" style="font-size: 13.00px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.00px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.00px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.00px;">Bower</a><a href="/tags/css/" style="font-size: 18.00px;">CSS</a><a href="/tags/certification/" style="font-size: 11.00px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.00px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.00px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 11.00px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.00px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.00px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.00px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.00px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.00px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.00px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.00px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.00px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.00px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.00px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.00px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.00px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.00px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.00px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.00px;">jQuery</a>
   </div>
 </div>
 
@@ -204,6 +250,34 @@
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/01/29/config-android-environment-on-mac/">config android environment on mac</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/28/iframe-not-rendering-in-ie9-mode/">iframe not rendering in ie9 mode</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/28/browser-difference-list/">browser difference list</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/28/quirks-mode-vs-standards-mode/">Quirks Mode vs Standards Mode</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/28/placeholder-in-ie9/">Placeholder in IE9</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/28/angular-apply-already-in-progress/">angular apply already in progress</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/27/video-editor-online/">video editor online</a>
+      </li>
     
       <li>
         <a href="/2015/01/25/closures-in-javascript/">Closures in JavaScript</a>
@@ -215,34 +289,6 @@
     
       <li>
         <a href="/2015/01/22/js-tests/">js tests</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/22/css-tests/">css tests</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/22/10-digest()-iterations-reached-aborting/">10 digest() iterations reached. Aborting</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/22/js-apply-call-difference/">关于javascript中apply()和call()方法的区别</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/20/maximum-call-stack-size-exceeded/">Maximum call stack size exceeded</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/18/getting-over-jquery/">Getting Over jQuery</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/18/understanding-prototypes-in-javascript/">Understanding Prototypes in JavaScript</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/17/js里的原型和继承/">js里的原型和继承</a>
       </li>
     
   </ul>
