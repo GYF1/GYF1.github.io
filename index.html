@@ -80,6 +80,72 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-02-01T07:38:14.000Z"><a href="/2015/02/01/javascript-scoping-and-hoisting/">2月 1 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/02/01/javascript-scoping-and-hoisting/">JavaScript Scoping and Hoisting</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>JavaScript Scoping and Hoisting</p>
+<p>Do you know what value will be alerted if the following is executed as a JavaScript program?</p>
+<pre><code><span class="keyword">var</span> foo = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> {</span>
+    <span class="keyword">if</span> (!foo) {
+        <span class="keyword">var</span> foo = <span class="number">10</span>;
+    }
+    alert(foo);
+}
+bar();
+</code></pre><p>If it surprises you that the answer is &#x201C;10&#x201D;, then this one will probably really throw you for a loop:</p>
+<pre><code><span class="keyword">var</span> a = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">b</span><span class="params">()</span> {</span>
+    a = <span class="number">10</span>;
+    <span class="keyword">return</span>;
+    <span class="function"><span class="keyword">function</span> <span class="title">a</span><span class="params">()</span> {</span>console.log(<span class="string">&apos;!&apos;</span>);}
+}
+b();
+alert(a);
+</code></pre><p>Here, of course, the browser will alert &#x201C;1&#x201D;. So what&#x2019;s going on here?<br>While it might seem strange, dangerous, and confusing, this is actually a powerful and expressive feature of the language.<br>I don&#x2019;t know if there is a standard name for this specific behavior, but I&#x2019;ve come to like the term &#x201C;hoisting&#x201D;.<br>This article will try to shed some light on this mechanism, but first lets take a necessary detour to understand JavaScript&#x2019;s scoping.<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/02/01/javascript-scoping-and-hoisting/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-01-29T14:28:46.000Z"><a href="/2015/01/29/config-android-environment-on-mac/">1月 29 2015</a></time>
       
       
@@ -95,6 +161,50 @@
 <p>&#x6253;&#x5F00;&#x7EC8;&#x7AEF;<br>export ANDROID_HOME=&#x201D;/Users/guoyinfeng/Development/android-sdk-macosx&#x201D;<br>export PATH=${PATH}:/Users/guoyinfeng/Development/android-sdk-macosx/tools</p>
 <p>&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x8F93;&#x5165;&#x5B8C;&#x4E86;&#x540E;&#xFF0C;&#x5C31;ok&#x4E86;</p>
 <p>&#x4F7F;&#x7528;androd&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5728;&#x6253;&#x5F00;&#x7A97;&#x53E3;&#x4E2D;&#x505A;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x914D;&#x7F6E;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-29T08:46:00.000Z"><a href="/2015/01/29/rubiks-cube/">1月 29 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/29/rubiks-cube/">Rubik&#39;s Cube</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://svejkgames.com/blog/post/create-your-own-rubiks-cube/" target="_blank" rel="external">http://svejkgames.com/blog/post/create-your-own-rubiks-cube/</a><br><a href="https://www.chrome.com/cubelab#demo" target="_blank" rel="external">https://www.chrome.com/cubelab#demo</a><br><a href="http://ondras.zarovi.cz/demos/rubik/" target="_blank" rel="external">http://ondras.zarovi.cz/demos/rubik/</a><br><a href="https://developer.mozilla.org/en-US/demos/detail/rubiks-cube" target="_blank" rel="external">https://developer.mozilla.org/en-US/demos/detail/rubiks-cube</a><br><a href="http://paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/" target="_blank" rel="external">http://paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/</a><br><a href="http://css-tricks.com/creating-a-3d-cube-image-gallery/" target="_blank" rel="external">http://css-tricks.com/creating-a-3d-cube-image-gallery/</a><br><a href="http://www.html5rubik.com/tutorial/" target="_blank" rel="external">http://www.html5rubik.com/tutorial/</a><br><a href="https://cube3x.com/magic-animation-using-css3/" target="_blank" rel="external">https://cube3x.com/magic-animation-using-css3/</a><br><a href="http://www.minimamente.com/magic-css3-animations-by-minimac/" target="_blank" rel="external">http://www.minimamente.com/magic-css3-animations-by-minimac/</a><br><a href="http://codepen.io/wenbin5243/pen/tcAeJ" target="_blank" rel="external">http://codepen.io/wenbin5243/pen/tcAeJ</a><br><a href="http://www.smashingmagazine.com/wp-content/uploads/uploader/images/css3-designs/css3-rubiks-cube/index.html" target="_blank" rel="external">http://www.smashingmagazine.com/wp-content/uploads/uploader/images/css3-designs/css3-rubiks-cube/index.html</a></p>
 
       
     </div>
@@ -444,102 +554,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-23T15:12:58.000Z"><a href="/2015/01/23/angularjs-style-guide/">1月 23 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/23/angularjs-style-guide/">AngularJS Style Guide</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Best practices for AngularJS</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/23/angularjs-style-guide/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-22T14:27:04.000Z"><a href="/2015/01/22/js-tests/">1月 22 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/22/js-tests/">js tests</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Questions to check whether you understand js.</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/22/js-tests/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -571,7 +585,7 @@
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>69</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>70</small></li>
   
     <li><a href="/categories/mobile/">Mobile</a><small>1</small></li>
   
@@ -606,7 +620,15 @@
   <ul class="entry">
     
       <li>
+        <a href="/2015/02/01/javascript-scoping-and-hoisting/">JavaScript Scoping and Hoisting</a>
+      </li>
+    
+      <li>
         <a href="/2015/01/29/config-android-environment-on-mac/">config android environment on mac</a>
+      </li>
+    
+      <li>
+        <a href="/2015/01/29/rubiks-cube/">Rubik&#39;s Cube</a>
       </li>
     
       <li>
@@ -635,14 +657,6 @@
     
       <li>
         <a href="/2015/01/25/closures-in-javascript/">Closures in JavaScript</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/23/angularjs-style-guide/">AngularJS Style Guide</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/22/js-tests/">js tests</a>
       </li>
     
   </ul>
