@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/02/01/a-dive-into-plain-javascript/</loc>
+    <lastmod>2015-02-02T09:39:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2014/02/02/what-is-double-exclamation-marks-in-javascript-mean/</loc>
+    <lastmod>2015-02-02T09:26:17.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/02/01/javascript-scoping-and-hoisting/</loc>
     <lastmod>2015-02-02T08:27:19.000Z</lastmod>
   </url>

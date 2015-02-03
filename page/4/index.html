@@ -46,15 +46,9 @@
     
       <li><a href="/atom.xml">RSS</a></li>
     
-      <li><a href="https://github.com/guoyinfeng">GitHub</a></li>
-    
-      <li><a href="/note">Note</a></li>
-    
-      <li><a href="/thinking">Thinking</a></li>
-    
       <li><a href="/bookmark">Bookmark</a></li>
     
-      <li><a href="/about">关于</a></li>
+      <li><a href="http:gyf1.com">GYF1</a></li>
     
   </ul>
   <div class="clearfix"></div>
@@ -62,6 +56,54 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-14T06:20:44.000Z"><a href="/2015/01/14/box-sizing/">1月 14 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/14/box-sizing/">box-sizing</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>css &#x5C5E;&#x6027; box-sizing<br>ie&#x6807;&#x51C6;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;&#x4E0D;&#x5305;&#x62EC;padding&#x548C;border<br>&#x5728;&#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x9AD8;&#x5EA6;&#x3001;&#x5BBD;&#x5EA6;&#x4F1A;&#x628A;padding&#x548C;border&#x90FD;&#x7B97;&#x5728;&#x91CC;&#x9762;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5185;&#x5BB9;&#x663E;&#x793A;&#x90E8;&#x5206;&#x5F88;&#x5C0F;&#x3002;<br>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;box-sizing&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;<br>box-sizing: content-box &#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;&#x4EC5;&#x4EC5;&#x662F;&#x5185;&#x5BB9;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;padding&#x548C;border&#x8BBE;&#x7F6E;&#x540E;&#x4F1A;&#x53E6;&#x52A0;<br>box-sizing: border-box &#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x4F1A;&#x5305;&#x62EC;padding&#x548C;border</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/01/14/box-sizing/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
   <article class="post">
   
     <div class="gallery">
@@ -499,68 +541,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-12-25T07:10:08.000Z"><a href="/2014/12/25/meteor部署后sockjs报错/">12月 25 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/12/25/meteor部署后sockjs报错/">meteor部署后sockjs报错</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x901A;&#x8FC7;ip&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x8BBF;&#x95EE;&#xFF0C;&#x662F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x7684;<br>&#x731C;&#x6D4B;&#x662F;&#x4F7F;&#x7528;&#x4E86;nginx&#x505A;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x65F6;&#x5BFC;&#x81F4;&#x7684;</p>
-<p>&#x6700;&#x540E;&#x914D;&#x7F6E;&#x6210;&#x529F;&#x7684;&#x662F;&#xFF1A;</p>
-<pre><code>proxy_pass http:<span class="comment">//127.0.0.1:8000;</span>
-
-proxy_http_version <span class="number">1.1</span>;
-proxy_set_header Upgrade <span class="variable">$http_upgrade</span>;
-proxy_set_header Connection <span class="string">&quot;upgrade&quot;</span>;
-proxy_set_header Host <span class="variable">$http_host</span>;
-
-proxy_set_header X<span class="attribute">-Real</span><span class="attribute">-IP</span> <span class="variable">$remote_addr</span>;
-proxy_set_header X<span class="attribute">-Forward</span><span class="attribute">-For</span> <span class="variable">$proxy_add_x_forwarded_for</span>;
-proxy_set_header X<span class="attribute">-Forward</span><span class="attribute">-Proto</span> http;
-proxy_set_header X<span class="attribute">-Nginx</span><span class="attribute">-Proxy</span> <span class="literal">true</span>;
-
-proxy_redirect off;
-</code></pre><p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/12/25/meteor部署后sockjs报错/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -594,7 +574,7 @@ proxy_redirect off;
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>70</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>72</small></li>
   
     <li><a href="/categories/mobile/">Mobile</a><small>1</small></li>
   
@@ -627,6 +607,10 @@ proxy_redirect off;
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/02/01/a-dive-into-plain-javascript/">A Dive Into Plain JavaScript</a>
+      </li>
     
       <li>
         <a href="/2015/02/01/javascript-scoping-and-hoisting/">JavaScript Scoping and Hoisting</a>
@@ -662,10 +646,6 @@ proxy_redirect off;
     
       <li>
         <a href="/2015/01/27/video-editor-online/">video editor online</a>
-      </li>
-    
-      <li>
-        <a href="/2015/01/25/closures-in-javascript/">Closures in JavaScript</a>
       </li>
     
   </ul>
