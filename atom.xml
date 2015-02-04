@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-02-03T02:31:41.243Z</updated>
+  <updated>2015-02-04T06:38:56.429Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -13,6 +13,135 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[CSS display: inline vs inline-block]]></title>
+    <link href="http://blog.gyf1.com/2015/02/04/css-display-inline-vs-inline-block/"/>
+    <id>http://blog.gyf1.com/2015/02/04/css-display-inline-vs-inline-block/</id>
+    <published>2015-02-04T11:32:05.000Z</published>
+    <updated>2015-02-04T06:38:42.000Z</updated>
+    <content type="html"><![CDATA[<p>Inline elements:</p>
+<ol>
+<li>respect left &amp; right margins and padding, but not top &amp; bottom</li>
+<li>cannot have a width and height set</li>
+<li>allow other elements to sit to their left and right.</li>
+</ol>
+<p>Block elements:</p>
+<ol>
+<li>respect all of those</li>
+<li>force a line break after the block element</li>
+</ol>
+<p>Inline-block elements:</p>
+<ol>
+<li>allow other elements to sit to their left and right</li>
+<li>respect top &amp; bottom margins and padding</li>
+<li>respect height and width</li>
+</ol>
+<p>From W3Schools:</p>
+<pre><code>An inline element has no line break <span class="keyword">before</span> <span class="keyword">or</span> <span class="keyword">after</span> <span class="keyword">it</span>, <span class="keyword">and</span> <span class="keyword">it</span> tolerates HTML elements next <span class="keyword">to</span> <span class="keyword">it</span>.
+
+A block element has <span class="keyword">some</span> whitespace <span class="keyword">above</span> <span class="keyword">and</span> <span class="keyword">below</span> <span class="keyword">it</span> <span class="keyword">and</span> <span class="keyword">does</span> <span class="keyword">not</span> tolerate any HTML elements next <span class="keyword">to</span> <span class="keyword">it</span>.
+
+An inline-block element <span class="keyword">is</span> placed <span class="keyword">as</span> an inline element (<span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> same line <span class="keyword">as</span> adjacent content), <span class="keyword">but</span> <span class="keyword">it</span> behaves <span class="keyword">as</span> a block element.
+</code></pre><p><a id="more"></a><br><a href="http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block" target="_blank" rel="external">http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block</a><br><a href="http://dustwell.com/div-span-inline-block.html" target="_blank" rel="external">http://dustwell.com/div-span-inline-block.html</a><br><a href="http://www.cnblogs.com/jdonson/archive/2011/06/10/2077932.html" target="_blank" rel="external">http://www.cnblogs.com/jdonson/archive/2011/06/10/2077932.html</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Inline elements:</p>
+<ol>
+<li>respect left &amp; right margins and padding, but not top &amp; bottom</li>
+<li>cannot have a width and height set</li>
+<li>allow other elements to sit to their left and right.</li>
+</ol>
+<p>Block elements:</p>
+<ol>
+<li>respect all of those</li>
+<li>force a line break after the block element</li>
+</ol>
+<p>Inline-block elements:</p>
+<ol>
+<li>allow other elements to sit to their left and right</li>
+<li>respect top &amp; bottom margins and padding</li>
+<li>respect height and width</li>
+</ol>
+<p>From W3Schools:</p>
+<pre><code>An inline element has no line break <span class="keyword">before</span> <span class="keyword">or</span> <span class="keyword">after</span> <span class="keyword">it</span>, <span class="keyword">and</span> <span class="keyword">it</span> tolerates HTML elements next <span class="keyword">to</span> <span class="keyword">it</span>.
+
+A block element has <span class="keyword">some</span> whitespace <span class="keyword">above</span> <span class="keyword">and</span> <span class="keyword">below</span> <span class="keyword">it</span> <span class="keyword">and</span> <span class="keyword">does</span> <span class="keyword">not</span> tolerate any HTML elements next <span class="keyword">to</span> <span class="keyword">it</span>.
+
+An inline-block element <span class="keyword">is</span> placed <span class="keyword">as</span> an inline element (<span class="function_start"><span class="keyword">on</span></span> <span class="keyword">the</span> same line <span class="keyword">as</span> adjacent content), <span class="keyword">but</span> <span class="keyword">it</span> behaves <span class="keyword">as</span> a block element.
+</code></pre><p>]]>
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://blog.gyf1.com/tags/css/"/>
+    
+      <category term="Style" scheme="http://blog.gyf1.com/categories/style/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Microdata]]></title>
+    <link href="http://blog.gyf1.com/2015/02/03/microdata/"/>
+    <id>http://blog.gyf1.com/2015/02/03/microdata/</id>
+    <published>2015-02-03T11:24:35.000Z</published>
+    <updated>2015-02-04T05:27:17.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x4EBA;&#x7269;&#x3001;&#x4E8B;&#x4EF6;&#x6216;&#x8BC4;&#x8BBA;&#x4E0D;&#x4EC5;&#x8981;&#x7ED9;&#x7528;&#x6237;&#x770B;&#xFF0C;&#x8FD8;&#x8981;&#x8BA9;&#x673A;&#x5668;&#x53EF;&#x8BC6;&#x522B;&#x3002;&#x800C;&#x76EE;&#x524D;&#x673A;&#x5668;&#x667A;&#x80FD;&#x7A0B;&#x5EA6;&#x6709;&#x9650;&#xFF0C;&#x8981;&#x8BA9;&#x5176;&#x77E5;&#x4F1A;&#x7279;&#x5B9A;&#x5185;&#x5BB9;&#x542B;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x89C4;&#x5B9A;&#x7684;&#x6807;&#x7B7E;&#x3001;&#x5C5E;&#x6027;&#x540D;&#x4EE5;&#x53CA;&#x7279;&#x5B9A;&#x7528;&#x6CD5;&#x7B49;&#x3002;&#x4E3E;&#x4E2A;&#x7B80;&#x5355;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<h1>&#x6807;&#x7B7E;&#x5305;&#x88F9;&#x9875;&#x9762;&#x6807;&#x9898;&#x4FE1;&#x606F;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x673A;&#x5668;&#x8BC6;&#x522B;&#xFF08;&#x641C;&#x7D22;&#x5F15;&#x64CE; &#x2013; SEO&#xFF09;&#x3002;</h1></p>
+<a id="more"></a>
+
+<p><a href="http://www.zhangxinxu.com/wordpress/2011/12/html5%E6%89%A9%E5%B1%95-%E5%BE%AE%E6%95%B0%E6%8D%AE-%E4%B8%B0%E5%AF%8C%E7%BD%91%E9%A1%B5%E6%91%98%E8%A6%81/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2011/12/html5%E6%89%A9%E5%B1%95-%E5%BE%AE%E6%95%B0%E6%8D%AE-%E4%B8%B0%E5%AF%8C%E7%BD%91%E9%A1%B5%E6%91%98%E8%A6%81/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x4EBA;&#x7269;&#x3001;&#x4E8B;&#x4EF6;&#x6216;&#x8BC4;&#x8BBA;&#x4E0D;&#x4EC5;&#x8981;&#x7ED9;&#x7528;&#x6237;&#x770B;&#xFF0C;&#x8FD8;&#x8981;&#x8BA9;&#x673A;&#x5668;&#x53EF;&#x8BC6;&#x522B;&#x3002;&#x800C;&#x76EE;&#x524D;&#x673A;&#x5668;&#x667A;&#x80FD;&#x7A0B;&#x5EA6;&#x6709;&#x9650;&#xFF0C;&#x8981;&#x8BA9;&#x5176;&#x77E5;&#x4F1A;&#x7279;&#x5B9A;&#x5185;&#x5BB9;&#x542B;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x89C4;&#x5B9A;&#x7684;&#x6807;&#x7B7E;&#x3001;&#x5C5E;&#x6027;&#x540D;&#x4EE5;&#x53CA;&#x7279;&#x5B9A;&#x7528;&#x6CD5;&#x7B49;&#x3002;&#x4E3E;&#x4E2A;&#x7B80;&#x5355;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<h1>&#x6807;&#x7B7E;&#x5305;&#x88F9;&#x9875;&#x9762;&#x6807;&#x9898;&#x4FE1;&#x606F;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x673A;&#x5668;&#x8BC6;&#x522B;&#xFF08;&#x641C;&#x7D22;&#x5F15;&#x64CE; &#x2013; SEO&#xFF09;&#x3002;</h1></p>
+]]>
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://blog.gyf1.com/categories/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[difference between visibility:hidden and display:none]]></title>
+    <link href="http://blog.gyf1.com/2015/02/03/difference-between-visibilityhidden-and-displaynone/"/>
+    <id>http://blog.gyf1.com/2015/02/03/difference-between-visibilityhidden-and-displaynone/</id>
+    <published>2015-02-03T11:17:30.000Z</published>
+    <updated>2015-02-04T01:19:09.000Z</updated>
+    <content type="html"><![CDATA[<p>What is the difference between visibility:hidden and display:none?</p>
+<p><a id="more"></a><br>display:none means that the the tag in question will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags.</p>
+<p>visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn&#x2019;t seen on the page.</p>
+<p>For example:</p>
+<pre><code>test | &lt;span style=<span class="string">&quot;[style-tag-value]&quot;</span>&gt;Appropriate style <span class="keyword">in</span> <span class="keyword">this</span> tag&lt;/span&gt; | test
+</code></pre><p>Replacing [style-tag-value] with display:none results in:</p>
+<p>test |   | test</p>
+<p>Replacing [style-tag-value] with visibility:hidden results in:</p>
+<p>test |                        | test</p>
+<p><a href="http://stackoverflow.com/questions/133051/what-is-the-difference-between-visibilityhidden-and-displaynone" target="_blank" rel="external">http://stackoverflow.com/questions/133051/what-is-the-difference-between-visibilityhidden-and-displaynone</a><br><a href="http://webdesign.about.com/od/css/f/blfaqhidden.htm" target="_blank" rel="external">http://webdesign.about.com/od/css/f/blfaqhidden.htm</a><br><a href="http://blog.csdn.net/gaofeng2000/article/details/7058550" target="_blank" rel="external">http://blog.csdn.net/gaofeng2000/article/details/7058550</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>What is the difference between visibility:hidden and display:none?</p>
+<p>]]>
+    
+    </summary>
+    
+      <category term="Style" scheme="http://blog.gyf1.com/categories/style/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[grunt task to generate spritesheet]]></title>
+    <link href="http://blog.gyf1.com/2015/02/03/grunt-task-to-generate-spritesheet/"/>
+    <id>http://blog.gyf1.com/2015/02/03/grunt-task-to-generate-spritesheet/</id>
+    <published>2015-02-03T02:59:43.000Z</published>
+    <updated>2015-02-03T06:10:28.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://github.com/Ensighten/grunt-spritesmith" target="_blank" rel="external">https://github.com/Ensighten/grunt-spritesmith</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://github.com/Ensighten/grunt-spritesmith" target="_blank" rel="external">https://github.com/Ensighten/grunt-spritesmith</a]]>
+    </summary>
+    
+      <category term="Grunt" scheme="http://blog.gyf1.com/tags/grunt/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[A Dive Into Plain JavaScript]]></title>
@@ -283,6 +412,33 @@ alert(a);
     </summary>
     
       <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[css underline attributes for ie]]></title>
+    <link href="http://blog.gyf1.com/2015/02/01/css-underline-attributes-for-ie/"/>
+    <id>http://blog.gyf1.com/2015/02/01/css-underline-attributes-for-ie/</id>
+    <published>2015-02-01T06:11:07.000Z</published>
+    <updated>2015-02-03T06:15:28.000Z</updated>
+    <content type="html"><![CDATA[<p>CSS &#x4E2D; _width&#x3001;_height &#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;</p>
+<p>CSS &#x5C5E;&#x6027;&#x524D;&#x9762;&#x52A0;&#x4E86;&#x4E0B;&#x5212;&#x7EBF;&#x201C;_&#x201D;&#xFF0C;&#x5728; IE 6 &#x4E2D;&#xFF0C;&#x8DDF;&#x6CA1;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x6548;&#x679C;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5982;&#xFF1A;_width &#x7B49;&#x4EF7;&#x4E8E; width&#xFF1B;_height &#x7B49;&#x4EF7;&#x4E8E; height&#xFF1B;_color &#x7B49;&#x4EF7;&#x4E8E; color&#x2026;&#x2026;</p>
+<p>&#x4E5F;&#x6709;&#x7528;&#x201C;\&#x201D;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x201C;\width&#x201D;&#x7B49;&#x4EF7;&#x4E8E; width&#x3002;&#x4F46;&#x5176;&#x5E94;&#x7528;&#x8303;&#x56F4;&#x6709;&#x9650;&#xFF0C;&#x6BD4;&#x5982;&#x201C;\color&#x201D;&#x5C31;&#x8BA4;&#x4E0D;&#x5230;&#x3002;<br><a id="more"></a></p>
+<p>&#x7C7B;&#x4F3C;&#x8FD9;&#x79CD;&#x524D;&#x9762;&#x5E26;&#x4E0B;&#x5212;&#x7EBF;&#x7684;css&#x6837;&#x5F0F;_position  _display _width _height&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;</p>
+<p>&#x4E0D;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x7684;css&#x6837;&#x5F0F;position  display width height&#x6211;&#x90FD;&#x77E5;&#x9053;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4F46;&#x662F;&#x52A0;&#x4E86;&#x4E0B;&#x5212;&#x7EBF;&#x540E;&#x662F;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#x5462;&#xFF1F;<br>&#x7C7B;&#x4F3C;&#x8FD9;&#x79CD;&#xFF1A;_position  _display _width _height</p>
+<p>&#x662F;&#x4E3A;&#x4E86;CSS HACK&#xFF0C;&#x60F3;&#x8BA9;&#x5728;IE6&#x4E0B;&#x663E;&#x793A;&#x7684;&#x548C;&#x5176;&#x4ED6;&#x7248;&#x672C;&#x7684;IE&#x4E2D;&#x663E;&#x793A;&#x4E00;&#x6837;&#xFF0C;&#x9700;&#x8981;&#x7279;&#x522B;&#x4E3A;IE6&#x5199;CSS&#x4EE3;&#x7801;&#xFF0C;&#x5E26;&#x4E0B;&#x5212;&#x7EBF;&#x7684;&#x5C31;&#x53EA;&#x6709;IE6&#x80FD;&#x8BA4;&#x8BC6;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x6709;IE6&#x4F1A;&#x6309;&#x5B83;&#x540E;&#x9762;&#x7684;CSS&#x8BBE;&#x7F6E;&#x5904;&#x7406;&#x3002;</p>
+<p><a href="http://stackoverflow.com/questions/10335446/what-does-height-mean-in-css" target="_blank" rel="external">http://stackoverflow.com/questions/10335446/what-does-height-mean-in-css</a><br><a href="http://www.cftea.com/c/2009/11/9DEQ6F51Z8B1QXJN.asp" target="_blank" rel="external">http://www.cftea.com/c/2009/11/9DEQ6F51Z8B1QXJN.asp</a><br><a href="http://bbs.blueidea.com/thread-2867074-1-1.html" target="_blank" rel="external">http://bbs.blueidea.com/thread-2867074-1-1.html</a><br><a href="http://zhidao.baidu.com/question/114226381.html" target="_blank" rel="external">http://zhidao.baidu.com/question/114226381.html</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>CSS &#x4E2D; _width&#x3001;_height &#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;</p>
+<p>CSS &#x5C5E;&#x6027;&#x524D;&#x9762;&#x52A0;&#x4E86;&#x4E0B;&#x5212;&#x7EBF;&#x201C;_&#x201D;&#xFF0C;&#x5728; IE 6 &#x4E2D;&#xFF0C;&#x8DDF;&#x6CA1;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x6548;&#x679C;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5982;&#xFF1A;_width &#x7B49;&#x4EF7;&#x4E8E; width&#xFF1B;_height &#x7B49;&#x4EF7;&#x4E8E; height&#xFF1B;_color &#x7B49;&#x4EF7;&#x4E8E; color&#x2026;&#x2026;</p>
+<p>&#x4E5F;&#x6709;&#x7528;&#x201C;\&#x201D;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x201C;\width&#x201D;&#x7B49;&#x4EF7;&#x4E8E; width&#x3002;&#x4F46;&#x5176;&#x5E94;&#x7528;&#x8303;&#x56F4;&#x6709;&#x9650;&#xFF0C;&#x6BD4;&#x5982;&#x201C;\color&#x201D;&#x5C31;&#x8BA4;&#x4E0D;&#x5230;&#x3002;<br>]]>
+    
+    </summary>
+    
+      <category term="Style" scheme="http://blog.gyf1.com/categories/style/"/>
     
   </entry>
   
@@ -5271,315 +5427,6 @@ D. None <span class="keyword">of</span> these.
     </summary>
     
       <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[关于javascript中apply()和call()方法的区别]]></title>
-    <link href="http://blog.gyf1.com/2015/01/22/js-apply-call-difference/"/>
-    <id>http://blog.gyf1.com/2015/01/22/js-apply-call-difference/</id>
-    <published>2015-01-22T08:37:07.000Z</published>
-    <updated>2015-01-26T01:12:28.000Z</updated>
-    <content type="html"><![CDATA[<p><a id="more"></a><br><a href="http://www.cnblogs.com/fighting_cp/archive/2010/09/20/1831844.html" target="_blank" rel="external">http://www.cnblogs.com/fighting_cp/archive/2010/09/20/1831844.html</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply</a><br><a href="http://hangar.runway7.net/javascript/difference-call-apply" target="_blank" rel="external">http://hangar.runway7.net/javascript/difference-call-apply</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>]]>
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Maximum call stack size exceeded]]></title>
-    <link href="http://blog.gyf1.com/2015/01/20/maximum-call-stack-size-exceeded/"/>
-    <id>http://blog.gyf1.com/2015/01/20/maximum-call-stack-size-exceeded/</id>
-    <published>2015-01-20T04:21:42.000Z</published>
-    <updated>2015-01-22T09:42:53.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/amosleaf/archive/2012/04/19/2457441.html" target="_blank" rel="external">http://www.cnblogs.com/amosleaf/archive/2012/04/19/2457441.html</a><br><a href="http://www.zizhujy.com/blog/post/2012/03/18/Uncaught-RangeError-Maximum-call-stack-size-exceeded.aspx" target="_blank" rel="external">http://www.zizhujy.com/blog/post/2012/03/18/Uncaught-RangeError-Maximum-call-stack-size-exceeded.aspx</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://www.cnblogs.com/amosleaf/archive/2012/04/19/2457441.html" target="_blank" rel="external">http://www.cnblogs.com/amosleaf/]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Getting Over jQuery]]></title>
-    <link href="http://blog.gyf1.com/2015/01/18/getting-over-jquery/"/>
-    <id>http://blog.gyf1.com/2015/01/18/getting-over-jquery/</id>
-    <published>2015-01-18T09:36:42.000Z</published>
-    <updated>2015-01-23T00:16:54.000Z</updated>
-    <content type="html"><![CDATA[<p>Why do we really use jQuery?<br>Sure, it simplifies things. But do we really need all those abstractions?<br>Can&#x2019;t we get away with just a few of the most basic of them?<br>In this article I&#x2019;ll examine the most frequently used portions of its API,and look at the different ways we can rewrite those everyday utilities using plain JavaScript.</p>
-<a id="more"></a>
-
-<p>If we look at their API documentation, we can quickly categorize the features we use most frequently.</p>
-<ul>
-<li>AJAX</li>
-<li>Attributes, CSS, .data</li>
-<li>Effects, Animations</li>
-<li>Events</li>
-<li>DOM Querying, Selectors</li>
-<li>DOM Manipulation</li>
-<li>Plugins</li>
-</ul>
-<p>That certainly looks like a lot. Lets break it down, and attempt to arrive at the same functionality, but without jQuery.<br>Our aim in doing so, isn&#x2019;t just getting rid of jQuery for the sake of doing so,<br>but thinking about why we&#x2019;d want it in the first place.<br>Furthermore, we will be gaining insight into how jQuery operates,<br>what is needed,<br>what is not,<br>and maybe even more importantly, understanding and becoming capable of performing these operations on our own.</p>
-<h1 id="Scope">Scope</h1>
-<p>I previously mentioned the micro library movement, which is awesome, too.<br>Here, though, we will pick a few battles of our own, and have a shot at resolving them without resorting to external dependencies.<br>Other than what browsers provide, that is.</p>
-<p>Keep browser support in mind.<br>In each of my solutions, I&#x2019;ll tell you what the browser support is for that particular approach.<br>I will mostly speak about future-proof solutions, but most of what I&#x2019;ll be talking about probably won&#x2019;t work in IE 6.<br>So keep an eye on that.</p>
-<pre><code>Even <span class="keyword">if</span> you are working <span class="keyword">in</span> a project that must support older browsers,
-<span class="keyword">for</span> whatever reason,
-I think yo<span class="string">u&apos;ll still find value in these excerpts.
-Maybe they aren&apos;</span>t that useful to you today, maybe they are.
-One thing <span class="keyword">is</span> certain though, the benefit of learning the underlying browser API won<span class="string">&apos;t be going away anytime soon.</span>
-</code></pre><h1 id="AJAX">AJAX</h1>
-<p>I wanted to give you an update on AJAX. We&#x2019;ve already somewhat covered how to write native requests, but lets take it up a notch.</p>
-<p>At this point, I think I should introduce you to XHR2.<br>Lets start by talking about browser support.<br>As you can see, XHR2 support includes anything that&#x2019;s not IE &lt; 10 || Android &lt; 3.0.<br>That&#x2019;s not very encouraging, but it&#x2019;s workable.</p>
-<p>The fun in XHR2 comes from being able to set a responseType. Here is a table of possible values, adapted from what can be found on MDN.</p>
-<pre><code>Value    response data <span class="keyword">type</span>
-<span class="attribute">&apos;text</span>&apos;    <span class="typename">String</span> (this <span class="keyword">is</span> the <span class="keyword">default</span>, too)
-<span class="attribute">&apos;arraybuffer</span>&apos;    ArrgayBuffer
-<span class="attribute">&apos;blob</span>&apos;    Blob
-<span class="attribute">&apos;document</span>&apos;    Document
-<span class="attribute">&apos;json</span>&apos;    JSON object
-
-Note that the <span class="attribute">&apos;json</span>&apos; value <span class="keyword">is</span> currently only supported by Firefox <span class="keyword">and</span> Opera.
-<span class="keyword">If</span> you want <span class="keyword">to</span> fetch JSON data <span class="keyword">in</span> a cross-browser manner, your best bet <span class="keyword">is</span> setting responseType = <span class="attribute">&apos;text</span>&apos;,
-<span class="keyword">and</span> <span class="keyword">then</span> parsing the response like so: JSON.parse(xhr.response).
-</code></pre><p><a href="http://ponyfoo.com/articles/getting-over-jquery" target="_blank" rel="external">http://ponyfoo.com/articles/getting-over-jquery</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Why do we really use jQuery?<br>Sure, it simplifies things. But do we really need all those abstractions?<br>Can&#x2019;t we get away with just a few of the most basic of them?<br>In this article I&#x2019;ll examine the most frequently used portions of its API,and look at the different ways we can rewrite those everyday utilities using plain JavaScript.</p>
-]]>
-    
-    </summary>
-    
-      <category term="jQuery" scheme="http://blog.gyf1.com/tags/jquery/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Understanding Prototypes in JavaScript]]></title>
-    <link href="http://blog.gyf1.com/2015/01/18/understanding-prototypes-in-javascript/"/>
-    <id>http://blog.gyf1.com/2015/01/18/understanding-prototypes-in-javascript/</id>
-    <published>2015-01-18T07:47:58.000Z</published>
-    <updated>2015-01-22T07:49:37.000Z</updated>
-    <content type="html"><![CDATA[<p>For the purposes of this post, I will be talking about JavaScript objects using syntax defined in ECMAScript 5.1.<br>The basic semantics existed in Edition 3, but they were not well exposed.</p>
-<a id="more"></a>
-
-<h1 id="&#x5BF9;&#x8C61;">&#x5BF9;&#x8C61;</h1>
-<p>&#x5728;js&#x91CC;&#x9762;&#x5BF9;&#x8C61;&#x662F;&#x6307;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x60F3;&#x63CF;&#x8FF0;&#x6211;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6211;&#x4F1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6709;&#x4E24;&#x4E2A;key&#x7684;&#x5BF9;&#x8C61;&#xFF1A;<br>&#x201C;firstName&#x201D; &#x6307;&#x5411;&#x201D;Yinfeng&#x201D; &#x548C; &#x201C;lastName&#x201D; &#x6307;&#x5411; &#x201C;Guo&#x201D;<br>key&#x5728;&#x5BF9;&#x8C61;&#x4E2D;&#x90FD;&#x662F;string</p>
-<p>&#x5728;js&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Object.create</p>
-<pre><code><span class="keyword">var</span> person = <span class="built_in">Object</span>.create(<span class="literal">null</span>); <span class="comment">// this creates an empty objects</span>
-</code></pre><p>&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x4E0D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;var person = {}; &#xFF1F;</p>
-<h1 id="&#x539F;&#x578B;">&#x539F;&#x578B;</h1>
-<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;js&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x3002;<br>&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x53EB;&#x505A;&#x539F;&#x578B;&#x3002;<br>&#x5047;&#x5982;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x67E5;&#x627E;&#x67D0;&#x4E00;&#x4E2A;key&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;js&#x4F1A;&#x7EE7;&#x7EED;&#x5728;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x4E2D;&#x53BB;&#x67E5;&#x627E;&#x3002;<br>&#x627E;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C31;&#x662F;&#x904D;&#x5386;&#x201C;&#x539F;&#x578B;&#x94FE;&#x201D;&#xFF0C;&#x77E5;&#x9053;&#x627E;&#x5230;null&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;undefined.</p>
-<p>&#x518D;&#x770B;&#x4E0B;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x4EE3;&#x7801; Object.create(null).<br>&#x53C2;&#x6570;&#x544A;&#x8BC9;js&#xFF0C;&#x4EC0;&#x4E48;&#x662F;&#x65B0;&#x5B9A;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Object.getPrototypeOf&#x6765;&#x67E5;&#x770B;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x3002;</p>
-<pre><code><span class="keyword">var</span> man = <span class="built_in">Object</span>.create(<span class="literal">null</span>);
-defineProperty(man, <span class="string">&apos;sex&apos;</span>, <span class="string">&quot;male&quot;</span>);
-
-<span class="keyword">var</span> yehuda = <span class="built_in">Object</span>.create(man);
-defineProperty(yehuda, <span class="string">&apos;firstName&apos;</span>, <span class="string">&quot;Yehuda&quot;</span>);
-defineProperty(yehuda, <span class="string">&apos;lastName&apos;</span>, <span class="string">&quot;Katz&quot;</span>);
-
-yehuda.sex       <span class="comment">// &quot;male&quot;</span>
-yehuda.firstName <span class="comment">// &quot;Yehuda&quot;</span>
-yehuda.lastName  <span class="comment">// &quot;Katz&quot;</span>
-
-<span class="built_in">Object</span>.getPrototypeOf(yehuda) <span class="comment">// returns the man object</span>
-</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x9519;&#x5F00;&#x7684;&#x5171;&#x4EAB;&#x5BF9;&#x8C61;</p>
-<pre><code><span class="keyword">var</span> person = <span class="built_in">Object</span>.create(<span class="literal">null</span>);
-defineProperty(person, <span class="string">&apos;fullName&apos;</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
-  <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName;
-});
-
-<span class="comment">// this time, let&apos;s make man&apos;s prototype person, so all</span>
-<span class="comment">// men share the fullName function</span>
-<span class="keyword">var</span> man = <span class="built_in">Object</span>.create(person);
-defineProperty(man, <span class="string">&apos;sex&apos;</span>, <span class="string">&quot;male&quot;</span>);
-
-<span class="keyword">var</span> yehuda = <span class="built_in">Object</span>.create(man);
-defineProperty(yehuda, <span class="string">&apos;firstName&apos;</span>, <span class="string">&quot;Yehuda&quot;</span>);
-defineProperty(yehuda, <span class="string">&apos;lastName&apos;</span>, <span class="string">&quot;Katz&quot;</span>);
-
-yehuda.sex        <span class="comment">// &quot;male&quot;</span>
-yehuda.fullName() <span class="comment">// &quot;Yehuda Katz&quot;</span>
-</code></pre><h1 id="&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;">&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;</h1>
-<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;writable, configurable, enumerable&#x7684;&#x5C5E;&#x6027;&#x662F;&#x975E;&#x5E38;&#x666E;&#x904D;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x6BCF;&#x6B21;&#x90FD;&#x90A3;&#x6837;&#x8C03;&#x7528;defineProperty&#x3002;<br>js&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;&#x901A;&#x8FC7;=&#x76F4;&#x63A5;&#x8D4B;&#x503C;</p>
-<pre><code><span class="keyword">var</span> person = <span class="built_in">Object</span>.create(<span class="literal">null</span>);
-
-<span class="comment">// instead of using defineProperty and specifying writable,</span>
-<span class="comment">// configurable, and enumerable, we can just assign the</span>
-<span class="comment">// value directly and JavaScript will take care of the rest</span>
-person[<span class="string">&apos;fullName&apos;</span>] = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
-  <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName;
-};
-
-<span class="comment">// this time, let&apos;s make man&apos;s prototype person, so all</span>
-<span class="comment">// men share the fullName function</span>
-<span class="keyword">var</span> man = <span class="built_in">Object</span>.create(person);
-man[<span class="string">&apos;sex&apos;</span>] = <span class="string">&quot;male&quot;</span>;
-
-<span class="keyword">var</span> yehuda = <span class="built_in">Object</span>.create(man);
-yehuda[<span class="string">&apos;firstName&apos;</span>] = <span class="string">&quot;Yehuda&quot;</span>;
-yehuda[<span class="string">&apos;lastName&apos;</span>] = <span class="string">&quot;Katz&quot;</span>;
-
-yehuda.sex        <span class="comment">// &quot;male&quot;</span>
-yehuda.fullName() <span class="comment">// &quot;Yehuda Katz&quot;</span>
-</code></pre><h1 id="&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;">&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;</h1>
-<p>&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x5355;&#x72EC;&#x5B9A;&#x4E49;&#x5F88;&#x591A;&#x5C5E;&#x6027;&#x662F;&#x5F88;&#x70E6;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x3002;js&#x63D0;&#x4F9B;&#x4E86;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x6B21;&#x6027;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x3002;</p>
-<pre><code><span class="keyword">var</span> person = { firstName: <span class="string">&quot;Paul&quot;</span>, lastName: <span class="string">&quot;Irish&quot;</span> }
-</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7B49;&#x540C;&#x4E8E;&#xFF1A;</p>
-<pre><code>var person = Object<span class="preprocessor">.create</span>(Object<span class="preprocessor">.prototype</span>)<span class="comment">;</span>
-person<span class="preprocessor">.firstName</span> = <span class="string">&quot;Paul&quot;</span><span class="comment">;</span>
-person<span class="preprocessor">.lastName</span>  = <span class="string">&quot;Irish&quot;</span><span class="comment">;</span>
-</code></pre><p>&#x7528;&#x5B57;&#x9762;&#x91CF;&#x8BED;&#x6CD5;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x4F1A;&#x9ED8;&#x8BA4;&#x4E3A;Object.prototype&#x3002;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5B50;&#xFF1A;</p>
-<p><img src="http://yehudakatz.com/wp-content/uploads/2011/08/prototype-chain.png" alt="&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x7684;&#x56FE;&#x7247;"></p>
-<p>Object.prototype &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x5E0C;&#x671B;&#x5BF9;&#x8C61;&#x62E5;&#x6709;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x3002;<br>&#x901A;&#x8FC7;&#x539F;&#x578B;&#x94FE;&#xFF08;prototype chain&#xFF09;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x6709;&#x4E0A;&#x9762;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x90A3;&#x4E9B;&#x65B9;&#x6CD5;&#x3002;<br>&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x90A3;&#x4E9B;&#x5C5E;&#x6027;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x5728;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x4E0A;&#x9762;&#x3002;<br>&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E00;&#x822C;&#x4F1A;&#x91CD;&#x5199;toString&#x65B9;&#x6CD5;</p>
-<pre><code><span class="keyword">var</span> alex = { firstName: <span class="string">&quot;Alex&quot;</span>, lastName: <span class="string">&quot;Russell&quot;</span> };
-
-alex.toString() <span class="comment">// &quot;[object Object]&quot;</span>
-
-<span class="keyword">var</span> brendan = {
-  firstName: <span class="string">&quot;Brendan&quot;</span>,
-  lastName: <span class="string">&quot;Eich&quot;</span>,
-  toString: <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> <span class="keyword">return</span> <span class="string">&quot;Brendan Eich&quot;</span>; }
-};
-
-brendan.toString() <span class="comment">// &quot;Brendan Eich&quot;</span>
-</code></pre><p>&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x53EA;&#x6709;&#x5728;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4ECB;&#x610F;Object.prototype&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x539F;&#x578B;&#x7684;&#x624D;&#x4F1A;&#x6BD4;&#x8F83;&#x9002;&#x7528;&#x3002;<br>&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x4E0A;&#x4E0A;&#x9762;&#x90A3;&#x6837;&#x5206;&#x4EAB;&#x6216;&#x8005;&#x4F20;&#x9012;&#x5C5E;&#x6027;&#x3002;<br>&#x6240;&#x4EE5;&#x6709;&#x5F97;&#x6709;&#x5931;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x7ED9;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
-<pre><code><span class="keyword">var</span> fromPrototype = <span class="function"><span class="keyword">function</span><span class="params">(prototype, object)</span> {</span>
-  <span class="keyword">var</span> newObject = <span class="built_in">Object</span>.create(prototype);
-
-  <span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> object) {
-    <span class="keyword">if</span> (object.hasOwnProperty(prop)) {
-      newObject[prop] = object[prop];
-    }
-  }
-
-  <span class="keyword">return</span> newObject;
-};
-
-<span class="keyword">var</span> person = {
-  toString: <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
-    <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName;
-  }
-};
-
-<span class="keyword">var</span> man = fromPrototype(person, {
-  sex: <span class="string">&quot;male&quot;</span>
-});
-
-<span class="keyword">var</span> jeremy = fromPrototype(man, {
-  firstName: <span class="string">&quot;Jeremy&quot;</span>,
-  lastName:  <span class="string">&quot;Ashkenas&quot;</span>
-});
-
-jeremy.sex        <span class="comment">// &quot;male&quot;</span>
-jeremy.toString() <span class="comment">// &quot;Jeremy Ashkenas&quot;</span>
-</code></pre><p>&#x5EFA;&#x597D;&#x7684;&#x5BF9;&#x8C61;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;</p>
-<p><img src="http://yehudakatz.com/wp-content/uploads/2011/08/prototype-chain-2.png" alt="&#x5E26;&#x6709;&#x6307;&#x5B9A;&#x539F;&#x578B;&#x7684;"></p>
-<h1 id="&#x672C;&#x5730;&#x5BF9;&#x8C61;&#x5B9A;&#x5411;">&#x672C;&#x5730;&#x5BF9;&#x8C61;&#x5B9A;&#x5411;</h1>
-<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x539F;&#x578B;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;&#xFF0C;&#x5C31;&#x50CF;&#x4F20;&#x7EDF;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x8A00;&#x3002;<br>&#x4E3A;&#x4E86;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;js&#x63D0;&#x4F9B;&#x4E86;new&#x64CD;&#x4F5C;&#x7B26;&#x3002;</p>
-<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF0C;js&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4F7F;&#x7528;function&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x5B50;&#x65E2;&#x80FD;&#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x5668;&#x6765;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x539F;&#x578B;&#x7684;&#x7279;&#x6027;&#x3002;</p>
-<pre><code><span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span><span class="params">(firstName, lastName)</span> {</span>
-  <span class="keyword">this</span>.firstName = firstName;
-  <span class="keyword">this</span>.lastName = lastName;
-}
-
-Person.prototype = {
-  toString: <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">&apos; &apos;</span> + <span class="keyword">this</span>.lastName; }
-}
-</code></pre><p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5982;&#x4F55;&#x57FA;&#x4E8E;Person&#x5BF9;&#x8C61;&#x6765;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5B9E;&#x4F8B;</p>
-<pre><code><span class="function"><span class="keyword">function</span> <span class="title">newObject</span><span class="params">(func)</span> {</span>
-  <span class="comment">// get an Array of all the arguments except the first one</span>
-  <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>);
-
-  <span class="comment">// create a new object with its prototype assigned to func.prototype</span>
-  <span class="keyword">var</span> object = <span class="built_in">Object</span>.create(func.prototype);
-
-  <span class="comment">// invoke the constructor, passing the new object as &apos;this&apos;</span>
-  <span class="comment">// and the rest of the arguments as the arguments</span>
-  func.apply(object, args);
-
-  <span class="comment">// return the new object</span>
-  <span class="keyword">return</span> object;
-}
-
-<span class="keyword">var</span> brendan = newObject(Person, <span class="string">&quot;Brendan&quot;</span>, <span class="string">&quot;Eich&quot;</span>);
-brendan.toString() <span class="comment">// &quot;Brendan Eich&quot;</span>
-</code></pre><p>&#x800C;js&#x91CC;&#x7684;new &#x64CD;&#x4F5C;&#x7B26;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E0A;&#x9762;&#x540C;&#x6837;&#x7684;&#x529F;&#x80FD;&#x3002;&#x8FD9;&#x548C;&#x5176;&#x4ED6;&#x7684;&#x5F88;&#x6B63;&#x7EDF;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x8A00;&#x662F;&#x5F88;&#x76F8;&#x4F3C;&#x7684;&#x3002;</p>
-<pre><code><span class="keyword">var</span> mark = <span class="keyword">new</span> Person(<span class="string">&quot;Mark&quot;</span>, <span class="string">&quot;Miller&quot;</span>);
-mark.toString() <span class="comment">// &quot;Mark Miller&quot;</span>
-</code></pre><p>&#x4ECE;&#x672C;&#x8D28;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;js&#x7684;Function&#x5BF9;&#x8C61;&#x770B;&#x6210;&#x662F;class&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x5668;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x539F;&#x578B;&#x3002;<br>&#x6211;&#x8BF4;&#x8FC7;&#xFF0C;&#x65E9;&#x8D77;&#x7684;js&#x91CC;&#x5E76;&#x6CA1;&#x6709;Object.create&#x3002;<br>&#x6B63;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x53EA;&#x662F;&#x4E4B;&#x524D;&#x4EBA;&#x4EEC;&#x90FD;&#x4F7F;&#x7528;new &#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x5B9E;&#x73B0;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
-<pre><code><span class="keyword">var</span> createObject = <span class="function"><span class="keyword">function</span> <span class="params">(o)</span> {</span>
-  <span class="comment">// we only want the prototype part of the `new`</span>
-  <span class="comment">// behavior, so make an empty constructor</span>
-  <span class="function"><span class="keyword">function</span> <span class="title">F</span><span class="params">()</span> {</span>}
-
-  <span class="comment">// set the function&apos;s `prototype` property to the</span>
-  <span class="comment">// object that we want the new object&apos;s prototype</span>
-  <span class="comment">// to be.</span>
-  F.prototype = o;
-
-  <span class="comment">// use the `new` operator. We will get a new</span>
-  <span class="comment">// object whose prototype is o, and we will</span>
-  <span class="comment">// invoke the empty function, which does nothing.</span>
-  <span class="keyword">return</span> <span class="keyword">new</span> F();
-};
-</code></pre><p>&#x539F;&#x6587;<br><a href="http://yehudakatz.com/2011/08/12/understanding-prototypes-in-JavaScript/" target="_blank" rel="external">http://yehudakatz.com/2011/08/12/understanding-prototypes-in-JavaScript/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>For the purposes of this post, I will be talking about JavaScript objects using syntax defined in ECMAScript 5.1.<br>The basic semantics existed in Edition 3, but they were not well exposed.</p>
-]]>
-    
-    </summary>
-    
-      <category term="English" scheme="http://blog.gyf1.com/tags/english/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[js里的原型和继承]]></title>
-    <link href="http://blog.gyf1.com/2015/01/17/js%E9%87%8C%E7%9A%84%E5%8E%9F%E5%9E%8B%E5%92%8C%E7%BB%A7%E6%89%BF/"/>
-    <id>http://blog.gyf1.com/2015/01/17/js里的原型和继承/</id>
-    <published>2015-01-17T09:23:28.000Z</published>
-    <updated>2015-01-22T09:38:29.000Z</updated>
-    <content type="html"><![CDATA[<p>js&#x91CC;&#x7684;&#x7EE7;&#x627F;&#x548C;&#x4F20;&#x7EDF;&#x7684;c++,java,c#&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x6837;&#x7684;&#x5F88;&#x5F3A;&#x5927;&#xFF0C;&#x5F88;&#x7075;&#x6D3B;&#x3002;</p>
-<h1 id="&#x5BF9;&#x8C61;&#x548C;&#x7C7B;">&#x5BF9;&#x8C61;&#x548C;&#x7C7B;</h1>
-<p>js&#x91CC;&#x5230;&#x5904;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#x3002;&#x5BF9;&#x8C61;&#x5C06;&#x5C5E;&#x6027;&#x548C;&#x884C;&#x4E3A;&#x5305;&#x88C5;&#x5728;&#x4E00;&#x8D77;&#x3002;<br>&#x62FF;&#x6570;&#x7EC4;&#x6765;&#x8BF4;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x4FDD;&#x5B58;&#x7684;&#x503C;&#x548C;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;</p>
-<pre><code>var myArray = [<span class="number">1</span>, <span class="number">2</span>];
-myArray.<span class="keyword">push</span>(<span class="number">3</span>);
-myArray.<span class="keyword">reverse</span>();
-myArray.<span class="keyword">pop</span>();
-var <span class="keyword">length</span> = myArray.<span class="keyword">length</span>;
-</code></pre><p>&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x50CF;push&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x4ECE;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#x62FF;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
-<a id="more"></a>
-
-<p><a href="https://msdn.microsoft.com/en-us/magazine/ff852808.aspx" target="_blank" rel="external">https://msdn.microsoft.com/en-us/magazine/ff852808.aspx</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>js&#x91CC;&#x7684;&#x7EE7;&#x627F;&#x548C;&#x4F20;&#x7EDF;&#x7684;c++,java,c#&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x6837;&#x7684;&#x5F88;&#x5F3A;&#x5927;&#xFF0C;&#x5F88;&#x7075;&#x6D3B;&#x3002;</p>
-<h1 id="&#x5BF9;&#x8C61;&#x548C;&#x7C7B;">&#x5BF9;&#x8C61;&#x548C;&#x7C7B;</h1>
-<p>js&#x91CC;&#x5230;&#x5904;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#x3002;&#x5BF9;&#x8C61;&#x5C06;&#x5C5E;&#x6027;&#x548C;&#x884C;&#x4E3A;&#x5305;&#x88C5;&#x5728;&#x4E00;&#x8D77;&#x3002;<br>&#x62FF;&#x6570;&#x7EC4;&#x6765;&#x8BF4;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x4FDD;&#x5B58;&#x7684;&#x503C;&#x548C;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;</p>
-<pre><code>var myArray = [<span class="number">1</span>, <span class="number">2</span>];
-myArray.<span class="keyword">push</span>(<span class="number">3</span>);
-myArray.<span class="keyword">reverse</span>();
-myArray.<span class="keyword">pop</span>();
-var <span class="keyword">length</span> = myArray.<span class="keyword">length</span>;
-</code></pre><p>&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x50CF;push&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x4ECE;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#x62FF;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
-]]>
-    
-    </summary>
-    
-      <category term="Translation" scheme="http://blog.gyf1.com/tags/translation/"/>
     
       <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
     
