@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.gyf1.com/2015/02/04/css-display-inline-vs-inline-block/</loc>
-    <lastmod>2015-02-04T06:38:42.000Z</lastmod>
+    <loc>http://blog.gyf1.com/2015/02/04/angular-display-multiple-lined-strings/</loc>
+    <lastmod>2015-02-05T07:33:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/02/04/angular-copy-to-clipboard/</loc>
+    <lastmod>2015-02-05T06:29:20.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://blog.gyf1.com/2015/02/03/microdata/</loc>
-    <lastmod>2015-02-04T05:27:17.000Z</lastmod>
+    <lastmod>2015-02-04T06:50:49.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/02/04/css-display-inline-vs-inline-block/</loc>
+    <lastmod>2015-02-04T06:38:42.000Z</lastmod>
   </url>
   
   <url>
