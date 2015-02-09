@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/</loc>
+    <lastmod>2015-02-09T13:11:33.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/02/04/angular-display-multiple-lined-strings/</loc>
     <lastmod>2015-02-05T07:33:57.000Z</lastmod>
   </url>

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-02-05T07:34:14.355Z</updated>
+  <updated>2015-02-09T13:12:21.348Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -13,6 +13,37 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[meteor mongodb mongodump and mongorestore]]></title>
+    <link href="http://blog.gyf1.com/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/"/>
+    <id>http://blog.gyf1.com/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/</id>
+    <published>2015-02-09T13:06:56.000Z</published>
+    <updated>2015-02-09T13:11:33.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5982;&#x4F55;&#x5907;&#x4EFD;&#x548C;&#x5BFC;&#x5165;meteor&#x7684;&#x6570;&#x636E;</p>
+<ol>
+<li>mongodump -d Telescope -o telescope_backup.json</li>
+<li>rsync -avzP root@gyf1.com:/root/telescope_backup ./steven</li>
+<li>&#x8FDB;&#x5165;&#x5230;&#x6587;&#x4EF6;&#x5939;telescope_backup.json&#x4E0B;&#x9762;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4;mongorestore &#x2014;db meteor  -h localhost &#x2014;port 3001 &#x2014;drop Telescope</li>
+</ol>
+<p><a id="more"></a><br><a href="http://stackoverflow.com/questions/19505543/mongorestore-from-meteor-production-server-to-local" target="_blank" rel="external">http://stackoverflow.com/questions/19505543/mongorestore-from-meteor-production-server-to-local</a><br><a href="https://groups.google.com/forum/#!topic/meteor-talk/KvDWrqZpy-w" target="_blank" rel="external">https://groups.google.com/forum/#!topic/meteor-talk/KvDWrqZpy-w</a><br><a href="http://stackoverflow.com/questions/7521163/what-does-too-many-positional-options-mean-when-doing-a-mongoexport" target="_blank" rel="external">http://stackoverflow.com/questions/7521163/what-does-too-many-positional-options-mean-when-doing-a-mongoexport</a><br><a href="http://stackoverflow.com/questions/11255630/how-to-export-all-collection-in-mongodb" target="_blank" rel="external">http://stackoverflow.com/questions/11255630/how-to-export-all-collection-in-mongodb</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5982;&#x4F55;&#x5907;&#x4EFD;&#x548C;&#x5BFC;&#x5165;meteor&#x7684;&#x6570;&#x636E;</p>
+<ol>
+<li>mongodump -d Telescope -o telescope_backup.json</li>
+<li>rsync -avzP root@gyf1.com:/root/telescope_backup ./steven</li>
+<li>&#x8FDB;&#x5165;&#x5230;&#x6587;&#x4EF6;&#x5939;telescope_backup.json&#x4E0B;&#x9762;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4;mongorestore &#x2014;db meteor  -h localhost &#x2014;port 3001 &#x2014;drop Telescope</li>
+</ol>
+<p>]]>
+    
+    </summary>
+    
+      <category term="Meteor" scheme="http://blog.gyf1.com/tags/meteor/"/>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[angular copy to clipboard]]></title>
@@ -4823,78 +4854,6 @@ ng-m <span class="comment">// creates an Angular module</span>
     </summary>
     
       <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[js tests]]></title>
-    <link href="http://blog.gyf1.com/2015/01/22/js-tests/"/>
-    <id>http://blog.gyf1.com/2015/01/22/js-tests/</id>
-    <published>2015-01-22T14:27:04.000Z</published>
-    <updated>2015-01-23T02:56:28.000Z</updated>
-    <content type="html"><![CDATA[<p>Questions to check whether you understand js.</p>
-<a id="more"></a>
-
-<p>Question</p>
-<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will randomly choose <span class="operator">an</span> <span class="keyword">element</span> <span class="built_in">from</span> <span class="operator">an</span> array named myStuff, given that <span class="operator">the</span> <span class="built_in">number</span> <span class="operator">of</span> elements changes dynamically?
-</code></pre><p>Answers</p>
-<pre><code>randomElement = myStuff[Math.<span class="built_in">floor</span>(Math.<span class="built_in">random</span>() * myStuff.<span class="built_in">length</span>)]; &#x2611;&#xFE0F;
-randomElement = myStuff[Math.<span class="built_in">ceil</span>(Math.<span class="built_in">random</span>() * myStuff.<span class="built_in">length</span>)];
-randomElement = myStuff[Math.<span class="built_in">random</span>(myStuff.<span class="built_in">length</span>)];
-randomElement = Math.<span class="built_in">random</span>(myStuff.<span class="built_in">length</span>);
-</code></pre><p>Practice</p>
-<pre><code>var myStuff = [<span class="number">100</span>,<span class="number">200</span>,<span class="number">300</span>,<span class="number">400</span>,<span class="number">500</span>,<span class="number">600</span>,<span class="number">700</span>]<span class="comment">;</span>
-var randomElement<span class="comment">;</span>
-randomElement = myStuff[Math<span class="preprocessor">.floor</span>(Math<span class="preprocessor">.random</span>() * myStuff<span class="preprocessor">.length</span>)]<span class="comment">;</span>
-//randomElement = myStuff[Math<span class="preprocessor">.ceil</span>(Math<span class="preprocessor">.random</span>() * myStuff<span class="preprocessor">.length</span>)]<span class="comment">;</span>
-//randomElement = myStuff[Math<span class="preprocessor">.random</span>(myStuff<span class="preprocessor">.length</span>)]<span class="comment">;</span>
-//randomElement = Math<span class="preprocessor">.random</span>(myStuff<span class="preprocessor">.length</span>)<span class="comment">;</span>
-alert (randomElement)<span class="comment">;</span>
-</code></pre><p>Question</p>
-<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will detect which DOM <span class="keyword">element</span> has <span class="operator">the</span> focus?
-</code></pre><p>Answers</p>
-<pre><code>document<span class="preprocessor">.activeElement</span> &#x2611;&#xFE0F;
-document<span class="preprocessor">.ready</span>
-document<span class="preprocessor">.referrer</span>
-document<span class="preprocessor">.getelementbyid</span>
-</code></pre><p>Question</p>
-<pre><code>Which <span class="operator">of</span> <span class="operator">the</span> following will check whether <span class="operator">the</span> <span class="built_in">variable</span> vRast exists <span class="operator">or</span> <span class="operator">not</span>?
-</code></pre><p>Answers</p>
-<pre><code><span class="keyword">if</span> (<span class="keyword">typeof</span> vRast=<span class="string">&quot;undefined&quot;</span>) {}
-<span class="keyword">if</span> (<span class="keyword">typeof</span> vRast ==<span class="string">&quot;undefined&quot;</span>) {} &#x2611;&#xFE0F;
-<span class="keyword">if</span> (vRast.defined =<span class="keyword">true</span>) {}
-<span class="keyword">if</span> (vRast.defined ==<span class="keyword">true</span>) {}
-</code></pre><p>Question</p>
-<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following will change <span class="keyword">the</span> color <span class="keyword">of</span> a <span class="property">paragraph</span>&apos;s <span class="type">text</span> <span class="keyword">to</span> blue when a user hovers <span class="keyword">over</span> <span class="keyword">it</span>, <span class="keyword">and</span> reset <span class="keyword">it</span> <span class="keyword">back</span> <span class="keyword">to</span> black when <span class="keyword">the</span> user hovers out?
-</code></pre><p>Answers</p>
-<pre><code>&lt;p onmouseover=<span class="string">&quot;style.color=&apos;black&apos;&quot;</span> onmouseout=<span class="string">&quot;style.color=&apos;blue&apos;&quot;</span>&gt; The <span class="type">text</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="property">paragraph</span>..&lt;/p&gt;
-&lt;p onmouseover=<span class="string">&quot;style.color=&apos;blue&apos;&quot;</span> onmouseout=<span class="string">&quot;style.color=&apos;black&apos;&quot;</span>&gt; The <span class="type">text</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="property">paragraph</span>..&lt;/p&gt; &#x2611;&#xFE0F;
-&lt;p onmouseout=<span class="string">&quot;style.color=&apos;blue&apos;&quot;</span>&gt; The <span class="type">text</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="property">paragraph</span>..&lt;/p&gt;
-&lt;p onmouseover=<span class="string">&quot;style.color=&apos;blue&apos;&quot;</span>&gt; The <span class="type">text</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="property">paragraph</span>..&lt;/p&gt;
-&lt;p onmousein=<span class="string">&quot;style.color=&apos;blue&apos;&quot;</span> onmouseout=<span class="string">&quot;style.color=&apos;black&apos;&quot;</span>&gt; The <span class="type">text</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="property">paragraph</span>..&lt;/p&gt;
-</code></pre><p>Question</p>
-<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following statements <span class="keyword">is</span> correct?
-</code></pre><p>Answers</p>
-<pre><code>There <span class="keyword">is</span> no undefined property <span class="keyword">in</span> JavaScript.
-Undefined <span class="keyword">object</span> properties can be <span class="keyword">checked</span> <span class="keyword">using</span> the following code: <span class="keyword">if</span> (<span class="keyword">typeof</span> something == <span class="keyword">null</span>)     alert(<span class="string">&quot;something is undefined&quot;</span>);
-It <span class="keyword">is</span> not possible to check <span class="keyword">for</span> undefined <span class="keyword">object</span> properties <span class="keyword">in</span> JavaScript.
-Undefined <span class="keyword">object</span> properties can be <span class="keyword">checked</span> <span class="keyword">using</span> the following code: <span class="keyword">if</span> (<span class="keyword">typeof</span> something === <span class="string">&quot;undefined&quot;</span>)     alert(<span class="string">&quot;something is undefined&quot;</span>);
-</code></pre><p>Question</p>
-<pre><code>Which <span class="keyword">of</span> <span class="keyword">the</span> following results <span class="keyword">is</span> returned <span class="keyword">by</span> <span class="keyword">the</span> JavaScript operator <span class="string">&quot;typeof&quot;</span> <span class="keyword">for</span> <span class="keyword">the</span> keyword <span class="string">&quot;null&quot;</span>?
-</code></pre><p>Answers</p>
-<pre><code><span class="function"><span class="keyword">function</span></span>
-object &#x2611;&#xFE0F;
-<span class="keyword">string</span>
-<span class="built_in">number</span>
-</code></pre><p><a href="http://odesk-tests.com/tests/200/questions/27912" target="_blank" rel="external">http://odesk-tests.com/tests/200/questions/27912</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Questions to check whether you understand js.</p>
-]]>
-    
-    </summary>
     
       <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
     
