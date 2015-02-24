@@ -74,6 +74,122 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-02-01T07:38:14.000Z"><a href="/2015/02/01/javascript-scoping-and-hoisting/">2月 1 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/02/01/javascript-scoping-and-hoisting/">JavaScript Scoping and Hoisting</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>JavaScript Scoping and Hoisting</p>
+<p>Do you know what value will be alerted if the following is executed as a JavaScript program?</p>
+<pre><code><span class="keyword">var</span> foo = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> {</span>
+    <span class="keyword">if</span> (!foo) {
+        <span class="keyword">var</span> foo = <span class="number">10</span>;
+    }
+    alert(foo);
+}
+bar();
+</code></pre><p>If it surprises you that the answer is &#x201C;10&#x201D;, then this one will probably really throw you for a loop:</p>
+<pre><code><span class="keyword">var</span> a = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">b</span><span class="params">()</span> {</span>
+    a = <span class="number">10</span>;
+    <span class="keyword">return</span>;
+    <span class="function"><span class="keyword">function</span> <span class="title">a</span><span class="params">()</span> {</span>console.log(<span class="string">&apos;!&apos;</span>);}
+}
+b();
+alert(a);
+</code></pre><p>Here, of course, the browser will alert &#x201C;1&#x201D;. So what&#x2019;s going on here?<br>While it might seem strange, dangerous, and confusing, this is actually a powerful and expressive feature of the language.<br>I don&#x2019;t know if there is a standard name for this specific behavior, but I&#x2019;ve come to like the term &#x201C;hoisting&#x201D;.<br>This article will try to shed some light on this mechanism, but first lets take a necessary detour to understand JavaScript&#x2019;s scoping.<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/02/01/javascript-scoping-and-hoisting/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-02-01T06:11:07.000Z"><a href="/2015/02/01/css-underline-attributes-for-ie/">2月 1 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/02/01/css-underline-attributes-for-ie/">css underline attributes for ie</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>CSS &#x4E2D; _width&#x3001;_height &#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;</p>
+<p>CSS &#x5C5E;&#x6027;&#x524D;&#x9762;&#x52A0;&#x4E86;&#x4E0B;&#x5212;&#x7EBF;&#x201C;_&#x201D;&#xFF0C;&#x5728; IE 6 &#x4E2D;&#xFF0C;&#x8DDF;&#x6CA1;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x6548;&#x679C;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5982;&#xFF1A;_width &#x7B49;&#x4EF7;&#x4E8E; width&#xFF1B;_height &#x7B49;&#x4EF7;&#x4E8E; height&#xFF1B;_color &#x7B49;&#x4EF7;&#x4E8E; color&#x2026;&#x2026;</p>
+<p>&#x4E5F;&#x6709;&#x7528;&#x201C;\&#x201D;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x201C;\width&#x201D;&#x7B49;&#x4EF7;&#x4E8E; width&#x3002;&#x4F46;&#x5176;&#x5E94;&#x7528;&#x8303;&#x56F4;&#x6709;&#x9650;&#xFF0C;&#x6BD4;&#x5982;&#x201C;\color&#x201D;&#x5C31;&#x8BA4;&#x4E0D;&#x5230;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/02/01/css-underline-attributes-for-ie/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-01-29T14:28:46.000Z"><a href="/2015/01/29/config-android-environment-on-mac/">1月 29 2015</a></time>
       
       
@@ -431,105 +547,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-25T06:22:55.000Z"><a href="/2015/01/25/closures-in-javascript/">1月 25 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/25/closures-in-javascript/">Closures in JavaScript</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>By now, you probably know all about functions and all the fun functiony things that they do.<br>An important part of working with functions, with JavaScript, and (possibly) life in general is understanding the topic known as closures.<br>Closures touch upon a gray area where functions and variable scope intersect:</p>
-<p><img src="http://www.kirupa.com/images/gray_area_72.png" alt="Closure"></p>
-<p>Now, I am not going to say any more about closures, for this is something best explained by seeing code.<br>Any words I add right now to define or describe what closures are will only serve to confuse things.<br>In the following sections, we&#x2019;ll start off in familiar territory and then slowly venture into hostile areas where closures can be found.</p>
-<p>Onwards!</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/25/closures-in-javascript/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-23T15:12:58.000Z"><a href="/2015/01/23/angularjs-style-guide/">1月 23 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/23/angularjs-style-guide/">AngularJS Style Guide</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Best practices for AngularJS</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/23/angularjs-style-guide/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -559,7 +576,7 @@
   
     <li><a href="/categories/giant/">Giant</a><small>96</small></li>
   
-    <li><a href="/categories/html/">HTML</a><small>10</small></li>
+    <li><a href="/categories/html/">HTML</a><small>11</small></li>
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
@@ -585,7 +602,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/agile-development/" style="font-size: 13.00px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 12.00px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.00px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 11.00px;">Bower</a><a href="/tags/css/" style="font-size: 18.00px;">CSS</a><a href="/tags/certification/" style="font-size: 11.00px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 11.00px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.00px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 11.00px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 11.00px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 12.00px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.00px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 13.00px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 11.00px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 11.00px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.00px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 11.00px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.00px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.00px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.00px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 11.00px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 14.00px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 12.00px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.00px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.00px;">jQuery</a>
+    <a href="/tags/agile-development/" style="font-size: 12.73px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.82px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.55px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.91px;">Bower</a><a href="/tags/css/" style="font-size: 18.18px;">CSS</a><a href="/tags/certification/" style="font-size: 10.91px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.91px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.45px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 10.91px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.91px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.82px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.64px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.73px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.91px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.91px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.09px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.91px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 11.82px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.91px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.27px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/regexp/" style="font-size: 10.00px;">RegExp</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.91px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 13.64px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.82px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.55px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.36px;">jQuery</a>
   </div>
 </div>
 
@@ -594,6 +611,14 @@
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/02/14/html5-record-audio/">html5 record audio</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/11/news-ticker/">news ticker</a>
+      </li>
     
       <li>
         <a href="/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/">meteor mongodb mongodump and mongorestore</a>
@@ -625,14 +650,6 @@
     
       <li>
         <a href="/2015/02/01/a-dive-into-plain-javascript/">A Dive Into Plain JavaScript</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/01/javascript-scoping-and-hoisting/">JavaScript Scoping and Hoisting</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/01/css-underline-attributes-for-ie/">css underline attributes for ie</a>
       </li>
     
   </ul>

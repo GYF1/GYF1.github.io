@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/02/14/html5-record-audio/</loc>
+    <lastmod>2015-02-14T00:29:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/17/you-dont-know-anything-about-regular-expressions-a-complete-guide/</loc>
+    <lastmod>2015-02-13T01:51:22.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/01/22/js-tests/</loc>
+    <lastmod>2015-02-12T07:20:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/02/11/news-ticker/</loc>
+    <lastmod>2015-02-12T00:58:28.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/</loc>
     <lastmod>2015-02-09T13:11:33.000Z</lastmod>
   </url>
@@ -127,11 +147,6 @@
   </url>
   
   <url>
-    <loc>http://blog.gyf1.com/2015/01/22/js-tests/</loc>
-    <lastmod>2015-01-23T02:56:28.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://blog.gyf1.com/2015/01/18/getting-over-jquery/</loc>
     <lastmod>2015-01-23T00:16:54.000Z</lastmod>
   </url>
@@ -164,11 +179,6 @@
   <url>
     <loc>http://blog.gyf1.com/2015/01/17/immediately-invoked-function-expression-(iife)/</loc>
     <lastmod>2015-01-22T09:39:48.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.gyf1.com/2015/01/17/%E4%BD%A0%E6%B2%A1%E6%9C%89%E5%AE%8C%E6%95%B4%E7%9A%84%E4%BA%86%E8%A7%A3%E8%BF%87%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    <lastmod>2015-01-22T09:39:19.000Z</lastmod>
   </url>
   
   <url>
