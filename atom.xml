@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-02-24T10:10:04.120Z</updated>
+  <updated>2015-02-27T03:37:41.346Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -13,6 +13,317 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Connect to a Remote MongoDB]]></title>
+    <link href="http://blog.gyf1.com/2015/02/27/connect-to-a-remote-mongodb/"/>
+    <id>http://blog.gyf1.com/2015/02/27/connect-to-a-remote-mongodb/</id>
+    <published>2015-02-27T03:33:44.000Z</published>
+    <updated>2015-02-27T03:37:19.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x88C5;mongodb&#xFF0C;&#x5982;&#x4F55;&#x5728;&#x672C;&#x5730;&#x901A;&#x8FC7;Robomongo&#x6216;&#x8005;MongoHub&#x6765;&#x8BBF;&#x95EE;</p>
+<p>Here&#x2019;s what you need to get started:</p>
+<pre><code>Install MongoDB <span class="function_start"><span class="keyword">on</span></span> your Server. There are a million tutorials out there, <span class="keyword">but</span> here&#x2019;s <span class="keyword">the</span> one I used <span class="keyword">at</span> mongodb.org.
+If you installed <span class="keyword">with</span> apt-<span class="keyword">get</span> install mongodb <span class="keyword">instead of</span>  apt-<span class="keyword">get</span> install mongodb-<span class="number">10</span>gen here&#x2019;s how <span class="keyword">to</span> UNINSTALL <span class="keyword">the</span> older <span class="property">version</span> <span class="keyword">after</span> shutting down gracefully so you don&#x2019;t wind up <span class="keyword">with</span> an infuriating mongod.lock <span class="type">file</span>.
+mongo use admin db.shutdownServer() sudo apt-<span class="keyword">get</span> remove mongodb sudo apt-<span class="keyword">get</span> autoremove sudo reboot
+<span class="number">1</span>
+<span class="number">2</span>
+<span class="number">3</span>
+<span class="number">4</span>
+<span class="number">5</span>
+<span class="number">6</span>
+
+mongo
+use admin
+db.shutdownServer()
+sudo apt-<span class="keyword">get</span> remove mongodb
+sudo apt-<span class="keyword">get</span> autoremove
+sudo reboot
+
+Then go ahead <span class="keyword">and</span> install <span class="keyword">the</span> mongodb-<span class="number">10</span>gen (latest stable) <span class="property">version</span>.
+Download <span class="keyword">and</span> install MongoHub <span class="keyword">for</span> Mac OS X.
+</code></pre><p>Secure MongoDB.</p>
+<pre><code>Start <span class="operator">the</span> <span class="built_in">shell</span> <span class="operator">and</span> <span class="built_in">add</span> <span class="operator">an</span> administrative user <span class="keyword">for</span> <span class="operator">the</span> server.
+$ ./mongo use admin db.addUser(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+<span class="number">1</span>
+<span class="number">2</span>
+<span class="number">3</span>
+
+$ ./mongo
+use admin
+db.addUser(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+
+Note: On my <span class="keyword">system</span>, typing ./mongo doesn&#x2019;t work, but plain mongo does.
+Authenticate, still <span class="operator">in</span> <span class="operator">the</span> <span class="built_in">shell</span>.
+db.auth(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+<span class="number">1</span>
+
+db.auth(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+Configure <span class="operator">a</span> specific user <span class="keyword">for</span> another database.
+use projectx db.addUser(<span class="string">&quot;joe&quot;</span>, <span class="string">&quot;passwordForJoe&quot;</span>)
+<span class="number">1</span>
+<span class="number">2</span>
+
+use projectx
+db.addUser(<span class="string">&quot;joe&quot;</span>, <span class="string">&quot;passwordForJoe&quot;</span>)
+Exit <span class="operator">the</span> MongoDB <span class="built_in">shell</span>.
+exit
+<span class="number">1</span>
+
+exit
+Edit <span class="operator">the</span> mongodb.conf <span class="built_in">file</span> <span class="built_in">to</span> enable authentication.
+sudo nano /etc/mongodb.conf
+<span class="number">1</span>
+
+sudo nano /etc/mongodb.conf
+
+Uncomment this <span class="built_in">line</span>.
+auth=<span class="constant">true</span>
+<span class="number">1</span>
+
+auth=<span class="constant">true</span>
+Restart MongoDB
+sudo /etc/init.d/mongodb restart
+<span class="number">1</span>
+
+sudo /etc/init.d/mongodb restart
+</code></pre><p><a id="more"></a><br><a href="http://stackoverflow.com/questions/25568465/acces-mongodb-from-other-server" target="_blank" rel="external">http://stackoverflow.com/questions/25568465/acces-mongodb-from-other-server</a><br><a href="http://ghosttx.com/2012/03/how-to-connect-to-a-remote-mongodb-server-with-mongohub-for-mac/" target="_blank" rel="external">http://ghosttx.com/2012/03/how-to-connect-to-a-remote-mongodb-server-with-mongohub-for-mac/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x88C5;mongodb&#xFF0C;&#x5982;&#x4F55;&#x5728;&#x672C;&#x5730;&#x901A;&#x8FC7;Robomongo&#x6216;&#x8005;MongoHub&#x6765;&#x8BBF;&#x95EE;</p>
+<p>Here&#x2019;s what you need to get started:</p>
+<pre><code>Install MongoDB <span class="function_start"><span class="keyword">on</span></span> your Server. There are a million tutorials out there, <span class="keyword">but</span> here&#x2019;s <span class="keyword">the</span> one I used <span class="keyword">at</span> mongodb.org.
+If you installed <span class="keyword">with</span> apt-<span class="keyword">get</span> install mongodb <span class="keyword">instead of</span>  apt-<span class="keyword">get</span> install mongodb-<span class="number">10</span>gen here&#x2019;s how <span class="keyword">to</span> UNINSTALL <span class="keyword">the</span> older <span class="property">version</span> <span class="keyword">after</span> shutting down gracefully so you don&#x2019;t wind up <span class="keyword">with</span> an infuriating mongod.lock <span class="type">file</span>.
+mongo use admin db.shutdownServer() sudo apt-<span class="keyword">get</span> remove mongodb sudo apt-<span class="keyword">get</span> autoremove sudo reboot
+<span class="number">1</span>
+<span class="number">2</span>
+<span class="number">3</span>
+<span class="number">4</span>
+<span class="number">5</span>
+<span class="number">6</span>
+
+mongo
+use admin
+db.shutdownServer()
+sudo apt-<span class="keyword">get</span> remove mongodb
+sudo apt-<span class="keyword">get</span> autoremove
+sudo reboot
+
+Then go ahead <span class="keyword">and</span> install <span class="keyword">the</span> mongodb-<span class="number">10</span>gen (latest stable) <span class="property">version</span>.
+Download <span class="keyword">and</span> install MongoHub <span class="keyword">for</span> Mac OS X.
+</code></pre><p>Secure MongoDB.</p>
+<pre><code>Start <span class="operator">the</span> <span class="built_in">shell</span> <span class="operator">and</span> <span class="built_in">add</span> <span class="operator">an</span> administrative user <span class="keyword">for</span> <span class="operator">the</span> server.
+$ ./mongo use admin db.addUser(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+<span class="number">1</span>
+<span class="number">2</span>
+<span class="number">3</span>
+
+$ ./mongo
+use admin
+db.addUser(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+
+Note: On my <span class="keyword">system</span>, typing ./mongo doesn&#x2019;t work, but plain mongo does.
+Authenticate, still <span class="operator">in</span> <span class="operator">the</span> <span class="built_in">shell</span>.
+db.auth(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+<span class="number">1</span>
+
+db.auth(<span class="string">&quot;mongoadmin&quot;</span>, <span class="string">&quot;anadminpassword&quot;</span>)
+Configure <span class="operator">a</span> specific user <span class="keyword">for</span> another database.
+use projectx db.addUser(<span class="string">&quot;joe&quot;</span>, <span class="string">&quot;passwordForJoe&quot;</span>)
+<span class="number">1</span>
+<span class="number">2</span>
+
+use projectx
+db.addUser(<span class="string">&quot;joe&quot;</span>, <span class="string">&quot;passwordForJoe&quot;</span>)
+Exit <span class="operator">the</span> MongoDB <span class="built_in">shell</span>.
+exit
+<span class="number">1</span>
+
+exit
+Edit <span class="operator">the</span> mongodb.conf <span class="built_in">file</span> <span class="built_in">to</span> enable authentication.
+sudo nano /etc/mongodb.conf
+<span class="number">1</span>
+
+sudo nano /etc/mongodb.conf
+
+Uncomment this <span class="built_in">line</span>.
+auth=<span class="constant">true</span>
+<span class="number">1</span>
+
+auth=<span class="constant">true</span>
+Restart MongoDB
+sudo /etc/init.d/mongodb restart
+<span class="number">1</span>
+
+sudo /etc/init.d/mongodb restart
+</code></pre><p>]]>
+    
+    </summary>
+    
+      <category term="MongoDB" scheme="http://blog.gyf1.com/tags/mongodb/"/>
+    
+      <category term="Database" scheme="http://blog.gyf1.com/categories/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ng-bind-html call function]]></title>
+    <link href="http://blog.gyf1.com/2015/02/26/ng-bind-html-call-function/"/>
+    <id>http://blog.gyf1.com/2015/02/26/ng-bind-html-call-function/</id>
+    <published>2015-02-26T09:00:14.000Z</published>
+    <updated>2015-02-26T09:02:40.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5728;&#x9875;&#x9762;&#x4E0A;&#x7ED1;&#x5B9A;&#x7684;html&#xFF0C;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x91CC;&#x9762;&#x7684;&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;ng-click<br>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;$compile<br><a id="more"></a><br><a href="http://stackoverflow.com/questions/20297638/call-function-inside-sce-trustashtml-string-in-angular-js" target="_blank" rel="external">http://stackoverflow.com/questions/20297638/call-function-inside-sce-trustashtml-string-in-angular-js</a><br><a href="http://stackoverflow.com/questions/20623118/rendering-directives-within-sce-trustashtml" target="_blank" rel="external">http://stackoverflow.com/questions/20623118/rendering-directives-within-sce-trustashtml</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5728;&#x9875;&#x9762;&#x4E0A;&#x7ED1;&#x5B9A;&#x7684;html&#xFF0C;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x91CC;&#x9762;&#x7684;&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;ng-click<br>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;$compile<br>]]>
+    
+    </summary>
+    
+      <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[regexp practice 1]]></title>
+    <link href="http://blog.gyf1.com/2015/02/26/regexp-practice-1/"/>
+    <id>http://blog.gyf1.com/2015/02/26/regexp-practice-1/</id>
+    <published>2015-02-26T08:57:24.000Z</published>
+    <updated>2015-02-26T09:06:39.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x6709;&#x4E00;&#x6BB5;html&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x4E0B;</p>
+<pre><code><span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x770B;<span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">&quot;font-size: 15px; line-height: 1.5;&quot;</span>&gt;</span>&#x56FE;&#x8BF4;&#x8BDD;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/1.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x518D;&#x6765;&#x4E00;&#x5F20;&#x56FE;&#x7247;<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/2.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;609&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;590&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre><p>&#x9700;&#x8981;&#x80FD;&#x591F;&#x9488;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;img&#x6807;&#x7B7E;&#x505A;&#x5982;&#x4E0B;&#x5904;&#x7406;&#xFF1A;</p>
+<ol>
+<li>&#x52A0;&#x4E0A; width=&#x201D;100%&#x201D; height=&#x201D;auto&#x201D;&#xFF0C;&#x5982;&#x679C;img&#x5DF2;&#x7ECF;&#x5B58;&#x5728;width&#x548C;hegiht&#xFF0C;&#x9700;&#x8981;&#x5148;&#x53BB;&#x6389;</li>
+<li>&#x589E;&#x52A0;&#x4E00;&#x4E2A;onlick&#x4E8B;&#x4EF6;&#xFF0C;&#x4F20;&#x5165;img&#x7684;src&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</li>
+</ol>
+<p>&#x671F;&#x5F85;&#x7684;&#x7ED3;&#x679C;&#x662F;</p>
+<pre><code><span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x770B;<span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">&quot;font-size: 15px; line-height: 1.5;&quot;</span>&gt;</span>&#x56FE;&#x8BF4;&#x8BDD;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/1.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;100%&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;auto&quot;</span> <span class="attribute">onlick</span>=<span class="value">&quot;foo(&apos;http://a.com/1.png&apos;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x518D;&#x6765;&#x4E00;&#x5F20;&#x56FE;&#x7247;<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/2.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;100%&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;auto&quot;</span> <span class="attribute">onlick</span>=<span class="value">&quot;foo(&apos;http://a.com/2.png&apos;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre><p><a id="more"></a><br>regular expression add width to html img<br>javascript reg remove img width<br>javascript regular expression remove width height<br>javascript regular expression get img src</p>
+<p><a href="http://segmentfault.com/q/1010000002565984" target="_blank" rel="external">http://segmentfault.com/q/1010000002565984</a><br><a href="http://stackoverflow.com/questions/21190381/pagedown-adding-a-css-class-to-every-img-tag-with-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/21190381/pagedown-adding-a-css-class-to-every-img-tag-with-javascript</a><br><a href="http://stackoverflow.com/questions/5618851/change-width-and-height-regex-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/5618851/change-width-and-height-regex-javascript</a><br><a href="http://vikku.info/codesnippets/php/replace-width-and-height-of-html-element-using-regular-expression/" target="_blank" rel="external">http://vikku.info/codesnippets/php/replace-width-and-height-of-html-element-using-regular-expression/</a><br><a href="http://www.experts-exchange.com/Programming/Languages/Scripting/PHP/Q_21668064.html" target="_blank" rel="external">http://www.experts-exchange.com/Programming/Languages/Scripting/PHP/Q_21668064.html</a></p>
+<p>&#x63D0;&#x53D6;&#x51FA;src&#xFF1A;<br><a href="http://stackoverflow.com/questions/12393671/substring-regex-to-get-a-src-value-held-in-a-string" target="_blank" rel="external">http://stackoverflow.com/questions/12393671/substring-regex-to-get-a-src-value-held-in-a-string</a><br><a href="http://stackoverflow.com/questions/14939296/extract-image-src-from-a-string" target="_blank" rel="external">http://stackoverflow.com/questions/14939296/extract-image-src-from-a-string</a></p>
+<p><a href="http://www.jbxue.com/article/7740.html" target="_blank" rel="external">http://www.jbxue.com/article/7740.html</a><br><a href="http://stackoverflow.com/questions/18664997/how-can-i-use-regular-expression-to-grab-an-img-tag" target="_blank" rel="external">http://stackoverflow.com/questions/18664997/how-can-i-use-regular-expression-to-grab-an-img-tag</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x6709;&#x4E00;&#x6BB5;html&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x4E0B;</p>
+<pre><code><span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x770B;<span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">&quot;font-size: 15px; line-height: 1.5;&quot;</span>&gt;</span>&#x56FE;&#x8BF4;&#x8BDD;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/1.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x518D;&#x6765;&#x4E00;&#x5F20;&#x56FE;&#x7247;<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/2.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;609&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;590&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre><p>&#x9700;&#x8981;&#x80FD;&#x591F;&#x9488;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;img&#x6807;&#x7B7E;&#x505A;&#x5982;&#x4E0B;&#x5904;&#x7406;&#xFF1A;</p>
+<ol>
+<li>&#x52A0;&#x4E0A; width=&#x201D;100%&#x201D; height=&#x201D;auto&#x201D;&#xFF0C;&#x5982;&#x679C;img&#x5DF2;&#x7ECF;&#x5B58;&#x5728;width&#x548C;hegiht&#xFF0C;&#x9700;&#x8981;&#x5148;&#x53BB;&#x6389;</li>
+<li>&#x589E;&#x52A0;&#x4E00;&#x4E2A;onlick&#x4E8B;&#x4EF6;&#xFF0C;&#x4F20;&#x5165;img&#x7684;src&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</li>
+</ol>
+<p>&#x671F;&#x5F85;&#x7684;&#x7ED3;&#x679C;&#x662F;</p>
+<pre><code><span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x770B;<span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">&quot;font-size: 15px; line-height: 1.5;&quot;</span>&gt;</span>&#x56FE;&#x8BF4;&#x8BDD;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/1.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;100%&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;auto&quot;</span> <span class="attribute">onlick</span>=<span class="value">&quot;foo(&apos;http://a.com/1.png&apos;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x518D;&#x6765;&#x4E00;&#x5F20;&#x56FE;&#x7247;<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/2.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;100%&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;auto&quot;</span> <span class="attribute">onlick</span>=<span class="value">&quot;foo(&apos;http://a.com/2.png&apos;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre><p>]]>
+    
+    </summary>
+    
+      <category term="RegExp" scheme="http://blog.gyf1.com/tags/regexp/"/>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ionic image viewer]]></title>
+    <link href="http://blog.gyf1.com/2015/02/26/ionic-image-viewer/"/>
+    <id>http://blog.gyf1.com/2015/02/26/ionic-image-viewer/</id>
+    <published>2015-02-26T08:40:42.000Z</published>
+    <updated>2015-02-26T08:41:42.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5982;&#x4F55;&#x5728;ionic&#x91CC;&#x9884;&#x89C8;&#x56FE;&#x7247;<br><a id="more"></a><br><a href="http://codepen.io/anandvj/pen/KwmMGY" target="_blank" rel="external">http://codepen.io/anandvj/pen/KwmMGY</a><br><a href="http://forum.ionicframework.com/t/dealing-with-images/2313/2" target="_blank" rel="external">http://forum.ionicframework.com/t/dealing-with-images/2313/2</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5982;&#x4F55;&#x5728;ionic&#x91CC;&#x9884;&#x89C8;&#x56FE;&#x7247;<br>]]>
+    
+    </summary>
+    
+      <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
+    
+      <category term="Mobile" scheme="http://blog.gyf1.com/categories/mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ionic image zoom]]></title>
+    <link href="http://blog.gyf1.com/2015/02/26/ionic-image-zoom/"/>
+    <id>http://blog.gyf1.com/2015/02/26/ionic-image-zoom/</id>
+    <published>2015-02-26T08:38:17.000Z</published>
+    <updated>2015-02-26T09:06:01.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5982;&#x4F55;&#x5728;ionic&#x5B9E;&#x73B0;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7F29;&#x653E;&#x56FE;&#x7247;<br><a id="more"></a><br>ionic image zoom<br><a href="http://codepen.io/arnaud-f/pen/CDatr" target="_blank" rel="external">http://codepen.io/arnaud-f/pen/CDatr</a><br><a href="https://github.com/driftyco/ionic/issues/679" target="_blank" rel="external">https://github.com/driftyco/ionic/issues/679</a><br><a href="http://forum.ionicframework.com/t/how-to-zooming-and-scrolling-on-a-fullscreen-image/10204" target="_blank" rel="external">http://forum.ionicframework.com/t/how-to-zooming-and-scrolling-on-a-fullscreen-image/10204</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5982;&#x4F55;&#x5728;ionic&#x5B9E;&#x73B0;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7F29;&#x653E;&#x56FE;&#x7247;<br>]]>
+    
+    </summary>
+    
+      <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
+    
+      <category term="Mobile" scheme="http://blog.gyf1.com/categories/mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ionic play audio and video]]></title>
+    <link href="http://blog.gyf1.com/2015/02/25/ionic-play-audio-and-video/"/>
+    <id>http://blog.gyf1.com/2015/02/25/ionic-play-audio-and-video/</id>
+    <published>2015-02-25T08:18:42.000Z</published>
+    <updated>2015-02-25T08:20:26.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/</a><br><a href="http://devdactic.com/images-videos-fullscreen-ionic/" target="_blank" rel="external">http://devdactic.com/images-videos-fullscreen-ionic/</a><br><a href="https://blog.nraboy.com/2014/11/playing-audio-android-ios-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.com/2014/11/playing-audio-android-ios-ionicframework-app/</a><br><a href="https://github.com/sirius2013/Angularjs-Ionic-Audio-VideoApp" target="_blank" rel="external">https://github.com/sirius2013/Angularjs-Ionic-Audio-VideoApp</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.]]>
+    </summary>
+    
+      <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli]]></title>
+    <link href="http://blog.gyf1.com/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/"/>
+    <id>http://blog.gyf1.com/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/</id>
+    <published>2015-02-25T08:14:18.000Z</published>
+    <updated>2015-02-25T08:15:45.000Z</updated>
+    <content type="html"><![CDATA[<p>Programming single-page applications is great to build modern web application. Publishing NPM packages are awesome if you write Node.js softwares. What&#x2019;s the link between this two subjects? Both require a complex tool chain (asset managemenet, CSS-preprocessor files compiling, test preparation, JS files concatenation, etc.) to publish your software. In this post, we are going to have look to a new trend: the task runners. They are the new generation of Makefiles for the JS world.</p>
+<p>Task runners are a set of tools to make build operation clean and well documented. They provide helpers to manage operations on the project file system via the command line.</p>
+<p><a id="more"></a><br><a href="http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/" target="_blank" rel="external">http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Programming single-page applications is great to build modern web application. Publishing NPM packages are awesome if you write Node.js softwares. What&#x2019;s the link between this two subjects? Both require a complex tool chain (asset managemenet, CSS-preprocessor files compiling, test preparation, JS files concatenation, etc.) to publish your software. In this post, we are going to have look to a new trend: the task runners. They are the new generation of Makefiles for the JS world.</p>
+<p>Task runners are a set of tools to make build operation clean and well documented. They provide helpers to manage operations on the project file system via the command line.</p>
+<p>]]>
+    
+    </summary>
+    
+      <category term="Grunt" scheme="http://blog.gyf1.com/tags/grunt/"/>
+    
+      <category term="Gulp" scheme="http://blog.gyf1.com/tags/gulp/"/>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[html5 record audio]]></title>
@@ -604,139 +915,6 @@ alert(a);
       <category term="Android" scheme="http://blog.gyf1.com/tags/android/"/>
     
       <category term="Mobile" scheme="http://blog.gyf1.com/categories/mobile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Rubik's Cube]]></title>
-    <link href="http://blog.gyf1.com/2015/01/29/rubiks-cube/"/>
-    <id>http://blog.gyf1.com/2015/01/29/rubiks-cube/</id>
-    <published>2015-01-29T08:46:00.000Z</published>
-    <updated>2015-01-29T08:59:09.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://svejkgames.com/blog/post/create-your-own-rubiks-cube/" target="_blank" rel="external">http://svejkgames.com/blog/post/create-your-own-rubiks-cube/</a><br><a href="https://www.chrome.com/cubelab#demo" target="_blank" rel="external">https://www.chrome.com/cubelab#demo</a><br><a href="http://ondras.zarovi.cz/demos/rubik/" target="_blank" rel="external">http://ondras.zarovi.cz/demos/rubik/</a><br><a href="https://developer.mozilla.org/en-US/demos/detail/rubiks-cube" target="_blank" rel="external">https://developer.mozilla.org/en-US/demos/detail/rubiks-cube</a><br><a href="http://paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/" target="_blank" rel="external">http://paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/</a><br><a href="http://css-tricks.com/creating-a-3d-cube-image-gallery/" target="_blank" rel="external">http://css-tricks.com/creating-a-3d-cube-image-gallery/</a><br><a href="http://www.html5rubik.com/tutorial/" target="_blank" rel="external">http://www.html5rubik.com/tutorial/</a><br><a href="https://cube3x.com/magic-animation-using-css3/" target="_blank" rel="external">https://cube3x.com/magic-animation-using-css3/</a><br><a href="http://www.minimamente.com/magic-css3-animations-by-minimac/" target="_blank" rel="external">http://www.minimamente.com/magic-css3-animations-by-minimac/</a><br><a href="http://codepen.io/wenbin5243/pen/tcAeJ" target="_blank" rel="external">http://codepen.io/wenbin5243/pen/tcAeJ</a><br><a href="http://www.smashingmagazine.com/wp-content/uploads/uploader/images/css3-designs/css3-rubiks-cube/index.html" target="_blank" rel="external">http://www.smashingmagazine.com/wp-content/uploads/uploader/images/css3-designs/css3-rubiks-cube/index.html</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://svejkgames.com/blog/post/create-your-own-rubiks-cube/" target="_blank" rel="external">http://svejkgames.com/blog/post/cre]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[iframe not rendering in ie9 mode]]></title>
-    <link href="http://blog.gyf1.com/2015/01/28/iframe-not-rendering-in-ie9-mode/"/>
-    <id>http://blog.gyf1.com/2015/01/28/iframe-not-rendering-in-ie9-mode/</id>
-    <published>2015-01-28T09:33:30.000Z</published>
-    <updated>2015-01-28T09:42:27.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/12467151/iframe-not-rendering-in-ie9-mode-when-containing-page-is-in-quirks-mode" target="_blank" rel="external">http://stackoverflow.com/questions/12467151/iframe-not-rendering-in-ie9-mode-when-containing-page-is-in-quirks-mode</a><br><a href="http://community.sitepoint.com/t/ie9-iframes-doctypes-and-you/7225" target="_blank" rel="external">http://community.sitepoint.com/t/ie9-iframes-doctypes-and-you/7225</a><br><a href="http://zhidao.baidu.com/link?url=f5UXDlsJRftImuyCq-JVHJluV4VWaquUsMnmOep-0QvQfQW6LfQhGsnKnhoP0h0TxYRtNIEIgFd5xGL5VdUzuq" target="_blank" rel="external">http://zhidao.baidu.com/link?url=f5UXDlsJRftImuyCq-JVHJluV4VWaquUsMnmOep-0QvQfQW6LfQhGsnKnhoP0h0TxYRtNIEIgFd5xGL5VdUzuq</a><br><a href="http://stackoverflow.com/questions/1244788/embed-vs-object" target="_blank" rel="external">http://stackoverflow.com/questions/1244788/embed-vs-object</a><br><a href="http://stackoverflow.com/questions/12467151/iframe-not-rendering-in-ie9-mode-when-containing-page-is-in-quirks-mode" target="_blank" rel="external">http://stackoverflow.com/questions/12467151/iframe-not-rendering-in-ie9-mode-when-containing-page-is-in-quirks-mode</a><br><a href="https://social.msdn.microsoft.com/forums/ie/en-us/0bced61d-7f89-4204-a000-dcdd2253d2f1/not-rendering-iframe-under-ie9" target="_blank" rel="external">https://social.msdn.microsoft.com/forums/ie/en-us/0bced61d-7f89-4204-a000-dcdd2253d2f1/not-rendering-iframe-under-ie9</a><br><a href="http://stackoverflow.com/questions/5653523/ie9-iframe-display-issue-controls-not-rendering-until-refresh" target="_blank" rel="external">http://stackoverflow.com/questions/5653523/ie9-iframe-display-issue-controls-not-rendering-until-refresh</a><br><a href="http://aubreypwd.com/iframe-not-loading-properly-in-internet-explorer-9-fix/" target="_blank" rel="external">http://aubreypwd.com/iframe-not-loading-properly-in-internet-explorer-9-fix/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://stackoverflow.com/questions/12467151/iframe-not-rendering-in-ie9-mode-when-containing-page-is-in-quirks-mode" target="_bl]]>
-    </summary>
-    
-      <category term="HTML" scheme="http://blog.gyf1.com/categories/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[browser difference list]]></title>
-    <link href="http://blog.gyf1.com/2015/01/28/browser-difference-list/"/>
-    <id>http://blog.gyf1.com/2015/01/28/browser-difference-list/</id>
-    <published>2015-01-28T09:31:58.000Z</published>
-    <updated>2015-01-28T09:32:49.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/1045830/dealing-with-firefox-and-internet-explorers-differences" target="_blank" rel="external">http://stackoverflow.com/questions/1045830/dealing-with-firefox-and-internet-explorers-differences</a><br><a href="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/" target="_blank" rel="external">http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/</a><br><a href="http://stackoverflow.com/questions/1064594/what-are-the-best-practices-for-cross-browser-web-sites" target="_blank" rel="external">http://stackoverflow.com/questions/1064594/what-are-the-best-practices-for-cross-browser-web-sites</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://stackoverflow.com/questions/1045830/dealing-with-firefox-and-internet-explorers-differences" target="_blank" rel="externa]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Quirks Mode vs Standards Mode]]></title>
-    <link href="http://blog.gyf1.com/2015/01/28/quirks-mode-vs-standards-mode/"/>
-    <id>http://blog.gyf1.com/2015/01/28/quirks-mode-vs-standards-mode/</id>
-    <published>2015-01-28T07:43:46.000Z</published>
-    <updated>2015-01-28T07:47:03.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x548C;&#x6807;&#x51C6;&#x6A21;&#x5F0F;</p>
-<a id="more"></a>
-
-<p><a href="http://www.aoao.org.cn/blog/2007/01/browser-mode/" target="_blank" rel="external">http://www.aoao.org.cn/blog/2007/01/browser-mode/</a><br><a href="http://younglab.blog.51cto.com/416652/264161/" target="_blank" rel="external">http://younglab.blog.51cto.com/416652/264161/</a><br><a href="https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode</a><br><a href="http://www.quirksmode.org/css/quirksmode.html" target="_blank" rel="external">http://www.quirksmode.org/css/quirksmode.html</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x548C;&#x6807;&#x51C6;&#x6A21;&#x5F0F;</p>
-]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Placeholder in IE9]]></title>
-    <link href="http://blog.gyf1.com/2015/01/28/placeholder-in-ie9/"/>
-    <id>http://blog.gyf1.com/2015/01/28/placeholder-in-ie9/</id>
-    <published>2015-01-28T07:14:58.000Z</published>
-    <updated>2015-01-28T07:16:22.000Z</updated>
-    <content type="html"><![CDATA[<p>input&#x7684;placeholder&#x5728;ie9&#x4E0A;&#x6CA1;&#x6709;&#x663E;&#x793A;</p>
-<a id="more"></a>
-
-<p><a href="http://stackoverflow.com/questions/6366021/placeholder-in-ie9" target="_blank" rel="external">http://stackoverflow.com/questions/6366021/placeholder-in-ie9</a><br><a href="http://blog.163.com/yhwwen@126/blog/static/17046885320135915529172/" target="_blank" rel="external">http://blog.163.com/yhwwen@126/blog/static/17046885320135915529172/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>input&#x7684;placeholder&#x5728;ie9&#x4E0A;&#x6CA1;&#x6709;&#x663E;&#x793A;</p>
-]]>
-    
-    </summary>
-    
-      <category term="HTML" scheme="http://blog.gyf1.com/categories/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[angular apply already in progress]]></title>
-    <link href="http://blog.gyf1.com/2015/01/28/angular-apply-already-in-progress/"/>
-    <id>http://blog.gyf1.com/2015/01/28/angular-apply-already-in-progress/</id>
-    <published>2015-01-28T06:16:35.000Z</published>
-    <updated>2015-01-28T06:18:15.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;</p>
-<pre><code><span class="function"><span class="keyword">function</span> <span class="title">safeApply</span><span class="params">(scope, fn)</span> {</span>
-  <span class="keyword">var</span> phase = scope.<span class="variable">$root</span>.<span class="variable">$$phase</span>;
-  <span class="keyword">if</span>(phase == <span class="string">&apos;$apply&apos;</span> || phase == <span class="string">&apos;$digest&apos;</span>)
-    scope.<span class="variable">$eval</span>(fn);
-  <span class="keyword">else</span>
-    scope.<span class="variable">$apply</span>(fn);
-}
-</code></pre><p><a id="more"></a><br><a href="https://gist.github.com/siongui/4969449" target="_blank" rel="external">https://gist.github.com/siongui/4969449</a><br><a href="http://stackoverflow.com/questions/18626039/apply-already-in-progress-error" target="_blank" rel="external">http://stackoverflow.com/questions/18626039/apply-already-in-progress-error</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;</p>
-<pre><code><span class="function"><span class="keyword">function</span> <span class="title">safeApply</span><span class="params">(scope, fn)</span> {</span>
-  <span class="keyword">var</span> phase = scope.<span class="variable">$root</span>.<span class="variable">$$phase</span>;
-  <span class="keyword">if</span>(phase == <span class="string">&apos;$apply&apos;</span> || phase == <span class="string">&apos;$digest&apos;</span>)
-    scope.<span class="variable">$eval</span>(fn);
-  <span class="keyword">else</span>
-    scope.<span class="variable">$apply</span>(fn);
-}
-</code></pre><p>]]>
-    
-    </summary>
-    
-      <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[video editor online]]></title>
-    <link href="http://blog.gyf1.com/2015/01/27/video-editor-online/"/>
-    <id>http://blog.gyf1.com/2015/01/27/video-editor-online/</id>
-    <published>2015-01-27T08:05:24.000Z</published>
-    <updated>2015-01-27T09:01:12.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/22449285/video-editing-using-html-css-and-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/22449285/video-editing-using-html-css-and-javascript</a><br><a href="https://popcorn.webmaker.org/" target="_blank" rel="external">https://popcorn.webmaker.org/</a><br><a href="https://github.com/casatt/html5-videoEditor" target="_blank" rel="external">https://github.com/casatt/html5-videoEditor</a><br><a href="https://github.com/mozilla/popcorn-js" target="_blank" rel="external">https://github.com/mozilla/popcorn-js</a><br><a href="https://github.com/bgrins/videoconverter.js" target="_blank" rel="external">https://github.com/bgrins/videoconverter.js</a><br><a href="https://github.com/DGIProject/VideoEditorJS" target="_blank" rel="external">https://github.com/DGIProject/VideoEditorJS</a><br><a href="http://www.videojs.com/" target="_blank" rel="external">http://www.videojs.com/</a><br><a href="https://github.com/videojs/video.js/" target="_blank" rel="external">https://github.com/videojs/video.js/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://stackoverflow.com/questions/22449285/video-editing-using-html-css-and-javascript" target="_blank" rel="external">http://s]]>
-    </summary>
     
   </entry>
   

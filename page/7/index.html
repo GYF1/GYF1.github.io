@@ -74,6 +74,369 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-12-23T02:20:25.000Z"><a href="/2014/12/23/将数组转换成树形结构/">12月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/23/将数组转换成树形结构/">将数组转换成树形结构</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x76F4;&#x63A5;&#x4E0A;&#x4EE3;&#x7801;:</p>
+<pre><code>var nodes = [
+    {
+        <span class="string">&quot;id&quot;</span>: <span class="string">&quot;12&quot;</span>,
+        <span class="string">&quot;parentId&quot;</span>: <span class="string">&quot;0&quot;</span>,
+        <span class="string">&quot;text&quot;</span>: <span class="string">&quot;Man&quot;</span>,
+        <span class="string">&quot;level&quot;</span>: <span class="string">&quot;1&quot;</span>,
+        <span class="string">&quot;children&quot;</span>: null
+    }, { /*<span class="keyword">...</span>*/ } ];
+
+var map = {}, node, roots = [];
+<span class="keyword">for</span> (var i = <span class="number">0</span>; i &lt; nodes.length; i += <span class="number">1</span>) {
+    node = nodes[i];
+    node.children = [];
+    map[node.id] = i; // use map to look-up the parents
+    <span class="keyword">if</span> (node.parentId !== <span class="string">&quot;0&quot;</span>) {
+        nodes[map[node.parentId]].children.push(node);
+    } <span class="keyword">else</span> {
+        roots.push(node);
+    }
+}
+console.log(roots); // &lt;-- there<span class="string">&apos;s your tree
+
+&lt;!--more--&gt;</span>
+</code></pre><p><a href="http://stackoverflow.com/questions/18017869/build-tree-array-from-flat-array-in-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/18017869/build-tree-array-from-flat-array-in-javascript</a><br><a href="http://stackoverflow.com/questions/2286031/javascript-building-tree-hierarchy" target="_blank" rel="external">http://stackoverflow.com/questions/2286031/javascript-building-tree-hierarchy</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-23T01:02:16.000Z"><a href="/2014/12/23/dropdown-tree/">12月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/23/dropdown-tree/">dropdown tree</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x60C5;&#x666F;&#xFF1A;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6709;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;<br>&#x8981;&#x8BA9;&#x7528;&#x6237;&#x4ECE;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;<br>&#x7B2C;&#x4E00;&#x4E2A;&#x65B9;&#x6848;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x4E2A;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x663E;&#x7136;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x3002;<br>&#x540E;&#x6765;&#x770B;&#x5230;&#x5176;&#x4ED6;&#x7F51;&#x7AD9;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#xFF0C;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x4E86;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x3002;<br>&#x8FD9;&#x6837;&#x5B50;&#xFF0C;&#x5360;&#x7684;&#x5730;&#x65B9;&#x4E0D;&#x591A;&#xFF0C;&#x7ED3;&#x6784;&#x4E5F;&#x6E05;&#x6670;&#x3002;<br>&#x672C;&#x6587;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/12/23/dropdown-tree/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-22T01:35:29.000Z"><a href="/2014/12/22/$fn/">12月 22 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/22/$fn/">jQuery开发插件</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5982;&#x4F55;&#x6DFB;&#x52A0;jQuery&#x63D2;&#x4EF6;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;:</p>
+<p><em>&#x9759;&#x6001;&#x65B9;&#x6CD5;</em></p>
+<pre><code>jQuery.extend(<span class="keyword">object</span>); <span class="comment">//&#x4E3A;&#x6269;&#x5C55;jQuery&#x7C7B;&#x672C;&#x8EAB;.&#x4E3A;&#x7C7B;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x3002;</span>
+</code></pre><p><em>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</em></p>
+<pre><code>jQuery.fn.extend(<span class="keyword">object</span>); <span class="comment">//&#x7ED9;jQuery&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x3002;</span>
+</code></pre><p>&#x4F8B;&#x5B50;:</p>
+<h3 id="jQuery-fn-extend">jQuery.fn.extend</h3>
+<pre><code>$.fn.extend({
+    hilight:<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+        <span class="comment">// Our plugin implementation code goes here.</span>
+    }
+})
+&#x6211;&#x4EEC;&#x7684;&#x63D2;&#x4EF6;&#x901A;&#x8FC7;&#x8FD9;&#x6837;&#x88AB;&#x8C03;&#x7528;&#xFF1A;
+$(<span class="string">&apos;#myDiv&apos;</span>).hilight();
+</code></pre><h3 id="jQuery-extend">jQuery.extend</h3>
+<pre><code>$.extend({
+&#x3000;&#x3000;add:<span class="function"><span class="keyword">function</span><span class="params">(a,b)</span>{</span>returna+b;}
+});
+
+$.add(<span class="number">3</span>,<span class="number">4</span>); <span class="comment">//return 7</span>
+</code></pre><p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/12/22/$fn/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-19T02:11:18.000Z"><a href="/2014/12/19/markdown语法教程/">12月 19 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/19/markdown语法教程/"></a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>title: &#x2018;Markdown &#x8BED;&#x6CD5;&#x6559;&#x7A0B;&#x2019;<br>date: 2014-01-06 08:21:30<br>categories: Others</p>
+<h2 id="tags:_Markdown">tags: Markdown</h2>
+<p>Markdown&#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x578B;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;WEB&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x8F83;HTML&#x6765;&#x8BF4;&#x66F4;&#x7B80;&#x4FBF;&#x3001;&#x66F4;&#x5B89;&#x5168;&#x3001;&#x53EF;&#x8BFB;&#x6027;&#x66F4;&#x5F3A;&#x7684;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#x3002;Markdown&#x7684;&#x8BED;&#x6CD5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x82B1;&#x4E94;&#x5206;&#x949F;&#x5C31;&#x80FD;&#x5B66;&#x4E60;&#x5B8C;&#x5927;&#x90E8;&#x5206;&#x8BED;&#x6CD5;&#x3002;<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/12/19/markdown语法教程/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-02T01:07:10.000Z"><a href="/2014/12/02/tinymce-performance-tune/">12月 2 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/02/tinymce-performance-tune/">tinymce performance tune</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://corpocrat.com/2008/01/19/tinymce-slow-loading-problem/" target="_blank" rel="external">http://corpocrat.com/2008/01/19/tinymce-slow-loading-problem/</a><br><a href="http://www.tinymce.com/wiki.php/TinyMCE3x:How-to_performance_tune_TinyMCE" target="_blank" rel="external">http://www.tinymce.com/wiki.php/TinyMCE3x:How-to_performance_tune_TinyMCE</a><br><a href="http://www.tinymce.com/tryit/3_x/load_on_demand.php" target="_blank" rel="external">http://www.tinymce.com/tryit/3_x/load_on_demand.php</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-02T00:58:47.000Z"><a href="/2014/12/02/ios上iframe的滚动条失效的解决办法/">12月 2 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/02/ios上iframe的滚动条失效的解决办法/">IOS上iframe的滚动条失效的解决办法</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://www.cnblogs.com/weinan/archive/2013/01/05/2832800.html" target="_blank" rel="external">http://www.cnblogs.com/weinan/archive/2013/01/05/2832800.html</a><br><a href="http://dev.magnolia-cms.com/blog/2012/05/strategies-for-the-iframe-on-the-ipad-problem/" target="_blank" rel="external">http://dev.magnolia-cms.com/blog/2012/05/strategies-for-the-iframe-on-the-ipad-problem/</a><br><a href="http://stackoverflow.com/questions/14183647/scrolling-iframe-on-ios-is-solved-but-the-iframe-page-display-incomplete" target="_blank" rel="external">http://stackoverflow.com/questions/14183647/scrolling-iframe-on-ios-is-solved-but-the-iframe-page-display-incomplete</a><br><a href="https://github.com/ftlabs/fastclick/issues/37" target="_blank" rel="external">https://github.com/ftlabs/fastclick/issues/37</a><br><a href="http://css-tricks.com/forums/topic/scrolling-iframe-on-ipad/" target="_blank" rel="external">http://css-tricks.com/forums/topic/scrolling-iframe-on-ipad/</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-02T00:50:20.000Z"><a href="/2014/12/02/meteor-style/">12月 2 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/02/meteor-style/">meteor style</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="https://www.yauh.de/using-pre-made-themes-with-meteor/" target="_blank" rel="external">https://www.yauh.de/using-pre-made-themes-with-meteor/</a><br><a href="https://fogofcode.wordpress.com/2013/04/24/efficiently-changing-css-styles-with-meteor/comment-page-1/" target="_blank" rel="external">https://fogofcode.wordpress.com/2013/04/24/efficiently-changing-css-styles-with-meteor/comment-page-1/</a><br><a href="http://stackoverflow.com/questions/12127076/dynamically-set-a-css-property-based-on-a-template-value" target="_blank" rel="external">http://stackoverflow.com/questions/12127076/dynamically-set-a-css-property-based-on-a-template-value</a><br><a href="http://stackoverflow.com/questions/26320228/how-do-i-apply-a-css-style-to-a-template-in-meteor" target="_blank" rel="external">http://stackoverflow.com/questions/26320228/how-do-i-apply-a-css-style-to-a-template-in-meteor</a><br><a href="http://stackoverflow.com/questions/10109176/ordering-of-the-css-and-js-files-loaded-by-meteor" target="_blank" rel="external">http://stackoverflow.com/questions/10109176/ordering-of-the-css-and-js-files-loaded-by-meteor</a><br><a href="https://groups.google.com/forum/#!topic/meteor-talk/OmX-_KFxWa0" target="_blank" rel="external">https://groups.google.com/forum/#!topic/meteor-talk/OmX-_KFxWa0</a><br><a href="http://stackoverflow.com/questions/22826421/how-to-use-multiple-css-files-in-meteor" target="_blank" rel="external">http://stackoverflow.com/questions/22826421/how-to-use-multiple-css-files-in-meteor</a><br><a href="http://stackoverflow.com/questions/15369021/conditionally-include-css-files-with-meteor" target="_blank" rel="external">http://stackoverflow.com/questions/15369021/conditionally-include-css-files-with-meteor</a><br><a href="http://stackoverflow.com/questions/10122977/what-are-the-best-practices-for-structuring-a-large-meteor-app-with-many-html-te" target="_blank" rel="external">http://stackoverflow.com/questions/10122977/what-are-the-best-practices-for-structuring-a-large-meteor-app-with-many-html-te</a><br><a href="https://github.com/EventedMind/iron-router/issues/488" target="_blank" rel="external">https://github.com/EventedMind/iron-router/issues/488</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-11-14T12:11:18.000Z"><a href="/2014/11/14/网页功能引导/">11月 14 2014</a></time>
       
       
@@ -188,345 +551,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-11-06T06:26:35.000Z"><a href="/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/">11月 6 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/">How to Style a HTML file upload button in Pure CSS</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Step 1. Create a simple html markup</p>
-<pre><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;fileUpload btn btn-primary&quot;</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">span</span>&gt;</span>Upload<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;file&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;upload&quot;</span> /&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</code></pre><p>Step 2. CSS: Tricky Part</p>
-<pre><code><span class="class">.fileUpload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
-    <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-<span class="rule">}</span></span>
-<span class="class">.fileUpload</span> <span class="tag">input</span><span class="class">.upload</span> <span class="rules">{
-    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
-    <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-    <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
-    <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0</span></span></span>;
-    <span class="rule"><span class="attribute">filter</span>:<span class="value"> <span class="function">alpha(opacity=<span class="number">0</span>)</span></span></span>;
-<span class="rule">}</span></span>
-</code></pre><p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/11/06/how-to-style-a-html-file-upload-button-in-pure-css/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-31T01:57:55.000Z"><a href="/2014/10/31/浏览器autofill-autocomplete-错位/">10月 31 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/31/浏览器autofill-autocomplete-错位/">浏览器autofill autocomplete 错位</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x9996;&#x5148;&#x5728;form&#x4E0A;&#x52A0;autocomplete=&#x201D;off&#x201D;<br>&#x4F46;&#x662F;&#x6CA1;&#x4EC0;&#x4E48;&#x4F5C;&#x7528;</p>
-<p>&#x9700;&#x8981;&#x52A0;&#x4E00;&#x4E9B;&#x5047;&#x7684;&#x9690;&#x85CF;&#x7684;input&#x5B57;&#x6BB5;<br><!-- fake fields are a workaround for chrome autofill getting the wrong fields --></p>
-<pre><code>&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;fakeusernameremembered&quot;</span>/&gt;
-&lt;input style=<span class="string">&quot;display:none&quot;</span> <span class="keyword">type</span>=<span class="string">&quot;password&quot;</span> name=<span class="string">&quot;fakepasswordremembered&quot;</span>/&gt;
-</code></pre>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/10/31/浏览器autofill-autocomplete-错位/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T04:10:40.000Z"><a href="/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/resolve-http-request-before-running-app-and-switching-to-a-route-or-state/">Resolve http request before running app and switching to a route or state</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state" target="_blank" rel="external">http://stackoverflow.com/questions/19721125/resolve-http-request-before-running-app-and-switching-to-a-route-or-state</a><br><a href="http://embed.plnkr.co/TWiDY3/script.js" target="_blank" rel="external">http://embed.plnkr.co/TWiDY3/script.js</a><br><a href="http://plnkr.co/edit/TWiDY3?p=info" target="_blank" rel="external">http://plnkr.co/edit/TWiDY3?p=info</a><br><a href="http://stackoverflow.com/questions/20094273/stop-angular-ui-router-navigation-until-promise-is-resolved" target="_blank" rel="external">http://stackoverflow.com/questions/20094273/stop-angular-ui-router-navigation-until-promise-is-resolved</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T04:05:16.000Z"><a href="/2014/10/30/http-synchronous-call-with-angularjs/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/http-synchronous-call-with-angularjs/">http Synchronous call with AngularJS</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://stackoverflow.com/questions/13088153/how-to-http-synchronous-call-with-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/13088153/how-to-http-synchronous-call-with-angularjs</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests</a><br><a href="http://stackoverflow.com/questions/20184070/angularjs-have-method-return-synchronously-when-it-calls-http-or-resource-int" target="_blank" rel="external">http://stackoverflow.com/questions/20184070/angularjs-have-method-return-synchronously-when-it-calls-http-or-resource-int</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T04:03:18.000Z"><a href="/2014/10/30/angular-验证用户是否登录/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/angular-验证用户是否登录/">angular 验证用户是否登录</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://stackoverflow.com/questions/22537311/angular-ui-router-login-authentication" target="_blank" rel="external">http://stackoverflow.com/questions/22537311/angular-ui-router-login-authentication</a><br><a href="http://stackoverflow.com/questions/25664590/preventing-users-from-navigating-to-some-urls-after-login-angular-ui-router" target="_blank" rel="external">http://stackoverflow.com/questions/25664590/preventing-users-from-navigating-to-some-urls-after-login-angular-ui-router</a><br><a href="http://stackoverflow.com/questions/15905547/angularjs-prevent-not-authenticated-user-from-accessing-given-routes" target="_blank" rel="external">http://stackoverflow.com/questions/15905547/angularjs-prevent-not-authenticated-user-from-accessing-given-routes</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T04:01:53.000Z"><a href="/2014/10/30/ui-router-statechangestart-statechangesuccess/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/ui-router-statechangestart-statechangesuccess/">ui-router stateChangeStart stateChangeSuccess</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="https://github.com/angular-ui/ui-router/wiki" target="_blank" rel="external">https://github.com/angular-ui/ui-router/wiki</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-30T03:28:45.000Z"><a href="/2014/10/30/scedelegateproviderresourceurlwhitelist/">10月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/30/scedelegateproviderresourceurlwhitelist/">sceDelegateProvider.resourceUrlWhitelist</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -552,7 +576,7 @@
   
     <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
   
-    <li><a href="/categories/database/">Database</a><small>5</small></li>
+    <li><a href="/categories/database/">Database</a><small>6</small></li>
   
     <li><a href="/categories/giant/">Giant</a><small>96</small></li>
   
@@ -560,9 +584,9 @@
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>75</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>79</small></li>
   
-    <li><a href="/categories/mobile/">Mobile</a><small>1</small></li>
+    <li><a href="/categories/mobile/">Mobile</a><small>3</small></li>
   
     <li><a href="/categories/others/">Others</a><small>10</small></li>
   
@@ -582,7 +606,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/agile-development/" style="font-size: 12.73px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.82px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.55px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.91px;">Bower</a><a href="/tags/css/" style="font-size: 18.18px;">CSS</a><a href="/tags/certification/" style="font-size: 10.91px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.91px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.45px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 10.91px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.91px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 11.82px;">Grunt</a><a href="/tags/html5/" style="font-size: 13.64px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.73px;">Heroku</a><a href="/tags/ionic/" style="font-size: 10.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.91px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.91px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.09px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.91px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 11.82px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.91px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.27px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/regexp/" style="font-size: 10.00px;">RegExp</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.91px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 13.64px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.82px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.55px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.36px;">jQuery</a>
+    <a href="/tags/agile-development/" style="font-size: 12.73px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.82px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.55px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.91px;">Bower</a><a href="/tags/css/" style="font-size: 18.18px;">CSS</a><a href="/tags/certification/" style="font-size: 10.91px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.91px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.45px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 10.91px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.91px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 12.73px;">Grunt</a><a href="/tags/gulp/" style="font-size: 10.00px;">Gulp</a><a href="/tags/html5/" style="font-size: 13.64px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.73px;">Heroku</a><a href="/tags/ionic/" style="font-size: 12.73px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.91px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.91px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.09px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 10.91px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 12.73px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.91px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.27px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/regexp/" style="font-size: 10.91px;">RegExp</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.91px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 13.64px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.82px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.55px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.36px;">jQuery</a>
   </div>
 </div>
 
@@ -591,6 +615,34 @@
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/02/27/connect-to-a-remote-mongodb/">Connect to a Remote MongoDB</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/26/ng-bind-html-call-function/">ng-bind-html call function</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/26/regexp-practice-1/">regexp practice 1</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/26/ionic-image-viewer/">ionic image viewer</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/26/ionic-image-zoom/">ionic image zoom</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/25/ionic-play-audio-and-video/">ionic play audio and video</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/">JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli</a>
+      </li>
     
       <li>
         <a href="/2015/02/14/html5-record-audio/">html5 record audio</a>
@@ -602,34 +654,6 @@
     
       <li>
         <a href="/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/">meteor mongodb mongodump and mongorestore</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/04/angular-copy-to-clipboard/">angular copy to clipboard</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/04/css-display-inline-vs-inline-block/">CSS display: inline vs inline-block</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/04/angular-display-multiple-lined-strings/">Angular display multiple lined strings</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/03/microdata/">Microdata</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/03/difference-between-visibilityhidden-and-displaynone/">difference between visibility:hidden and display:none</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/03/grunt-task-to-generate-spritesheet/">grunt task to generate spritesheet</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/01/a-dive-into-plain-javascript/">A Dive Into Plain JavaScript</a>
       </li>
     
   </ul>
