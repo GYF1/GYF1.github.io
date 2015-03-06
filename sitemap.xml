@@ -2,8 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/03/06/import-json-into-mongodb/</loc>
+    <lastmod>2015-03-06T09:18:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/06/import-xml-file-into-mongodb/</loc>
+    <lastmod>2015-03-06T09:17:29.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/02/27/connect-to-a-remote-mongodb/</loc>
-    <lastmod>2015-02-27T03:37:19.000Z</lastmod>
+    <lastmod>2015-03-06T09:17:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/06/2013-china-district-data/</loc>
+    <lastmod>2015-03-06T01:12:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/04/angularjs-controller-watch-service-variable/</loc>
+    <lastmod>2015-03-04T06:37:50.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/03/ionic-html5-input-types/</loc>
+    <lastmod>2015-03-03T11:54:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/03/ionic-tabs-horizon-scroll/</loc>
+    <lastmod>2015-03-03T11:53:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/03/meteor-package-accounts-password/</loc>
+    <lastmod>2015-03-03T08:34:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/03/02/ionic-quiz-app-design/</loc>
+    <lastmod>2015-03-02T00:58:05.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gyf1.com/2015/02/27/meteor1/</loc>
+    <lastmod>2015-02-27T09:10:29.000Z</lastmod>
   </url>
   
   <url>
