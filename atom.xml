@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-03-06T09:20:09.807Z</updated>
+  <updated>2015-03-10T02:44:21.646Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -13,6 +13,199 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ipad iframe scroll back to top]]></title>
+    <link href="http://blog.gyf1.com/2015/03/10/ipad-iframe-scroll-back-to-top/"/>
+    <id>http://blog.gyf1.com/2015/03/10/ipad-iframe-scroll-back-to-top/</id>
+    <published>2015-03-10T02:42:32.000Z</published>
+    <updated>2015-03-10T02:43:16.000Z</updated>
+    <content type="html"><![CDATA[<pre><code><span class="tag">html</span>, <span class="tag">body</span>
+<span class="rules">{
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+    <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"> <span class="number">1</span>px</span></span>;
+<span class="rule">}</span></span>
+</code></pre><p><a href="http://stackoverflow.com/questions/21342057/ipad-scrolling-to-top-of-iframe" target="_blank" rel="external">http://stackoverflow.com/questions/21342057/ipad-scrolling-to-top-of-iframe</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<pre><code><span class="tag">html</span>, <span class="tag">body</span>
+<span class="rules">{
+    <span class="rule"><span class="attribute"]]>
+    </summary>
+    
+      <category term="CSS" scheme="http://blog.gyf1.com/tags/css/"/>
+    
+      <category term="Style" scheme="http://blog.gyf1.com/categories/style/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[meteor set MONGO_URL]]></title>
+    <link href="http://blog.gyf1.com/2015/03/09/meteor-set-mongo_url/"/>
+    <id>http://blog.gyf1.com/2015/03/09/meteor-set-mongo_url/</id>
+    <published>2015-03-09T08:08:41.000Z</published>
+    <updated>2015-03-09T08:11:54.000Z</updated>
+    <content type="html"><![CDATA[<p>meteor  use remote mongo<br>set MONGO_URL for meteor</p>
+<p><a href="http://stackoverflow.com/questions/22054856/using-meteor-mongo-on-localhost-but-with-remote-mongodb" target="_blank" rel="external">http://stackoverflow.com/questions/22054856/using-meteor-mongo-on-localhost-but-with-remote-mongodb</a><br><a href="http://stackoverflow.com/questions/10588038/how-to-use-the-existing-mongodb-in-a-meteor-project" target="_blank" rel="external">http://stackoverflow.com/questions/10588038/how-to-use-the-existing-mongodb-in-a-meteor-project</a><br><a href="http://stackoverflow.com/questions/18359326/how-do-i-fix-error-mongo-url-must-be-set-in-environment-on-ubuntu-using-forev" target="_blank" rel="external">http://stackoverflow.com/questions/18359326/how-do-i-fix-error-mongo-url-must-be-set-in-environment-on-ubuntu-using-forev</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>meteor  use remote mongo<br>set MONGO_URL for meteor</p>
+<p><a href="http://stackoverflow.com/questions/22054856/using-meteor-mongo-on-lo]]>
+    </summary>
+    
+      <category term="Meteor" scheme="http://blog.gyf1.com/tags/meteor/"/>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[deep into javascript prototype and closure]]></title>
+    <link href="http://blog.gyf1.com/2015/03/09/deep-into-javascript-prototype-and-closure/"/>
+    <id>http://blog.gyf1.com/2015/03/09/deep-into-javascript-prototype-and-closure/</id>
+    <published>2015-03-09T00:35:40.000Z</published>
+    <updated>2015-03-09T00:36:00.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x6DF1;&#x5165;&#x7406;&#x89E3;javascript&#x539F;&#x578B;&#x548C;&#x95ED;&#x5305;&#x7CFB;&#x5217;<br><a href="http://www.cnblogs.com/wangfupeng1988/p/4001284.html" target="_blank" rel="external">http://www.cnblogs.com/wangfupeng1988/p/4001284.html</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x6DF1;&#x5165;&#x7406;&#x89E3;javascript&#x539F;&#x578B;&#x548C;&#x95ED;&#x5305;&#x7CFB;&#x5217;<br><a href="http://www.cnblogs.com/wan]]>
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[mongoose promise]]></title>
+    <link href="http://blog.gyf1.com/2015/03/09/mongoose-promise/"/>
+    <id>http://blog.gyf1.com/2015/03/09/mongoose-promise/</id>
+    <published>2015-03-09T00:28:52.000Z</published>
+    <updated>2015-03-09T00:39:46.000Z</updated>
+    <content type="html"><![CDATA[<p>mongoose create return promise<br>mongoose pass variable to promise then</p>
+<p><a href="https://github.com/petkaantonov/bluebird" target="_blank" rel="external">https://github.com/petkaantonov/bluebird</a><br><a href="http://stackoverflow.com/questions/9022099/how-to-use-mongoose-promise-mongo" target="_blank" rel="external">http://stackoverflow.com/questions/9022099/how-to-use-mongoose-promise-mongo</a><br><a href="http://stackoverflow.com/questions/10266512/how-can-i-save-multiple-documents-concurrently-in-mongoose-node-js" target="_blank" rel="external">http://stackoverflow.com/questions/10266512/how-can-i-save-multiple-documents-concurrently-in-mongoose-node-js</a></p>
+<p><a href="https://github.com/LearnBoost/mongoose/issues/1431" target="_blank" rel="external">https://github.com/LearnBoost/mongoose/issues/1431</a><br><a href="http://stackoverflow.com/questions/9022099/how-to-use-mongoose-promise-mongo" target="_blank" rel="external">http://stackoverflow.com/questions/9022099/how-to-use-mongoose-promise-mongo</a><br><a href="http://stackoverflow.com/questions/27095466/mongoose-promise-arguments-passing-issue" target="_blank" rel="external">http://stackoverflow.com/questions/27095466/mongoose-promise-arguments-passing-issue</a><br><a href="http://stackoverflow.com/questions/21199971/locomotivejs-and-mongoose-passing-promise-variables-to-a-controller" target="_blank" rel="external">http://stackoverflow.com/questions/21199971/locomotivejs-and-mongoose-passing-promise-variables-to-a-controller</a></p>
+<p><a href="http://codereview.stackexchange.com/questions/65199/mongoose-promise-error-handling" target="_blank" rel="external">http://codereview.stackexchange.com/questions/65199/mongoose-promise-error-handling</a><br><a href="http://stackoverflow.com/questions/9022099/how-to-use-mongoose-promise-mongo" target="_blank" rel="external">http://stackoverflow.com/questions/9022099/how-to-use-mongoose-promise-mongo</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>mongoose create return promise<br>mongoose pass variable to promise then</p>
+<p><a href="https://github.com/petkaantonov/bluebird" target]]>
+    </summary>
+    
+      <category term="MongoDB" scheme="http://blog.gyf1.com/tags/mongodb/"/>
+    
+      <category term="Mongoose" scheme="http://blog.gyf1.com/tags/mongoose/"/>
+    
+      <category term="Database" scheme="http://blog.gyf1.com/categories/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[mongoose batch insert]]></title>
+    <link href="http://blog.gyf1.com/2015/03/09/mongoose-batch-insert/"/>
+    <id>http://blog.gyf1.com/2015/03/09/mongoose-batch-insert/</id>
+    <published>2015-03-09T00:27:41.000Z</published>
+    <updated>2015-03-09T00:39:14.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5173;&#x952E;&#x8BCD;&#xFF1A;mongoose promise batch</p>
+<p><a href="http://stackoverflow.com/questions/11913074/mongoose-js-promises-or-how-to-manage-batch-save" target="_blank" rel="external">http://stackoverflow.com/questions/11913074/mongoose-js-promises-or-how-to-manage-batch-save</a><br><a href="http://stackoverflow.com/questions/16726330/mongoose-mongodb-batch-insert?lq=1" target="_blank" rel="external">http://stackoverflow.com/questions/16726330/mongoose-mongodb-batch-insert?lq=1</a></p>
+<p><a href="http://stackoverflow.com/questions/16726330/mongoose-mongodb-batch-insert" target="_blank" rel="external">http://stackoverflow.com/questions/16726330/mongoose-mongodb-batch-insert</a><br><a href="http://stackoverflow.com/questions/10266512/how-can-i-save-multiple-documents-concurrently-in-mongoose-node-js" target="_blank" rel="external">http://stackoverflow.com/questions/10266512/how-can-i-save-multiple-documents-concurrently-in-mongoose-node-js</a><br><a href="http://stackoverflow.com/questions/17416415/mongoose-batch-save-with-promises" target="_blank" rel="external">http://stackoverflow.com/questions/17416415/mongoose-batch-save-with-promises</a><br><a href="http://stackoverflow.com/questions/11913074/mongoose-js-promises-or-how-to-manage-batch-save" target="_blank" rel="external">http://stackoverflow.com/questions/11913074/mongoose-js-promises-or-how-to-manage-batch-save</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5173;&#x952E;&#x8BCD;&#xFF1A;mongoose promise batch</p>
+<p><a href="http://stackoverflow.com/questions/11913074/mongoose-js-promises-o]]>
+    </summary>
+    
+      <category term="MongoDB" scheme="http://blog.gyf1.com/tags/mongodb/"/>
+    
+      <category term="Database" scheme="http://blog.gyf1.com/categories/database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Native Rich-Text Editing with the contenteditable Attribute]]></title>
+    <link href="http://blog.gyf1.com/2015/03/07/native-rich-text-editing-with-the-contenteditable-attribute/"/>
+    <id>http://blog.gyf1.com/2015/03/07/native-rich-text-editing-with-the-contenteditable-attribute/</id>
+    <published>2015-03-07T09:33:00.000Z</published>
+    <updated>2015-03-09T00:34:16.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5173;&#x952E;&#x8BCD;&#xFF1A;<br>angular insert html according to cursor DIV<br>div wysiwyg insert image</p>
+<p><a href="http://blog.teamtreehouse.com/native-rich-text-editing-with-the-contenteditable-attribute" target="_blank" rel="external">http://blog.teamtreehouse.com/native-rich-text-editing-with-the-contenteditable-attribute</a><br><a href="http://codepen.io/matt-west/pen/gtruC" target="_blank" rel="external">http://codepen.io/matt-west/pen/gtruC</a></p>
+<p><a href="http://plnkr.co/edit/Xx1SHwQI2t6ji31COneO?p=preview" target="_blank" rel="external">http://plnkr.co/edit/Xx1SHwQI2t6ji31COneO?p=preview</a><br><a href="http://stackoverflow.com/questions/21401042/angularjs-directive-to-insert-text-at-textarea-caret" target="_blank" rel="external">http://stackoverflow.com/questions/21401042/angularjs-directive-to-insert-text-at-textarea-caret</a></p>
+<p><a href="http://stackoverflow.com/questions/6753729/online-wysiwyg-editor-using-a-div" target="_blank" rel="external">http://stackoverflow.com/questions/6753729/online-wysiwyg-editor-using-a-div</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5173;&#x952E;&#x8BCD;&#xFF1A;<br>angular insert html according to cursor DIV<br>div wysiwyg insert image</p>
+<p><a href="http://blog.t]]>
+    </summary>
+    
+      <category term="HTML" scheme="http://blog.gyf1.com/categories/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[insert html where cursor is]]></title>
+    <link href="http://blog.gyf1.com/2015/03/07/insert-html-where-cursor-is/"/>
+    <id>http://blog.gyf1.com/2015/03/07/insert-html-where-cursor-is/</id>
+    <published>2015-03-07T07:06:56.000Z</published>
+    <updated>2015-03-07T09:31:43.000Z</updated>
+    <content type="html"><![CDATA[<p>&#x5173;&#x952E;&#x5B57;&#xFF1A;<br>insert html into div contenteditable<br>get contenteditable div cursor<br>div contenteditable mobile</p>
+<p>html</p>
+<pre><code>&lt;input type=<span class="string">&quot;button&quot;</span> value=<span class="string">&quot;Paste HTML&quot;</span> onclick=<span class="string">&quot;document.getElementById(&apos;test&apos;).focus(); pasteHtmlAtCaret(&apos;&lt;b&gt;INSERTED&lt;/b&gt;&apos;); &quot;</span>&gt;
+
+&lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">&quot;test&quot;</span> contenteditable=<span class="string">&quot;true&quot;</span>&gt;
+    Here <span class="keyword">is</span> <span class="keyword">some</span> nice <span class="type">text</span>
+&lt;/<span class="keyword">div</span>&gt;
+</code></pre><p><a id="more"></a><br>js</p>
+<pre><code>function pasteHtmlAtCaret(html) {
+    var sel, range<span class="comment">;</span>
+    if (window<span class="preprocessor">.getSelection</span>) {
+        // IE9 <span class="keyword">and</span> non-IE
+        sel = window<span class="preprocessor">.getSelection</span>()<span class="comment">;</span>
+        if (sel<span class="preprocessor">.getRangeAt</span> &amp;&amp; sel<span class="preprocessor">.rangeCount</span>) {
+            range = sel<span class="preprocessor">.getRangeAt</span>(<span class="number">0</span>)<span class="comment">;</span>
+            range<span class="preprocessor">.deleteContents</span>()<span class="comment">;</span>
+
+            // Range<span class="preprocessor">.createContextualFragment</span>() would be useful here but is
+            // non-standard <span class="keyword">and</span> not supported <span class="keyword">in</span> all browsers (IE9, for one)
+            var el = document<span class="preprocessor">.createElement</span>(<span class="string">&quot;div&quot;</span>)<span class="comment">;</span>
+            el<span class="preprocessor">.innerHTML</span> = html<span class="comment">;</span>
+            var frag = document<span class="preprocessor">.createDocumentFragment</span>(), node, lastNode<span class="comment">;</span>
+            while ( (node = el<span class="preprocessor">.firstChild</span>) ) {
+                lastNode = frag<span class="preprocessor">.appendChild</span>(node)<span class="comment">;</span>
+            }
+            range<span class="preprocessor">.insertNode</span>(frag)<span class="comment">;</span>
+
+            // Preserve the selection
+            if (lastNode) {
+                range = range<span class="preprocessor">.cloneRange</span>()<span class="comment">;</span>
+                range<span class="preprocessor">.setStartAfter</span>(lastNode)<span class="comment">;</span>
+                range<span class="preprocessor">.collapse</span>(true)<span class="comment">;</span>
+                sel<span class="preprocessor">.removeAllRanges</span>()<span class="comment">;</span>
+                sel<span class="preprocessor">.addRange</span>(range)<span class="comment">;</span>
+            }
+        }
+    } else if (document<span class="preprocessor">.selection</span> &amp;&amp; document<span class="preprocessor">.selection</span><span class="preprocessor">.type</span> != <span class="string">&quot;Control&quot;</span>) {
+        // IE &lt; <span class="number">9</span>
+        document<span class="preprocessor">.selection</span><span class="preprocessor">.createRange</span>()<span class="preprocessor">.pasteHTML</span>(html)<span class="comment">;</span>
+    }
+}
+</code></pre><p><a href="http://stackoverflow.com/questions/6690752/insert-html-at-caret-in-a-contenteditable-div" target="_blank" rel="external">http://stackoverflow.com/questions/6690752/insert-html-at-caret-in-a-contenteditable-div</a><br><a href="http://jsfiddle.net/jwvha/1/" target="_blank" rel="external">http://jsfiddle.net/jwvha/1/</a><br>&#x8BD5;&#x8FC7;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;</p>
+<hr>
+<p><a href="http://stackoverflow.com/questions/4767848/get-caret-cursor-position-in-contenteditable-area-containing-html-content" target="_blank" rel="external">http://stackoverflow.com/questions/4767848/get-caret-cursor-position-in-contenteditable-area-containing-html-content</a><br><a href="http://jsfiddle.net/timdown/2YcaX/" target="_blank" rel="external">http://jsfiddle.net/timdown/2YcaX/</a><br><a href="http://stackoverflow.com/questions/4811822/get-a-ranges-start-and-end-offsets-relative-to-its-parent-container/4812022#4812022" target="_blank" rel="external">http://stackoverflow.com/questions/4811822/get-a-ranges-start-and-end-offsets-relative-to-its-parent-container/4812022#4812022</a><br><a href="http://stackoverflow.com/questions/3972014/get-caret-position-in-contenteditable-div" target="_blank" rel="external">http://stackoverflow.com/questions/3972014/get-caret-position-in-contenteditable-div</a><br><a href="http://stackoverflow.com/questions/2920150/insert-text-at-cursor-in-a-content-editable-div" target="_blank" rel="external">http://stackoverflow.com/questions/2920150/insert-text-at-cursor-in-a-content-editable-div</a><br><a href="http://stackoverflow.com/questions/21401042/angularjs-directive-to-insert-text-at-textarea-caret" target="_blank" rel="external">http://stackoverflow.com/questions/21401042/angularjs-directive-to-insert-text-at-textarea-caret</a><br><a href="http://plnkr.co/edit/Xx1SHwQI2t6ji31COneO?p=preview" target="_blank" rel="external">http://plnkr.co/edit/Xx1SHwQI2t6ji31COneO?p=preview</a><br><a href="http://stackoverflow.com/questions/1064089/inserting-a-text-where-cursor-is-using-javascript-jquery" target="_blank" rel="external">http://stackoverflow.com/questions/1064089/inserting-a-text-where-cursor-is-using-javascript-jquery</a><br><a href="http://stackoverflow.com/questions/2897155/get-cursor-position-in-characters-within-a-text-input-field" target="_blank" rel="external">http://stackoverflow.com/questions/2897155/get-cursor-position-in-characters-within-a-text-input-field</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>&#x5173;&#x952E;&#x5B57;&#xFF1A;<br>insert html into div contenteditable<br>get contenteditable div cursor<br>div contenteditable mobile</p>
+<p>html</p>
+<pre><code>&lt;input type=<span class="string">&quot;button&quot;</span> value=<span class="string">&quot;Paste HTML&quot;</span> onclick=<span class="string">&quot;document.getElementById(&apos;test&apos;).focus(); pasteHtmlAtCaret(&apos;&lt;b&gt;INSERTED&lt;/b&gt;&apos;); &quot;</span>&gt;
+
+&lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">&quot;test&quot;</span> contenteditable=<span class="string">&quot;true&quot;</span>&gt;
+    Here <span class="keyword">is</span> <span class="keyword">some</span> nice <span class="type">text</span>
+&lt;/<span class="keyword">div</span>&gt;
+</code></pre><p>]]>
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[import json into mongodb]]></title>
@@ -424,164 +617,6 @@ sudo /etc/init.d/mongodb restart
       <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
     
       <category term="Mobile" scheme="http://blog.gyf1.com/categories/mobile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[ionic image zoom]]></title>
-    <link href="http://blog.gyf1.com/2015/02/26/ionic-image-zoom/"/>
-    <id>http://blog.gyf1.com/2015/02/26/ionic-image-zoom/</id>
-    <published>2015-02-26T08:38:17.000Z</published>
-    <updated>2015-02-26T09:06:01.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x5982;&#x4F55;&#x5728;ionic&#x5B9E;&#x73B0;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7F29;&#x653E;&#x56FE;&#x7247;<br><a id="more"></a><br>ionic image zoom<br><a href="http://codepen.io/arnaud-f/pen/CDatr" target="_blank" rel="external">http://codepen.io/arnaud-f/pen/CDatr</a><br><a href="https://github.com/driftyco/ionic/issues/679" target="_blank" rel="external">https://github.com/driftyco/ionic/issues/679</a><br><a href="http://forum.ionicframework.com/t/how-to-zooming-and-scrolling-on-a-fullscreen-image/10204" target="_blank" rel="external">http://forum.ionicframework.com/t/how-to-zooming-and-scrolling-on-a-fullscreen-image/10204</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x5982;&#x4F55;&#x5728;ionic&#x5B9E;&#x73B0;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7F29;&#x653E;&#x56FE;&#x7247;<br>]]>
-    
-    </summary>
-    
-      <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
-    
-      <category term="Mobile" scheme="http://blog.gyf1.com/categories/mobile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[ionic play audio and video]]></title>
-    <link href="http://blog.gyf1.com/2015/02/25/ionic-play-audio-and-video/"/>
-    <id>http://blog.gyf1.com/2015/02/25/ionic-play-audio-and-video/</id>
-    <published>2015-02-25T08:18:42.000Z</published>
-    <updated>2015-02-25T08:20:26.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/</a><br><a href="http://devdactic.com/images-videos-fullscreen-ionic/" target="_blank" rel="external">http://devdactic.com/images-videos-fullscreen-ionic/</a><br><a href="https://blog.nraboy.com/2014/11/playing-audio-android-ios-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.com/2014/11/playing-audio-android-ios-ionicframework-app/</a><br><a href="https://github.com/sirius2013/Angularjs-Ionic-Audio-VideoApp" target="_blank" rel="external">https://github.com/sirius2013/Angularjs-Ionic-Audio-VideoApp</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.]]>
-    </summary>
-    
-      <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli]]></title>
-    <link href="http://blog.gyf1.com/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/"/>
-    <id>http://blog.gyf1.com/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/</id>
-    <published>2015-02-25T08:14:18.000Z</published>
-    <updated>2015-02-25T08:15:45.000Z</updated>
-    <content type="html"><![CDATA[<p>Programming single-page applications is great to build modern web application. Publishing NPM packages are awesome if you write Node.js softwares. What&#x2019;s the link between this two subjects? Both require a complex tool chain (asset managemenet, CSS-preprocessor files compiling, test preparation, JS files concatenation, etc.) to publish your software. In this post, we are going to have look to a new trend: the task runners. They are the new generation of Makefiles for the JS world.</p>
-<p>Task runners are a set of tools to make build operation clean and well documented. They provide helpers to manage operations on the project file system via the command line.</p>
-<p><a id="more"></a><br><a href="http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/" target="_blank" rel="external">http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Programming single-page applications is great to build modern web application. Publishing NPM packages are awesome if you write Node.js softwares. What&#x2019;s the link between this two subjects? Both require a complex tool chain (asset managemenet, CSS-preprocessor files compiling, test preparation, JS files concatenation, etc.) to publish your software. In this post, we are going to have look to a new trend: the task runners. They are the new generation of Makefiles for the JS world.</p>
-<p>Task runners are a set of tools to make build operation clean and well documented. They provide helpers to manage operations on the project file system via the command line.</p>
-<p>]]>
-    
-    </summary>
-    
-      <category term="Grunt" scheme="http://blog.gyf1.com/tags/grunt/"/>
-    
-      <category term="Gulp" scheme="http://blog.gyf1.com/tags/gulp/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[html5 record audio]]></title>
-    <link href="http://blog.gyf1.com/2015/02/14/html5-record-audio/"/>
-    <id>http://blog.gyf1.com/2015/02/14/html5-record-audio/</id>
-    <published>2015-02-14T00:27:47.000Z</published>
-    <updated>2015-02-14T00:29:12.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x5229;&#x7528;html5&#x5B9E;&#x73B0;&#x5F55;&#x97F3;&#x529F;&#x80FD;<br><a id="more"></a></p>
-<p><a href="https://nusofthq.com/blog/recording-mp3-using-only-html5-and-javascript-recordmp3-js/" target="_blank" rel="external">https://nusofthq.com/blog/recording-mp3-using-only-html5-and-javascript-recordmp3-js/</a><br><a href="https://github.com/daaain/JSSoundRecorder" target="_blank" rel="external">https://github.com/daaain/JSSoundRecorder</a><br><a href="http://stackoverflow.com/questions/16413063/html5-record-audio-to-file" target="_blank" rel="external">http://stackoverflow.com/questions/16413063/html5-record-audio-to-file</a><br><a href="https://github.com/mattdiamond/Recorderjs" target="_blank" rel="external">https://github.com/mattdiamond/Recorderjs</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x5229;&#x7528;html5&#x5B9E;&#x73B0;&#x5F55;&#x97F3;&#x529F;&#x80FD;<br>]]>
-    
-    </summary>
-    
-      <category term="HTML5" scheme="http://blog.gyf1.com/tags/html5/"/>
-    
-      <category term="HTML" scheme="http://blog.gyf1.com/categories/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[news ticker]]></title>
-    <link href="http://blog.gyf1.com/2015/02/11/news-ticker/"/>
-    <id>http://blog.gyf1.com/2015/02/11/news-ticker/</id>
-    <published>2015-02-11T08:49:11.000Z</published>
-    <updated>2015-02-12T00:58:28.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x5B9E;&#x73B0;&#x6EDA;&#x52A8;&#x65B0;&#x95FB;</p>
-<p><a id="more"></a><br><a href="http://www.jqueryrain.com/demo/jquery-news-ticker/page/3/" target="_blank" rel="external">http://www.jqueryrain.com/demo/jquery-news-ticker/page/3/</a><br><a href="http://jquery-plugins.net/tag/news-scroller" target="_blank" rel="external">http://jquery-plugins.net/tag/news-scroller</a><br><a href="http://www.hypergurl.com/marquee.html" target="_blank" rel="external">http://www.hypergurl.com/marquee.html</a></p>
-<p><a href="https://github.com/rhodimus/jQuery-News-Ticker" target="_blank" rel="external">https://github.com/rhodimus/jQuery-News-Ticker</a><br><a href="https://github.com/paulpullen/sportsticker" target="_blank" rel="external">https://github.com/paulpullen/sportsticker</a><br><a href="https://github.com/search?o=desc&#x26;q=ticker&#x26;ref=searchresults&#x26;s=stars&#x26;type=Repositories&#x26;utf8=%E2%9C%93" target="_blank" rel="external">https://github.com/search?o=desc&amp;q=ticker&amp;ref=searchresults&amp;s=stars&amp;type=Repositories&amp;utf8=%E2%9C%93</a><br><a href="http://www.jquerynewsticker.com/" target="_blank" rel="external">http://www.jquerynewsticker.com/</a><br><a href="https://github.com/rhodimus/jQuery-News-Ticker" target="_blank" rel="external">https://github.com/rhodimus/jQuery-News-Ticker</a><br><a href="http://risq.github.io/jquery-advanced-news-ticker/" target="_blank" rel="external">http://risq.github.io/jquery-advanced-news-ticker/</a><br><a href="https://github.com/risq/jquery-advanced-news-ticker" target="_blank" rel="external">https://github.com/risq/jquery-advanced-news-ticker</a><br><a href="http://richhollis.github.io/vticker/" target="_blank" rel="external">http://richhollis.github.io/vticker/</a><br><a href="https://github.com/richhollis/vticker" target="_blank" rel="external">https://github.com/richhollis/vticker</a><br><a href="https://github.com/search?o=desc&#x26;q=news+ticker&#x26;s=stars&#x26;type=Repositories&#x26;utf8=%E2%9C%93" target="_blank" rel="external">https://github.com/search?o=desc&amp;q=news+ticker&amp;s=stars&amp;type=Repositories&amp;utf8=%E2%9C%93</a><br><a href="http://www.aakashweb.com/demos/jquery-easy-ticker/" target="_blank" rel="external">http://www.aakashweb.com/demos/jquery-easy-ticker/</a><br><a href="https://github.com/vaakash/jquery-easy-ticker" target="_blank" rel="external">https://github.com/vaakash/jquery-easy-ticker</a><br><a href="https://github.com/search?o=desc&#x26;q=scroller+news&#x26;ref=searchresults&#x26;s=stars&#x26;type=Repositories&#x26;utf8=%E2%9C%93" target="_blank" rel="external">https://github.com/search?o=desc&amp;q=scroller+news&amp;ref=searchresults&amp;s=stars&amp;type=Repositories&amp;utf8=%E2%9C%93</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x5B9E;&#x73B0;&#x6EDA;&#x52A8;&#x65B0;&#x95FB;</p>
-<p>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[meteor mongodb mongodump and mongorestore]]></title>
-    <link href="http://blog.gyf1.com/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/"/>
-    <id>http://blog.gyf1.com/2015/02/09/meteor-mongodb-mongodump-and-mongorestore/</id>
-    <published>2015-02-09T13:06:56.000Z</published>
-    <updated>2015-02-09T13:11:33.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x5982;&#x4F55;&#x5907;&#x4EFD;&#x548C;&#x5BFC;&#x5165;meteor&#x7684;&#x6570;&#x636E;</p>
-<ol>
-<li>mongodump -d Telescope -o telescope_backup.json</li>
-<li>rsync -avzP root@gyf1.com:/root/telescope_backup ./steven</li>
-<li>&#x8FDB;&#x5165;&#x5230;&#x6587;&#x4EF6;&#x5939;telescope_backup.json&#x4E0B;&#x9762;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4;mongorestore &#x2014;db meteor  -h localhost &#x2014;port 3001 &#x2014;drop Telescope</li>
-</ol>
-<p><a id="more"></a><br><a href="http://stackoverflow.com/questions/19505543/mongorestore-from-meteor-production-server-to-local" target="_blank" rel="external">http://stackoverflow.com/questions/19505543/mongorestore-from-meteor-production-server-to-local</a><br><a href="https://groups.google.com/forum/#!topic/meteor-talk/KvDWrqZpy-w" target="_blank" rel="external">https://groups.google.com/forum/#!topic/meteor-talk/KvDWrqZpy-w</a><br><a href="http://stackoverflow.com/questions/7521163/what-does-too-many-positional-options-mean-when-doing-a-mongoexport" target="_blank" rel="external">http://stackoverflow.com/questions/7521163/what-does-too-many-positional-options-mean-when-doing-a-mongoexport</a><br><a href="http://stackoverflow.com/questions/11255630/how-to-export-all-collection-in-mongodb" target="_blank" rel="external">http://stackoverflow.com/questions/11255630/how-to-export-all-collection-in-mongodb</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x5982;&#x4F55;&#x5907;&#x4EFD;&#x548C;&#x5BFC;&#x5165;meteor&#x7684;&#x6570;&#x636E;</p>
-<ol>
-<li>mongodump -d Telescope -o telescope_backup.json</li>
-<li>rsync -avzP root@gyf1.com:/root/telescope_backup ./steven</li>
-<li>&#x8FDB;&#x5165;&#x5230;&#x6587;&#x4EF6;&#x5939;telescope_backup.json&#x4E0B;&#x9762;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4;mongorestore &#x2014;db meteor  -h localhost &#x2014;port 3001 &#x2014;drop Telescope</li>
-</ol>
-<p>]]>
-    
-    </summary>
-    
-      <category term="Meteor" scheme="http://blog.gyf1.com/tags/meteor/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[angular copy to clipboard]]></title>
-    <link href="http://blog.gyf1.com/2015/02/04/angular-copy-to-clipboard/"/>
-    <id>http://blog.gyf1.com/2015/02/04/angular-copy-to-clipboard/</id>
-    <published>2015-02-04T11:32:54.000Z</published>
-    <updated>2015-02-05T06:29:20.000Z</updated>
-    <content type="html"><![CDATA[<p>js&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<a href="https://github.com/zeroclipboard/zeroclipboard" target="_blank" rel="external">zeroclipboard</a></p>
-<p>angular&#x5982;&#x4F55;&#x5229;&#x7528;zeroclipboard&#x5C06;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;&#x526A;&#x8D34;&#x677F;</p>
-<p><a id="more"></a><br><a href="https://github.com/zeroclipboard/zeroclipboard" target="_blank" rel="external">https://github.com/zeroclipboard/zeroclipboard</a></p>
-<p><a href="https://github.com/asafdav/ng-clip" target="_blank" rel="external">https://github.com/asafdav/ng-clip</a><br><a href="http://stackoverflow.com/questions/25402959/ng-clip-copy-to-clipboard-is-not-working" target="_blank" rel="external">http://stackoverflow.com/questions/25402959/ng-clip-copy-to-clipboard-is-not-working</a></p>
-<p><a href="https://github.com/chouseknecht/angular-clipboard" target="_blank" rel="external">https://github.com/chouseknecht/angular-clipboard</a><br><a href="http://chouseknecht.github.io/angular-clipboard/" target="_blank" rel="external">http://chouseknecht.github.io/angular-clipboard/</a></p>
-<p><a href="https://sourcegraph.com/github.com/buttercoin/ng-clip@master" target="_blank" rel="external">https://sourcegraph.com/github.com/buttercoin/ng-clip@master</a></p>
-<p><a href="http://plnkr.co/edit/xwV5Yn?p=preview" target="_blank" rel="external">http://plnkr.co/edit/xwV5Yn?p=preview</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>js&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<a href="https://github.com/zeroclipboard/zeroclipboard" target="_blank" rel="external">zeroclipboard</a></p>
-<p>angular&#x5982;&#x4F55;&#x5229;&#x7528;zeroclipboard&#x5C06;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;&#x526A;&#x8D34;&#x677F;</p>
-<p>]]>
-    
-    </summary>
-    
-      <category term="AngularJS" scheme="http://blog.gyf1.com/tags/angularjs/"/>
-    
-      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
     
   </entry>
   

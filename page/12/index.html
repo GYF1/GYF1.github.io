@@ -74,6 +74,323 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-10-22T07:38:32.000Z"><a href="/2014/10/22/tinymce使用绝对路径/">10月 22 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/22/tinymce使用绝对路径/">tinymce使用绝对路径</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>&#x5982;&#xFF1A;<br>convert_urls<br>&#x8BE5;&#x9009;&#x9879;&#x5141;&#x8BB8;&#x4F60;&#x63A7;&#x5236;TinyMCE&#x662F;&#x5426;&#x591F;&#x806A;&#x660E;&#xFF0C;&#x5B58;&#x50A8;URL&#x7684;&#x539F;&#x59CB;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;URL&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x8F6C;&#x5316;&#xFF0C;&#x56E0;&#x4E3A;&#x5185;&#x7F6E;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x903B;&#x8F91;&#x4EE5;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;&#xFF0C;&#x6CA1;&#x6709;&#x65B9;&#x6CD5;&#x83B7; &#x53D6;&#x771F;&#x6B63;&#x7684;URL&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x522B;&#x5904;&#x5B58;&#x50A8;&#x3002;&#x5982;&#x679C;&#x4F60;&#x8BBE;&#x7F6E;&#x8BE5;&#x9009;&#x9879;&#x4E3A;false&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4F1A;&#x8BD5;&#x7740;&#x4FDD;&#x6301;URL&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;true,&#x610F;&#x5473;&#x7740;URL&#x4F1A;&#x4F9D;&#x636E; relative_urls&#x7684;&#x72B6;&#x6001;&#x800C;&#x88AB;&#x5F3A;&#x5236;&#x4E3A;&#x7EDD;&#x5BF9;&#x6216;&#x76F8;&#x5BF9;&#x7684;&#x3002;<br>Convert_urls&#x9009;&#x9879;&#x793A;&#x4F8B;&#xFF1A;<br>tinyMCE.init({<br>&#x2026;<br>convert_urls :false<br>});<br>relative_urls<br>&#x5982;&#x679C;&#x8BE5;&#x9009;&#x9879;&#x8BBE;&#x4E3A;true&#xFF0C;&#x6240;&#x6709;&#x901A;&#x8FC7;MCFileManager&#x8FD4;&#x56DE;&#x7684;URL&#x90FD;&#x4F1A;&#x4E0E;&#x77E5;&#x9053;&#x7684;document_base_url&#x76F8;&#x5173;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x4E3A;false&#xFF0C;&#x6240;&#x6709;URL&#x4F1A;&#x88AB;&#x8F6C;&#x5316;&#x6210;&#x7EDD;&#x5BF9;URL&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;true&#x3002;<br>relative_urls&#x9009;&#x9879;&#x793A;&#x4F8B;&#xFF1A;<br>tinyMCE.init({<br>&#x2026;<br>relative_urls :false<br>});<br>remove_script_host</p>
+<p>&#x8BE5;&#x9009;&#x9879;&#x5141;&#x8BB8;MCFileManager&#x8FD4;&#x56DE;&#x7684;URL&#x7684;&#x534F;&#x8BAE;&#x548C;&#x4E3B;&#x673A;&#x90E8;&#x5206;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x8BE5;&#x9009;&#x9879;&#x4EC5;&#x5728;relative_urls&#x9009;&#x9879;&#x8BBE;&#x4E3A;false&#x65F6;&#x6709;&#x7528;&#xFF0C;&#x8BE5;&#x9009;&#x9879;&#x9ED8;&#x8BA4;&#x4E3A;true&#x3002;<br>URL&#x4F1A;&#x4EE5;&#x683C;&#x5F0F;&#x201C;/somedir/somefile.htm&#x201D;&#x8FD4;&#x56DE;&#x800C;&#x4E0D;&#x662F;&#x9ED8;&#x8BA4;&#x7684;<a href="http://www.somesite.com/somedir/somefile.htm&#x7684;&#x683C;&#x5F0F;&#x3002;" target="_blank" rel="external">http://www.somesite.com/somedir/somefile.htm&#x7684;&#x683C;&#x5F0F;&#x3002;</a><br>remove_script_host&#x9009;&#x9879;&#x793A;&#x4F8B;&#xFF1A;<br>tinyMCE.init({<br>&#x2026;<br>remove_script_host :false<br>});<br>document_base_url</p>
+<p>&#x8BE5;&#x9009;&#x9879;&#x4E3A;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x6709;&#x76F8;&#x5BF9;&#x7684;URL&#x6307;&#x5B9A;URL&#x57FA;&#x7840;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x6863;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;&#x503C;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x662F;&#x76EE;&#x5F55;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x6587;&#x6863;&#xFF09;&#xFF0C;&#x5FC5;&#x987B;&#x4EE5;&#x201C;/&#x201D;&#x7ED3;&#x5C3E;&#x3002;&#x8BE5;&#x9009;&#x9879;&#x8FD8; &#x4E0E;relative_urls&#xFF0C;remove_script_host&#x548C;convert_urls&#x9009;&#x9879;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x4EE5;&#x786E;&#x5B9A;TinyMCE&#x8FD4;&#x56DE;&#x76F8;&#x5BF9;&#x8FD8;&#x662F;&#x7EDD;&#x5BF9;&#x7684; URL&#x3002;&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5305;&#x542B;&#x4E86;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x548C;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;/&#x7EDD;&#x5BF9;URL&#x5DE5;&#x4F5C;&#x7684;&#x793A;&#x4F8B;&#x9875;&#x9762;&#x3002;<br>3.0&#x7248;&#x672C;&#x7684;&#x4FEE;&#x6539;&#xFF1A;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x5176;&#x4ED6;&#x8DEF;&#x5F84;&#x5982;&#x4F55;&#x89E3;&#x6790;&#xFF0C;&#x5982;&#x8C03;&#x7528;tinyMCE.windowManager.open&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x4F3C;&#x4E4E;&#x4E5F;&#x53D7;&#x5230;document_base_url&#x8BBE;&#x7F6E;&#x7684;&#x5F71;&#x54CD;&#xFF1A;<br>external_link_list_url<br>external_image_list_url<br>document_base_url&#x9009;&#x9879;&#x793A;&#x4F8B;&#xFF1A;<br>tinyMCE.init({<br>&#x2026;<br>document_base_url :&#x201D;<a href="http://www.baidu.com/" target="_blank" rel="external">http://www.baidu.com/</a>&#x201C;;<br>});</p>
+<p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/10/22/tinymce使用绝对路径/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-17T09:15:22.000Z"><a href="/2014/10/17/jquery-ui-sortable-ipad/">10月 17 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/17/jquery-ui-sortable-ipad/">jquery ui sortable ipad</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="https://github.com/furf/jquery-ui-touch-punch/" target="_blank" rel="external">https://github.com/furf/jquery-ui-touch-punch/</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-17T07:35:07.000Z"><a href="/2014/10/17/tinymce-ipad-不能输入文字/">10月 17 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/17/tinymce-ipad-不能输入文字/">tinymce ipad 不能输入文字</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://stackoverflow.com/questions/18629341/cannot-type-into-empty-tinymce-4-area-on-ipad" target="_blank" rel="external">http://stackoverflow.com/questions/18629341/cannot-type-into-empty-tinymce-4-area-on-ipad</a><br><a href="http://www.tinymce.com/forum/viewtopic.php?id=33030" target="_blank" rel="external">http://www.tinymce.com/forum/viewtopic.php?id=33030</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-17T07:29:42.000Z"><a href="/2014/10/17/iframe-自适应高度/">10月 17 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/17/iframe-自适应高度/">iframe 自适应高度</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://blog.ccidnet.com/home.php?mod=space&#x26;uid=62827&#x26;do=blog&#x26;id=21266815" target="_blank" rel="external">http://blog.ccidnet.com/home.php?mod=space&amp;uid=62827&amp;do=blog&amp;id=21266815</a><br><a href="http://ccvita.com/376.html" target="_blank" rel="external">http://ccvita.com/376.html</a><br><a href="http://caibaojian.com/iframe-adjust-content-height.html" target="_blank" rel="external">http://caibaojian.com/iframe-adjust-content-height.html</a><br><a href="http://stackoverflow.com/questions/18765762/how-to-make-width-and-height-of-iframe-same-as-its-parent-div" target="_blank" rel="external">http://stackoverflow.com/questions/18765762/how-to-make-width-and-height-of-iframe-same-as-its-parent-div</a><br><a href="http://www.jb51.net/article/15780.htm" target="_blank" rel="external">http://www.jb51.net/article/15780.htm</a><br><a href="http://www.iteye.com/problems/41699" target="_blank" rel="external">http://www.iteye.com/problems/41699</a><br><a href="http://stackoverflow.com/questions/153152/resizing-an-iframe-based-on-content" target="_blank" rel="external">http://stackoverflow.com/questions/153152/resizing-an-iframe-based-on-content</a><br><a href="https://www.mattcutts.com/blog/iframe-height-scrollbar-example/" target="_blank" rel="external">https://www.mattcutts.com/blog/iframe-height-scrollbar-example/</a><br><a href="http://stackoverflow.com/questions/9162933/make-iframe-height-dynamic-based-on-content-inside-jquery-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/9162933/make-iframe-height-dynamic-based-on-content-inside-jquery-javascript</a><br><a href="http://stackoverflow.com/questions/3913167/iframe-dynamic-height-width-change-based-on-inner-content" target="_blank" rel="external">http://stackoverflow.com/questions/3913167/iframe-dynamic-height-width-change-based-on-inner-content</a><br><a href="http://www.iteye.com/problems/41699" target="_blank" rel="external">http://www.iteye.com/problems/41699</a><br><a href="http://www.cnblogs.com/lykbk/archive/2012/08/20/2647865.html" target="_blank" rel="external">http://www.cnblogs.com/lykbk/archive/2012/08/20/2647865.html</a><br><a href="http://www.jb51.net/article/15780.htm" target="_blank" rel="external">http://www.jb51.net/article/15780.htm</a><br><a href="http://zhidao.baidu.com/link?url=LfxD3veIv7WxKi-6ioGjAmtVCJCJI6DXuKAY80mHWAx6sunj8FeOHh8M62-s9kOEvSHxianEPipnzxUJD1_7oq" target="_blank" rel="external">http://zhidao.baidu.com/link?url=LfxD3veIv7WxKi-6ioGjAmtVCJCJI6DXuKAY80mHWAx6sunj8FeOHh8M62-s9kOEvSHxianEPipnzxUJD1_7oq</a><br><a href="http://zhidao.baidu.com/link?url=-5Gp3lBqwoFpd2N__oAYYmCGVlSWexONPUrdUkBszOv9MUfT7-lapXB988WY3SJ-OJCx7uyT6VuVtV6FBy-ATa" target="_blank" rel="external">http://zhidao.baidu.com/link?url=-5Gp3lBqwoFpd2N__oAYYmCGVlSWexONPUrdUkBszOv9MUfT7-lapXB988WY3SJ-OJCx7uyT6VuVtV6FBy-ATa</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-17T02:31:54.000Z"><a href="/2014/10/17/ipad-css/">10月 17 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/17/ipad-css/">ipad css</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://css-tricks.com/snippets/css/ipad-specific-css/" target="_blank" rel="external">http://css-tricks.com/snippets/css/ipad-specific-css/</a><br><a href="http://stackoverflow.com/questions/8271493/css-media-query-to-target-ipad-and-ipad-only" target="_blank" rel="external">http://stackoverflow.com/questions/8271493/css-media-query-to-target-ipad-and-ipad-only</a><br><a href="http://stephen.io/mediaqueries/" target="_blank" rel="external">http://stephen.io/mediaqueries/</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-16T07:47:23.000Z"><a href="/2014/10/16/tinymce-maximum-call-stack-size-exceeded/">10月 16 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/16/tinymce-maximum-call-stack-size-exceeded/">tinymce Maximum call stack size exceeded</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://fiddle.tinymce.com/tndaab/4" target="_blank" rel="external">http://fiddle.tinymce.com/tndaab/4</a><br><a href="http://www.eriwen.com/javascript/js-stack-trace/" target="_blank" rel="external">http://www.eriwen.com/javascript/js-stack-trace/</a><br><a href="http://stackoverflow.com/questions/11097234/using-firefox-how-can-i-monitor-all-javascript-events-that-are-fired" target="_blank" rel="external">http://stackoverflow.com/questions/11097234/using-firefox-how-can-i-monitor-all-javascript-events-that-are-fired</a><br><a href="https://developer.chrome.com/devtools/docs/cpu-profiling" target="_blank" rel="external">https://developer.chrome.com/devtools/docs/cpu-profiling</a><br><a href="http://stackoverflow.com/questions/280389/how-do-you-find-out-the-caller-function-in-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/280389/how-do-you-find-out-the-caller-function-in-javascript</a></p>
+<p><a href="http://www.sencha.com/forum/showthread.php?138012-quot-Uncaught-RangeError-Maximum-call-stack-size-exceeded-quot" target="_blank" rel="external">http://www.sencha.com/forum/showthread.php?138012-quot-Uncaught-RangeError-Maximum-call-stack-size-exceeded-quot</a><br><a href="https://code.google.com/p/datejs/issues/detail?id=143" target="_blank" rel="external">https://code.google.com/p/datejs/issues/detail?id=143</a><br><a href="http://www.tinymce.com/develop/bugtracker_view.php?id=6037" target="_blank" rel="external">http://www.tinymce.com/develop/bugtracker_view.php?id=6037</a><br><a href="http://www.tinymce.com/forum/viewtopic.php?id=28616" target="_blank" rel="external">http://www.tinymce.com/forum/viewtopic.php?id=28616</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-10-16T05:14:02.000Z"><a href="/2014/10/16/tablet-web/">10月 16 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/10/16/tablet-web/">tablet web</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://appleinsider.com/articles/10/04/07/apple_creates_ipad_adlib_framework_to_join_tunekit_pastrykit" target="_blank" rel="external">http://appleinsider.com/articles/10/04/07/apple_creates_ipad_adlib_framework_to_join_tunekit_pastrykit</a><br><a href="http://www.nxfx.com/blog/design-topics/adlib-ipad-javascript-framework/#.VD9T4udYTdZ" target="_blank" rel="external">http://www.nxfx.com/blog/design-topics/adlib-ipad-javascript-framework/#.VD9T4udYTdZ</a><br><a href="http://dhtmlx.com/touch/samples/apps/menu/index.html" target="_blank" rel="external">http://dhtmlx.com/touch/samples/apps/menu/index.html</a><br><a href="http://dhtmlx.com/touch/samples/apps/docs/index.html" target="_blank" rel="external">http://dhtmlx.com/touch/samples/apps/docs/index.html</a></p>
+<p><a href="http://www.iui-js.org/demo" target="_blank" rel="external">http://www.iui-js.org/demo</a><br><a href="http://matthewjamestaylor.com/demos/ipad-css-layout/" target="_blank" rel="external">http://matthewjamestaylor.com/demos/ipad-css-layout/</a><br><a href="http://ipad.inspired-ui.com/#show-all" target="_blank" rel="external">http://ipad.inspired-ui.com/#show-all</a><br><a href="http://www.searchenginejournal.com/is-your-site-ipad-ready/20094/" target="_blank" rel="external">http://www.searchenginejournal.com/is-your-site-ipad-ready/20094/</a></p>
+<p><a href="http://tabinspire.com/" target="_blank" rel="external">http://tabinspire.com/</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-10-16T05:11:25.000Z"><a href="/2014/10/16/underscore-where/">10月 16 2014</a></time>
       
       
@@ -188,348 +505,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-15T10:16:05.000Z"><a href="/2014/10/15/angularjs-&-requirejs/">10月 15 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/15/angularjs-&-requirejs/">Angular.js &amp; Require.js</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://beletsky.net/2013/11/using-angular-dot-js-with-require-dot-js.html" target="_blank" rel="external">http://beletsky.net/2013/11/using-angular-dot-js-with-require-dot-js.html</a><br><a href="http://www.sitepoint.com/using-requirejs-angularjs-applications/" target="_blank" rel="external">http://www.sitepoint.com/using-requirejs-angularjs-applications/</a><br><a href="http://www.cnblogs.com/walkerwang/p/3372284.html" target="_blank" rel="external">http://www.cnblogs.com/walkerwang/p/3372284.html</a><br><a href="http://segmentfault.com/blog/moejser/1190000000492238" target="_blank" rel="external">http://segmentfault.com/blog/moejser/1190000000492238</a><br><a href="http://weblogs.asp.net/dwahlin/dynamically-loading-controllers-and-views-with-angularjs-and-requirejs" target="_blank" rel="external">http://weblogs.asp.net/dwahlin/dynamically-loading-controllers-and-views-with-angularjs-and-requirejs</a><br><a href="http://marcoslin.github.io/angularAMD/#/home" target="_blank" rel="external">http://marcoslin.github.io/angularAMD/#/home</a><br><a href="https://github.com/marcoslin/angularAMD" target="_blank" rel="external">https://github.com/marcoslin/angularAMD</a><br><a href="https://github.com/tnajdek/angular-requirejs-seed" target="_blank" rel="external">https://github.com/tnajdek/angular-requirejs-seed</a><br><a href="https://github.com/StarterSquad/startersquad.com/tree/master/examples/angularjs-requirejs-1" target="_blank" rel="external">https://github.com/StarterSquad/startersquad.com/tree/master/examples/angularjs-requirejs-1</a><br><a href="http://addyosmani.com/writing-modular-js/" target="_blank" rel="external">http://addyosmani.com/writing-modular-js/</a><br><a href="http://www.csdn.net/article/2012-09-27/2810404" target="_blank" rel="external">http://www.csdn.net/article/2012-09-27/2810404</a></p>
-<p><a href="http://www.cnblogs.com/snandy/archive/2012/06/06/2536969.html" target="_blank" rel="external">http://www.cnblogs.com/snandy/archive/2012/06/06/2536969.html</a><br><a href="http://www.cnblogs.com/terrylin/archive/2013/05/09/3068853.html" target="_blank" rel="external">http://www.cnblogs.com/terrylin/archive/2013/05/09/3068853.html</a><br><a href="http://www.cnblogs.com/terrylin/archive/2013/06/01/3112596.html" target="_blank" rel="external">http://www.cnblogs.com/terrylin/archive/2013/06/01/3112596.html</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-13T09:14:44.000Z"><a href="/2014/10/13/使用requirejs优化web应用前端/">10月 13 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/13/使用requirejs优化web应用前端/">使用RequireJS优化Web应用前端</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>data-requirecontext<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/10/13/使用requirejs优化web应用前端/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-13T09:13:21.000Z"><a href="/2014/10/13/通过javascript在url中获取参数/">10月 13 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/13/通过javascript在url中获取参数/">通过javascript在URL中获取参数</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x4F8B;&#x5982; a.htm?ID=12&amp;str=aaaa</p>
-<pre><code><span class="tag">&lt;<span class="title">script</span> <span class="attribute">language</span>=<span class="value">&quot;JavaScript&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"> 
-<span class="function"><span class="keyword">function</span> <span class="title">QueryString</span><span class="params">()</span>
-{</span>
-<span class="keyword">var</span> name,value,i;
-<span class="keyword">var</span> str=location.href;
-<span class="keyword">var</span> num=str.indexOf(<span class="string">&quot;?&quot;</span>)
-str=str.substr(num+<span class="number">1</span>);
-<span class="keyword">var</span> arrtmp=str.split(<span class="string">&quot;&amp;&quot;</span>);
-<span class="keyword">for</span>(i=<span class="number">0</span>;i &lt; arrtmp.length;i++){
-num=arrtmp[i].indexOf(<span class="string">&quot;=&quot;</span>);
-<span class="keyword">if</span>(num&gt;<span class="number">0</span>){
-name=arrtmp[i].substring(<span class="number">0</span>,num);
-value=arrtmp[i].substr(num+<span class="number">1</span>);
-<span class="keyword">this</span>[name]=value;
-}
-}
-}
-<span class="comment">//--------------------------------------</span>
-<span class="comment">//&#x8C03;&#x7528;:</span>
-<span class="keyword">var</span> Request=<span class="keyword">new</span> QueryString();
-ID=Request[<span class="string">&quot;ID&quot;</span>]
-str=Request[<span class="string">&quot;str&quot;</span>]
-document.write(ID+<span class="string">&quot;&lt;br&gt;&quot;</span>+str); 
-</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span> 
-</code></pre><p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;:<br>12<br>aaaa</p>
-<p><a href="http://zhidao.baidu.com/link?url=erlObnAqAld4jsV7NyD2v4RVHPB_C1WFhc2CkJ1FRYeGoDBiCXSSte7KCrOd-FA_CaWYd007UvFaAzXICjmA5q" target="_blank" rel="external">http://zhidao.baidu.com/link?url=erlObnAqAld4jsV7NyD2v4RVHPB_C1WFhc2CkJ1FRYeGoDBiCXSSte7KCrOd-FA_CaWYd007UvFaAzXICjmA5q</a></p>
-<p><a href="http://stackoverflow.com/questions/16964444/get-query-string-using-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/16964444/get-query-string-using-angularjs</a><br><a href="http://stackoverflow.com/questions/18665850/angularjs-build-url-with-query-string" target="_blank" rel="external">http://stackoverflow.com/questions/18665850/angularjs-build-url-with-query-string</a><br><a href="http://stackoverflow.com/questions/15155911/how-to-pass-querystring-in-angular-routes" target="_blank" rel="external">http://stackoverflow.com/questions/15155911/how-to-pass-querystring-in-angular-routes</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-13T09:09:22.000Z"><a href="/2014/10/13/uncaught-rangeerror-maximum-call-stack-size-exceeded/">10月 13 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/13/uncaught-rangeerror-maximum-call-stack-size-exceeded/">uncaught rangeerror maximum call stack size exceeded</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://stackoverflow.com/questions/6095530/maximum-call-stack-size-exceeded-error" target="_blank" rel="external">http://stackoverflow.com/questions/6095530/maximum-call-stack-size-exceeded-error</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-13T09:07:42.000Z"><a href="/2014/10/13/angular-scroll-directive/">10月 13 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/13/angular-scroll-directive/">angular scroll directive</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://jsfiddle.net/ADukg/4831/" target="_blank" rel="external">http://jsfiddle.net/ADukg/4831/</a><br><a href="http://stackoverflow.com/questions/21989923/scroll-event-is-not-fired-insider-directive-angular-js" target="_blank" rel="external">http://stackoverflow.com/questions/21989923/scroll-event-is-not-fired-insider-directive-angular-js</a><br><a href="http://jsfiddle.net/88TzF/" target="_blank" rel="external">http://jsfiddle.net/88TzF/</a><br><a href="http://stackoverflow.com/questions/20253322/angular-js-scroll-window" target="_blank" rel="external">http://stackoverflow.com/questions/20253322/angular-js-scroll-window</a><br><a href="http://stackoverflow.com/questions/16333014/hide-a-div-on-scroll-with-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/16333014/hide-a-div-on-scroll-with-angularjs</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-13T09:05:40.000Z"><a href="/2014/10/13/angular-scroll/">10月 13 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/13/angular-scroll/">angular-scroll</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="https://github.com/durated/angular-scroll" target="_blank" rel="external">https://github.com/durated/angular-scroll</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-13T09:00:15.000Z"><a href="/2014/10/13/jqueryformjs的ajaxsubmit使用/">10月 13 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/13/jqueryformjs的ajaxsubmit使用/">jquery.form.js的ajaxSubmit使用</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>jquery.form.js&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/10/13/jqueryformjs的ajaxsubmit使用/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -555,15 +530,15 @@ document.write(ID+<span class="string">&quot;&lt;br&gt;&quot;</span>+str);
   
     <li><a href="/categories/cloud/">Cloud</a><small>5</small></li>
   
-    <li><a href="/categories/database/">Database</a><small>8</small></li>
+    <li><a href="/categories/database/">Database</a><small>10</small></li>
   
     <li><a href="/categories/giant/">Giant</a><small>96</small></li>
   
-    <li><a href="/categories/html/">HTML</a><small>11</small></li>
+    <li><a href="/categories/html/">HTML</a><small>12</small></li>
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>82</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>85</small></li>
   
     <li><a href="/categories/mobile/">Mobile</a><small>6</small></li>
   
@@ -575,7 +550,7 @@ document.write(ID+<span class="string">&quot;&lt;br&gt;&quot;</span>+str);
   
     <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
   
-    <li><a href="/categories/style/">Style</a><small>26</small></li>
+    <li><a href="/categories/style/">Style</a><small>27</small></li>
   
   </ul>
 </div>
@@ -585,7 +560,7 @@ document.write(ID+<span class="string">&quot;&lt;br&gt;&quot;</span>+str);
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/agile-development/" style="font-size: 12.50px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.67px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 14.17px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.83px;">Bower</a><a href="/tags/css/" style="font-size: 18.33px;">CSS</a><a href="/tags/certification/" style="font-size: 10.83px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.83px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 15.83px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 10.83px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.83px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 12.50px;">Grunt</a><a href="/tags/gulp/" style="font-size: 10.00px;">Gulp</a><a href="/tags/html5/" style="font-size: 13.33px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.50px;">Heroku</a><a href="/tags/ionic/" style="font-size: 15.00px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.83px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.83px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.17px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 12.50px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 14.17px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 10.83px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.50px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/regexp/" style="font-size: 10.83px;">RegExp</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.83px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 13.33px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.67px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 14.17px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.67px;">jQuery</a>
+    <a href="/tags/agile-development/" style="font-size: 12.31px;">Agile Development</a><a href="/tags/android/" style="font-size: 10.00px;">Android</a><a href="/tags/angularjs/" style="font-size: 20.00px;">AngularJS</a><a href="/tags/apex/" style="font-size: 11.54px;">Apex</a><a href="/tags/bootstrap/" style="font-size: 13.85px;">Bootstrap</a><a href="/tags/bower/" style="font-size: 10.77px;">Bower</a><a href="/tags/css/" style="font-size: 18.46px;">CSS</a><a href="/tags/certification/" style="font-size: 10.77px;">Certification</a><a href="/tags/coffeescript/" style="font-size: 10.77px;">CoffeeScript</a><a href="/tags/commonjs/" style="font-size: 10.00px;">CommonJS</a><a href="/tags/compass/" style="font-size: 10.00px;">Compass</a><a href="/tags/design-pattern/" style="font-size: 16.15px;">Design Pattern</a><a href="/tags/dojo/" style="font-size: 10.00px;">Dojo</a><a href="/tags/english/" style="font-size: 10.77px;">English</a><a href="/tags/express/" style="font-size: 10.00px;">Express</a><a href="/tags/geddy/" style="font-size: 10.00px;">Geddy</a><a href="/tags/git/" style="font-size: 10.77px;">Git</a><a href="/tags/golang/" style="font-size: 10.00px;">Golang</a><a href="/tags/grunt/" style="font-size: 12.31px;">Grunt</a><a href="/tags/gulp/" style="font-size: 10.00px;">Gulp</a><a href="/tags/html5/" style="font-size: 13.08px;">HTML5</a><a href="/tags/haxe/" style="font-size: 10.00px;">Haxe</a><a href="/tags/heroku/" style="font-size: 12.31px;">Heroku</a><a href="/tags/ionic/" style="font-size: 14.62px;">Ionic</a><a href="/tags/jshint/" style="font-size: 10.77px;">JSHint</a><a href="/tags/jasmine/" style="font-size: 10.00px;">Jasmine</a><a href="/tags/karma/" style="font-size: 10.77px;">Karma</a><a href="/tags/less/" style="font-size: 10.00px;">LESS</a><a href="/tags/learning/" style="font-size: 19.23px;">Learning</a><a href="/tags/memcache/" style="font-size: 10.00px;">Memcache</a><a href="/tags/meteor/" style="font-size: 13.08px;">Meteor</a><a href="/tags/mongodb/" style="font-size: 15.38px;">MongoDB</a><a href="/tags/mongoose/" style="font-size: 11.54px;">Mongoose</a><a href="/tags/mootools/" style="font-size: 10.00px;">MooTools</a><a href="/tags/nodejs/" style="font-size: 17.69px;">Node.js</a><a href="/tags/phantomjs/" style="font-size: 10.00px;">Phantomjs</a><a href="/tags/postgres/" style="font-size: 10.00px;">Postgres</a><a href="/tags/protractor/" style="font-size: 10.00px;">Protractor</a><a href="/tags/ratchet/" style="font-size: 10.00px;">Ratchet</a><a href="/tags/redis/" style="font-size: 10.00px;">Redis</a><a href="/tags/regexp/" style="font-size: 10.77px;">RegExp</a><a href="/tags/requirejs/" style="font-size: 10.00px;">RequireJS</a><a href="/tags/riak/" style="font-size: 10.00px;">Riak</a><a href="/tags/sass/" style="font-size: 10.77px;">SASS</a><a href="/tags/stylus/" style="font-size: 10.00px;">Stylus</a><a href="/tags/teamcity/" style="font-size: 10.00px;">TeamCity</a><a href="/tags/titanium/" style="font-size: 10.00px;">Titanium</a><a href="/tags/translation/" style="font-size: 13.08px;">Translation</a><a href="/tags/ucd/" style="font-size: 10.00px;">UCD</a><a href="/tags/ued/" style="font-size: 10.00px;">UED</a><a href="/tags/visualforce/" style="font-size: 11.54px;">Visualforce</a><a href="/tags/webstorm/" style="font-size: 13.85px;">WebStorm</a><a href="/tags/yslow/" style="font-size: 10.00px;">YSlow</a><a href="/tags/yui/" style="font-size: 10.00px;">YUI</a><a href="/tags/yeoman/" style="font-size: 10.00px;">Yeoman</a><a href="/tags/jquery/" style="font-size: 16.92px;">jQuery</a>
   </div>
 </div>
 
@@ -594,6 +569,34 @@ document.write(ID+<span class="string">&quot;&lt;br&gt;&quot;</span>+str);
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/03/10/ipad-iframe-scroll-back-to-top/">ipad iframe scroll back to top</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/09/meteor-set-mongo_url/">meteor set MONGO_URL</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/09/deep-into-javascript-prototype-and-closure/">deep into javascript prototype and closure</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/09/mongoose-promise/">mongoose promise</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/09/mongoose-batch-insert/">mongoose batch insert</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/07/native-rich-text-editing-with-the-contenteditable-attribute/">Native Rich-Text Editing with the contenteditable Attribute</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/07/insert-html-where-cursor-is/">insert html where cursor is</a>
+      </li>
     
       <li>
         <a href="/2015/03/06/import-json-into-mongodb/">import json into mongodb</a>
@@ -605,34 +608,6 @@ document.write(ID+<span class="string">&quot;&lt;br&gt;&quot;</span>+str);
     
       <li>
         <a href="/2015/03/06/2013-china-district-data/">2013年统计用区划代码和城乡划分代码</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/04/angularjs-controller-watch-service-variable/">angularjs controller watch service variable</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/03/ionic-html5-input-types/">ionic HTML5 Input Types</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/03/ionic-tabs-horizon-scroll/">ionic tabs horizon scroll</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/03/meteor-package-accounts-password/">meteor package accounts-password</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/02/ionic-quiz-app-design/">ionic quiz app design</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/27/meteor1/">meteor1</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/27/connect-to-a-remote-mongodb/">Connect to a Remote MongoDB</a>
       </li>
     
   </ul>
