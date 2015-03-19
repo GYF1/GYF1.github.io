@@ -78,6 +78,268 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-03-18T07:00:13.000Z"><a href="/2015/03/18/tinymce-focus-and-set-cursor-caret-position/">3月 18 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/03/18/tinymce-focus-and-set-cursor-caret-position/">tinymce focus and set cursor caret position</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>setCursorLocation</p>
+<p>tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);<br>tinyMCE.activeEditor.selection.collapse(false);</p>
+<p>tinyMCE.activeEditor.focus();</p>
+<p>tinymce.execCommand(&#x2018;mceFocus&#x2019;,false,&#x2019;id_of_textarea&#x2019;);</p>
+<p>To cleanly remove an editor instance and avoid any errors use:</p>
+<p>tinymce.EditorManager.execCommand(&#x2018;mceRemoveEditor&#x2019;,true, editor_id);<br>To reinitialize the instance use:</p>
+<p>tinymce.EditorManager.execCommand(&#x2018;mceAddEditor&#x2019;,true, editor_id);</p>
+<p>tinymce.execCommand(&#x2018;mceRemoveControl&#x2019;, true, &#x2018;my_original_textarea_id&#x2019;);<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/03/18/tinymce-focus-and-set-cursor-caret-position/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-17T05:15:48.000Z"><a href="/2015/03/17/convert-data-uri-to-file/">3月 17 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/03/17/convert-data-uri-to-file/">Convert Data URI to File</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Data URL&#x7ED9;&#x4E86;&#x6211;&#x4EEC;&#x4E00;&#x79CD;&#x5F88;&#x5DE7;&#x5999;&#x7684;&#x5C06;&#x56FE;&#x7247;&#x201C;&#x5D4C;&#x5165;&#x201D;&#x5230;HTML&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x3002;<br>&#x8DDF;&#x4F20;&#x7EDF;&#x7684;&#x7528;img&#x6807;&#x8BB0;&#x5C06;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x56FE;&#x7247;&#x5F15;&#x7528;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x65B9;&#x5F0F;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5728;Data URL&#x534F;&#x8BAE;&#x4E2D;&#xFF0C;&#x56FE;&#x7247;&#x88AB;&#x8F6C;&#x6362;&#x6210;base64&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#xFF0C;&#x5E76;&#x5B58;&#x50A8;&#x5728;URL&#x4E2D;&#xFF0C;&#x51A0;&#x4EE5;mime-type&#x3002;</p>
+<p>&#x5982;&#x679C;&#x540E;&#x53F0;&#x4E0D;&#x652F;&#x6301;&#x6211;&#x4EEC;&#x4EE5;base64&#x7684;&#x683C;&#x5F0F;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x56FE;&#x7247;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x628A;base64&#x8F6C;&#x6210;blob&#xFF1A;</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">dataURItoBlob</span><span class="params">(dataURI)</span> {</span>
+    <span class="comment">// convert base64/URLEncoded data component to raw binary data held in a string</span>
+    <span class="keyword">var</span> byteString;
+    <span class="keyword">if</span> (dataURI.split(<span class="string">&apos;,&apos;</span>)[<span class="number">0</span>].indexOf(<span class="string">&apos;base64&apos;</span>) &gt;= <span class="number">0</span>)
+        byteString = atob(dataURI.split(<span class="string">&apos;,&apos;</span>)[<span class="number">1</span>]);
+    <span class="keyword">else</span>
+        byteString = <span class="built_in">unescape</span>(dataURI.split(<span class="string">&apos;,&apos;</span>)[<span class="number">1</span>]);
+
+    <span class="comment">// separate out the mime component</span>
+    <span class="keyword">var</span> mimeString = dataURI.split(<span class="string">&apos;,&apos;</span>)[<span class="number">0</span>].split(<span class="string">&apos;:&apos;</span>)[<span class="number">1</span>].split(<span class="string">&apos;;&apos;</span>)[<span class="number">0</span>];
+
+    <span class="comment">// write the bytes of the string to a typed array</span>
+    <span class="keyword">var</span> ia = <span class="keyword">new</span> <span class="built_in">Uint8Array</span>(byteString.length);
+    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+
+    <span class="keyword">return</span> <span class="keyword">new</span> Blob([ia], {type:mimeString});
+}
+
+<span class="keyword">var</span> dataURL = canvas.toDataURL(<span class="string">&apos;image/jpeg&apos;</span>, <span class="number">0.5</span>);
+<span class="keyword">var</span> blob = dataURItoBlob(dataURL);
+</code></pre><p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/03/17/convert-data-uri-to-file/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-16T01:41:25.000Z"><a href="/2015/03/16/resizing-image-before-upload/">3月 16 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/03/16/resizing-image-before-upload/">resizing image before upload</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>angularjs-imageupload-directive:<br><a href="https://github.com/Mischi/angularjs-imageupload-directive" target="_blank" rel="external">https://github.com/Mischi/angularjs-imageupload-directive</a></p>
+<p>Resizing images with Javascript:<br><a href="https://github.com/leonzinger/ng-image-resize" target="_blank" rel="external">https://github.com/leonzinger/ng-image-resize</a><br><a href="https://blog.liip.ch/archive/2013/05/28/resizing-images-with-javascript.html" target="_blank" rel="external">https://blog.liip.ch/archive/2013/05/28/resizing-images-with-javascript.html</a></p>
+<p>localResizeIMG3:<br><a href="https://github.com/think2011/localResizeIMG3" target="_blank" rel="external">https://github.com/think2011/localResizeIMG3</a></p>
+<p>CodePen:<br><a href="http://codepen.io/michaeljcalkins/pen/prhtG" target="_blank" rel="external">http://codepen.io/michaeljcalkins/pen/prhtG</a></p>
+<p>WURFL:<br><a href="http://www.scientiamobile.com/page/angularwit" target="_blank" rel="external">http://www.scientiamobile.com/page/angularwit</a><br><a href="https://github.com/WURFL/angular-wurfl-image-tailor" target="_blank" rel="external">https://github.com/WURFL/angular-wurfl-image-tailor</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-13T07:45:29.000Z"><a href="/2015/03/13/the-sanitizer-was-unable-to-parse-the-following-block-of-html/">3月 13 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/03/13/the-sanitizer-was-unable-to-parse-the-following-block-of-html/">The sanitizer was unable to parse the following block of html</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>The sanitizer was unable to parse the following block of<br>escape less than in javascript</p>
+<p><a href="http://stackoverflow.com/questions/5251520/how-do-i-escape-some-html-in-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/5251520/how-do-i-escape-some-html-in-javascript</a><br><a href="http://stackoverflow.com/questions/20436579/how-to-have-angularjs-output-escaped-html" target="_blank" rel="external">http://stackoverflow.com/questions/20436579/how-to-have-angularjs-output-escaped-html</a><br><a href="http://stackoverflow.com/questions/5225096/escape-less-greater-than-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/5225096/escape-less-greater-than-javascript</a><br><a href="http://stackoverflow.com/questions/8045745/how-to-escape-less-than-sign-in-javascript-jquery" target="_blank" rel="external">http://stackoverflow.com/questions/8045745/how-to-escape-less-than-sign-in-javascript-jquery</a><br><a href="http://w3facility.org/question/angularjs-how-can-i-ignore-certain-html-tags/" target="_blank" rel="external">http://w3facility.org/question/angularjs-how-can-i-ignore-certain-html-tags/</a><br><a href="http://stackoverflow.com/questions/18340872/how-do-you-use-sce-trustashtmlstring-to-replicate-ng-bind-html-unsafe-in-angu" target="_blank" rel="external">http://stackoverflow.com/questions/18340872/how-do-you-use-sce-trustashtmlstring-to-replicate-ng-bind-html-unsafe-in-angu</a><br><a href="https://github.com/angular/angular.js/issues/9790" target="_blank" rel="external">https://github.com/angular/angular.js/issues/9790</a><br><a href="https://github.com/angular/angular.js/issues/6989" target="_blank" rel="external">https://github.com/angular/angular.js/issues/6989</a><br><a href="http://stackoverflow.com/questions/25820722/how-to-trace-the-sanitizer-was-unable-to-parse-the-following-block-of-html-3" target="_blank" rel="external">http://stackoverflow.com/questions/25820722/how-to-trace-the-sanitizer-was-unable-to-parse-the-following-block-of-html-3</a><br><a href="http://stackoverflow.com/questions/22533491/angularjs-how-can-i-ignore-certain-html-tags" target="_blank" rel="external">http://stackoverflow.com/questions/22533491/angularjs-how-can-i-ignore-certain-html-tags</a><br><a href="http://plnkr.co/edit/qOuvpSMvooC6jR0HxCNT?p=preview" target="_blank" rel="external">http://plnkr.co/edit/qOuvpSMvooC6jR0HxCNT?p=preview</a><br><a href="http://stackoverflow.com/questions/14462612/escape-html-text-in-an-angularjs-directive" target="_blank" rel="external">http://stackoverflow.com/questions/14462612/escape-html-text-in-an-angularjs-directive</a><br><a href="http://stackoverflow.com/questions/5225096/escape-less-greater-than-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/5225096/escape-less-greater-than-javascript</a><br><a href="http://stackoverflow.com/questions/8045745/how-to-escape-less-than-sign-in-javascript-jquery" target="_blank" rel="external">http://stackoverflow.com/questions/8045745/how-to-escape-less-than-sign-in-javascript-jquery</a><br><a href="http://stackoverflow.com/questions/5225096/escape-less-greater-than-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/5225096/escape-less-greater-than-javascript</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-12T05:34:08.000Z"><a href="/2015/03/12/http-put-or-delete-not-allowed/">3月 12 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/03/12/http-put-or-delete-not-allowed/">HTTP PUT or DELETE not allowed</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://segmentfault.net/q/1010000002512319" target="_blank" rel="external">http://segmentfault.net/q/1010000002512319</a><br><a href="http://www.hanselman.com/blog/HTTPPUTOrDELETENotAllowedUseXHTTPMethodOverrideForYourRESTServiceWithASPNETWebAPI.aspx" target="_blank" rel="external">http://www.hanselman.com/blog/HTTPPUTOrDELETENotAllowedUseXHTTPMethodOverrideForYourRESTServiceWithASPNETWebAPI.aspx</a><br><a href="http://snandy.iteye.com/blog/1483186" target="_blank" rel="external">http://snandy.iteye.com/blog/1483186</a><br><a href="http://www.oschina.net/question/1456141_165490?sort=time" target="_blank" rel="external">http://www.oschina.net/question/1456141_165490?sort=time</a><br><a href="http://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers" target="_blank" rel="external">http://stackoverflow.com/questions/165779/are-the-put-delete-head-etc-methods-available-in-most-web-browsers</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-03-09T08:08:41.000Z"><a href="/2015/03/09/meteor-set-mongo_url/">3月 9 2015</a></time>
       
       
@@ -318,270 +580,6 @@
 
 
   
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-02-27T08:27:28.000Z"><a href="/2015/02/27/meteor1/">2月 27 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/02/27/meteor1/">meteor1</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;meteor&#x5E94;&#x7528;&#xFF0C;&#x5E76;&#x53D1;&#x5E03;&#x5230;&#x963F;&#x91CC;&#x4E91;&#x91CC;&#x9762;</p>
-<ol>
-<li><p>&#x521B;&#x5EFA;&#x7A0B;&#x5E8F;<br>meteor create app</p>
-</li>
-<li><p>&#x901A;&#x8FC7;meteor up&#x6765;&#x914D;&#x7F6E;&#x90E8;&#x7F72;&#x7A0B;&#x5E8F;</p>
-</li>
-<li><p>mup deploy</p>
-</li>
-<li><p>&#x8BBE;&#x7F6E;nginx</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/02/27/meteor1/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-02-26T09:00:14.000Z"><a href="/2015/02/26/ng-bind-html-call-function/">2月 26 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/02/26/ng-bind-html-call-function/">ng-bind-html call function</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x5728;&#x9875;&#x9762;&#x4E0A;&#x7ED1;&#x5B9A;&#x7684;html&#xFF0C;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x91CC;&#x9762;&#x7684;&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;ng-click<br>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;$compile<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/02/26/ng-bind-html-call-function/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-02-26T08:57:24.000Z"><a href="/2015/02/26/regexp-practice-1/">2月 26 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/02/26/regexp-practice-1/">regexp practice 1</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x6709;&#x4E00;&#x6BB5;html&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x4E0B;</p>
-<pre><code><span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x770B;<span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">&quot;font-size: 15px; line-height: 1.5;&quot;</span>&gt;</span>&#x56FE;&#x8BF4;&#x8BDD;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/1.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x518D;&#x6765;&#x4E00;&#x5F20;&#x56FE;&#x7247;<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/2.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;609&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;590&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-</code></pre><p>&#x9700;&#x8981;&#x80FD;&#x591F;&#x9488;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;img&#x6807;&#x7B7E;&#x505A;&#x5982;&#x4E0B;&#x5904;&#x7406;&#xFF1A;</p>
-<ol>
-<li>&#x52A0;&#x4E0A; width=&#x201D;100%&#x201D; height=&#x201D;auto&#x201D;&#xFF0C;&#x5982;&#x679C;img&#x5DF2;&#x7ECF;&#x5B58;&#x5728;width&#x548C;hegiht&#xFF0C;&#x9700;&#x8981;&#x5148;&#x53BB;&#x6389;</li>
-<li>&#x589E;&#x52A0;&#x4E00;&#x4E2A;onlick&#x4E8B;&#x4EF6;&#xFF0C;&#x4F20;&#x5165;img&#x7684;src&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</li>
-</ol>
-<p>&#x671F;&#x5F85;&#x7684;&#x7ED3;&#x679C;&#x662F;</p>
-<pre><code><span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x770B;<span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">&quot;font-size: 15px; line-height: 1.5;&quot;</span>&gt;</span>&#x56FE;&#x8BF4;&#x8BDD;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/1.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;100%&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;auto&quot;</span> <span class="attribute">onlick</span>=<span class="value">&quot;foo(&apos;http://a.com/1.png&apos;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span> <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span>&#x518D;&#x6765;&#x4E00;&#x5F20;&#x56FE;&#x7247;<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-<span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">&quot;http://a.com/2.png&quot;</span> <span class="attribute">alt</span>=<span class="value">&quot;&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;100%&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;auto&quot;</span> <span class="attribute">onlick</span>=<span class="value">&quot;foo(&apos;http://a.com/2.png&apos;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-</code></pre><p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/02/26/regexp-practice-1/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-02-25T08:18:42.000Z"><a href="/2015/02/25/ionic-play-audio-and-video/">2月 25 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/02/25/ionic-play-audio-and-video/">ionic play audio and video</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.com/2015/01/embed-video-ios-android-ionicframework-app/</a><br><a href="http://devdactic.com/images-videos-fullscreen-ionic/" target="_blank" rel="external">http://devdactic.com/images-videos-fullscreen-ionic/</a><br><a href="https://blog.nraboy.com/2014/11/playing-audio-android-ios-ionicframework-app/" target="_blank" rel="external">https://blog.nraboy.com/2014/11/playing-audio-android-ios-ionicframework-app/</a><br><a href="https://github.com/sirius2013/Angularjs-Ionic-Audio-VideoApp" target="_blank" rel="external">https://github.com/sirius2013/Angularjs-Ionic-Audio-VideoApp</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-02-25T08:14:18.000Z"><a href="/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/">2月 25 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/">JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Programming single-page applications is great to build modern web application. Publishing NPM packages are awesome if you write Node.js softwares. What&#x2019;s the link between this two subjects? Both require a complex tool chain (asset managemenet, CSS-preprocessor files compiling, test preparation, JS files concatenation, etc.) to publish your software. In this post, we are going to have look to a new trend: the task runners. They are the new generation of Makefiles for the JS world.</p>
-<p>Task runners are a set of tools to make build operation clean and well documented. They provide helpers to manage operations on the project file system via the command line.</p>
-<p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/02/25/js-task-runners-comparison-grunt-vs-cake-vs-gulp-vs-broccoli/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
 
   <nav id="pagination">
   
@@ -614,7 +612,7 @@
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>85</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>90</small></li>
   
     <li><a href="/categories/mobile/">Mobile</a><small>6</small></li>
   
@@ -626,7 +624,7 @@
   
     <li><a href="/categories/software-engineering/">Software Engineering</a><small>20</small></li>
   
-    <li><a href="/categories/style/">Style</a><small>27</small></li>
+    <li><a href="/categories/style/">Style</a><small>28</small></li>
   
   </ul>
 </div>
@@ -647,6 +645,34 @@
   <ul class="entry">
     
       <li>
+        <a href="/2015/03/18/tinymce-safari/">tinymce safari</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/18/tinymce-focus-and-set-cursor-caret-position/">tinymce focus and set cursor caret position</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/18/scroll-iframes-on-ios/">Scroll IFRAMEs on iOS</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/17/convert-data-uri-to-file/">Convert Data URI to File</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/16/resizing-image-before-upload/">resizing image before upload</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/13/the-sanitizer-was-unable-to-parse-the-following-block-of-html/">The sanitizer was unable to parse the following block of html</a>
+      </li>
+    
+      <li>
+        <a href="/2015/03/12/http-put-or-delete-not-allowed/">HTTP PUT or DELETE not allowed</a>
+      </li>
+    
+      <li>
         <a href="/2015/03/10/ipad-iframe-scroll-back-to-top/">ipad iframe scroll back to top</a>
       </li>
     
@@ -656,34 +682,6 @@
     
       <li>
         <a href="/2015/03/09/deep-into-javascript-prototype-and-closure/">deep into javascript prototype and closure</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/09/mongoose-promise/">mongoose promise</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/09/mongoose-batch-insert/">mongoose batch insert</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/07/native-rich-text-editing-with-the-contenteditable-attribute/">Native Rich-Text Editing with the contenteditable Attribute</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/07/insert-html-where-cursor-is/">insert html where cursor is</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/06/import-json-into-mongodb/">import json into mongodb</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/06/import-xml-file-into-mongodb/">import xml file into mongodb</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/06/2013-china-district-data/">2013年统计用区划代码和城乡划分代码</a>
       </li>
     
   </ul>
