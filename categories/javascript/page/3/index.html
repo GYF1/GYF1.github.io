@@ -78,6 +78,72 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-02-01T07:38:14.000Z"><a href="/2015/02/01/javascript-scoping-and-hoisting/">2月 1 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/02/01/javascript-scoping-and-hoisting/">JavaScript Scoping and Hoisting</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>JavaScript Scoping and Hoisting</p>
+<p>Do you know what value will be alerted if the following is executed as a JavaScript program?</p>
+<pre><code><span class="keyword">var</span> foo = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> {</span>
+    <span class="keyword">if</span> (!foo) {
+        <span class="keyword">var</span> foo = <span class="number">10</span>;
+    }
+    alert(foo);
+}
+bar();
+</code></pre><p>If it surprises you that the answer is &#x201C;10&#x201D;, then this one will probably really throw you for a loop:</p>
+<pre><code><span class="keyword">var</span> a = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">b</span><span class="params">()</span> {</span>
+    a = <span class="number">10</span>;
+    <span class="keyword">return</span>;
+    <span class="function"><span class="keyword">function</span> <span class="title">a</span><span class="params">()</span> {</span>console.log(<span class="string">&apos;!&apos;</span>);}
+}
+b();
+alert(a);
+</code></pre><p>Here, of course, the browser will alert &#x201C;1&#x201D;. So what&#x2019;s going on here?<br>While it might seem strange, dangerous, and confusing, this is actually a powerful and expressive feature of the language.<br>I don&#x2019;t know if there is a standard name for this specific behavior, but I&#x2019;ve come to like the term &#x201C;hoisting&#x201D;.<br>This article will try to shed some light on this mechanism, but first lets take a necessary detour to understand JavaScript&#x2019;s scoping.<br>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/02/01/javascript-scoping-and-hoisting/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-01-28T06:16:35.000Z"><a href="/2015/01/28/angular-apply-already-in-progress/">1月 28 2015</a></time>
       
       
@@ -535,56 +601,6 @@ var <span class="keyword">length</span> = myArray.<span class="keyword">length</
 
 
   
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-01-17T08:23:22.000Z"><a href="/2015/01/17/immediately-invoked-function-expression-(iife)/">1月 17 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/01/17/immediately-invoked-function-expression-(iife)/">Immediately-Invoked Function Expression (IIFE)</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>In case you hadn&#x2019;t noticed, I&#x2019;m a bit of a stickler for terminology. So, after hearing the popular, yet misleading, JavaScript term &#x201C;self-executing anonymous function&#x201D; (or self-invoked anonymous function) one too many times, I&#x2019;ve finally decided to organize my thoughts into an article.</p>
-<p>In addition to providing some very thorough information about how this pattern actually works, I&#x2019;ve actually made a recommendation on what we should call it, moving forward. Also, If you want to skip ahead, you can just check out some actual Immediately-Invoked Function Expressions, but I recommend reading the entire article.</p>
-<p>Please understand that this article isn&#x2019;t intended to be an &#x201C;I&#x2019;m right, you&#x2019;re wrong&#x201D; kind of thing. I&#x2019;m genuinely interested in helping people understand potentially complex concepts, and feel that using consistent and accurate terminology is one of the easiest things that people can do to facilitate understanding.</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/01/17/immediately-invoked-function-expression-(iife)/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
 
   <nav id="pagination">
   
@@ -619,7 +635,7 @@ var <span class="keyword">length</span> = myArray.<span class="keyword">length</
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>90</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>91</small></li>
   
     <li><a href="/categories/mobile/">Mobile</a><small>6</small></li>
   
@@ -650,6 +666,10 @@ var <span class="keyword">length</span> = myArray.<span class="keyword">length</
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/03/22/setting-focus-on-hidden-textbox-field-using-javascript/">Setting focus on hidden textbox field using Javascript</a>
+      </li>
     
       <li>
         <a href="/2015/03/18/tinymce-safari/">tinymce safari</a>
@@ -685,10 +705,6 @@ var <span class="keyword">length</span> = myArray.<span class="keyword">length</
     
       <li>
         <a href="/2015/03/09/meteor-set-mongo_url/">meteor set MONGO_URL</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/09/deep-into-javascript-prototype-and-closure/">deep into javascript prototype and closure</a>
       </li>
     
   </ul>

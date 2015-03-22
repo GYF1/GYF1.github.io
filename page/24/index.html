@@ -74,6 +74,70 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-08-07T09:02:42.000Z"><a href="/2014/08/07/angularjs-filter-使用常用方法/">8月 7 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/08/07/angularjs-filter-使用常用方法/">AngularJS filter 使用常用方法</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>not equal</p>
+<p>html</p>
+<pre><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">ng-app</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">ng-controller</span>=<span class="value">&quot;TodoCtrl&quot;</span>&gt;</span>
+         <span class="tag">&lt;<span class="title">h1</span>&gt;</span>List<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">ng-repeat</span>=<span class="value">&quot;t in todos | filter:{ id: &apos;!-1&apos;}&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre><p>js</p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">TodoCtrl</span><span class="params">(<span class="variable">$scope</span>)</span> {</span>
+    <span class="variable">$scope</span>.todos = [{
+        text: <span class="string">&apos;learn angular&apos;</span>,
+        done: <span class="keyword">true</span>,
+        id: -<span class="number">1</span>
+    }, {
+        text: <span class="string">&apos;build an angular app&apos;</span>,
+        done: <span class="keyword">false</span>,
+        id: <span class="number">1</span>
+    }];
+}
+</code></pre><p><a href="http://stackoverflow.com/questions/22666366/angular-js-filter-not-equals" target="_blank" rel="external">http://stackoverflow.com/questions/22666366/angular-js-filter-not-equals</a><br><a href="http://jsfiddle.net/U3pVM/3845/" target="_blank" rel="external">http://jsfiddle.net/U3pVM/3845/</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-08-04T03:47:46.000Z"><a href="/2014/08/04/bootstrap-dropdown需要点击两下才打开/">8月 4 2014</a></time>
       
       
@@ -466,52 +530,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-07-12T09:02:03.000Z"><a href="/2014/07/12/angularjs-更改iframe内样式/">7月 12 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/07/12/angularjs-更改iframe内样式/">AngularJS 更改iframe内样式</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>&#x9700;&#x8981;&#x5D4C;&#x5957;&#x4E00;&#x4E2A;iframe&#x7684;&#x6837;&#x5F0F;</p>
-<p><a href="http://stackoverflow.com/questions/13059284/window-onload-does-not-work-in-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/13059284/window-onload-does-not-work-in-angularjs</a><br><a href="http://stackoverflow.com/questions/15458609/angular-js-how-to-execute-function-on-page-load" target="_blank" rel="external">http://stackoverflow.com/questions/15458609/angular-js-how-to-execute-function-on-page-load</a><br><a href="http://blog.51yip.com/jsjquery/1599.html" target="_blank" rel="external">http://blog.51yip.com/jsjquery/1599.html</a><br><a href="http://learn.jquery.com/using-jquery-core/document-ready/" target="_blank" rel="external">http://learn.jquery.com/using-jquery-core/document-ready/</a><br><a href="http://wasw100.iteye.com/blog/490161" target="_blank" rel="external">http://wasw100.iteye.com/blog/490161</a><br><a href="https://github.com/angular/angular.js/issues/2388" target="_blank" rel="external">https://github.com/angular/angular.js/issues/2388</a><br><a href="https://github.com/angular/angular.js/issues/3679" target="_blank" rel="external">https://github.com/angular/angular.js/issues/3679</a><br><a href="http://stackoverflow.com/questions/24380388/how-to-remove-iframe-body-class-jquery-js" target="_blank" rel="external">http://stackoverflow.com/questions/24380388/how-to-remove-iframe-body-class-jquery-js</a><br><a href="http://stackoverflow.com/questions/9099043/select-the-iframe-body-element-on-the-lightbox-call" target="_blank" rel="external">http://stackoverflow.com/questions/9099043/select-the-iframe-body-element-on-the-lightbox-call</a><br><a href="http://jsfiddle.net/codef0rmer/K7bTT/" target="_blank" rel="external">http://jsfiddle.net/codef0rmer/K7bTT/</a><br><a href="http://stackoverflow.com/questions/16557495/how-to-use-iframe-in-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/16557495/how-to-use-iframe-in-angularjs</a><br><a href="http://stackoverflow.com/questions/19125910/is-it-possible-to-update-angularjs-expressions-inside-of-an-iframe" target="_blank" rel="external">http://stackoverflow.com/questions/19125910/is-it-possible-to-update-angularjs-expressions-inside-of-an-iframe</a><br><a href="http://www.cnblogs.com/devcjq/articles/2583399.html" target="_blank" rel="external">http://www.cnblogs.com/devcjq/articles/2583399.html</a><br><a href="http://zhidao.baidu.com/link?url=EvFhvhbSwJ1a7tIXveepk29EJoTwrQOsRhck6-T2fE8XTHkgsxVSU_XbXIaWYTs9GaeGzKjIhnMEIfK34ORA7_" target="_blank" rel="external">http://zhidao.baidu.com/link?url=EvFhvhbSwJ1a7tIXveepk29EJoTwrQOsRhck6-T2fE8XTHkgsxVSU_XbXIaWYTs9GaeGzKjIhnMEIfK34ORA7_</a><br><a href="http://stackoverflow.com/questions/13059284/window-onload-does-not-work-in-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/13059284/window-onload-does-not-work-in-angularjs</a><br><a href="http://plnkr.co/edit/NZiKGZ9D99JyntLJ7Lxk?p=preview" target="_blank" rel="external">http://plnkr.co/edit/NZiKGZ9D99JyntLJ7Lxk?p=preview</a><br><a href="http://stackoverflow.com/questions/19125910/is-it-possible-to-update-angularjs-expressions-inside-of-an-iframe" target="_blank" rel="external">http://stackoverflow.com/questions/19125910/is-it-possible-to-update-angularjs-expressions-inside-of-an-iframe</a><br><a href="http://stackoverflow.com/questions/16557495/how-to-use-iframe-in-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/16557495/how-to-use-iframe-in-angularjs</a><br><a href="http://stackoverflow.com/questions/18718393/refreshing-iframe-contents-in-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/18718393/refreshing-iframe-contents-in-angularjs</a><br><a href="http://bbs.csdn.net/topics/340058209" target="_blank" rel="external">http://bbs.csdn.net/topics/340058209</a></p>
-<p><a href="http://stackoverflow.com/questions/16557495/how-to-use-iframe-in-angularjs" target="_blank" rel="external">http://stackoverflow.com/questions/16557495/how-to-use-iframe-in-angularjs</a><br><a href="http://stackoverflow.com/questions/15882326/angular-onload-function-on-an-iframe" target="_blank" rel="external">http://stackoverflow.com/questions/15882326/angular-onload-function-on-an-iframe</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -545,7 +563,7 @@
   
     <li><a href="/categories/innovation/">Innovation</a><small>2</small></li>
   
-    <li><a href="/categories/javascript/">JavaScript</a><small>90</small></li>
+    <li><a href="/categories/javascript/">JavaScript</a><small>91</small></li>
   
     <li><a href="/categories/mobile/">Mobile</a><small>6</small></li>
   
@@ -576,6 +594,10 @@
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2015/03/22/setting-focus-on-hidden-textbox-field-using-javascript/">Setting focus on hidden textbox field using Javascript</a>
+      </li>
     
       <li>
         <a href="/2015/03/18/tinymce-safari/">tinymce safari</a>
@@ -611,10 +633,6 @@
     
       <li>
         <a href="/2015/03/09/meteor-set-mongo_url/">meteor set MONGO_URL</a>
-      </li>
-    
-      <li>
-        <a href="/2015/03/09/deep-into-javascript-prototype-and-closure/">deep into javascript prototype and closure</a>
       </li>
     
   </ul>

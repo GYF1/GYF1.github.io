@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.gyf1.com/2015/03/22/setting-focus-on-hidden-textbox-field-using-javascript/</loc>
+    <lastmod>2015-03-22T02:09:52.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gyf1.com/2015/03/18/tinymce-focus-and-set-cursor-caret-position/</loc>
     <lastmod>2015-03-18T07:54:20.000Z</lastmod>
   </url>

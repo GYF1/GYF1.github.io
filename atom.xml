@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Web Platform, Cloud and Mobile Application Development]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.gyf1.com/"/>
-  <updated>2015-03-19T02:54:56.147Z</updated>
+  <updated>2015-03-22T02:10:33.469Z</updated>
   <id>http://blog.gyf1.com/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Setting focus on hidden textbox field using Javascript]]></title>
+    <link href="http://blog.gyf1.com/2015/03/22/setting-focus-on-hidden-textbox-field-using-javascript/"/>
+    <id>http://blog.gyf1.com/2015/03/22/setting-focus-on-hidden-textbox-field-using-javascript/</id>
+    <published>2015-03-22T01:45:27.000Z</published>
+    <updated>2015-03-22T02:09:52.000Z</updated>
+    <content type="html"><![CDATA[<p>If you really need to do this, make the box transparent, not hidden:</p>
+<p>opacity:0;<br>filter:alpha(opacity=0);</p>
+<p>Alternatively, if you want to ensure that the user doesn&#x2019;t accidentally click it, just place the input inside a div with</p>
+<p>width: 0;<br>overflow: hidden;</p>
+<p>However, there is most certainly a better way to do what you want, maybe using keydown/keypress events.</p>
+<p><a id="more"></a><br>js focus input hidden<br><a href="http://stackoverflow.com/questions/10851402/setting-focus-on-hidden-textbox-field-using-javascript" target="_blank" rel="external">http://stackoverflow.com/questions/10851402/setting-focus-on-hidden-textbox-field-using-javascript</a><br><a href="http://stackoverflow.com/questions/11184547/trying-to-set-focus-on-a-hidden-text-box" target="_blank" rel="external">http://stackoverflow.com/questions/11184547/trying-to-set-focus-on-a-hidden-text-box</a><br><a href="http://stackoverflow.com/questions/18010412/focus-cursor-to-a-hidden-field" target="_blank" rel="external">http://stackoverflow.com/questions/18010412/focus-cursor-to-a-hidden-field</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>If you really need to do this, make the box transparent, not hidden:</p>
+<p>opacity:0;<br>filter:alpha(opacity=0);</p>
+<p>Alternatively, if you want to ensure that the user doesn&#x2019;t accidentally click it, just place the input inside a div with</p>
+<p>width: 0;<br>overflow: hidden;</p>
+<p>However, there is most certainly a better way to do what you want, maybe using keydown/keypress events.</p>
+<p>]]>
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.gyf1.com/categories/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[tinymce safari]]></title>
@@ -523,29 +550,6 @@
     <summary type="html">
     <![CDATA[<p>&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;input&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x63A7;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;date picker</p>
 <p>]]>
-    
-    </summary>
-    
-      <category term="Ionic" scheme="http://blog.gyf1.com/tags/ionic/"/>
-    
-      <category term="Mobile" scheme="http://blog.gyf1.com/categories/mobile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[ionic tabs horizon scroll]]></title>
-    <link href="http://blog.gyf1.com/2015/03/03/ionic-tabs-horizon-scroll/"/>
-    <id>http://blog.gyf1.com/2015/03/03/ionic-tabs-horizon-scroll/</id>
-    <published>2015-03-03T11:51:43.000Z</published>
-    <updated>2015-03-03T11:53:18.000Z</updated>
-    <content type="html"><![CDATA[<p>&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x9700;&#x6C42;&#xFF1A;&#x6C34;&#x5E73;&#x7684;&#x7528;tab&#x7684;&#x65B9;&#x5F0F;&#x52A8;&#x6001;&#x663E;&#x793A;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x5C4F;&#x5E55;&#x957F;&#x5EA6;&#xFF0C;&#x9700;&#x8981;&#x53EF;&#x4EE5;&#x6EDA;&#x52A8;&#x3002;</p>
-<a id="more"></a>
-
-<p><a href="http://codepen.io/calendee/pen/HIuft" target="_blank" rel="external">http://codepen.io/calendee/pen/HIuft</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x9700;&#x6C42;&#xFF1A;&#x6C34;&#x5E73;&#x7684;&#x7528;tab&#x7684;&#x65B9;&#x5F0F;&#x52A8;&#x6001;&#x663E;&#x793A;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x5C4F;&#x5E55;&#x957F;&#x5EA6;&#xFF0C;&#x9700;&#x8981;&#x53EF;&#x4EE5;&#x6EDA;&#x52A8;&#x3002;</p>
-]]>
     
     </summary>
     
