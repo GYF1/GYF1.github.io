@@ -14,7 +14,7 @@
   <![endif]-->
 </head>
 <body>
-<header class="hero">
+<header id="header" class="hero">
   <div class="pattern-overlay"></div>
   <div class="hero-body">
     <div class="hero-text text-center">
@@ -29,5 +29,10 @@
   <li><a href="http://gyf1.com/websites" title=" Collection of web sites that web developers should know ">WebSites</a>
   </li>
 </ul>
+<!--[if IE]>
+<script>
+  document.getElementById('header').style.height = document.body.clientHeight - 65 + 'px';
+</script>
+<![endif]-->
 </body>
 </html>
