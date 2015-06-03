@@ -20,7 +20,7 @@ header.hero {
     position: relative;
     z-index: 5;
     width: 100%;
-    background-image: url('../img/bg-me-3.jpg');
+    background-image: url('../img/me3.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     -webkit-background-size: cover;
