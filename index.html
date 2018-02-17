@@ -24,9 +24,9 @@
   </div>
 </header>
 <ul class="navbar">
-  <li><a href="http://saiweng.me/blog" title="My Blog">Blog</a></li>
+  <li><a href="/blog" title="My Blog">Blog</a></li>
   <li><a href="http://github.com/guoyinfeng" title="My Github">GitHub</a></li>
-  <li><a href="http://saiweng.me/websites" title="Collection of web sites that web developers should know">WebSites</a>
+  <li><a href="/websites" title="Collection of web sites that web developers should know">WebSites</a>
   </li>
 </ul>
 <!--[if IE]>
@@ -39,7 +39,7 @@
     var imageCount = Math.floor(Math.random() * ( 21 + 1));
     var header = document.getElementsByTagName('header')[0];
     imageCount = imageCount === 0 ? imageCount + 1 : imageCount;
-    var imageURL = 'http://saiweng.me/img/me' + imageCount + '.jpg'
+    var imageURL = '/img/me' + imageCount + '.jpg'
     header.style.backgroundImage = 'url(' + imageURL + ')';
   }());
 </script>
